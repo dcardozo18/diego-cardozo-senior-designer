@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Mail, MapPin, Send } from 'lucide-react';
+import { Github, Linkedin, Twitter, Phone, Mail, MapPin, Send } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -34,6 +34,40 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold">Location</h4>
                     <p className="text-muted-foreground">Based in Bogotá, Colombia</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-4 rounded-lg bg-card">
+                  <div className="p-3 rounded-md bg-primary/10 text-primary">
+                    <Phone className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Phone</h4>
+                    <p className="text-muted-foreground">+57 300 123 4567</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-4 rounded-lg bg-card">
+                  <div className="p-3 rounded-md bg-primary/10 text-primary">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-share-2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Social</h4>
+                    <div className="flex items-center gap-1 -ml-2">
+                      <Button variant="ghost" size="icon" asChild>
+                        <a href="#" aria-label="Twitter">
+                          <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                        </a>
+                      </Button>
+                      <Button variant="ghost" size="icon" asChild>
+                        <a href="#" aria-label="GitHub">
+                          <Github className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                        </a>
+                      </Button>
+                      <Button variant="ghost" size="icon" asChild>
+                        <a href="#" aria-label="LinkedIn">
+                          <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </div>
                  <div className="text-center mt-8">
