@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "A vibrant and abstract design for a tech company's website.",
+      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzU5NzUxMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract technology"
+    },
+    {
+      "id": "project-2",
+      "description": "A sleek and modern e-commerce platform for fashion.",
+      "imageUrl": "https://images.unsplash.com/photo-1629019597573-9c149be022b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc1OTc0NTg0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fashion ecommerce"
+    },
+    {
+      "id": "project-3",
+      "description": "A creative and engaging portfolio website for a photographer.",
+      "imageUrl": "https://picsum.photos/seed/p3/600/400",
+      "imageHint": "photography portfolio"
+    },
+    {
+      "id": "project-4",
+      "description": "A professional and clean corporate landing page.",
+      "imageUrl": "https://picsum.photos/seed/p4/600/400",
+      "imageHint": "corporate business"
+    },
+    {
+      "id": "project-5",
+      "description": "An interactive data visualization dashboard for analytics.",
+      "imageUrl": "https://picsum.photos/seed/p5/600/400",
+      "imageHint": "data dashboard"
+    },
+    {
+      "id": "project-6",
+      "description": "A bold and futuristic event promotion website.",
+      "imageUrl": "https://picsum.photos/seed/p6/600/400",
+      "imageHint": "futuristic event"
+    }
+  ]
 }
