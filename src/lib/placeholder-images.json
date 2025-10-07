@@ -2,39 +2,343 @@
   "placeholderImages": [
     {
       "id": "project-1",
-      "description": "A vibrant and abstract design for a tech company's website.",
-      "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzU5NzUxMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "name": "QuantumLeap",
+      "client": "Innovate Inc.",
+      "industry": "Tech",
+      "description": "A vibrant and abstract design for a tech company's website, focusing on user engagement and modern aesthetics.",
+      "goal": "Improve online presence and user engagement.",
+      "role": "UI/UX Design, WordPress Implementation, Responsive Layout.",
+      "tools": [
+        "Figma",
+        "WordPress",
+        "Elementor"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://images.unsplash.com/photo-1562575214-da9fcf59b907?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzU5NzUxMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract technology"
     },
     {
       "id": "project-2",
-      "description": "A sleek and modern e-commerce platform for fashion.",
-      "imageUrl": "https://images.unsplash.com/photo-1629019597573-9c149be022b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc1OTc0NTg0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "name": "Chic Boutique",
+      "client": "Fashion Forward",
+      "industry": "E-commerce",
+      "description": "A sleek and modern e-commerce platform for fashion, designed to provide a seamless shopping experience.",
+      "goal": "Increase online sales and improve user experience.",
+      "role": "UI/UX Design, Shopify Development, Payment Integration.",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p2/600/400",
       "imageHint": "fashion ecommerce"
     },
     {
       "id": "project-3",
-      "description": "A creative and engaging portfolio website for a photographer.",
+      "name": "Lens Legacy",
+      "client": "Anna Petrova",
+      "industry": "Photography",
+      "description": "A creative and engaging portfolio website for a photographer, showcasing her work in a visually appealing way.",
+      "goal": "Create a stunning online portfolio to attract new clients.",
+      "role": "UI/UX Design, Webflow Development, CMS Integration.",
+      "tools": [
+        "Figma",
+        "Webflow",
+        "CMS"
+      ],
+      "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/p3/600/400",
       "imageHint": "photography portfolio"
     },
     {
       "id": "project-4",
-      "description": "A professional and clean corporate landing page.",
+      "name": "CorpConnect",
+      "client": "Global Solutions",
+      "industry": "Corporate",
+      "description": "A professional and clean corporate landing page designed to build trust and generate leads.",
+      "goal": "Establish a strong corporate identity and generate leads.",
+      "role": "UI Design, WordPress Development, SEO Optimization.",
+      "tools": [
+        "Adobe XD",
+        "WordPress",
+        "DIVI"
+      ],
+      "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/p4/600/400",
       "imageHint": "corporate business"
     },
     {
       "id": "project-5",
-      "description": "An interactive data visualization dashboard for analytics.",
+      "name": "DataDriven",
+      "client": "Analytics Co.",
+      "industry": "Data Science",
+      "description": "An interactive data visualization dashboard for analytics, providing insights at a glance.",
+      "goal": "Simplify complex data into actionable insights.",
+      "role": "UI/UX Design, Front-end Development, Data Visualization.",
+      "tools": [
+        "Figma",
+        "Angular",
+        "D3.js"
+      ],
+      "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/p5/600/400",
       "imageHint": "data dashboard"
     },
     {
       "id": "project-6",
-      "description": "A bold and futuristic event promotion website.",
+      "name": "FutureFest",
+      "client": "Event Horizon",
+      "industry": "Events",
+      "description": "A bold and futuristic event promotion website to drive ticket sales and excitement.",
+      "goal": "Promote a major tech event and manage registrations.",
+      "role": "UI Design, Front-end Development, Interaction Design.",
+      "tools": [
+        "Framer",
+        "JavaScript",
+        "Tailwind"
+      ],
+      "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/p6/600/400",
       "imageHint": "futuristic event"
+    },
+    {
+      "id": "project-7",
+      "name": "LegalEagle",
+      "client": "Bogotá Legal Group",
+      "industry": "Legal",
+      "description": "A professional and trustworthy website for a law firm, enhancing their digital presence.",
+      "goal": "Attract more clients through a professional online portal.",
+      "role": "UI/UX Design, WordPress Customization, Content Strategy.",
+      "tools": [
+        "Figma",
+        "WordPress",
+        "Elementor"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p7/600/400",
+      "imageHint": "legal firm"
+    },
+    {
+      "id": "project-8",
+      "name": "Artisan Haven",
+      "client": "Handmade Crafts",
+      "industry": "E-commerce",
+      "description": "An online marketplace for artisans to sell their handmade goods.",
+      "goal": "Create a community-driven platform for craftspeople.",
+      "role": "UI/UX Design, Magento Development, Community Features.",
+      "tools": [
+        "Figma",
+        "Magento",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p8/600/400",
+      "imageHint": "artisan market"
+    },
+    {
+      "id": "project-9",
+      "name": "HealthTrack",
+      "client": "Wellness App",
+      "industry": "Health & Fitness",
+      "description": "A mobile-first web app to track fitness goals and progress.",
+      "goal": "Provide a simple and motivating health tracking tool.",
+      "role": "UI/UX Design, Front-end Development.",
+      "tools": [
+        "Figma",
+        "Angular",
+        "Tailwind"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://images.unsplash.com/photo-1727432813810-cabde273e273?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc1OTc0OTgxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fitness app"
+    },
+    {
+      "id": "project-10",
+      "name": "GreenScape",
+      "client": "Eco Landscapes",
+      "industry": "Services",
+      "description": "A website for a landscaping company specializing in sustainable solutions.",
+      "goal": "Showcase sustainable projects and attract eco-conscious clients.",
+      "role": "UI Design, WordPress Development, Photo Gallery.",
+      "tools": [
+        "Canva",
+        "WordPress",
+        "DIVI"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p10/600/400",
+      "imageHint": "eco landscape"
+    },
+    {
+      "id": "project-11",
+      "name": "CodeCanvas",
+      "client": "Dev Portfolios",
+      "industry": "Web Development",
+      "description": "A platform for developers to create and host their portfolios.",
+      "goal": "Offer an easy-to-use portfolio builder for tech professionals.",
+      "role": "UI/UX Design, Full-Stack Development.",
+      "tools": [
+        "Framer",
+        "JavaScript",
+        "HTML"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p11/600/400",
+      "imageHint": "developer portfolio"
+    },
+    {
+      "id": "project-12",
+      "name": "GourmetGo",
+      "client": "Local Restaurants",
+      "industry": "Food & Beverage",
+      "description": "A food delivery platform that connects users with local restaurants.",
+      "goal": "Support local businesses and provide a convenient delivery service.",
+      "role": "UI/UX Design, Shopify Integration.",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p12/600/400",
+      "imageHint": "food delivery"
+    },
+    {
+      "id": "project-13",
+      "name": "MindWell",
+      "client": "Mental Health Startup",
+      "industry": "Healthcare",
+      "description": "A calming and supportive web platform for mental wellness resources.",
+      "goal": "Provide accessible mental health information and support.",
+      "role": "UI/UX Design, Webflow Development.",
+      "tools": [
+        "Figma",
+        "Webflow",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p13/600/400",
+      "imageHint": "mental wellness"
+    },
+    {
+      "id": "project-14",
+      "name": "Travelista",
+      "client": "Adventure Tours",
+      "industry": "Travel",
+      "description": "A visually-driven travel booking website for adventure seekers.",
+      "goal": "Inspire and facilitate adventure travel bookings.",
+      "role": "UI Design, WordPress Development.",
+      "tools": [
+        "Adobe XD",
+        "WordPress",
+        "Elementor"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p14/600/400",
+      "imageHint": "travel adventure"
+    },
+    {
+      "id": "project-15",
+      "name": "PropTech",
+      "client": "Real Estate Innovations",
+      "industry": "Real Estate",
+      "description": "A platform for real estate agents to manage listings and clients.",
+      "goal": "Streamline real estate operations with a modern digital tool.",
+      "role": "UI/UX Design, Front-end Development.",
+      "tools": [
+        "Figma",
+        "Angular",
+        "Tailwind"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p15/600/400",
+      "imageHint": "real estate"
+    },
+    {
+      "id": "project-16",
+      "name": "EduSphere",
+      "client": "Online Learning Inc.",
+      "industry": "Education",
+      "description": "An e-learning platform with interactive courses and progress tracking.",
+      "goal": "Deliver engaging and effective online education.",
+      "role": "UI/UX Design, Magento Customization.",
+      "tools": [
+        "Figma",
+        "Magento",
+        "CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p16/600/400",
+      "imageHint": "elearning platform"
+    },
+    {
+      "id": "project-17",
+      "name": "AutoMotion",
+      "client": "Car Dealership Network",
+      "industry": "Automotive",
+      "description": "A sleek website for a luxury car dealership, featuring virtual showrooms.",
+      "goal": "Create a high-end online car buying experience.",
+      "role": "UI Design, WordPress Development.",
+      "tools": [
+        "Framer",
+        "WordPress",
+        "DIVI"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p17/600/400",
+      "imageHint": "luxury car"
+    },
+    {
+      "id": "project-18",
+      "name": "The Daily Read",
+      "client": "Digital Magazine",
+      "industry": "Publishing",
+      "description": "A modern and readable layout for an online magazine.",
+      "goal": "Increase readership and subscription rates.",
+      "role": "UI/UX Design, Webflow Development.",
+      "tools": [
+        "Figma",
+        "Webflow",
+        "CMS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p18/600/400",
+      "imageHint": "online magazine"
+    },
+    {
+      "id": "project-19",
+      "name": "NonProfit Connect",
+      "client": "Charity Foundation",
+      "industry": "Non-Profit",
+      "description": "A website to raise awareness and collect donations for a charitable cause.",
+      "goal": "Boost online donations and volunteer sign-ups.",
+      "role": "UI Design, WordPress Implementation.",
+      "tools": [
+        "Canva",
+        "WordPress",
+        "Elementor"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p19/600/400",
+      "imageHint": "charity website"
+    },
+    {
+      "id": "project-20",
+      "name": "Stylo",
+      "client": "Personal Stylist",
+      "industry": "Fashion",
+      "description": "A personal branding website for a high-profile fashion stylist.",
+      "goal": "Showcase stylist's portfolio and attract celebrity clients.",
+      "role": "UI/UX Design, Shopify Development.",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/p20/600/400",
+      "imageHint": "fashion stylist"
     }
   ]
 }

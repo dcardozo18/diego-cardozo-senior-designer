@@ -10,14 +10,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-
-const ProjectSchema = z.object({
-  name: z.string().describe('The name of the project.'),
-  imageUrl: z.string().describe('The URL of the project image.'),
-  description: z.string().describe('A brief description of the project.'),
-  engagementScore: z.number().describe('A score representing user engagement with the project.'),
-  visualAppealScore: z.number().describe('A score representing the visual appeal of the project.'),
-});
+import { ProjectSchema } from '@/lib/placeholder-images';
 
 export type Project = z.infer<typeof ProjectSchema>;
 

@@ -1,30 +1,47 @@
 
+'use client';
+
+import { useState, useMemo, useEffect } from 'react';
 import { smartProjectArrangement, type Project } from '@/ai/flows/smart-project-arrangement';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import ProjectCard from '@/components/shared/project-card';
-import { Briefcase } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
-const ProjectsSection = async () => {
-  // Mock data for projects
-  const mockProjects: Project[] = PlaceHolderImages.map((p, index) => ({
-    name: p.description.split(' for ')[0],
-    imageUrl: p.imageUrl,
-    description: p.description,
-    // Assign pseudo-random scores for demonstration
-    engagementScore: Math.floor(Math.random() * (95 - 70 + 1) + 70), // Score between 70-95
-    visualAppealScore: Math.floor(Math.random() * (98 - 75 + 1) + 75), // Score between 75-98
-  }));
+const ProjectsSection = () => {
+  const [allProjects, setAllProjects] = useState<Project[]>([]);
+  const [activeFilter, setActiveFilter] = useState<string>('All');
 
-  let arrangedProjects: Project[] = [];
-  try {
-    // Call the GenAI flow to arrange projects
-    arrangedProjects = await smartProjectArrangement({ projects: mockProjects });
-  } catch (error) {
-    console.error("AI flow failed, using mock data as is:", error);
-    // Fallback to original mock data if AI flow fails
-    arrangedProjects = mockProjects.sort((a,b) => (b.engagementScore + b.visualAppealScore) - (a.engagementScore + a.visualAppealScore));
-  }
+  useEffect(() => {
+    const arrangeProjects = async () => {
+      const mockProjects: Project[] = PlaceHolderImages.map((p) => ({
+        ...p,
+        engagementScore: Math.floor(Math.random() * (95 - 70 + 1) + 70),
+        visualAppealScore: Math.floor(Math.random() * (98 - 75 + 1) + 75),
+      }));
 
+      try {
+        const arranged = await smartProjectArrangement({ projects: mockProjects });
+        setAllProjects(arranged);
+      } catch (error) {
+        console.error("AI flow failed, using mock data as is:", error);
+        const sorted = mockProjects.sort((a,b) => (b.engagementScore + b.visualAppealScore) - (a.engagementScore + a.visualAppealScore));
+        setAllProjects(sorted);
+      }
+    };
+    arrangeProjects();
+  }, []);
+
+  const technologies = useMemo(() => {
+    const allTechs = allProjects.flatMap(p => p.tools);
+    return ['All', ...Array.from(new Set(allTechs))];
+  }, [allProjects]);
+
+  const filteredProjects = useMemo(() => {
+    if (activeFilter === 'All') {
+      return allProjects;
+    }
+    return allProjects.filter(p => p.tools.includes(activeFilter));
+  }, [allProjects, activeFilter]);
 
   return (
     <section id="projects" className="py-20 md:py-32">
@@ -37,9 +54,23 @@ const ProjectsSection = async () => {
             A selection of my projects, thoughtfully arranged for visual harmony.
           </p>
         </div>
+        
+        <div className="mb-12 flex flex-wrap justify-center gap-2">
+          {technologies.map(tech => (
+            <Button
+              key={tech}
+              variant={activeFilter === tech ? 'default' : 'outline'}
+              onClick={() => setActiveFilter(tech)}
+              className="transition-all"
+            >
+              {tech}
+            </Button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {arrangedProjects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+          {filteredProjects.map((project, index) => (
+            <ProjectCard key={`${project.id}-${index}`} project={project} />
           ))}
         </div>
       </div>
