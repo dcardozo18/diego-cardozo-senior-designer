@@ -20,7 +20,7 @@ const AboutSection = () => {
           <div className="lg:col-span-2 flex items-center justify-center">
              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl shadow-primary/20">
                <Image
-                src="https://picsum.photos/seed/profile/400/400"
+                src="https://storage.googleapis.com/gweb-aip-images/prod/221977792477811904/1180w/e16f316a3e2c1409.png"
                 alt="Profile picture for Diego Cardozo"
                 fill
                 data-ai-hint="professional portrait"
