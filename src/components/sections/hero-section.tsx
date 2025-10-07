@@ -4,7 +4,7 @@ import { ArrowDown, Download, Eye } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative h-screen min-h-[700px] overflow-hidden">
+    <section id="home" className="relative h-screen min-h-[700px]">
       <div className="absolute inset-0 animated-gradient -z-10"></div>
       <div className="container mx-auto flex h-full flex-col items-start justify-center px-4 text-left md:px-6 z-10">
         <div className="animate-fade-in-up space-y-6 max-w-3xl">
