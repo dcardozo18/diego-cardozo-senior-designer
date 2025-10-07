@@ -1,3 +1,4 @@
+
 import data from './placeholder-images.json';
 import { z } from 'zod';
 
@@ -20,4 +21,7 @@ export const ProjectSchema = z.object({
 
 export type Project = z.infer<typeof ProjectSchema>;
 
-export const PlaceHolderImages: Project[] = data.placeholderImages;
+export const PlaceHolderImages: Project[] = data.placeholderImages.map(p => ({
+  ...p,
+  id: String(p.id)
+}));

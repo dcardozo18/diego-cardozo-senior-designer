@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <p className="text-sm text-muted-foreground">{project.industry}</p>
             <h3 className="text-xl font-bold text-foreground mt-2">{project.name}</h3>
             <div className="mt-4 flex items-center text-primary font-semibold text-sm">
-               <span className="group-hover:underline">View Details</span>
+               <span className="underline">View Details</span>
                <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </div>
           </div>
