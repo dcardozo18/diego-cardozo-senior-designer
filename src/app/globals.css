@@ -90,3 +90,19 @@ html {
     @apply min-h-screen flex flex-col justify-center;
   }
 }
+
+@layer utilities {
+  .animated-gradient {
+    background: radial-gradient(circle, hsl(var(--primary) / 0.1), hsl(var(--background)) 70%),
+                radial-gradient(circle, hsl(var(--accent) / 0.05), transparent 50%);
+    background-size: 200% 200%, 300% 300%;
+    animation: gradient-move 20s ease-in-out infinite;
+  }
+}
+
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%, 100% 50%; }
+  50% { background-position: 100% 50%, 0% 50%; }
+  100% { background-position: 0% 50%, 100% 50%; }
+}

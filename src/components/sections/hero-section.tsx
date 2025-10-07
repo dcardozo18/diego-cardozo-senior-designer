@@ -4,8 +4,9 @@ import { ArrowDown, Download, Eye } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative h-screen min-h-[700px] bg-background">
-      <div className="container mx-auto flex h-full flex-col items-start justify-center px-4 text-left md:px-6">
+    <section id="home" className="relative h-screen min-h-[700px] overflow-hidden">
+      <div className="absolute inset-0 animated-gradient -z-10"></div>
+      <div className="container mx-auto flex h-full flex-col items-start justify-center px-4 text-left md:px-6 z-10">
         <div className="animate-fade-in-up space-y-6 max-w-3xl">
            <p className="font-headline text-2xl font-semibold tracking-tight text-primary sm:text-3xl md:text-4xl">
             Hi, I’m Diego Cardozo
@@ -32,7 +33,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
         <a href="#about" aria-label="Scroll to about section">
           <div className="h-10 w-6 rounded-full border-2 border-muted-foreground">
               <div className="mx-auto mt-2 h-2 w-1 animate-bounce rounded-full bg-muted-foreground"></div>
