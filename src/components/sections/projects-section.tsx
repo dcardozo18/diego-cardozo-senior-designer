@@ -71,7 +71,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="py-20 md:py-32">
+    <section id="projects" className="bg-background py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
