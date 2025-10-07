@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Home, Briefcase, User, Star, Mail, Menu, X, Code2 } from 'lucide-react';
+import { Home, Briefcase, User, Mail, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -10,7 +10,6 @@ const navLinks = [
   { href: '#home', label: 'Home', icon: Home },
   { href: '#about', label: 'About', icon: User },
   { href: '#projects', label: 'Projects', icon: Briefcase },
-  { href: '#testimonials', label: 'Testimonials', icon: Star },
   { href: '#contact', label: 'Contact', icon: Mail },
 ];
 
