@@ -36,10 +36,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
            </div>
           <div className="p-6">
             <p className="text-sm text-muted-foreground">{project.industry}</p>
-            <h3 className="text-xl font-bold text-white mt-2">{project.name}</h3>
-            <div className="mt-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center text-primary font-semibold">
-               <span>View Details</span>
-               <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            <h3 className="text-xl font-bold text-foreground mt-2">{project.name}</h3>
+            <div className="mt-4 flex items-center text-primary font-semibold text-sm">
+               <span className="group-hover:underline">View Details</span>
+               <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </div>
           </div>
         </div>
