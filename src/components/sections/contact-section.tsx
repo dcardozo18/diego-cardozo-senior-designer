@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useFormState } from 'react-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -9,11 +9,8 @@ import { useEffect } from 'react';
 
 import { submitContactForm, type FormState } from '@/app/actions';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, Mail } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const contactSchema = z.object({
@@ -22,21 +19,6 @@ const contactSchema = z.object({
   message: z.string().min(10, 'Message must be at least 10 characters.'),
 });
 
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <Button type="submit" size="lg" className="w-full" disabled={pending}>
-      {pending ? (
-        <>
-          <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-          Sending...
-        </>
-      ) : (
-        'Send Message'
-      )}
-    </Button>
-  );
-}
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -72,58 +54,26 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            Get In <span className="text-primary">Touch</span>
+             Let’s build something great <span className="text-primary">together.</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Have a project in mind? I'd love to hear from you.
+            I’m currently available for remote design opportunities across Latin America and beyond.
           </p>
-        </div>
-
-        <div className="mx-auto max-w-lg">
-          <Form {...form}>
-            <form action={formAction} className="space-y-6">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Name</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Your Name" {...field} />
-                    </FormControl>
-                    <FormMessage>{state?.errors?.name?.[0]}</FormMessage>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input type="email" placeholder="your.email@example.com" {...field} />
-                    </FormControl>
-                    <FormMessage>{state?.errors?.email?.[0]}</FormMessage>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Message</FormLabel>
-                    <FormControl>
-                      <Textarea placeholder="Tell me about your project..." {...field} rows={6} />
-                    </FormControl>
-                    <FormMessage>{state?.errors?.message?.[0]}</FormMessage>
-                  </FormItem>
-                )}
-              />
-              <SubmitButton />
-            </form>
-          </Form>
+          <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6 text-lg">
+            <div className="flex items-center gap-2">
+              <Mail className="h-5 w-5 text-primary" />
+              <a href="mailto:your-email@example.com" className="hover:text-primary">your-email@example.com</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPin className="h-5 w-5 text-primary" />
+              <span>Based in Bogotá, Colombia</span>
+            </div>
+          </div>
+          <div className="mt-8">
+            <Button size="lg" asChild>
+              <a href="mailto:your-email@example.com">Let's Connect</a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

@@ -10,6 +10,7 @@ const navLinks = [
   { href: '#home', label: 'Home' },
   { href: '#projects', label: 'Projects' },
   { href: '#about', label: 'About' },
+  { href: '#testimonials', label: 'Testimonials' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -57,7 +58,7 @@ const Header = () => {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <a href="#home" className="flex items-center gap-2" aria-label="Back to top">
           <Code2 className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold">Vibrant Portfolio</span>
+          <span className="text-xl font-bold">Diego Cardozo</span>
         </a>
 
         <nav className="hidden items-center gap-6 md:flex">

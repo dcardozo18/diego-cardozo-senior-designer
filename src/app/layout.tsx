@@ -4,8 +4,8 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Vibrant Portfolio',
-  description: 'A modern and animated web design portfolio by a creative developer.',
+  title: 'Diego Cardozo – Senior Web & UI/UX Designer',
+  description: 'Diego Cardozo – Senior Web & UI/UX Designer | WordPress · Figma · LATAM Remote',
 };
 
 export default function RootLayout({
