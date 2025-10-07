@@ -30,7 +30,7 @@ const ProjectsSection = () => {
         setAllProjects(arranged);
       } catch (error) {
         console.error("AI flow failed, using mock data as is:", error);
-        const sorted = mockProjects.sort((a,b) => (b.engagementScore + b.visualAppealScore) - (a.engagementScore + a.visualAppealScore));
+        const sorted = mockProjects.sort((a,b) => (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!));
         setAllProjects(sorted);
       } finally {
         setIsArranging(false);

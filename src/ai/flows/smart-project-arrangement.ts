@@ -19,15 +19,20 @@ const SmartProjectArrangementInputSchema = z.object({
 });
 export type SmartProjectArrangementInput = z.infer<typeof SmartProjectArrangementInputSchema>;
 
-const SmartProjectArrangementOutputSchema = z.array(ProjectSchema).describe(
-  'An array of portfolio projects arranged by visual appeal and user engagement metrics.'
-);
+const SmartProjectArrangementOutputSchema = z.object({
+  arrangedProjects: z.array(ProjectSchema).describe(
+    'An array of portfolio projects arranged by visual appeal and user engagement metrics.'
+  )
+});
+
 export type SmartProjectArrangementOutput = z.infer<typeof SmartProjectArrangementOutputSchema>;
+
 
 export async function smartProjectArrangement(
   input: SmartProjectArrangementInput
-): Promise<SmartProjectArrangementOutput> {
-  return smartProjectArrangementFlow(input);
+): Promise<Project[]> {
+  const result = await smartProjectArrangementFlow(input);
+  return result.arrangedProjects;
 }
 
 const prompt = ai.definePrompt({
