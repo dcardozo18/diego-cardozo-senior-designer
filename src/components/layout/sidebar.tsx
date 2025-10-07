@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Home, Briefcase, User, Mail, Code2 } from 'lucide-react';
+import { Home, Briefcase, User, Mail, Code2, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { useTheme } from 'next-themes';
 
 const navLinks = [
   { href: '#home', label: 'Home', icon: Home },
@@ -16,6 +17,10 @@ const navLinks = [
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,6 +41,39 @@ const Sidebar = () => {
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
+
+  const ThemeToggle = () => {
+    if (!mounted) {
+      return (
+        <Button variant="ghost" size="icon" className="rounded-full h-12 w-12" disabled>
+          <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      );
+    }
+    return (
+        <TooltipProvider delayDuration={0}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary"
+                  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                >
+                  <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                  <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                  <span className="sr-only">Toggle theme</span>
+                </Button>
+            </TooltipTrigger>
+            <TooltipContent side="right" className="bg-card text-foreground border-border">
+              <p>Toggle Theme</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+    );
+  };
 
   const NavItems = () => (
     <nav className="flex flex-col items-center gap-4">
@@ -71,18 +109,21 @@ const Sidebar = () => {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="hidden md:flex flex-col items-center justify-between w-28 h-screen fixed top-0 left-0 bg-card border-r border-border py-8 z-50">
+      <aside className="hidden md:flex flex-col items-center justify-between w-28 h-screen fixed top-0 left-0 bg-card border-r py-8 z-50">
         <a href="#home" className="flex items-center gap-2" aria-label="Back to top">
           <div className="bg-primary text-primary-foreground rounded-full p-2">
             <Code2 className="h-8 w-8" />
           </div>
         </a>
-        <NavItems />
+        <div className="flex flex-col items-center gap-6">
+          <NavItems />
+          <ThemeToggle />
+        </div>
         <div />
       </aside>
 
       {/* Mobile Bottom Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-card border-t border-border p-2 z-50">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-card border-t p-2 z-50">
          <div className="flex justify-around items-center">
             {navLinks.map((link) => (
               <Button
@@ -102,6 +143,18 @@ const Sidebar = () => {
                 </a>
               </Button>
             ))}
+            { mounted && (
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full h-12 w-12 text-muted-foreground"
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              >
+                <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                <span className="sr-only">Toggle theme</span>
+              </Button>
+            )}
          </div>
       </div>
     </>

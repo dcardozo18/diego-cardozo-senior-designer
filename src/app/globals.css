@@ -8,24 +8,24 @@ html {
 
 @layer base {
   :root {
-    --background: 222 83% 4%;
-    --foreground: 0 0% 98%;
-    --card: 222 83% 8%;
-    --card-foreground: 0 0% 98%;
-    --popover: 222 83% 4%;
-    --popover-foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222 83% 4%;
+    --card: 0 0% 96%;
+    --card-foreground: 222 83% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 83% 4%;
     --primary: 217 91% 60%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 222 83% 12%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 222 83% 12%;
-    --muted-foreground: 0 0% 60%;
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 222 83% 8%;
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 40%;
     --accent: 217 91% 60%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 222 83% 15%;
-    --input: 222 83% 15%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
     --ring: 217 91% 60%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -33,15 +33,16 @@ html {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --sidebar-background: 222 83% 8%;
-    --sidebar-foreground: 0 0% 98%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222 83% 4%;
     --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 222 83% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 222 83% 15%;
+    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent-foreground: 222 83% 8%;
+    --sidebar-border: 0 0% 88%;
     --sidebar-ring: 217 91% 60%;
   }
+
   .dark {
     --background: 222 83% 4%;
     --foreground: 0 0% 98%;
@@ -123,7 +124,7 @@ html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><g fill-opacity="0.25"><rect fill="hsl(222, 83%, 4%)" width="800" height="800"/><g fill="hsl(222, 83%, 8%)"><path d="M784 400 L400 784 L0 400 L400 16 Z M112 400 L400 688 L688 400 L400 112 Z"/></g></g></svg>');
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><g fill-opacity="0.25"><rect fill="hsl(var(--background))" width="800" height="800"/><g fill="hsl(var(--card))"><path d="M784 400 L400 784 L0 400 L400 16 Z M112 400 L400 688 L688 400 L400 112 Z"/></g></g></svg>');
     background-size: 2px;
     opacity: 0.05;
     z-index: -2;
