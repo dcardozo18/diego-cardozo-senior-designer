@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="border-t bg-background/50">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row md:px-6">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Vibrant Portfolio. All rights reserved.
+          &copy; {new Date().getFullYear()} Diego Cardozo. All rights reserved.
         </p>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" asChild>

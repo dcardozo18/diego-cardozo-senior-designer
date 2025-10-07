@@ -2,6 +2,14 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
+import { Poppins } from 'next/font/google'
+import Sidebar from '@/components/layout/sidebar';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-poppins'
+})
 
 export const metadata: Metadata = {
   title: 'Diego Cardozo – Senior Web & UI/UX Designer',
@@ -15,13 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-      </head>
-      <body className={cn("font-body antialiased")}>
-        {children}
+      <body className={cn("font-body antialiased", poppins.variable)}>
+        <div className="flex">
+          <Sidebar />
+          <div className="flex-1 md:pl-28">
+            {children}
+          </div>
+        </div>
         <Toaster />
       </body>
     </html>

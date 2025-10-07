@@ -10,9 +10,11 @@ import { Button } from '@/components/ui/button';
 const ProjectsSection = () => {
   const [allProjects, setAllProjects] = useState<Project[]>([]);
   const [activeFilter, setActiveFilter] = useState<string>('All');
+  const [isArranging, setIsArranging] = useState(true);
 
   useEffect(() => {
     const arrangeProjects = async () => {
+      setIsArranging(true);
       const mockProjects: Project[] = PlaceHolderImages.map((p) => ({
         ...p,
         engagementScore: Math.floor(Math.random() * (95 - 70 + 1) + 70),
@@ -26,22 +28,25 @@ const ProjectsSection = () => {
         console.error("AI flow failed, using mock data as is:", error);
         const sorted = mockProjects.sort((a,b) => (b.engagementScore + b.visualAppealScore) - (a.engagementScore + a.visualAppealScore));
         setAllProjects(sorted);
+      } finally {
+        setIsArranging(false);
       }
     };
     arrangeProjects();
   }, []);
 
   const technologies = useMemo(() => {
-    const allTechs = allProjects.flatMap(p => p.tools);
+    const allTechs = PlaceHolderImages.flatMap(p => p.tools);
     return ['All', ...Array.from(new Set(allTechs))];
-  }, [allProjects]);
+  }, []);
 
   const filteredProjects = useMemo(() => {
+    const sourceProjects = isArranging ? PlaceHolderImages : allProjects;
     if (activeFilter === 'All') {
-      return allProjects;
+      return sourceProjects;
     }
-    return allProjects.filter(p => p.tools.includes(activeFilter));
-  }, [allProjects, activeFilter]);
+    return sourceProjects.filter(p => p.tools.includes(activeFilter));
+  }, [allProjects, activeFilter, isArranging]);
 
   return (
     <section id="projects" className="py-20 md:py-32">
@@ -61,7 +66,7 @@ const ProjectsSection = () => {
               key={tech}
               variant={activeFilter === tech ? 'default' : 'outline'}
               onClick={() => setActiveFilter(tech)}
-              className="transition-all"
+              className="rounded-full transition-all"
             >
               {tech}
             </Button>

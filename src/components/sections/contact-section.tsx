@@ -10,8 +10,10 @@ import { useEffect } from 'react';
 import { submitContactForm, type FormState } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Input } from '../ui/input';
+import { Textarea } from '../ui/textarea';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -38,6 +40,8 @@ const ContactSection = () => {
       toast({
         title: 'Success!',
         description: state.message,
+        variant: 'default',
+        className: 'bg-primary text-primary-foreground',
       });
       form.reset();
     } else if (state?.success === false) {
@@ -59,22 +63,63 @@ const ContactSection = () => {
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             I’m currently available for remote design opportunities across Latin America and beyond.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6 text-lg">
-            <div className="flex items-center gap-2">
-              <Mail className="h-5 w-5 text-primary" />
-              <a href="mailto:your-email@example.com" className="hover:text-primary">your-email@example.com</a>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="h-5 w-5 text-primary" />
-              <span>Based in Bogotá, Colombia</span>
-            </div>
-          </div>
-          <div className="mt-8">
-            <Button size="lg" asChild>
-              <a href="mailto:your-email@example.com">Let's Connect</a>
-            </Button>
-          </div>
         </div>
+
+        <div className="grid md:grid-cols-3 gap-12">
+            <div className="flex flex-col gap-8">
+                <div className="flex items-center gap-4 p-4 rounded-lg bg-card">
+                  <div className="p-3 rounded-md bg-primary/10 text-primary">
+                    <Mail className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Email</h4>
+                    <a href="mailto:your-email@example.com" className="text-muted-foreground hover:text-primary transition-colors">your-email@example.com</a>
+                  </div>
+                </div>
+                 <div className="flex items-center gap-4 p-4 rounded-lg bg-card">
+                  <div className="p-3 rounded-md bg-primary/10 text-primary">
+                    <MapPin className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Location</h4>
+                    <p className="text-muted-foreground">Based in Bogotá, Colombia</p>
+                  </div>
+                </div>
+            </div>
+            <div className="md:col-span-2">
+                <form action={formAction} className="space-y-6">
+                    <div className="grid sm:grid-cols-2 gap-6">
+                        <Input 
+                            {...form.register('name')} 
+                            placeholder="Your Name"
+                            className="bg-card border-border h-12"
+                         />
+                        <Input 
+                            {...form.register('email')}
+                            placeholder="Your Email"
+                            type="email"
+                            className="bg-card border-border h-12"
+                        />
+                    </div>
+                    <Textarea 
+                        {...form.register('message')}
+                        placeholder="Your Message"
+                        rows={6}
+                        className="bg-card border-border"
+                    />
+                    <div className="text-right">
+                        <Button size="lg" type="submit" disabled={form.formState.isSubmitting}>
+                            <span>Let's Connect</span>
+                            <Send className="h-5 w-5" />
+                        </Button>
+                    </div>
+                    {state?.success === false && (
+                        <p className="text-destructive text-sm mt-4">{state.message}</p>
+                    )}
+                </form>
+            </div>
+        </div>
+
       </div>
     </section>
   );

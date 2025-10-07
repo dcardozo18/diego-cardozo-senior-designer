@@ -2,7 +2,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ExternalLink, Briefcase, Target, Wrench, Compass } from 'lucide-react';
+import { ExternalLink, Briefcase, Compass, Wrench, ArrowRight } from 'lucide-react';
 import type { Project } from '@/lib/placeholder-images';
 import {
   Dialog,
@@ -23,33 +23,35 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="group relative cursor-pointer overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:scale-105 hover:shadow-primary/20">
-          <Image
-            src={project.imageUrl}
-            alt={project.name}
-            width={600}
-            height={400}
-            data-ai-hint={project.imageHint}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-          <div className="absolute inset-0 flex flex-col justify-end p-6">
-            <h3 className="text-2xl font-bold text-white">{project.name}</h3>
-            <p className="text-sm text-gray-300">{project.client} / {project.industry}</p>
-            <div className="mt-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-               <p className="text-sm font-semibold text-primary">View Details →</p>
+        <div className="group relative cursor-pointer overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:shadow-primary/20 bg-card border border-border/50">
+           <div className="aspect-video overflow-hidden">
+            <Image
+                src={project.imageUrl}
+                alt={project.name}
+                width={600}
+                height={400}
+                data-ai-hint={project.imageHint}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+           </div>
+          <div className="p-6">
+            <p className="text-sm text-muted-foreground">{project.industry}</p>
+            <h3 className="text-xl font-bold text-white mt-2">{project.name}</h3>
+            <div className="mt-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center text-primary font-semibold">
+               <span>View Details</span>
+               <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </div>
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-4xl bg-card text-card-foreground">
+      <DialogContent className="max-w-4xl bg-card text-card-foreground border-border">
         <DialogHeader>
           <DialogTitle className="text-3xl font-bold text-primary">{project.name}</DialogTitle>
           <p className="text-muted-foreground">{project.client} / {project.industry}</p>
         </DialogHeader>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-4 max-h-[80vh] overflow-y-auto">
             <div>
-                 <div className="relative mb-6 aspect-video overflow-hidden rounded-lg">
+                 <div className="relative mb-6 aspect-video overflow-hidden rounded-lg border">
                     <Image
                         src={project.imageUrl}
                         alt={project.name}
@@ -63,7 +65,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <div className="flex flex-col gap-6">
                 
                 <div className="flex items-start gap-4">
-                    <Compass className="h-6 w-6 shrink-0 text-accent" />
+                    <Compass className="h-6 w-6 shrink-0 text-primary" />
                     <div>
                         <h4 className="font-semibold text-lg">Goal</h4>
                         <p className="text-muted-foreground">{project.goal}</p>
@@ -71,7 +73,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                    <Briefcase className="h-6 w-6 shrink-0 text-accent" />
+                    <Briefcase className="h-6 w-6 shrink-0 text-primary" />
                     <div>
                         <h4 className="font-semibold text-lg">Role</h4>
                         <p className="text-muted-foreground">{project.role}</p>
@@ -79,19 +81,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                    <Wrench className="h-6 w-6 shrink-0 text-accent" />
+                    <Wrench className="h-6 w-6 shrink-0 text-primary" />
                     <div>
                         <h4 className="font-semibold text-lg">Tools</h4>
                         <div className="flex flex-wrap gap-2">
                             {project.tools.map(tool => (
-                                <Badge key={tool} variant="secondary" className="px-2 py-1">{tool}</Badge>
+                                <Badge key={tool} variant="secondary">{tool}</Badge>
                             ))}
                         </div>
                     </div>
                 </div>
 
                 {project.liveSiteUrl && (
-                     <Button asChild className="mt-4">
+                     <Button asChild className="mt-4 rounded-full">
                         <a href={project.liveSiteUrl} target="_blank" rel="noopener noreferrer">
                             View Live Site <ExternalLink className="ml-2 h-4 w-4" />
                         </a>
