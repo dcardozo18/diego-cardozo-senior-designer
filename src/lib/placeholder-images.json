@@ -1,6 +1,61 @@
 {
   "placeholderImages": [
     {
+      "id": "21",
+      "name": "Aviatur Travel Platform",
+      "client": "Aviatur",
+      "industry": "Travel",
+      "description": "Comprehensive travel and booking platform for one of the largest travel agencies in the region.",
+      "goal": "Modernize the online booking experience and integrate multiple travel services into a single platform.",
+      "role": "Lead UI/UX Designer, Web Development",
+      "tools": [
+        "Figma",
+        "Angular",
+        "TailwindCSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/images/projects/aviatur.png",
+      "imageHint": "travel agency platform",
+      "category": "Web Design"
+    },
+    {
+      "id": "22",
+      "name": "Hotel Las Islas - Luxury Retreat",
+      "client": "Hotel Las Islas",
+      "industry": "Hospitality",
+      "description": "Elegant and immersive website for a luxury island hotel, focusing on stunning visuals and easy booking.",
+      "goal": "Capture the essence of the luxury retreat and increase direct bookings through a seamless user experience.",
+      "role": "UI/UX Design, Frontend Development",
+      "tools": [
+        "WordPress",
+        "Figma",
+        "CSS",
+        "PHP"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/images/projects/las-islas.jpeg",
+      "imageHint": "luxury hotel website",
+      "category": "Web Design"
+    },
+    {
+      "id": "23",
+      "name": "Bit-C Crypto Exchange",
+      "client": "Bit-C",
+      "industry": "Fintech",
+      "description": "UI/UX design for a cryptocurrency exchange platform, focusing on security, clarity, and ease of use for both new and experienced traders.",
+      "goal": "Design a trustworthy and intuitive interface for a complex financial application.",
+      "role": "UI/UX Design",
+      "tools": [
+        "Figma",
+        "Framer"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/images/projects/bit-c.jpeg",
+      "imageHint": "crypto exchange dashboard",
+      "category": "App Design"
+    },
+    {
       "id": "1",
       "name": "Creative Agency Website",
       "client": "Creative Co.",

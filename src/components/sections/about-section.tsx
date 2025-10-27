@@ -20,7 +20,7 @@ const AboutSection = () => {
           <div className="lg:col-span-2 flex items-center justify-center">
              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl shadow-primary/20">
                <Image
-                src="/home/user/studio/src/app/web-profile.jpeg"
+                src="/home/user/studio/src/images/web-profile.jpeg"
                 alt="Diego Cardozo"
                 fill
                 data-ai-hint="professional portrait"
