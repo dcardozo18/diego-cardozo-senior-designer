@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Brush, Code, Server } from 'lucide-react';
 
 const designSkills = ['Figma', 'Adobe Creative Suite', 'Canva', 'Framer', 'Webflow'];
-const frontendSkills = ['HTML', 'CSS', 'Tailwind', 'Angular', 'JavaScript'];
+const frontendSkills = ['HTML', 'CSS', 'Bootstrap', 'Tailwind', 'Angular', 'JavaScript'];
 const platformSkills = ['WordPress', 'Shopify', 'Magento'];
 
 const AboutSection = () => {
@@ -20,8 +20,8 @@ const AboutSection = () => {
           <div className="lg:col-span-2 flex items-center justify-center">
              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl shadow-primary/20">
                <Image
-                src="https://storage.googleapis.com/gweb-aip-images/prod/221977792477811904/1180w/e16f316a3e2c1409.png"
-                alt="Profile picture for Diego Cardozo"
+                src="/home/user/studio/src/app/web-profile.jpeg"
+                alt="Diego Cardozo"
                 fill
                 data-ai-hint="professional portrait"
                 className="object-cover"
