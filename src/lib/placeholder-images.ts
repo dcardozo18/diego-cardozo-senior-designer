@@ -14,6 +14,7 @@ export const ProjectSchema = z.object({
   liveSiteUrl: z.string().url().or(z.literal('#')),
   imageUrl: z.string(),
   imageHint: z.string(),
+  category: z.string(),
   // Optional scores for AI arrangement
   engagementScore: z.number().optional(),
   visualAppealScore: z.number().optional(),

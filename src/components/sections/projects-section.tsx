@@ -9,6 +9,8 @@ import { Button } from '@/components/ui/button';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 
 const PROJECTS_PER_PAGE = 6;
+const CATEGORIES = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding'];
+
 
 const ProjectsSection = () => {
   const [allProjects, setAllProjects] = useState<Project[]>([]);
@@ -39,17 +41,12 @@ const ProjectsSection = () => {
     arrangeProjects();
   }, []);
 
-  const technologies = useMemo(() => {
-    const allTechs = PlaceHolderImages.flatMap(p => p.tools);
-    return ['All', ...Array.from(new Set(allTechs))];
-  }, []);
-
   const filteredProjects = useMemo(() => {
     const sourceProjects = isArranging ? PlaceHolderImages : allProjects;
     if (activeFilter === 'All') {
       return sourceProjects;
     }
-    return sourceProjects.filter(p => p.tools.includes(activeFilter));
+    return sourceProjects.filter(p => p.category === activeFilter);
   }, [allProjects, activeFilter, isArranging]);
 
   useEffect(() => {
@@ -83,7 +80,7 @@ const ProjectsSection = () => {
         </div>
         
         <div className="mb-12 flex flex-wrap justify-center gap-2">
-          {technologies.map(tech => (
+          {CATEGORIES.map(tech => (
             <Button
               key={tech}
               variant={activeFilter === tech ? 'default' : 'outline'}

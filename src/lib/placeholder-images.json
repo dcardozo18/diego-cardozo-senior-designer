@@ -16,8 +16,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/creative-agency/600/400",
-      "imageHint": "creative agency"
+      "imageUrl": "https://images.unsplash.com/photo-1617695744007-68ef55752789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjcmVhdGl2ZSUyMGFnZW5jeXxlbnwwfHx8fDE3NjE1OTM5NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "creative agency",
+      "category": "Web Design"
     },
     {
       "id": "2",
@@ -34,8 +35,9 @@
         "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/handmade-store/600/400",
-      "imageHint": "handmade products"
+      "imageUrl": "https://images.unsplash.com/photo-1631869382470-cd1722baebc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYW5kbWFkZSUyMHByb2R1Y3RzfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "handmade products",
+      "category": "E-commerce"
     },
     {
       "id": "3",
@@ -52,8 +54,9 @@
         "CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/restaurant-landing/600/400",
-      "imageHint": "fine dining"
+      "imageUrl": "https://images.unsplash.com/photo-1694021408920-922ff450c525?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5lJTIwZGluaW5nfGVufDB8fHx8MTc2MTU3Nzg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fine dining",
+      "category": "Web Design"
     },
     {
       "id": "4",
@@ -70,7 +73,8 @@
       ],
       "liveSiteUrl": "#",
       "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc1OTc0OTgxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fitness app"
+      "imageHint": "fitness app",
+      "category": "App Design"
     },
     {
       "id": "5",
@@ -86,8 +90,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/photographer-portfolio/600/400",
-      "imageHint": "photography portfolio"
+      "imageUrl": "https://images.unsplash.com/photo-1743446770828-180040aba491?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoeSUyMHBvcnRmb2xpb3xlbnwwfHx8fDE3NjE1OTM5NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "photography portfolio",
+      "category": "Web Design"
     },
     {
       "id": "6",
@@ -104,8 +109,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/fashion-store/600/400",
-      "imageHint": "fashion ecommerce"
+      "imageUrl": "https://images.unsplash.com/photo-1558234200-3efd43232f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fashion ecommerce",
+      "category": "E-commerce"
     },
     {
       "id": "7",
@@ -121,8 +127,9 @@
         "PHP"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/creators-blog/600/400",
-      "imageHint": "digital blog"
+      "imageUrl": "https://images.unsplash.com/photo-1758273239705-fd46eb56f7b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwYmxvZ3xlbnwwfHx8fDE3NjE1OTM5NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital blog",
+      "category": "Development"
     },
     {
       "id": "8",
@@ -138,8 +145,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/real-estate/600/400",
-      "imageHint": "real estate"
+      "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2MTU2MDE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "real estate",
+      "category": "Web Design"
     },
     {
       "id": "9",
@@ -156,8 +164,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/personal-brand/600/400",
-      "imageHint": "personal branding"
+      "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb25hbCUyMGJyYW5kaW5nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "personal branding",
+      "category": "Branding"
     },
     {
       "id": "10",
@@ -173,8 +182,9 @@
         "Bootstrap"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/dashboard-ui/600/400",
-      "imageHint": "data dashboard"
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTUzMzIyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data dashboard",
+      "category": "App Design"
     },
     {
       "id": "11",
@@ -192,7 +202,8 @@
       ],
       "liveSiteUrl": "#",
       "imageUrl": "https://images.unsplash.com/photo-1600320261634-78edd477fa1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVjaCUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzU5NzQwMDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tech conference"
+      "imageHint": "tech conference",
+      "category": "Web Design"
     },
     {
       "id": "12",
@@ -209,7 +220,8 @@
       ],
       "liveSiteUrl": "#",
       "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbWFpbCUyMG1hcmtldGluZ3xlbnwwfHx8fDE3NTk3NDk3OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "email marketing"
+      "imageHint": "email marketing",
+      "category": "Branding"
     },
     {
       "id": "13",
@@ -225,8 +237,9 @@
         "Tailwind"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/travel-blog/600/400",
-      "imageHint": "travel blog"
+      "imageUrl": "https://images.unsplash.com/photo-1640441709847-ab9f0d334f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0cmF2ZWwlMjBibG9nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel blog",
+      "category": "Development"
     },
     {
       "id": "14",
@@ -243,8 +256,9 @@
         "CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/beauty-landing/600/400",
-      "imageHint": "skincare product"
+      "imageUrl": "https://images.unsplash.com/photo-1616750819456-5cdee9b85d22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2tpbmNhcmUlMjBwcm9kdWN0fGVufDB8fHx8MTc2MTQ2ODA2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "skincare product",
+      "category": "Branding"
     },
     {
       "id": "15",
@@ -259,8 +273,9 @@
         "Figma"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/framer-portfolio/600/400",
-      "imageHint": "motion design"
+      "imageUrl": "https://images.unsplash.com/photo-1630347254264-cad43144b2d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb3Rpb24lMjBkZXNpZ258ZW58MHx8fHwxNzYxNTkzOTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "motion design",
+      "category": "Web Design"
     },
     {
       "id": "16",
@@ -276,8 +291,9 @@
         "TailwindCSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/food-app/600/400",
-      "imageHint": "food delivery"
+      "imageUrl": "https://images.unsplash.com/photo-1695654398407-0c309e1f5827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kJTIwZGVsaXZlcnl8ZW58MHx8fHwxNzYxNTczMzAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "food delivery",
+      "category": "App Design"
     },
     {
       "id": "17",
@@ -292,8 +308,9 @@
         "Figma"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/music-app/600/400",
-      "imageHint": "music streaming"
+      "imageUrl": "https://images.unsplash.com/photo-1551817958-795f9440ce4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXVzaWMlMjBzdHJlYW1pbmd8ZW58MHx8fHwxNzYxNTUxNDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "music streaming",
+      "category": "App Design"
     },
     {
       "id": "18",
@@ -309,8 +326,9 @@
         "TailwindCSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/elearning-app/600/400",
-      "imageHint": "elearning mobile"
+      "imageUrl": "https://images.unsplash.com/photo-1726033474257-690c0a29d0cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbGVhcm5pbmclMjBtb2JpbGV8ZW58MHx8fHwxNzYxNTkzOTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "elearning mobile",
+      "category": "App Design"
     },
     {
       "id": "19",
@@ -325,8 +343,9 @@
         "Adobe Illustrator"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/travel-app/600/400",
-      "imageHint": "travel booking"
+      "imageUrl": "https://images.unsplash.com/photo-1522199873717-bc67b1a5e32b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmF2ZWwlMjBib29raW5nfGVufDB8fHx8MTc2MTU1NzAxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel booking",
+      "category": "App Design"
     },
     {
       "id": "20",
@@ -342,8 +361,9 @@
         "Framer"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance-app/600/400",
-      "imageHint": "finance dashboard"
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance dashboard",
+      "category": "App Design"
     }
   ]
 }
