@@ -85,6 +85,7 @@ html {
   }
   body {
     @apply bg-background text-foreground;
+    background-attachment: fixed;
   }
   
   section {
@@ -126,9 +127,11 @@ html {
     height: 100vh;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><g fill-opacity="0.25"><rect fill="hsl(var(--background))" width="800" height="800"/><g fill="hsl(var(--card))"><path d="M784 400 L400 784 L0 400 L400 16 Z M112 400 L400 688 L688 400 L400 112 Z"/></g></g></svg>');
     background-size: 2px;
+    background-attachment: fixed;
     opacity: 0.05;
     z-index: -2;
     pointer-events: none;
+    animation: bg-scroll 8s linear infinite;
   }
 }
 
@@ -141,7 +144,6 @@ html {
   }
 }
 
-
 @keyframes gradient-move {
   0% { background-position: 0% 50%, 100% 50%; }
   50% { background-position: 100% 50%, 0% 50%; }
@@ -152,4 +154,9 @@ html {
   0% { transform: scale(1); opacity: 0.5; }
   50% { transform: scale(1.2); opacity: 0.7; }
   100% { transform: scale(1); opacity: 0.5; }
+}
+
+@keyframes bg-scroll {
+  from { background-position: 0 0; }
+  to { background-position: -100px -100px; }
 }
