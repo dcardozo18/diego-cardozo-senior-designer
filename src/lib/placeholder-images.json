@@ -2,7 +2,7 @@
   "placeholderImages": [
     {
       "id": "21",
-      "name": "Aviatur Travel Platform",
+      "name": "Aviatur Travel",
       "client": "Aviatur",
       "industry": "Travel",
       "description": "Comprehensive travel and booking platform for one of the largest travel agencies in the region.",
@@ -11,17 +11,17 @@
       "tools": [
         "Figma",
         "Angular",
-        "TailwindCSS",
+        "Bootstrap",
         "JavaScript"
       ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/images/projects/aviatur.png",
+      "liveSiteUrl": "https://www.aviatur.com/",
+      "imageUrl": "/../images/aviatur.png",
       "imageHint": "travel agency platform",
       "category": "Web Design"
     },
     {
       "id": "22",
-      "name": "Hotel Las Islas - Luxury Retreat",
+      "name": "Hotel Las Islas",
       "client": "Hotel Las Islas",
       "industry": "Hospitality",
       "description": "Elegant and immersive website for a luxury island hotel, focusing on stunning visuals and easy booking.",
@@ -33,16 +33,16 @@
         "CSS",
         "PHP"
       ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/images/projects/las-islas.jpeg",
+      "liveSiteUrl": "https://www.lasislas.com.co/",
+      "imageUrl": "/app/images/las-islas.jpeg",
       "imageHint": "luxury hotel website",
       "category": "Web Design"
     },
     {
       "id": "23",
-      "name": "Bit-C Crypto Exchange",
+      "name": "Bit-C",
       "client": "Bit-C",
-      "industry": "Fintech",
+      "industry": "Technology",
       "description": "UI/UX design for a cryptocurrency exchange platform, focusing on security, clarity, and ease of use for both new and experienced traders.",
       "goal": "Design a trustworthy and intuitive interface for a complex financial application.",
       "role": "UI/UX Design",
@@ -50,10 +50,10 @@
         "Figma",
         "Framer"
       ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/images/projects/bit-c.jpeg",
-      "imageHint": "crypto exchange dashboard",
-      "category": "App Design"
+      "liveSiteUrl": "https://www.bit-c.com.co/",
+      "imageUrl": "/src/app/images/bit-c.jpeg",
+      "imageHint": "business, technology",
+      "category": "Web Design"
     },
     {
       "id": "1",

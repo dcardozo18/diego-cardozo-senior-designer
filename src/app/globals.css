@@ -92,32 +92,6 @@ html {
     @apply min-h-screen flex flex-col justify-center relative overflow-hidden;
   }
 
-  section::before, section::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    pointer-events: none;
-    background: radial-gradient(circle at center, hsla(var(--primary), 0.1), transparent 40%);
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: pulse 15s infinite ease-in-out;
-  }
-
-  section::before {
-    width: 50vw;
-    height: 50vw;
-    top: 10%;
-    left: -20%;
-  }
-
-  section::after {
-    width: 40vw;
-    height: 40vw;
-    bottom: 5%;
-    right: -15%;
-    animation-delay: 3s;
-  }
-
   body::before {
     content: "";
     position: fixed;
@@ -136,13 +110,36 @@ html {
 }
 
 @layer utilities {
-  .animated-gradient {
-    background: radial-gradient(circle, hsl(var(--primary) / 0.1), hsl(var(--background)) 70%),
-                radial-gradient(circle, hsl(var(--accent) / 0.05), transparent 50%);
-    background-size: 200% 200%, 300% 300%;
-    animation: gradient-move 20s ease-in-out infinite;
+  .aurora-background {
+    position: relative;
+    overflow: hidden;
+  }
+  .aurora-background::before,
+  .aurora-background::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsla(var(--primary) / 0.2) 0%, transparent 70%);
+    animation: aurora-animation 20s linear infinite;
+    mix-blend-mode: multiply;
+  }
+  .aurora-background::after {
+    background: radial-gradient(circle, hsla(var(--accent) / 0.1) 0%, transparent 70%);
+    animation-delay: -10s;
   }
 }
+
+@keyframes aurora-animation {
+  0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
+  50% { transform: translate(-50%, -50%) rotate(180deg) scale(1.2); }
+  100% { transform: translate(-50%, -50%) rotate(360deg) scale(1); }
+}
+
 
 @keyframes gradient-move {
   0% { background-position: 0% 50%, 100% 50%; }
