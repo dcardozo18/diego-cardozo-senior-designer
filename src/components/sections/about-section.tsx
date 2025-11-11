@@ -1,11 +1,14 @@
 
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
-import { Brush, Code, Server } from 'lucide-react';
+import { Brush, Code, Server, BrainCircuit, Bot } from 'lucide-react';
 
 const designSkills = ['Figma', 'Adobe Creative Suite', 'Canva', 'Framer', 'Webflow'];
 const frontendSkills = ['HTML', 'CSS', 'Bootstrap', 'Tailwind', 'Angular', 'JavaScript'];
 const platformSkills = ['WordPress', 'Shopify', 'Magento'];
+const uxSkills = ['User Research', 'Information Architecture', 'Wireframing', 'Prototyping', 'Usability Testing'];
+const aiSkills = ['Midjourney', 'Runway', 'ChatGPT', 'GenAI', 'Copilot'];
+
 
 const AboutSection = () => {
   return (
@@ -20,8 +23,8 @@ const AboutSection = () => {
           <div className="lg:col-span-2 flex items-center justify-center">
              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl shadow-primary/20">
                <Image
-                src="/home/user/studio/src/images/web-profile.jpeg"
-                alt="Diego Cardozo"
+                src="/web-profile.jpeg"
+                alt="Profile picture for Diego Cardozo"
                 fill
                 data-ai-hint="professional portrait"
                 className="object-cover"
@@ -40,11 +43,10 @@ const AboutSection = () => {
               I’ve collaborated with developers, marketing teams, and agencies to turn ideas into digital products that look great and perform even better.
             </p>
           </div>
-          
         </div>
         <div className="mt-16">
           <h3 className="mb-8 text-center text-3xl font-bold">Core Expertise</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             <div className="rounded-lg bg-card p-6 border border-transparent hover:border-primary transition-colors duration-300">
               <div className="flex items-center gap-4 mb-4">
                 <Brush className="h-8 w-8 text-primary" />
@@ -53,6 +55,19 @@ const AboutSection = () => {
               <div className="flex flex-wrap gap-2">
                 {designSkills.map(skill => (
                   <Badge key={skill} variant="secondary">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+             <div className="rounded-lg bg-card p-6 border border-transparent hover:border-primary transition-colors duration-300">
+               <div className="flex items-center gap-4 mb-4">
+                <BrainCircuit className="h-8 w-8 text-primary" />
+                <h4 className="text-xl font-semibold">UX</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {uxSkills.map(skill => (
+                   <Badge key={skill} variant="secondary">
                     {skill}
                   </Badge>
                 ))}
@@ -81,6 +96,19 @@ const AboutSection = () => {
                    <Badge key={skill} variant="secondary">
                     {skill}
                   </Badge>
+                ))}
+              </div>
+            </div>
+             <div className="rounded-lg bg-card p-6 border border-transparent hover:border-primary transition-colors duration-300">
+               <div className="flex items-center gap-4 mb-4">
+                <Bot className="h-8 w-8 text-primary" />
+                <h4 className="text-xl font-semibold">AI Tools</h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {aiSkills.map(skill => (
+                   <Badge key={skill} variant="secondary">
+                    {skill}
+                  </badge>
                 ))}
               </div>
             </div>
