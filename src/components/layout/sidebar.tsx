@@ -23,11 +23,15 @@ const Sidebar = () => {
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {
+    const navLinkIds = navLinks.map(link => link.href.substring(1));
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+             if (navLinkIds.includes(entry.target.id)) {
+              setActiveSection(entry.target.id);
+            }
           }
         });
       },
