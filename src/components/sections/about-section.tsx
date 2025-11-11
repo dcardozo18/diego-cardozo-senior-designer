@@ -108,7 +108,7 @@ const AboutSection = () => {
                 {aiSkills.map(skill => (
                    <Badge key={skill} variant="secondary">
                     {skill}
-                  </badge>
+                  </Badge>
                 ))}
               </div>
             </div>
