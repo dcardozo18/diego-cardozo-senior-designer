@@ -40,19 +40,20 @@
     },
     {
       "id": "23",
-      "name": "BIT-C - Punto Comedia E-commerce",
-      "client": "Bit-C",
-      "industry": "Technology",
-      "description": "UI/UX design for a cryptocurrency exchange platform, focusing on security, clarity, and ease of use for both new and experienced traders.",
-      "goal": "Design a trustworthy and intuitive interface for a complex financial application.",
-      "role": "UI/UX Design",
+      "name": "Punto Comedia E-commerce",
+      "client": "Punto Comedia",
+      "industry": "Entertainment & E-commerce",
+      "description": "Designed an e-commerce platform for purchasing tickets to specialized stand-up comedy events, covering the full cycle from market research to a final, implementation-ready design for WooCommerce.",
+      "goal": "Define the target audience through market research and user persona creation, then prototype and design a seamless user experience. The final objective was to adapt the custom design for a successful launch on the WooCommerce platform.",
+      "role": "UI/UX Design, Market Research",
       "tools": [
         "Figma",
-        "Framer"
+        "WooCommerce",
+        "User Research"
       ],
-      "liveSiteUrl": "https://www.bit-c.com.co/",
+      "liveSiteUrl": "#",
       "imageUrl": "/src/app/images/bit-c.jpeg",
-      "imageHint": "business, technology",
+      "imageHint": "comedy event tickets",
       "category": "E-commerce"
     },
     {
@@ -183,7 +184,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1558234200-3efd43232f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558234200-3efd43232f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "fashion ecommerce",
       "category": "E-commerce"
     },
@@ -219,7 +220,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2MTU2MDE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2MTU2MDE4OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "real estate",
       "category": "Web Design"
     },
