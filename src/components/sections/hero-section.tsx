@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { Download, Eye } from 'lucide-react';
 import { cn } from '@/lib/utils';
