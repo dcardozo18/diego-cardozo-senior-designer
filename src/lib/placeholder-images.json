@@ -15,7 +15,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "https://www.aviatur.com/",
-      "imageUrl": "/../images/aviatur.png",
+      "imageUrl": "/aviatur.png",
       "imageHint": "travel agency platform",
       "category": "E-commerce"
     },
@@ -52,7 +52,7 @@
         "User Research"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/src/app/images/bit-c.jpeg",
+      "imageUrl": "/bit-c.jpeg",
       "imageHint": "comedy event tickets",
       "category": "E-commerce"
     },
@@ -71,7 +71,7 @@
         "TypeScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1642427749670-f20e2e76f8c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MHx8fHwxNzIxMjgwMjE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/orbit.png",
       "imageHint": "dashboard analytics",
       "category": "App Design"
     },
@@ -152,24 +152,6 @@
       "category": "App Design"
     },
     {
-      "id": "5",
-      "name": "Photographer Portfolio",
-      "client": "Elena Ray",
-      "industry": "Photography",
-      "description": "Minimalist portfolio for a photographer with fullscreen image galleries.",
-      "goal": "Create a visually immersive portfolio to attract new clients.",
-      "role": "UI/UX Design, Web Development",
-      "tools": [
-        "Adobe XD",
-        "Webflow",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1743446770828-180040aba941?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaG90b2dyYXBoeSUyMHBvcnRmb2xpb3xlbnwwfHx8fDE3NjE1OTM5NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "photography portfolio",
-      "category": "Web Design"
-    },
-    {
       "id": "6",
       "name": "Fashion E-commerce",
       "client": "Chic & Co.",
@@ -184,7 +166,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1558234200-3efd43232f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1558234200-3efd43232f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fashion ecommerce",
       "category": "E-commerce"
     },
@@ -220,7 +202,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2MTU2MDE4OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2MTU2MDE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "real estate",
       "category": "Web Design"
     },
@@ -239,7 +221,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb25hbCUyMGJyYW5kaW5nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb25hbCUyMGJyYW5kaW5nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "personal branding",
       "category": "Branding"
     },
@@ -257,7 +239,7 @@
         "Bootstrap"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTUzMzIyNHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTUzMzIyNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data dashboard",
       "category": "App Design"
     },
@@ -276,27 +258,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1600320261634-78edd477fa1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVjaCUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzU5NzQwMDg0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600320261634-78edd477fa1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVjaCUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzU5NzQwMDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tech conference",
       "category": "Web Design"
-    },
-    {
-      "id": "12",
-      "name": "Marketing Email Templates",
-      "client": "Growth Co.",
-      "industry": "Marketing",
-      "description": "Responsive HTML email templates for promotional campaigns.",
-      "goal": "Improve email marketing engagement and conversion rates.",
-      "role": "Email Design, HTML Development",
-      "tools": [
-        "Adobe Illustrator",
-        "HTML",
-        "CSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbWFpbCUyMG1hcmtldGluZ3xlbnwwfHx8fDE3NTk3NDk3OTB8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "email marketing",
-      "category": "Branding"
     },
     {
       "id": "13",
@@ -312,7 +276,7 @@
         "Tailwind"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1640441709847-ab9f0d334f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0cmF2ZWwlMjBibG9nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1640441709847-ab9f0d334f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0cmF2ZWwlMjBibG9nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "travel blog",
       "category": "Development"
     },
@@ -331,26 +295,9 @@
         "CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1616750819456-5cdee9b85d22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2tpbmNhcmUlMjBwcm9kdWN0fGVufDB8fHx8MTc2MTQ2ODA2Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616750819456-5cdee9b85d22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2tpbmNhcmUlMjBwcm9kdWN0fGVufDB8fHx8MTc2MTQ2ODA2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "skincare product",
       "category": "Branding"
-    },
-    {
-      "id": "15",
-      "name": "Portfolio Redesign in Framer",
-      "client": "John Smith",
-      "industry": "Personal",
-      "description": "Personal portfolio built entirely in Framer showcasing motion design skills.",
-      "goal": "Create a dynamic and interactive portfolio to showcase motion design skills.",
-      "role": "Motion Design, UI/UX Design",
-      "tools": [
-        "Framer",
-        "Figma"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1630347254264-cad43144b2d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb3Rpb24lMjBkZXNpZ258ZW58MHx8fHwxNzYxNTkzOTQ5fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "motion design",
-      "category": "Web Design"
     },
     {
       "id": "16",
@@ -366,7 +313,7 @@
         "TailwindCSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1695654398407-0c309e1f5827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kJTIwZGVsaXZlcnl8ZW58MHx8fHwxNzYxNTczMzAwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1695654398407-0c309e1f5827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kJTIwZGVsaXZlcnl8ZW58MHx8fHwxNzYxNTczMzAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "food delivery",
       "category": "App Design"
     },
@@ -385,41 +332,6 @@
       "liveSiteUrl": "#",
       "imageUrl": "https://images.unsplash.com/photo-1551817958-795f9440ce4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXVzaWMlMjBzdHJlYW1pbmd8ZW58MHx8fHwxNzYxNTUxNDQ4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "music streaming",
-      "category": "App Design"
-    },
-    {
-      "id": "18",
-      "name": "E-learning Mobile Interface",
-      "client": "LearnSphere",
-      "industry": "EdTech",
-      "description": "Mobile app UI for an e-learning platform with lessons and progress tracking.",
-      "goal": "Design an accessible and motivating mobile learning platform.",
-      "role": "UI/UX Design",
-      "tools": [
-        "Figma",
-        "Framer",
-        "TailwindCSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1726033474257-690c0a29d0cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbGVhcm5pbmclMjBtb2JpbGV8ZW58MHx8fHwxNzYxNTkzOTQ5fDA&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "elearning mobile",
-      "category": "App Design"
-    },
-    {
-      "id": "19",
-      "name": "Travel Booking Mobile App",
-      "client": "GoNext",
-      "industry": "Travel",
-      "description": "Mobile design for a travel app allowing users to search and book destinations.",
-      "goal": "Simplify the travel booking process with a clean and intuitive mobile app.",
-      "role": "UI/UX Design",
-      "tools": [
-        "Figma",
-        "Adobe Illustrator"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1522199873717-bc67b1a5e32b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmF2ZWwlMjBib29raW5nfGVufDB8fHx8MTc2MTU1NzAxNnww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "travel booking",
       "category": "App Design"
     },
     {
