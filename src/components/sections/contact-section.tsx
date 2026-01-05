@@ -24,7 +24,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <a href="mailto:your-email@example.com" className="text-muted-foreground hover:text-primary transition-colors">your-email@example.com</a>
+                    <a href="mailto:diegocardozosenioruiuxdesigner@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">diegocardozosenioruiuxdesigner@gmail.com</a>
                   </div>
                 </div>
                  <div className="flex items-center gap-4 p-4 rounded-lg bg-card">
@@ -42,7 +42,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Phone</h4>
-                    <p className="text-muted-foreground">+57 300 123 4567</p>
+                    <p className="text-muted-foreground">+57 311 226 1900</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 rounded-lg bg-card">
@@ -53,17 +53,12 @@ const ContactSection = () => {
                     <h4 className="font-semibold">Social</h4>
                     <div className="flex items-center gap-1 -ml-2">
                       <Button variant="ghost" size="icon" asChild>
-                        <a href="#" aria-label="Twitter">
-                          <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary" />
-                        </a>
-                      </Button>
-                      <Button variant="ghost" size="icon" asChild>
                         <a href="#" aria-label="GitHub">
                           <Github className="h-5 w-5 text-muted-foreground hover:text-primary" />
                         </a>
                       </Button>
                       <Button variant="ghost" size="icon" asChild>
-                        <a href="#" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/diegocardozosenioruiuxdeisgner/" aria-label="LinkedIn">
                           <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" />
                         </a>
                       </Button>
@@ -72,7 +67,7 @@ const ContactSection = () => {
                 </div>
                  <div className="text-center mt-8">
                     <Button size="lg" asChild>
-                        <a href="mailto:your-email@example.com">
+                        <a href="mailto:diegocardozosenioruiuxdesigner@gmail.com">
                             <span>Let's Connect</span>
                             <Send className="h-5 w-5" />
                         </a>

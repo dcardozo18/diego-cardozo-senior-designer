@@ -89,7 +89,7 @@
         "WordPress"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1729314458953-d8716fae1b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21lZHklMjBjbHViJTIwc3RhZ2V8ZW58MHx8fHwxNzY3NjI4NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/puntocomedia.png",
       "imageHint": "comedy club stage",
       "category": "E-commerce"
     },
@@ -108,7 +108,7 @@
         "User Research"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1660486358484-975da44dc68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0cm9waWNhbCUyMGJlYWNoJTIwZGVzdGluYXRpb258ZW58MHx8fHwxNzY3NjI4NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/bestdeal.png",
       "imageHint": "tropical beach destination",
       "category": "Web Design"
     },
@@ -126,7 +126,7 @@
         "PHP"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1758691461932-d0aa0ebf6b31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBvZmZpY2UlMjBjb25zdWx0aW5nfGVufDB8fHx8MTc2NzYyODUzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/bitc.png",
       "imageHint": "modern office consulting",
       "category": "Web Design"
     },
@@ -144,7 +144,7 @@
         "CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1683828217491-ee90652c8acb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXRlciUyMHNwbGFzaCUyMGFwcHxlbnwwfHx8fDE3Njc2Mjg1Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/water.png",
       "imageHint": "water splash app",
       "category": "App Design"
     },
@@ -163,7 +163,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1558234200-3efd43232f08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fashion.jpeg",
       "imageHint": "fashion ecommerce",
       "category": "E-commerce"
     },
@@ -199,7 +199,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2MTU2MDE4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/realstate.jpeg",
       "imageHint": "real estate",
       "category": "Web Design"
     },
@@ -242,8 +242,8 @@
     },
     {
       "id": "11",
-      "name": "Event Promotion Page",
-      "client": "Tech Summit 2024",
+      "name": "Wake Up Conferences",
+      "client": "Tech Summit 2025",
       "industry": "Events",
       "description": "One-page website for a tech conference with animations and schedule.",
       "goal": "Drive ticket sales and provide event information.",
@@ -255,7 +255,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1600320261634-78edd477fa1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVjaCUyMGNvbmZlcmVuY2V8ZW58MHx8fHwxNzU5NzQwMDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/wakeup.png",
       "imageHint": "tech conference",
       "category": "Web Design"
     },
@@ -273,7 +273,7 @@
         "Tailwind"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1640441709847-ab9f0d334f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0cmF2ZWwlMjBibG9nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/travel.jpeg",
       "imageHint": "travel blog",
       "category": "Development"
     },
@@ -292,7 +292,7 @@
         "CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1616750819456-5cdee9b85d22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2tpbmNhcmUlMjBwcm9kdWN0fGVufDB8fHx8MTc2MTQ2ODA2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/glow.jpeg",
       "imageHint": "skincare product",
       "category": "Branding"
     },
@@ -310,26 +310,26 @@
         "TailwindCSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1695654398407-0c309e1f5827?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmb29kJTIwZGVsaXZlcnl8ZW58MHx8fHwxNzYxNTczMzAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/food.jpeg",
       "imageHint": "food delivery",
       "category": "App Design"
     },
     {
       "id": "17",
-      "name": "Music Streaming App UI",
-      "client": "SoundWave",
-      "industry": "Entertainment",
-      "description": "Mobile UI design for a music streaming platform with playlists and player screen.",
-      "goal": "Create an engaging and intuitive music listening experience.",
+      "name": "Bingo Mobile Game App UI",
+      "client": "BingoPlay",
+      "industry": "Gaming",
+      "description": "Mobile UI design for a bingo game app featuring interactive bingo cards, live draws, and player rewards.",
+      "goal": "Create a fun, intuitive, and engaging bingo experience that keeps players entertained and motivated.",
       "role": "UI/UX Design",
       "tools": [
-        "Adobe XD",
-        "Figma"
+        "Figma",
+        "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1551817958-795f9440ce4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXVzaWMlMjBzdHJlYW1pbmd8ZW58MHx8fHwxNzYxNTUxNDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "music streaming",
-      "category": "App Design"
+      "imageUrl": "/bingo.png",
+      "imageHint": "bingo game mobile app",
+      "category": "Game App Design"
     },
     {
       "id": "20",

@@ -27,7 +27,7 @@ const HeroSection = () => {
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild className="rounded-full">
-              <a href="#">
+              <a href="/Diego-Cardozo-UI-UX-Designer.pdf" target='_blank'>
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </a>
