@@ -32,15 +32,11 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="lg:col-span-3 flex flex-col justify-center">
-            
             <p className="mt-6 text-lg text-muted-foreground">
-              I’m a Colombian Web and UI/UX Designer with over 20 years of experience creating digital solutions for corporate, legal, and e-commerce clients.
+              Senior UI/UX Designer with 20 years of experience creating intuitive, engaging, and user-centered digital products. Skilled in transforming complex requirements into seamless user journeys through UI design, wireframes, prototypes, and customer journey maps.
             </p>
             <p className="mt-4 text-lg text-muted-foreground">
-              I specialize in designing and developing responsive, high-performing websites using Figma, WordPress (Elementor & DIVI), Shopify, and Magento. My focus is always on blending creativity and functionality to deliver intuitive user experiences that support real business goals.
-            </p>
-            <p className="mt-4 text-lg text-muted-foreground">
-              I’ve collaborated with developers, marketing teams, and agencies to turn ideas into digital products that look great and perform even better.
+              I collaborate with cross-functional teams to ensure consistency and quality, conduct user testing to optimize experiences, and maintain design systems for scalability. Passionate about mentoring designers and driving best practices to deliver meaningful and impactful digital solutions.
             </p>
           </div>
         </div>
