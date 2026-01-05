@@ -169,21 +169,21 @@
     },
     {
       "id": "7",
-      "name": "Digital Creators Blog",
-      "client": "Creator Hub",
-      "industry": "Publishing",
-      "description": "Blog platform for digital creators with custom post types and dark mode.",
-      "goal": "Build a community platform for creators to share their work.",
-      "role": "Full-Stack Development",
+      "name": "Hamunet Jewelry E-commerce",
+      "client": "Hamunet",
+      "industry": "E-commerce / Jewelry",
+      "description": "Online jewelry store showcasing handcrafted and modern pieces with a premium shopping experience, secure checkout, and product filtering.",
+      "goal": "Sell jewelry online through a visually elegant, trustworthy, and conversion-focused e-commerce platform.",
+      "role": "E-commerce Development & UI/UX",
       "tools": [
-        "WordPress",
-        "Tailwind",
-        "PHP"
+        "Woocommerce",
+        "Tailwind CSS",
+        "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1758273239705-fd46eb56f7b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwYmxvZ3xlbnwwfHx8fDE3NjE1OTM5NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "digital blog",
-      "category": "Development"
+      "imageUrl": "/hamunet.jpeg",
+      "imageHint": "jewelry ecommerce",
+      "category": "E-commerce"
     },
     {
       "id": "8",
@@ -205,22 +205,22 @@
     },
     {
       "id": "9",
-      "name": "Personal Branding Website",
-      "client": "Jane Doe",
-      "industry": "Personal",
-      "description": "Personal portfolio website combining biography, projects, and contact form.",
-      "goal": "Establish a strong personal brand and online presence.",
+      "name": "SkillTech IT Support Website",
+      "client": "SkillTech",
+      "industry": "IT Services",
+      "description": "Corporate website for an IT support and computer maintenance company, highlighting technical services, support plans, and contact channels.",
+      "goal": "Generate leads and build trust by showcasing reliable computer support and maintenance services for individuals and businesses.",
       "role": "UI/UX Design, Frontend Development",
       "tools": [
         "Figma",
         "HTML",
-        "Tailwind",
-        "JavaScript"
+        "Tailwind CSS",
+        "WordPress"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb25hbCUyMGJyYW5kaW5nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "personal branding",
-      "category": "Branding"
+      "imageUrl": "/skilltech.jpeg",
+      "imageHint": "computer repair it support",
+      "category": "Corporate Website"
     },
     {
       "id": "10",
@@ -236,7 +236,7 @@
         "Bootstrap"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTUzMzIyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/dashboard.jpeg",
       "imageHint": "data dashboard",
       "category": "App Design"
     },
