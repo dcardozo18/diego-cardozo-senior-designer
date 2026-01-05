@@ -77,78 +77,75 @@
     },
     {
       "id": "1",
-      "name": "Creative Agency Website",
-      "client": "Creative Co.",
-      "industry": "Web Design",
-      "description": "Corporate website for a creative agency with motion effects and modern UI components.",
-      "goal": "Create a stunning online presence to attract high-value clients.",
-      "role": "UI/UX Design, Development",
-      "tools": [
-        "Figma",
-        "Framer",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1617695744007-68ef55752789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjcmVhdGl2ZSUyMGFnZW5jeXxlbnwwfHx8fDE3NjE1OTM5NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "creative agency",
-      "category": "Web Design"
-    },
-    {
-      "id": "2",
-      "name": "Handmade Products Store",
-      "client": "Artisans Collective",
+      "name": "Punto Comedia",
+      "client": "Punto Comedia",
       "industry": "E-commerce",
-      "description": "Shopify e-commerce for handmade goods with a custom responsive theme.",
-      "goal": "Increase online sales and showcase unique handmade products.",
-      "role": "E-commerce Development, UI Design",
+      "description": "An e-commerce platform dedicated to selling tickets for premier stand-up comedy events.",
+      "goal": "Conduct market research to define the target audience, then prototype and design a user-centric experience, and adapt the final design for a seamless WooCommerce integration.",
+      "role": "UX Research, UI Design, Prototyping",
       "tools": [
-        "Shopify",
         "Figma",
-        "Tailwind",
-        "Liquid"
+        "WooCommerce",
+        "WordPress"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1631869382470-cd1722baebc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYW5kbWFkZSUyMHByb2R1Y3RzfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "handmade products",
+      "imageUrl": "https://images.unsplash.com/photo-1729314458953-d8716fae1b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21lZHklMjBjbHViJTIwc3RhZ2V8ZW58MHx8fHwxNzY3NjI4NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "comedy club stage",
       "category": "E-commerce"
     },
     {
-      "id": "3",
-      "name": "Restaurant Landing Page",
-      "client": "The Golden Spoon",
-      "industry": "Hospitality",
-      "description": "Landing page for a fine dining restaurant featuring menu sections and booking form.",
-      "goal": "Drive reservations and showcase the restaurant's ambiance and menu.",
-      "role": "Web Design, Development",
+      "id": "2",
+      "name": "Best Deal Vacations",
+      "client": "Best Deal Vacations",
+      "industry": "Travel",
+      "description": "A full-service travel agency website offering flights, hotels, car rentals, and vacation packages.",
+      "goal": "Define the user experience from the ground up through user research and prototyping, delivering a high-fidelity design for a competitive travel booking platform.",
+      "role": "UX Research, Prototyping, UI Design",
       "tools": [
-        "Webflow",
-        "Adobe Photoshop",
+        "Figma",
         "HTML",
-        "CSS"
+        "CSS",
+        "User Research"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1694021408920-922ff450c525?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5lJTIwZGluaW5nfGVufDB8fHx8MTc2MTU3Nzg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fine dining",
+      "imageUrl": "https://images.unsplash.com/photo-1660486358484-975da44dc68e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0cm9waWNhbCUyMGJlYWNoJTIwZGVzdGluYXRpb258ZW58MHx8fHwxNzY3NjI4NTM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tropical beach destination",
+      "category": "Web Design"
+    },
+    {
+      "id": "3",
+      "name": "BIT-C Tech Consulting",
+      "client": "BIT-C",
+      "industry": "Technology",
+      "description": "Corporate website for a technology development and consulting firm, showcasing their services and expertise.",
+      "goal": "Create a professional and modern online presence that effectively communicates the company's value proposition and technical capabilities.",
+      "role": "UI/UX Design, WordPress Implementation",
+      "tools": [
+        "Figma",
+        "WordPress",
+        "PHP"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://images.unsplash.com/photo-1758691461932-d0aa0ebf6b31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBvZmZpY2UlMjBjb25zdWx0aW5nfGVufDB8fHx8MTc2NzYyODUzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern office consulting",
       "category": "Web Design"
     },
     {
       "id": "4",
-      "name": "Fitness App Landing Page",
-      "client": "FitLife",
-      "industry": "Fitness & Health",
-      "description": "Responsive one-page site promoting a mobile fitness app.",
-      "goal": "Increase app downloads and user engagement.",
-      "role": "UI/UX Design, Frontend Development",
+      "name": "Water App Landing Page",
+      "client": "Water Inc.",
+      "industry": "Health & Wellness",
+      "description": "A clean and engaging landing page designed to showcase the key features of a new mobile wellness application.",
+      "goal": "Drive user acquisition by creating a visually appealing and informative landing page that clearly presents the app's benefits.",
+      "role": "UI Design, Frontend Development",
       "tools": [
         "Figma",
-        "React",
-        "TailwindCSS"
+        "HTML",
+        "CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc2MTU0NjcwNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fitness app",
+      "imageUrl": "https://images.unsplash.com/photo-1683828217491-ee90652c8acb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3YXRlciUyMHNwbGFzaCUyMGFwcHxlbnwwfHx8fDE3Njc2Mjg1Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water splash app",
       "category": "App Design"
     },
     {
