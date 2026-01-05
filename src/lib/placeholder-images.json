@@ -34,26 +34,26 @@
         "PHP"
       ],
       "liveSiteUrl": "https://www.lasislas.com.co/",
-      "imageUrl": "/app/images/las-islas.jpeg",
+      "imageUrl": "/islas.png",
       "imageHint": "luxury hotel website",
       "category": "Web Design"
     },
     {
       "id": "23",
-      "name": "Punto Comedia E-commerce",
-      "client": "Punto Comedia",
-      "industry": "Entertainment & E-commerce",
-      "description": "Designed an e-commerce platform for purchasing tickets to specialized stand-up comedy events, covering the full cycle from market research to a final, implementation-ready design for WooCommerce.",
-      "goal": "Define the target audience through market research and user persona creation, then prototype and design a seamless user experience. The final objective was to adapt the custom design for a successful launch on the WooCommerce platform.",
-      "role": "UI/UX Design, Market Research",
+      "name": "Tecnologia Mayorista",
+      "client": "Tecnologia Mayorista",
+      "industry": "E-commerce & Technology",
+      "description": "A comprehensive e-commerce platform for a major technology wholesaler, offering a wide range of products from computers and cell phones to home and office devices.",
+      "goal": "To boost online sales by optimizing the user experience through in-depth user research and customer journey mapping. The key objective was to create an intuitive, high-converting shopping experience on the Shopify platform.",
+      "role": "UX Research, Customer Journey Mapping, UI Design",
       "tools": [
         "Figma",
-        "WooCommerce",
+        "Shopify",
         "User Research"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/bit-c.jpeg",
-      "imageHint": "comedy event tickets",
+      "imageUrl": "/tecnologia.png",
+      "imageHint": "technology store ecommerce",
       "category": "E-commerce"
     },
     {
@@ -135,19 +135,19 @@
     },
     {
       "id": "4",
-      "name": "Fitness App Marketing Site",
-      "client": "FitLife Inc.",
-      "industry": "Health & Fitness",
+      "name": "Fitness App Landing Page",
+      "client": "FitLife",
+      "industry": "Fitness & Health",
       "description": "Responsive one-page site promoting a mobile fitness app.",
       "goal": "Increase app downloads and user engagement.",
       "role": "UI/UX Design, Frontend Development",
       "tools": [
-        "Framer",
         "Figma",
+        "React",
         "TailwindCSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc1OTc0OTgxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc2MTU0NjcwNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fitness app",
       "category": "App Design"
     },
@@ -221,7 +221,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb25hbCUyMGJyYW5kaW5nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb25hbCUyMGJyYW5kaW5nfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "personal branding",
       "category": "Branding"
     },
@@ -330,7 +330,7 @@
         "Figma"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1551817958-795f9440ce4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXVzaWMlMjBzdHJlYW1pbmd8ZW58MHx8fHwxNzYxNTUxNDQ4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551817958-795f9440ce4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXVzaWMlMjBzdHJlYW1pbmd8ZW58MHx8fHwxNzYxNTUxNDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "music streaming",
       "category": "App Design"
     },
@@ -348,7 +348,7 @@
         "Framer"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MTU5Mzk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "finance dashboard",
       "category": "App Design"
     }
