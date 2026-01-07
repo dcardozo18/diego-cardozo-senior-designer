@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Home, Briefcase, User, Mail, Code2, Sun, Moon } from 'lucide-react';
+import { Home, Briefcase, User, Mail, Code2, Sun, Moon, Languages } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useTheme } from 'next-themes';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { useRouter, usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '#home', label: 'Home', icon: Home },
@@ -19,6 +21,8 @@ const Sidebar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => setMounted(true), []);
 
@@ -45,6 +49,37 @@ const Sidebar = () => {
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
+
+  const handleLocaleChange = (locale: string) => {
+    router.push(pathname.replace(/^\/(en|es)/, `/${locale}`));
+  };
+
+  const LanguageSwitcher = () => {
+    if (!mounted) return null;
+    return (
+      <DropdownMenu>
+        <TooltipProvider delayDuration={0}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary">
+                  <Languages className="h-6 w-6" />
+                  <span className="sr-only">Change language</span>
+                </Button>
+              </DropdownMenuTrigger>
+            </TooltipTrigger>
+            <TooltipContent side="right" className="bg-card text-foreground border-border">
+              <p>Change Language</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        <DropdownMenuContent side="right" className="bg-card text-foreground border-border">
+          <DropdownMenuItem onClick={() => handleLocaleChange('en')}>English</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => handleLocaleChange('es')}>Español</DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    );
+  }
 
   const ThemeToggle = () => {
     if (!mounted) {
@@ -121,9 +156,11 @@ const Sidebar = () => {
         </a>
         <div className="flex flex-col items-center gap-6">
           <NavItems />
+        </div>
+        <div className="flex flex-col items-center gap-4">
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
-        <div />
       </aside>
 
       {/* Mobile Bottom Bar */}
@@ -147,6 +184,19 @@ const Sidebar = () => {
                 </a>
               </Button>
             ))}
+            { mounted && (
+              <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full h-12 w-12 text-muted-foreground">
+                  <Languages className="h-6 w-6" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent side="top" className="bg-card text-foreground border-border mb-2">
+                <DropdownMenuItem onClick={() => handleLocaleChange('en')}>English</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLocaleChange('es')}>Español</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            )}
             { mounted && (
               <Button
                 variant="ghost"
