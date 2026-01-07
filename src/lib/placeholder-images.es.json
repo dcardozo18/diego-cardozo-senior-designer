@@ -1,0 +1,354 @@
+{
+  "placeholderImages": [
+    {
+      "id": "21",
+      "name": "Aviatur - Sitio Web E-commerce",
+      "client": "Aviatur",
+      "industry": "Viajes",
+      "description": "Plataforma integral de viajes y reservas para una de las agencias de viajes más grandes de la región.",
+      "goal": "Modernizar la experiencia de reserva en línea e integrar múltiples servicios de viaje en una única plataforma.",
+      "role": "Diseñador Principal UI/UX, Desarrollo Web",
+      "tools": [
+        "Figma",
+        "Angular",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "https://www.aviatur.com/",
+      "imageUrl": "/aviatur.png",
+      "imageHint": "plataforma de agencia de viajes",
+      "category": "E-commerce"
+    },
+    {
+      "id": "22",
+      "name": "Hotel Las Islas",
+      "client": "Hotel Las Islas",
+      "industry": "Hotelería",
+      "description": "Sitio web elegante e inmersivo para un hotel de lujo en una isla, centrado en imágenes impresionantes y reservas fáciles.",
+      "goal": "Capturar la esencia del retiro de lujo y aumentar las reservas directas a través de una experiencia de usuario fluida.",
+      "role": "Diseño UI/UX, Desarrollo Frontend",
+      "tools": [
+        "WordPress",
+        "Figma",
+        "CSS",
+        "PHP"
+      ],
+      "liveSiteUrl": "https://www.lasislas.com.co/",
+      "imageUrl": "/islas.png",
+      "imageHint": "sitio web de hotel de lujo",
+      "category": "Web Design"
+    },
+    {
+      "id": "23",
+      "name": "Tecnologia Mayorista",
+      "client": "Tecnologia Mayorista",
+      "industry": "E-commerce y Tecnología",
+      "description": "Una completa plataforma de comercio electrónico para un importante mayorista de tecnología, que ofrece una amplia gama de productos, desde computadoras y celulares hasta dispositivos para el hogar y la oficina.",
+      "goal": "Impulsar las ventas en línea optimizando la experiencia del usuario a través de una investigación de usuario en profundidad y el mapeo del viaje del cliente. El objetivo clave era crear una experiencia de compra intuitiva y de alta conversión en la plataforma Shopify.",
+      "role": "Investigación UX, Mapeo del Viaje del Cliente, Diseño de UI",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "Investigación de Usuario"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/tecnologia.png",
+      "imageHint": "tienda de tecnología ecommerce",
+      "category": "E-commerce"
+    },
+    {
+      "id": "24",
+      "name": "Orbit Group Partners - Dashboard",
+      "client": "Orbit Group Partners",
+      "industry": "Coaching y Productividad",
+      "description": "Una completa plataforma de coaching diseñada para ayudar a los usuarios a alcanzar sus metas y completar tareas mediante el seguimiento de métricas de rendimiento en tiempo real.",
+      "goal": "Revisar la experiencia del usuario implementando los estándares de accesibilidad WCAG y creando un sistema de diseño robusto. El objetivo era garantizar una mayor consistencia en la aplicación y acelerar la implementación de componentes para el equipo de desarrollo.",
+      "role": "Diseñador Principal UI/UX, Arquitectura de Sistemas de Diseño",
+      "tools": [
+        "Figma",
+        "Angular",
+        "D3.js",
+        "TypeScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/orbit.png",
+      "imageHint": "dashboard de analíticas",
+      "category": "App Design"
+    },
+    {
+      "id": "1",
+      "name": "Punto Comedia E-commerce",
+      "client": "Punto Comedia",
+      "industry": "E-commerce",
+      "description": "Plataforma de comercio electrónico dedicada a la venta de entradas para eventos de comedia en vivo de primer nivel.",
+      "goal": "Realizar una investigación de mercado para definir el público objetivo, luego prototipar y diseñar una experiencia centrada en el usuario, y adaptar el diseño final para una integración perfecta con WooCommerce.",
+      "role": "Investigación UX, Diseño UI, Prototipado",
+      "tools": [
+        "Figma",
+        "WooCommerce",
+        "WordPress",
+        "Investigación de Usuario"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/puntocomedia.png",
+      "imageHint": "escenario de club de comedia",
+      "category": "E-commerce"
+    },
+    {
+      "id": "2",
+      "name": "Best Deal Vacations",
+      "client": "Best Deal Vacations",
+      "industry": "Viajes",
+      "description": "Un sitio web de agencia de viajes de servicio completo que ofrece vuelos, hoteles, alquiler de autos y paquetes de vacaciones.",
+      "goal": "Definir la experiencia del usuario desde cero a través de la investigación de usuarios y la creación de prototipos, entregando un diseño de alta fidelidad para una plataforma competitiva de reservas de viajes.",
+      "role": "Investigación UX, Prototipado, Diseño UI",
+      "tools": [
+        "Figma",
+        "HTML",
+        "CSS",
+        "Investigación de Usuario"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/bestdeal.png",
+      "imageHint": "destino de playa tropical",
+      "category": "Web Design"
+    },
+    {
+      "id": "3",
+      "name": "BIT-C Consultoría Tecnológica",
+      "client": "BIT-C",
+      "industry": "Tecnología",
+      "description": "Sitio web corporativo para una empresa de consultoría y desarrollo de tecnología, mostrando sus servicios y experiencia.",
+      "goal": "Crear una presencia en línea profesional y moderna que comunique eficazmente la propuesta de valor y las capacidades técnicas de la empresa.",
+      "role": "Diseño UI/UX, Implementación en WordPress",
+      "tools": [
+        "Figma",
+        "WordPress",
+        "PHP"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/bitc.png",
+      "imageHint": "oficina moderna consultoría",
+      "category": "Web Design"
+    },
+    {
+      "id": "4",
+      "name": "Water App Landing Page",
+      "client": "Water Inc.",
+      "industry": "Salud y Bienestar",
+      "description": "Una página de destino limpia y atractiva diseñada para mostrar las características clave de una nueva aplicación móvil de bienestar.",
+      "goal": "Impulsar la adquisición de usuarios mediante la creación de una página de destino visualmente atractiva e informativa que presente claramente los beneficios de la aplicación.",
+      "role": "Diseño UI, Desarrollo Frontend",
+      "tools": [
+        "Figma",
+        "HTML",
+        "CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/water.png",
+      "imageHint": "aplicación de salpicaduras de agua",
+      "category": "App Design"
+    },
+    {
+      "id": "6",
+      "name": "E-commerce de Moda",
+      "client": "Chic & Co.",
+      "industry": "E-commerce",
+      "description": "Tienda Shopify para una marca de moda con un diseño de cuadrícula moderno y animaciones.",
+      "goal": "Proporcionar una experiencia de compra fluida y aumentar la lealtad a la marca.",
+      "role": "Desarrollo de E-commerce, Diseño UI",
+      "tools": [
+        "Shopify",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/fashion.jpeg",
+      "imageHint": "ecommerce de moda",
+      "category": "E-commerce"
+    },
+    {
+      "id": "7",
+      "name": "E-commerce de Joyería Hamunet",
+      "client": "Hamunet",
+      "industry": "E-commerce / Joyería",
+      "description": "Tienda de joyería en línea que muestra piezas artesanales y modernas con una experiencia de compra premium, pago seguro y filtrado de productos.",
+      "goal": "Vender joyas en línea a través de una plataforma de comercio electrónico visualmente elegante, confiable y centrada en la conversión.",
+      "role": "Desarrollo de E-commerce y UI/UX",
+      "tools": [
+        "Woocommerce",
+        "Tailwind CSS",
+        "Liquid"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/hamunet.jpeg",
+      "imageHint": "ecommerce de joyería",
+      "category": "E-commerce"
+    },
+    {
+      "id": "8",
+      "name": "Landing Page de Bienes Raíces",
+      "client": "Prime Properties",
+      "industry": "Bienes Raíces",
+      "description": "Página de destino moderna con listados de propiedades dinámicos y formulario de contacto.",
+      "goal": "Generar clientes potenciales para agentes inmobiliarios.",
+      "role": "Diseño Web, Desarrollo",
+      "tools": [
+        "Webflow",
+        "Figma",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/realstate.jpeg",
+      "imageHint": "bienes raíces",
+      "category": "Web Design"
+    },
+    {
+      "id": "9",
+      "name": "Sitio Web de Soporte TI SkillTech",
+      "client": "SkillTech",
+      "industry": "Servicios de TI",
+      "description": "Sitio web corporativo para una empresa de soporte de TI y mantenimiento de computadoras, destacando servicios técnicos, planes de soporte y canales de contacto.",
+      "goal": "Generar clientes potenciales y generar confianza mostrando servicios confiables de soporte y mantenimiento de computadoras para individuos y empresas.",
+      "role": "Diseño UI/UX, Desarrollo Frontend",
+      "tools": [
+        "Figma",
+        "HTML",
+        "Tailwind CSS",
+        "WordPress"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/skilltech.jpeg",
+      "imageHint": "reparación de computadoras soporte técnico",
+      "category": "Development"
+    },
+    {
+      "id": "10",
+      "name": "UI de Dashboard para Startup",
+      "client": "Innovate LLC",
+      "industry": "SaaS",
+      "description": "Dashboard de administración para una startup con gráficos y visualización de datos.",
+      "goal": "Crear una herramienta intuitiva y potente para el análisis de datos.",
+      "role": "Diseño UI/UX",
+      "tools": [
+        "Angular",
+        "Figma",
+        "Bootstrap"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/dashboard.jpeg",
+      "imageHint": "dashboard de datos",
+      "category": "App Design"
+    },
+    {
+      "id": "11",
+      "name": "Conferencias Wake Up",
+      "client": "Tech Summit 2025",
+      "industry": "Eventos",
+      "description": "Sitio web de una página para una conferencia tecnológica con animaciones y agenda.",
+      "goal": "Impulsar la venta de entradas y proporcionar información sobre el evento.",
+      "role": "Diseño Web, Diseño de Interacción",
+      "tools": [
+        "Framer",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/wakeup.png",
+      "imageHint": "conferencia tecnológica",
+      "category": "Web Design"
+    },
+    {
+      "id": "13",
+      "name": "Sitio Web de Blog de Viajes",
+      "client": "Wanderlust Chronicles",
+      "industry": "Viajes",
+      "description": "Blog de viajes en WordPress con categorías personalizadas e integración con Instagram.",
+      "goal": "Compartir historias de viajes y construir una comunidad de viajeros.",
+      "role": "Desarrollo Web, SEO",
+      "tools": [
+        "WordPress",
+        "PHP",
+        "Tailwind"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/travel.jpeg",
+      "imageHint": "blog de viajes",
+      "category": "Development"
+    },
+    {
+      "id": "14",
+      "name": "Landing Page de Producto de Belleza",
+      "client": "Glow Cosmetics",
+      "industry": "Belleza",
+      "description": "Página de destino para una marca de cuidado de la piel creada en Canva con estilos de Bootstrap.",
+      "goal": "Lanzar un nuevo producto y captar el interés de los clientes.",
+      "role": "Diseño UI, Desarrollo Frontend",
+      "tools": [
+        "Canva",
+        "Bootstrap",
+        "HTML",
+        "CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/glow.jpeg",
+      "imageHint": "producto para el cuidado de la piel",
+      "category": "Branding"
+    },
+    {
+      "id": "16",
+      "name": "App Móvil para Pedir Comida",
+      "client": "YumYum",
+      "industry": "Tecnología Alimentaria",
+      "description": "Concepto de aplicación para entrega de comida con menús interactivos y UI de seguimiento.",
+      "goal": "Diseñar una aplicación móvil fácil de usar para pedir comida sin problemas.",
+      "role": "Diseño UI/UX",
+      "tools": [
+        "Figma",
+        "Framer",
+        "TailwindCSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/food.jpeg",
+      "imageHint": "entrega de comida",
+      "category": "App Design"
+    },
+    {
+      "id": "17",
+      "name": "UI de App de Juego Móvil de Bingo",
+      "client": "BingoPlay",
+      "industry": "Juegos",
+      "description": "Diseño de interfaz de usuario móvil para una aplicación de juego de bingo con cartones de bingo interactivos, sorteos en vivo y recompensas para jugadores.",
+      "goal": "Crear una experiencia de bingo divertida, intuitiva y atractiva que mantenga a los jugadores entretenidos y motivados.",
+      "role": "Diseño UI/UX",
+      "tools": [
+        "Figma",
+        "Adobe XD"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/bingo.png",
+      "imageHint": "aplicación móvil de juego de bingo",
+      "category": "App Design"
+    },
+    {
+      "id": "20",
+      "name": "Dashboard Móvil para Finanzas",
+      "client": "CoinFlow",
+      "industry": "Fintech",
+      "description": "Concepto de UI para un rastreador de finanzas móvil con análisis y gráficos.",
+      "goal": "Ayudar a los usuarios a administrar sus finanzas con un dashboard móvil claro y perspicaz.",
+      "role": "Diseño UI/UX",
+      "tools": [
+        "Figma",
+        "TailwindCSS",
+        "Framer"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/finance.jpeg",
+      "imageHint": "dashboard de finanzas",
+      "category": "App Design"
+    }
+  ]
+}

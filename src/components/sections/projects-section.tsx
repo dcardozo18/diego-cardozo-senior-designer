@@ -16,7 +16,7 @@ const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Des
 
 const ProjectsSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
   const [allProjects, setAllProjects] = useState<Project[]>([]);
-  const [activeFilter, setActiveFilter] = useState<string>('All');
+  const [activeFilter, setActiveFilter] = useState<string>(lang === 'es' ? 'Todos' : 'All');
   const [isArranging, setIsArranging] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -46,6 +46,11 @@ const ProjectsSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }
       }
     };
     arrangeProjects();
+  }, [lang]);
+  
+  useEffect(() => {
+    setActiveFilter(lang === 'es' ? 'Todos' : 'All');
+    setCurrentPage(1);
   }, [lang]);
 
   const { featuredProjects, otherProjects, placeholderFeatured } = useMemo(() => {
@@ -84,19 +89,18 @@ const ProjectsSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }
 
 
   const filteredProjects = useMemo(() => {
-    const filter = lang === 'es' ? CATEGORIES_EN[CATEGORIES.indexOf(activeFilter)] : activeFilter;
-    if (filter === 'All') {
+    const filterKey = lang === 'es' ? CATEGORIES_EN[CATEGORIES.indexOf(activeFilter)] || 'All' : activeFilter;
+    
+    if (filterKey === 'All') {
       return otherProjects;
     }
-    return otherProjects.filter(p => p.category === filter);
+    return otherProjects.filter(p => p.category === filterKey);
   }, [otherProjects, activeFilter, lang, CATEGORIES, CATEGORIES_EN]);
 
 
   useEffect(() => {
     setCurrentPage(1);
-    if(lang === 'es') setActiveFilter('Todos');
-    else setActiveFilter('All');
-  }, [activeFilter, lang]);
+  }, [activeFilter]);
   
   const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);
 
@@ -109,6 +113,7 @@ const ProjectsSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
+      document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
 
