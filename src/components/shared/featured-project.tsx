@@ -6,15 +6,14 @@ import type { Project } from '@/lib/placeholder-images';
 import { Badge } from '../ui/badge';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
-import { Card } from '../ui/card';
-
 
 interface FeaturedProjectProps {
   project: Project;
   index: number;
+  dictionary: any;
 }
 
-const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
+const FeaturedProject = ({ project, index, dictionary }: FeaturedProjectProps) => {
     const isReversed = index % 2 !== 0;
 
   return (
@@ -41,21 +40,21 @@ const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
              <div className="flex items-start gap-4">
                 <Compass className="h-6 w-6 shrink-0 text-primary mt-1" />
                 <div>
-                    <h4 className="font-semibold text-lg">Goal</h4>
+                    <h4 className="font-semibold text-lg">{dictionary.projects.goal}</h4>
                     <p className="text-muted-foreground">{project.goal}</p>
                 </div>
             </div>
              <div className="flex items-start gap-4">
                 <Briefcase className="h-6 w-6 shrink-0 text-primary mt-1" />
                 <div>
-                    <h4 className="font-semibold text-lg">My Role</h4>
+                    <h4 className="font-semibold text-lg">{dictionary.projects.my_role}</h4>
                     <p className="text-muted-foreground">{project.role}</p>
                 </div>
             </div>
              <div className="flex items-start gap-4">
                 <Wrench className="h-6 w-6 shrink-0 text-primary mt-1" />
                 <div>
-                    <h4 className="font-semibold text-lg">Tools</h4>
+                    <h4 className="font-semibold text-lg">{dictionary.projects.tools}</h4>
                     <div className="flex flex-wrap gap-2">
                         {project.tools.map(tool => (
                             <Badge key={tool} variant="secondary">{tool}</Badge>
@@ -69,7 +68,7 @@ const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
             <div className="mt-2">
                 <Button asChild>
                     <a href={project.liveSiteUrl} target="_blank" rel="noopener noreferrer">
-                        View Live Site <ExternalLink className="ml-2 h-4 w-4" />
+                        {dictionary.projects.view_live_site} <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                 </Button>
             </div>

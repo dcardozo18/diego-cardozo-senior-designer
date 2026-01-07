@@ -17,9 +17,10 @@ import { Button } from '../ui/button';
 
 interface ProjectCardProps {
   project: Project;
+  dictionary: any;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, dictionary }: ProjectCardProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -38,7 +39,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <p className="text-sm text-muted-foreground">{project.industry}</p>
             <h3 className="text-xl font-bold text-foreground mt-2">{project.name}</h3>
             <div className="mt-4 flex items-center text-primary font-semibold text-sm">
-               <span className="underline">View Details</span>
+               <span className="underline">{dictionary.projects.view_details}</span>
                <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </div>
           </div>
@@ -67,7 +68,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <div className="flex items-start gap-4">
                     <Compass className="h-6 w-6 shrink-0 text-primary" />
                     <div>
-                        <h4 className="font-semibold text-lg">Goal</h4>
+                        <h4 className="font-semibold text-lg">{dictionary.projects.goal}</h4>
                         <p className="text-muted-foreground">{project.goal}</p>
                     </div>
                 </div>
@@ -75,7 +76,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <div className="flex items-start gap-4">
                     <Briefcase className="h-6 w-6 shrink-0 text-primary" />
                     <div>
-                        <h4 className="font-semibold text-lg">Role</h4>
+                        <h4 className="font-semibold text-lg">{dictionary.projects.my_role}</h4>
                         <p className="text-muted-foreground">{project.role}</p>
                     </div>
                 </div>
@@ -83,7 +84,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <div className="flex items-start gap-4">
                     <Wrench className="h-6 w-6 shrink-0 text-primary" />
                     <div>
-                        <h4 className="font-semibold text-lg">Tools</h4>
+                        <h4 className="font-semibold text-lg">{dictionary.projects.tools}</h4>
                         <div className="flex flex-wrap gap-2">
                             {project.tools.map(tool => (
                                 <Badge key={tool} variant="secondary">{tool}</Badge>
@@ -92,10 +93,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                     </div>
                 </div>
 
-                {project.liveSiteUrl && (
+                {project.liveSiteUrl && project.liveSiteUrl !== '#' && (
                      <Button asChild className="mt-4 rounded-full">
                         <a href={project.liveSiteUrl} target="_blank" rel="noopener noreferrer">
-                            View Live Site <ExternalLink className="ml-2 h-4 w-4" />
+                            {dictionary.projects.view_live_site} <ExternalLink className="ml-2 h-4 w-4" />
                         </a>
                     </Button>
                 )}

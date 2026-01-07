@@ -1,29 +1,34 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
-import { smartProjectArrangement, type Project } from '@/ai/flows/smart-project-arrangement';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { smartProjectArrangement } from '@/ai/flows/smart-project-arrangement';
+import { getProjects, type Project } from '@/lib/placeholder-images';
 import ProjectCard from '@/components/shared/project-card';
 import FeaturedProject from '@/components/shared/featured-project';
 import { Button } from '@/components/ui/button';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 import { Separator } from '@/components/ui/separator';
+import { Locale } from '../../../i18n-config';
 
 const PROJECTS_PER_PAGE = 6;
-const CATEGORIES = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding'];
-const FEATURED_PROJECT_IDS = ['21', '24', '23'];
+const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding'];
+const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding'];
 
-
-const ProjectsSection = () => {
+const ProjectsSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
   const [allProjects, setAllProjects] = useState<Project[]>([]);
   const [activeFilter, setActiveFilter] = useState<string>('All');
   const [isArranging, setIsArranging] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
 
+  const FEATURED_PROJECT_IDS = useMemo(() => ['21', '24', '23'], []);
+  const CATEGORIES = lang === 'es' ? CATEGORIES_ES : CATEGORIES_EN;
+
   useEffect(() => {
     const arrangeProjects = async () => {
       setIsArranging(true);
-      const mockProjects: Project[] = PlaceHolderImages.map((p) => ({
+      const placeholderProjects = await getProjects(lang);
+      
+      const mockProjects: Project[] = placeholderProjects.map((p) => ({
         ...p,
         engagementScore: Math.floor(Math.random() * (95 - 70 + 1) + 70),
         visualAppealScore: Math.floor(Math.random() * (98 - 75 + 1) + 75),
@@ -41,10 +46,10 @@ const ProjectsSection = () => {
       }
     };
     arrangeProjects();
-  }, []);
+  }, [lang]);
 
-  const { featuredProjects, otherProjects } = useMemo(() => {
-    const sourceProjects = isArranging ? PlaceHolderImages : allProjects;
+  const { featuredProjects, otherProjects, placeholderFeatured } = useMemo(() => {
+    const sourceProjects = isArranging ? [] : allProjects;
     const featured: Project[] = [];
     const others: Project[] = [];
 
@@ -61,21 +66,37 @@ const ProjectsSection = () => {
         others.push(p);
       }
     });
+    
+    const [p1, p2, p3] = FEATURED_PROJECT_IDS;
 
-    return { featuredProjects: featured, otherProjects: others };
-  }, [isArranging, allProjects]);
+    return { 
+      featuredProjects: featured, 
+      otherProjects: others,
+      placeholderFeatured: [
+        allProjects.find(p => p.id === p1),
+        allProjects.find(p => p.id === p2),
+        allProjects.find(p => p.id === p3)
+      ].filter(Boolean) as Project[]
+    };
+  }, [isArranging, allProjects, FEATURED_PROJECT_IDS]);
+
+  const projectsToDisplay = isArranging ? placeholderFeatured : featuredProjects;
 
 
   const filteredProjects = useMemo(() => {
-    if (activeFilter === 'All') {
+    const filter = lang === 'es' ? CATEGORIES_EN[CATEGORIES.indexOf(activeFilter)] : activeFilter;
+    if (filter === 'All') {
       return otherProjects;
     }
-    return otherProjects.filter(p => p.category === activeFilter);
-  }, [otherProjects, activeFilter]);
+    return otherProjects.filter(p => p.category === filter);
+  }, [otherProjects, activeFilter, lang, CATEGORIES, CATEGORIES_EN]);
+
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [activeFilter]);
+    if(lang === 'es') setActiveFilter('Todos');
+    else setActiveFilter('All');
+  }, [activeFilter, lang]);
   
   const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);
 
@@ -96,16 +117,16 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            My Creative <span className="text-primary">Portfolio</span>
+            {dictionary.projects.title_part1} <span className="text-primary">{dictionary.projects.title_part2}</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            A selection of my best work, showcasing my skills in design and development.
+            {dictionary.projects.subtitle}
           </p>
         </div>
         
         <div className="flex flex-col gap-20 md:gap-32">
-          {featuredProjects.map((project, index) => (
-            <FeaturedProject key={project.id} project={project} index={index} />
+          {projectsToDisplay.map((project, index) => (
+            <FeaturedProject key={project.id} project={project} index={index} dictionary={dictionary} />
           ))}
         </div>
 
@@ -113,10 +134,10 @@ const ProjectsSection = () => {
 
         <div className="mb-12 text-center">
            <h3 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            Other <span className="text-primary">Projects</span>
+            {dictionary.projects.other_projects_title_part1} <span className="text-primary">{dictionary.projects.other_projects_title_part2}</span>
           </h3>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Explore more of my work.
+            {dictionary.projects.other_projects_subtitle}
           </p>
         </div>
 
@@ -135,7 +156,7 @@ const ProjectsSection = () => {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {paginatedProjects.map((project, index) => (
-            <ProjectCard key={`${project.id}-${index}`} project={project} />
+            <ProjectCard key={`${project.id}-${index}`} project={project} dictionary={dictionary} />
           ))}
         </div>
 

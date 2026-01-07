@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "change_language": "Change Language",
+    "toggle_theme": "Toggle Theme"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "hero": {
+    "greeting": "Hi, I’m Diego Cardozo",
+    "title": "Senior Web & UI/UX Designer",
+    "subtitle": "I design and build modern, user-focused websites that help brands communicate clearly and grow online. With over 20 years of experience, I blend creativity and functionality to deliver impactful digital solutions.",
+    "view_work_button": "View My Work",
+    "download_cv_button": "Download CV"
+  },
+  "about": {
+    "title_part1": "About",
+    "title_part2": "Me",
+    "intro_p1": "Senior UI/UX Designer with 20 years of experience creating intuitive, engaging, and user-centered digital products. Skilled in transforming complex requirements into seamless user journeys through UI design, wireframes, prototypes, and customer journey maps.",
+    "intro_p2": "I collaborate with cross-functional teams to ensure consistency and quality, conduct user testing to optimize experiences, and maintain design systems for scalability. Passionate about mentoring designers and driving best practices to deliver meaningful and impactful digital solutions.",
+    "expertise_title": "Core Expertise",
+    "design_tools_title": "Design Tools",
+    "ux_title": "UX",
+    "frontend_title": "Front-end",
+    "platforms_title": "Platforms",
+    "ai_tools_title": "AI Tools"
+  },
+  "projects": {
+    "title_part1": "My Creative",
+    "title_part2": "Portfolio",
+    "subtitle": "A selection of my best work, showcasing my skills in design and development.",
+    "other_projects_title_part1": "Other",
+    "other_projects_title_part2": "Projects",
+    "other_projects_subtitle": "Explore more of my work.",
+    "view_details": "View Details",
+    "goal": "Goal",
+    "my_role": "My Role",
+    "tools": "Tools",
+    "view_live_site": "View Live Site"
+  },
+  "contact": {
+    "title_part1": "Let’s build something great",
+    "title_part2": "together.",
+    "subtitle": "I’m currently available for remote design opportunities across Latin America and beyond.",
+    "email_title": "Email",
+    "location_title": "Location",
+    "location_value": "Based in Bogotá, Colombia",
+    "phone_title": "Phone",
+    "social_title": "Social",
+    "connect_button": "Let's Connect"
+  },
+  "footer": {
+    "copy": "Diego Cardozo. All rights reserved."
+  }
+}

@@ -7,22 +7,21 @@ import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useTheme } from 'next-themes';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
+import { Locale } from '../../../i18n-config';
 
-const navLinks = [
-  { href: '#home', label: 'Home', icon: Home },
-  { href: '#about', label: 'About', icon: User },
-  { href: '#projects', label: 'Projects', icon: Briefcase },
-  { href: '#contact', label: 'Contact', icon: Mail },
-];
-
-const Sidebar = () => {
+const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
   const [activeSection, setActiveSection] = useState('home');
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const router = useRouter();
   const pathname = usePathname();
+
+  const navLinks = [
+    { href: '#home', label: dictionary.nav.home, icon: Home },
+    { href: '#about', label: dictionary.nav.about, icon: User },
+    { href: '#projects', label: dictionary.nav.projects, icon: Briefcase },
+    { href: '#contact', label: dictionary.nav.contact, icon: Mail },
+  ];
 
   useEffect(() => setMounted(true), []);
 
@@ -33,7 +32,7 @@ const Sidebar = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-             if (navLinkIds.includes(entry.target.id)) {
+            if (navLinkIds.includes(entry.target.id)) {
               setActiveSection(entry.target.id);
             }
           }
@@ -43,15 +42,17 @@ const Sidebar = () => {
     );
 
     const sections = document.querySelectorAll('section');
-    sections.forEach((section) => observer.observe(section));
+    const sectionsToObserve = Array.from(sections).filter(section => navLinkIds.includes(section.id));
+    sectionsToObserve.forEach((section) => observer.observe(section));
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
+      sectionsToObserve.forEach((section) => observer.unobserve(section));
     };
-  }, []);
+  }, [navLinks]);
 
   const handleLocaleChange = (locale: string) => {
-    router.push(pathname.replace(/^\/(en|es)/, `/${locale}`));
+    const newPath = `/${locale}`;
+    window.location.href = newPath;
   };
 
   const LanguageSwitcher = () => {
@@ -64,18 +65,18 @@ const Sidebar = () => {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary">
                   <Languages className="h-6 w-6" />
-                  <span className="sr-only">Change language</span>
+                  <span className="sr-only">{dictionary.nav.change_language}</span>
                 </Button>
               </DropdownMenuTrigger>
             </TooltipTrigger>
             <TooltipContent side="right" className="bg-card text-foreground border-border">
-              <p>Change Language</p>
+              <p>{dictionary.nav.change_language}</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
         <DropdownMenuContent side="right" className="bg-card text-foreground border-border">
-          <DropdownMenuItem onClick={() => handleLocaleChange('en')}>English</DropdownMenuItem>
-          <DropdownMenuItem onClick={() => handleLocaleChange('es')}>Español</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => handleLocaleChange('en')} disabled={lang === 'en'}>{dictionary.languages.en}</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => handleLocaleChange('es')} disabled={lang === 'es'}>{dictionary.languages.es}</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     );
@@ -87,7 +88,7 @@ const Sidebar = () => {
         <Button variant="ghost" size="icon" className="rounded-full h-12 w-12" disabled>
           <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">{dictionary.nav.toggle_theme}</span>
         </Button>
       );
     }
@@ -103,11 +104,11 @@ const Sidebar = () => {
                 >
                   <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                   <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                  <span className="sr-only">Toggle theme</span>
+                  <span className="sr-only">{dictionary.nav.toggle_theme}</span>
                 </Button>
             </TooltipTrigger>
             <TooltipContent side="right" className="bg-card text-foreground border-border">
-              <p>Toggle Theme</p>
+              <p>{dictionary.nav.toggle_theme}</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
@@ -131,7 +132,7 @@ const Sidebar = () => {
                 )}
                 asChild
               >
-                <a href={link.href} onClick={() => isMobileMenuOpen && setIsMobileMenuOpen(false)}>
+                <a href={link.href}>
                   <link.icon className="h-6 w-6" />
                 </a>
               </Button>
@@ -192,8 +193,8 @@ const Sidebar = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent side="top" className="bg-card text-foreground border-border mb-2">
-                <DropdownMenuItem onClick={() => handleLocaleChange('en')}>English</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleLocaleChange('es')}>Español</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLocaleChange('en')} disabled={lang === 'en'}>{dictionary.languages.en}</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLocaleChange('es')} disabled={lang === 'es'}>{dictionary.languages.es}</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             )}
@@ -206,7 +207,7 @@ const Sidebar = () => {
               >
                 <Sun className="h-6 w-6 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                 <Moon className="absolute h-6 w-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                <span className="sr-only">Toggle theme</span>
+                <span className="sr-only">{dictionary.nav.toggle_theme}</span>
               </Button>
             )}
          </div>

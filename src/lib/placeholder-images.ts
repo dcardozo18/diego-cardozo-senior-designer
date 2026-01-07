@@ -1,6 +1,6 @@
 
-import data from './placeholder-images.json';
 import { z } from 'zod';
+import type { Locale } from '../../i18n-config';
 
 export const ProjectSchema = z.object({
   id: z.string(),
@@ -22,7 +22,16 @@ export const ProjectSchema = z.object({
 
 export type Project = z.infer<typeof ProjectSchema>;
 
-export const PlaceHolderImages: Project[] = data.placeholderImages.map(p => ({
-  ...p,
-  id: String(p.id)
-}));
+const projectData = {
+  en: () => import('./placeholder-images.json').then(module => module.default),
+  es: () => import('./placeholder-images.es.json').then(module => module.default),
+};
+
+export const getProjects = async (locale: Locale): Promise<Project[]> => {
+  const loader = projectData[locale] || projectData.en;
+  const data = await loader();
+  return data.placeholderImages.map(p => ({
+    ...p,
+    id: String(p.id)
+  }));
+};

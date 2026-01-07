@@ -5,31 +5,31 @@ import { Download, Eye } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
-const HeroSection = () => {
+const HeroSection = ({ dictionary }: { dictionary: any }) => {
   return (
     <section id="home" className={cn("relative h-screen min-h-[700px] aurora-background overflow-hidden")}>
       <div className="container mx-auto grid md:grid-cols-2 h-full items-center px-4 md:px-6 z-10">
         <div className="animate-fade-in-up space-y-6 text-left">
            <p className="font-headline text-2xl font-semibold tracking-tight text-primary sm:text-3xl md:text-4xl">
-            Hi, I’m Diego Cardozo
+            {dictionary.hero.greeting}
           </p>
           <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            Senior Web & UI/UX Designer
+            {dictionary.hero.title}
           </h1>
           <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
-            I design and build modern, user-focused websites that help brands communicate clearly and grow online. With over 20 years of experience, I blend creativity and functionality to deliver impactful digital solutions.
+            {dictionary.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row justify-start gap-4">
             <Button size="lg" asChild className="rounded-full">
               <a href="#projects">
                 <Eye className="mr-2 h-5 w-5" />
-                View My Work
+                {dictionary.hero.view_work_button}
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild className="rounded-full">
               <a href="/Diego-Cardozo-UI-UX-Designer.pdf" target='_blank'>
                 <Download className="mr-2 h-5 w-5" />
-                Download CV
+                {dictionary.hero.download_cv_button}
               </a>
             </Button>
           </div>

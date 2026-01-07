@@ -1,18 +1,18 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Twitter, Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Phone, Send } from 'lucide-react';
 
-const ContactSection = () => {
+const ContactSection = ({ dictionary }: { dictionary: any }) => {
   return (
     <section id="contact" className="bg-card/20 py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-             Let’s build something great <span className="text-primary">together.</span>
+             {dictionary.contact.title_part1} <span className="text-primary">{dictionary.contact.title_part2}</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            I’m currently available for remote design opportunities across Latin America and beyond.
+            {dictionary.contact.subtitle}
           </p>
         </div>
 
@@ -23,7 +23,7 @@ const ContactSection = () => {
                     <Mail className="h-6 w-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Email</h4>
+                    <h4 className="font-semibold">{dictionary.contact.email_title}</h4>
                     <a href="mailto:diegocardozosenioruiuxdesigner@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">diegocardozosenioruiuxdesigner@gmail.com</a>
                   </div>
                 </div>
@@ -32,8 +32,8 @@ const ContactSection = () => {
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Location</h4>
-                    <p className="text-muted-foreground">Based in Bogotá, Colombia</p>
+                    <h4 className="font-semibold">{dictionary.contact.location_title}</h4>
+                    <p className="text-muted-foreground">{dictionary.contact.location_value}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 rounded-lg bg-card">
@@ -41,7 +41,7 @@ const ContactSection = () => {
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Phone</h4>
+                    <h4 className="font-semibold">{dictionary.contact.phone_title}</h4>
                     <p className="text-muted-foreground">+57 311 226 1900</p>
                   </div>
                 </div>
@@ -50,7 +50,7 @@ const ContactSection = () => {
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-share-2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold">Social</h4>
+                    <h4 className="font-semibold">{dictionary.contact.social_title}</h4>
                     <div className="flex items-center gap-1 -ml-2">
                       <Button variant="ghost" size="icon" asChild>
                         <a href="#" aria-label="GitHub">
@@ -68,7 +68,7 @@ const ContactSection = () => {
                  <div className="text-center mt-8">
                     <Button size="lg" asChild>
                         <a href="mailto:diegocardozosenioruiuxdesigner@gmail.com">
-                            <span>Let's Connect</span>
+                            <span>{dictionary.contact.connect_button}</span>
                             <Send className="h-5 w-5" />
                         </a>
                     </Button>

@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "change_language": "Cambiar Idioma",
+    "toggle_theme": "Cambiar Tema"
+  },
+  "languages": {
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "hero": {
+    "greeting": "Hola, soy Diego Cardozo",
+    "title": "Diseñador Senior Web y UI/UX",
+    "subtitle": "Diseño y construyo sitios web modernos y centrados en el usuario que ayudan a las marcas a comunicarse claramente y a crecer en línea. Con más de 20 años de experiencia, combino creatividad y funcionalidad para ofrecer soluciones digitales impactantes.",
+    "view_work_button": "Ver mi trabajo",
+    "download_cv_button": "Descargar CV"
+  },
+  "about": {
+    "title_part1": "Sobre",
+    "title_part2": "Mí",
+    "intro_p1": "Diseñador Senior UI/UX con 20 años de experiencia creando productos digitales intuitivos, atractivos y centrados en el usuario. Experto en transformar requisitos complejos en recorridos de usuario fluidos a través de diseño de UI, wireframes, prototipos y mapas de viaje del cliente.",
+    "intro_p2": "Colaboro con equipos multifuncionales para garantizar la consistencia y la calidad, realizo pruebas de usuario para optimizar las experiencias y mantengo sistemas de diseño para la escalabilidad. Apasionado por guiar a diseñadores e impulsar las mejores prácticas para ofrecer soluciones digitales significativas e impactantes.",
+    "expertise_title": "Mis Habilidades",
+    "design_tools_title": "Herramientas de Diseño",
+    "ux_title": "UX",
+    "frontend_title": "Front-end",
+    "platforms_title": "Plataformas",
+    "ai_tools_title": "Herramientas de IA"
+  },
+  "projects": {
+    "title_part1": "Mi Creativo",
+    "title_part2": "Portafolio",
+    "subtitle": "Una selección de mi mejor trabajo, mostrando mis habilidades en diseño y desarrollo.",
+    "other_projects_title_part1": "Otros",
+    "other_projects_title_part2": "Proyectos",
+    "other_projects_subtitle": "Explora más de mi trabajo.",
+    "view_details": "Ver Detalles",
+    "goal": "Meta",
+    "my_role": "Mi Rol",
+    "tools": "Herramientas",
+    "view_live_site": "Ver Sitio en Vivo"
+  },
+  "contact": {
+    "title_part1": "Construyamos algo genial",
+    "title_part2": "juntos.",
+    "subtitle": "Actualmente estoy disponible para oportunidades de diseño remoto en toda América Latina y más allá.",
+    "email_title": "Email",
+    "location_title": "Ubicación",
+    "location_value": "Bogotá, Colombia",
+    "phone_title": "Teléfono",
+    "social_title": "Social",
+    "connect_button": "Conectemos"
+  },
+  "footer": {
+    "copy": "Diego Cardozo. Todos los derechos reservados."
+  }
+}
