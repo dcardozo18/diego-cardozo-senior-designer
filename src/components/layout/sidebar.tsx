@@ -59,7 +59,7 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
     if (!mounted) return null;
     
     const targetLocale = lang === 'en' ? 'es' : 'en';
-    const flagSrc = lang === 'en' ? '/spain-flag.svg' : '/us-flag.svg';
+    const flagSrc = lang === 'en' ? '/es.png' : '/en.png';
 
     return (
       <TooltipProvider delayDuration={0}>
@@ -193,7 +193,7 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
                 className="rounded-full h-12 w-12 text-muted-foreground flex items-center justify-center"
                 onClick={() => handleLocaleChange(lang === 'en' ? 'es' : 'en')}
               >
-                <Image src={lang === 'en' ? '/spain-flag.svg' : '/us-flag.svg'} alt={dictionary.nav.change_language} width={24} height={24} />
+                <Image src={lang === 'en' ? '/es.png' : '/en.png'} alt={dictionary.nav.change_language} width={20} height={20} />
               </Button>
             )}
             { mounted && (
