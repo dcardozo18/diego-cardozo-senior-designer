@@ -6,33 +6,9 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useTheme } from 'next-themes';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { usePathname } from 'next/navigation';
 import { Locale } from '../../../i18n-config';
-
-const UsaFlagIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 72 72">
-    <path fill="#fcea2b" d="M12 12h48v48H12z"/>
-    <path fill="#1e50a0" d="M12 12h24v24H12z"/>
-    <path fill="#fff" d="M36 12h24v4H36zm0 8h24v4H36zM12 40h48v4H12zm0 8h48v4H12z"/>
-    <path fill="#d22f27" d="M12 28h48v4H12zm0 8h48v4H12zm0 8h48v4H12z"/>
-    <path fill="#fff" d="m15 15l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1zm10 0l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1zm-5 5l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1zm10 0l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1zm-5 5l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1z"/>
-  </svg>
-);
-
-const SpainFlagIcon = () => (
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 72 72">
-    <path fill="#d22f27" d="M12 12h48v48H12z"/>
-    <path fill="#fcea2b" d="M12 24h48v24H12z"/>
-    <g fill="none" stroke="#f1b31c" stroke-miterlimit="10" stroke-width="2">
-      <path d="M26 31.5a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2"/>
-      <path d="M30 35.5a2 2 0 0 1-2-2v-2h-4v2a2 2 0 0 1-2 2"/>
-    </g>
-    <path fill="#d22f27" d="M30 29.5h-4v-4h4z"/>
-    <path fill="none" stroke="#f1b31c" stroke-miterlimit="10" stroke-width="2" d="M31 32.5h2m-10 0h2m7-10v-1m-8 1v-1"/>
-  </svg>
-);
-
+import Image from 'next/image';
 
 const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
   const [activeSection, setActiveSection] = useState('home');
@@ -83,7 +59,7 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
     if (!mounted) return null;
     
     const targetLocale = lang === 'en' ? 'es' : 'en';
-    const TargetFlagIcon = lang === 'en' ? SpainFlagIcon : UsaFlagIcon;
+    const flagSrc = lang === 'en' ? '/spain-flag.svg' : '/us-flag.svg';
 
     return (
       <TooltipProvider delayDuration={0}>
@@ -92,10 +68,10 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
             <Button
               variant="ghost"
               size="icon"
-              className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary"
+              className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary flex items-center justify-center"
               onClick={() => handleLocaleChange(targetLocale)}
             >
-              <TargetFlagIcon />
+              <Image src={flagSrc} alt={dictionary.nav.change_language} width={24} height={24} />
               <span className="sr-only">{dictionary.nav.change_language}</span>
             </Button>
           </TooltipTrigger>
@@ -214,10 +190,10 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="rounded-full h-12 w-12 text-muted-foreground"
+                className="rounded-full h-12 w-12 text-muted-foreground flex items-center justify-center"
                 onClick={() => handleLocaleChange(lang === 'en' ? 'es' : 'en')}
               >
-                {lang === 'en' ? <SpainFlagIcon /> : <UsaFlagIcon />}
+                <Image src={lang === 'en' ? '/spain-flag.svg' : '/us-flag.svg'} alt={dictionary.nav.change_language} width={24} height={24} />
               </Button>
             )}
             { mounted && (
