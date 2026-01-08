@@ -4,8 +4,13 @@ import { Button } from '@/components/ui/button';
 import { Download, Eye } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
+import { Locale } from '../../../i18n-config';
 
-const HeroSection = ({ dictionary }: { dictionary: any }) => {
+const HeroSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
+  const cvUrl = lang === 'es' 
+    ? '/Diego-Cardozo-UI-UX-Designer-ES.pdf' 
+    : '/Diego-Cardozo-UI-UX-Designer-EN.pdf';
+
   return (
     <section id="home" className={cn("relative h-screen min-h-[700px] aurora-background overflow-hidden")}>
       <div className="container mx-auto grid md:grid-cols-2 h-full items-center px-4 md:px-6 z-10">
@@ -27,7 +32,7 @@ const HeroSection = ({ dictionary }: { dictionary: any }) => {
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild className="rounded-full">
-              <a href="/Diego-Cardozo-UI-UX-Designer.pdf" target='_blank'>
+              <a href={cvUrl} target='_blank'>
                 <Download className="mr-2 h-5 w-5" />
                 {dictionary.hero.download_cv_button}
               </a>

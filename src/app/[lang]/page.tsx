@@ -11,7 +11,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
-        <HeroSection dictionary={dictionary} />
+        <HeroSection dictionary={dictionary} lang={lang} />
         <AboutSection dictionary={dictionary} />
         <ProjectsSection dictionary={dictionary} lang={lang} />
         <ContactSection dictionary={dictionary} />

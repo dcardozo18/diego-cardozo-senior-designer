@@ -41,5 +41,5 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico|Diego-Cardozo-UI-UX-Designer.pdf|aviatur.png|islas.png|tecnologia.png|orbit.png|puntocomedia.png|bestdeal.png|bitc.png|water.png|fashion.jpeg|hamunet.jpeg|realstate.jpeg|skilltech.jpeg|dashboard.jpeg|wakeup.png|travel.jpeg|glow.jpeg|food.jpeg|bingo.png|finance.jpeg|hero-image.png|about-profile.png).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico|Diego-Cardozo-UI-UX-Designer-EN.pdf|Diego-Cardozo-UI-UX-Designer-ES.pdf|aviatur.png|islas.png|tecnologia.png|orbit.png|puntocomedia.png|bestdeal.png|bitc.png|water.png|fashion.jpeg|hamunet.jpeg|realstate.jpeg|skilltech.jpeg|dashboard.jpeg|wakeup.png|travel.jpeg|glow.jpeg|food.jpeg|bingo.png|finance.jpeg|hero-image.png|about-profile.png).*)'],
 }
