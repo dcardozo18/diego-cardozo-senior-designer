@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Home, Briefcase, User, Mail, Code2, Sun, Moon, Languages } from 'lucide-react';
+import { Home, Briefcase, User, Mail, Code2, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
@@ -81,31 +81,29 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
 
   const LanguageSwitcher = () => {
     if (!mounted) return null;
+    
+    const targetLocale = lang === 'en' ? 'es' : 'en';
+    const TargetFlagIcon = lang === 'en' ? SpainFlagIcon : UsaFlagIcon;
+
     return (
-      <DropdownMenu>
-        <TooltipProvider delayDuration={0}>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary">
-                  {lang === 'en' ? <UsaFlagIcon /> : <SpainFlagIcon />}
-                  <span className="sr-only">{dictionary.nav.change_language}</span>
-                </Button>
-              </DropdownMenuTrigger>
-            </TooltipTrigger>
-            <TooltipContent side="right" className="bg-card text-foreground border-border">
-              <p>{dictionary.nav.change_language}</p>
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-        <DropdownMenuContent side="right" className="bg-card text-foreground border-border">
-          {lang === 'en' ? (
-            <DropdownMenuItem onClick={() => handleLocaleChange('es')}>{dictionary.languages.es}</DropdownMenuItem>
-          ) : (
-            <DropdownMenuItem onClick={() => handleLocaleChange('en')}>{dictionary.languages.en}</DropdownMenuItem>
-          )}
-        </DropdownMenuContent>
-      </DropdownMenu>
+      <TooltipProvider delayDuration={0}>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary"
+              onClick={() => handleLocaleChange(targetLocale)}
+            >
+              <TargetFlagIcon />
+              <span className="sr-only">{dictionary.nav.change_language}</span>
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent side="right" className="bg-card text-foreground border-border">
+            <p>{dictionary.nav.change_language}</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     );
   }
 
@@ -213,20 +211,14 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
               </Button>
             ))}
             { mounted && (
-              <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="rounded-full h-12 w-12 text-muted-foreground">
-                  {lang === 'en' ? <UsaFlagIcon /> : <SpainFlagIcon />}
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent side="top" className="bg-card text-foreground border-border mb-2">
-                {lang === 'en' ? (
-                  <DropdownMenuItem onClick={() => handleLocaleChange('es')}>{dictionary.languages.es}</DropdownMenuItem>
-                ) : (
-                  <DropdownMenuItem onClick={() => handleLocaleChange('en')}>{dictionary.languages.en}</DropdownMenuItem>
-                )}
-              </DropdownMenuContent>
-            </DropdownMenu>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full h-12 w-12 text-muted-foreground"
+                onClick={() => handleLocaleChange(lang === 'en' ? 'es' : 'en')}
+              >
+                {lang === 'en' ? <SpainFlagIcon /> : <UsaFlagIcon />}
+              </Button>
             )}
             { mounted && (
               <Button
