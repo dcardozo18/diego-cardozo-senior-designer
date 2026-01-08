@@ -10,6 +10,30 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { usePathname } from 'next/navigation';
 import { Locale } from '../../../i18n-config';
 
+const UsaFlagIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 72 72">
+    <path fill="#fcea2b" d="M12 12h48v48H12z"/>
+    <path fill="#1e50a0" d="M12 12h24v24H12z"/>
+    <path fill="#fff" d="M36 12h24v4H36zm0 8h24v4H36zM12 40h48v4H12zm0 8h48v4H12z"/>
+    <path fill="#d22f27" d="M12 28h48v4H12zm0 8h48v4H12zm0 8h48v4H12z"/>
+    <path fill="#fff" d="m15 15l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1zm10 0l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1zm-5 5l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1zm10 0l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1zm-5 5l-1 3l-3-1l2 2l-1 3l2-2l2 2l-1-3l2-2l-3 1z"/>
+  </svg>
+);
+
+const SpainFlagIcon = () => (
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 72 72">
+    <path fill="#d22f27" d="M12 12h48v48H12z"/>
+    <path fill="#fcea2b" d="M12 24h48v24H12z"/>
+    <g fill="none" stroke="#f1b31c" stroke-miterlimit="10" stroke-width="2">
+      <path d="M26 31.5a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2"/>
+      <path d="M30 35.5a2 2 0 0 1-2-2v-2h-4v2a2 2 0 0 1-2 2"/>
+    </g>
+    <path fill="#d22f27" d="M30 29.5h-4v-4h4z"/>
+    <path fill="none" stroke="#f1b31c" stroke-miterlimit="10" stroke-width="2" d="M31 32.5h2m-10 0h2m7-10v-1m-8 1v-1"/>
+  </svg>
+);
+
+
 const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
   const [activeSection, setActiveSection] = useState('home');
   const { theme, setTheme } = useTheme();
@@ -64,7 +88,7 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
             <TooltipTrigger asChild>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary">
-                  <Languages className="h-6 w-6" />
+                  {lang === 'en' ? <UsaFlagIcon /> : <SpainFlagIcon />}
                   <span className="sr-only">{dictionary.nav.change_language}</span>
                 </Button>
               </DropdownMenuTrigger>
@@ -75,8 +99,11 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
           </Tooltip>
         </TooltipProvider>
         <DropdownMenuContent side="right" className="bg-card text-foreground border-border">
-          <DropdownMenuItem onClick={() => handleLocaleChange('en')} disabled={lang === 'en'}>{dictionary.languages.en}</DropdownMenuItem>
-          <DropdownMenuItem onClick={() => handleLocaleChange('es')} disabled={lang === 'es'}>{dictionary.languages.es}</DropdownMenuItem>
+          {lang === 'en' ? (
+            <DropdownMenuItem onClick={() => handleLocaleChange('es')}>{dictionary.languages.es}</DropdownMenuItem>
+          ) : (
+            <DropdownMenuItem onClick={() => handleLocaleChange('en')}>{dictionary.languages.en}</DropdownMenuItem>
+          )}
         </DropdownMenuContent>
       </DropdownMenu>
     );
@@ -189,12 +216,15 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
               <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full h-12 w-12 text-muted-foreground">
-                  <Languages className="h-6 w-6" />
+                  {lang === 'en' ? <UsaFlagIcon /> : <SpainFlagIcon />}
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent side="top" className="bg-card text-foreground border-border mb-2">
-                <DropdownMenuItem onClick={() => handleLocaleChange('en')} disabled={lang === 'en'}>{dictionary.languages.en}</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleLocaleChange('es')} disabled={lang === 'es'}>{dictionary.languages.es}</DropdownMenuItem>
+                {lang === 'en' ? (
+                  <DropdownMenuItem onClick={() => handleLocaleChange('es')}>{dictionary.languages.es}</DropdownMenuItem>
+                ) : (
+                  <DropdownMenuItem onClick={() => handleLocaleChange('en')}>{dictionary.languages.en}</DropdownMenuItem>
+                )}
               </DropdownMenuContent>
             </DropdownMenu>
             )}

@@ -29,7 +29,7 @@ export function middleware(request: NextRequest) {
     const locale = getLocale(request)
 
     // e.g. incoming request is /products
-    // The new URL is now /en-US/products
+    // The new URL is now /en/products
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
@@ -41,5 +41,5 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico|Diego-Cardozo-UI-UX-Designer-EN.pdf|Diego-Cardozo-UI-UX-Designer-ES.pdf|aviatur.png|islas.png|tecnologia.png|orbit.png|puntocomedia.png|bestdeal.png|bitc.png|water.png|fashion.jpeg|hamunet.jpeg|realstate.jpeg|skilltech.jpeg|dashboard.jpeg|wakeup.png|travel.jpeg|glow.jpeg|food.jpeg|bingo.png|finance.jpeg|hero-image.png|about-profile.png).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|pdf)$).*)'],
 }
