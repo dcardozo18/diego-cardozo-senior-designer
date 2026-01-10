@@ -1,107 +1,67 @@
 
-'use client';
-
-import { useState, useMemo, useEffect } from 'react';
-import { getProjects, type Project } from '@/lib/placeholder-images';
+import type { Project } from '@/lib/placeholder-images';
 import ProjectCard from '@/components/shared/project-card';
 import FeaturedProject from '@/components/shared/featured-project';
 import { Button } from '@/components/ui/button';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 import { Separator } from '@/components/ui/separator';
-import { Locale } from '../../../i18n-config';
-import { smartProjectArrangement } from '@/ai/flows/smart-project-arrangement';
+import type { Locale } from '../../../i18n-config';
 
 const PROJECTS_PER_PAGE = 6;
 const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding'];
 const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding'];
 
 const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {
-  const [activeFilter, setActiveFilter] = useState<string>(lang === 'es' ? 'Todos' : 'All');
-  const [currentPage, setCurrentPage] = useState(1);
-  const [clientProjects, setClientProjects] = useState(arrangedProjects);
-
-  const FEATURED_PROJECT_IDS = useMemo(() => ['21', '24', '23'], []);
+  
   const CATEGORIES = lang === 'es' ? CATEGORIES_ES : CATEGORIES_EN;
 
-  useEffect(() => {
-    // When language changes, update projects and reset filters
-    const fetchProjects = async () => {
-        const placeholderProjects = await getProjects(lang);
-        const mockProjects: Project[] = placeholderProjects.map((p) => ({
-            ...p,
-            engagementScore: Math.floor(Math.random() * (95 - 70 + 1) + 70),
-            visualAppealScore: Math.floor(Math.random() * (98 - 75 + 1) + 75),
-        }));
-        try {
-            const arranged = await smartProjectArrangement({ projects: mockProjects });
-            setClientProjects(arranged);
-        } catch (error) {
-            console.error("AI flow failed, using mock data as is:", error);
-            const sorted = mockProjects.sort((a,b) => (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!));
-            setClientProjects(sorted);
-        }
-    };
-    fetchProjects();
-    setActiveFilter(lang === 'es' ? 'Todos' : 'All');
-    setCurrentPage(1);
-  }, [lang]);
+  const FEATURED_PROJECT_IDS = ['21', '24', '23'];
 
-
-  const { featuredProjects, otherProjects } = useMemo(() => {
+  const { featuredProjects, otherProjects } = (() => {
     const featured: Project[] = [];
     const others: Project[] = [];
-
-    const projectMap = new Map(clientProjects.map(p => [p.id, p]));
-
+    const projectMap = new Map(arrangedProjects.map(p => [p.id, p]));
+  
     FEATURED_PROJECT_IDS.forEach(id => {
-        const project = projectMap.get(id);
-        if (project) {
-            featured.push(project);
-            projectMap.delete(id);
-        }
+      const project = projectMap.get(id);
+      if (project) {
+        featured.push(project);
+        projectMap.delete(id);
+      }
     });
-
-    others.push(...projectMap.values());
+  
+    others.push(...Array.from(projectMap.values()));
     
     // Ensure featured projects have a stable order
     featured.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
 
-    return { 
-      featuredProjects: featured, 
-      otherProjects: others
-    };
-  }, [clientProjects, FEATURED_PROJECT_IDS]);
+    return { featuredProjects: featured, otherProjects: others };
+  })();
 
-  const filteredProjects = useMemo(() => {
+  // This is a placeholder for the state that would be managed in a client component
+  const activeFilter = lang === 'es' ? 'Todos' : 'All';
+  const currentPage = 1;
+
+  const filteredProjects = (() => {
     const filterKey = lang === 'es' ? CATEGORIES_EN[CATEGORIES.indexOf(activeFilter)] || 'All' : activeFilter;
     
     if (filterKey === 'All') {
       return otherProjects;
     }
     return otherProjects.filter(p => p.category === filterKey);
-  }, [otherProjects, activeFilter, lang, CATEGORIES, CATEGORIES_EN]);
+  })();
 
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [activeFilter]);
-  
   const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);
 
-  const paginatedProjects = useMemo(() => {
+  const paginatedProjects = (() => {
     const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
     const endIndex = startIndex + PROJECTS_PER_PAGE;
     return filteredProjects.slice(startIndex, endIndex);
-  }, [filteredProjects, currentPage]);
+  })();
 
+  // The interactive parts will be re-enabled in a client component wrapper later
   const handlePageChange = (page: number) => {
-    if (page >= 1 && page <= totalPages) {
-      setCurrentPage(page);
-      const projectsElement = document.getElementById('projects');
-      if(projectsElement) {
-        projectsElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }
+    // This would be implemented in a client component
   };
   
   return (
@@ -133,12 +93,13 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
           </p>
         </div>
 
+        {/* Client-side interactivity for filters and pagination will be restored */}
         <div className="mb-12 flex flex-wrap justify-center gap-2">
           {CATEGORIES.map(tech => (
             <Button
               key={tech}
               variant={activeFilter === tech ? 'default' : 'outline'}
-              onClick={() => setActiveFilter(tech)}
+              // onClick={() => setActiveFilter(tech)}
               className="rounded-full transition-all"
             >
               {tech}
@@ -159,10 +120,6 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
                 <PaginationItem>
                   <PaginationPrevious 
                     href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handlePageChange(currentPage - 1)
-                    }} 
                     aria-disabled={currentPage === 1}
                     className={currentPage === 1 ? 'pointer-events-none opacity-50' : ''}
                   />
@@ -171,10 +128,6 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
                   <PaginationItem key={page}>
                     <PaginationLink 
                       href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        handlePageChange(page)
-                      }}
                       isActive={currentPage === page}
                     >
                       {page}
@@ -184,10 +137,6 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
                 <PaginationItem>
                   <PaginationNext 
                     href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handlePageChange(currentPage + 1)
-                    }}
                      aria-disabled={currentPage === totalPages}
                      className={currentPage === totalPages ? 'pointer-events-none opacity-50' : ''}
                   />
