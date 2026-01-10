@@ -17,26 +17,23 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
 
   const FEATURED_PROJECT_IDS = ['21', '24', '23'];
 
-  const { featuredProjects, otherProjects } = (() => {
-    const featured: Project[] = [];
-    const others: Project[] = [];
-    const projectMap = new Map(arrangedProjects.map(p => [p.id, p]));
-  
-    FEATURED_PROJECT_IDS.forEach(id => {
-      const project = projectMap.get(id);
-      if (project) {
-        featured.push(project);
-        projectMap.delete(id);
-      }
-    });
-  
-    others.push(...Array.from(projectMap.values()));
-    
-    // Ensure featured projects have a stable order
-    featured.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
+  const featuredProjects: Project[] = [];
+  const otherProjects: Project[] = [];
+  const projectMap = new Map(arrangedProjects.map(p => [p.id, p]));
 
-    return { featuredProjects: featured, otherProjects: others };
-  })();
+  FEATURED_PROJECT_IDS.forEach(id => {
+    const project = projectMap.get(id);
+    if (project) {
+      featuredProjects.push(project);
+      projectMap.delete(id);
+    }
+  });
+
+  otherProjects.push(...Array.from(projectMap.values()));
+  
+  // Ensure featured projects have a stable order
+  featuredProjects.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
+
 
   // This is a placeholder for the state that would be managed in a client component
   const activeFilter = lang === 'es' ? 'Todos' : 'All';
