@@ -12,6 +12,9 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   const dictionary = await getDictionary(lang);
   
   const placeholderProjects = await getProjects(lang);
+  
+  // These scores are added for the AI to have something to work with.
+  // In a real app, this data might come from an analytics service.
   const mockProjects: Project[] = placeholderProjects.map((p) => ({
     ...p,
     engagementScore: Math.floor(Math.random() * (95 - 70 + 1) + 70),
@@ -20,11 +23,12 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
 
   let arrangedProjects: Project[];
   try {
-    arrangedProjects = await smartProjectArrangement({ projects: mockProjects });
+    const result = await smartProjectArrangement({ projects: mockProjects });
+    arrangedProjects = result;
   } catch (error) {
     console.error("AI flow failed on server, using mock data as is:", error);
     // Fallback to simple sorting if AI fails
-    arrangedProjects = mockProjects.sort((a,b) => (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!));
+    arrangedProjects = [...mockProjects].sort((a,b) => (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!));
   }
 
   return (

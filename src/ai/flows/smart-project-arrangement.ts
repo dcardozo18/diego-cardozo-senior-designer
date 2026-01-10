@@ -65,7 +65,23 @@ const smartProjectArrangementFlow = ai.defineFlow(
     outputSchema: SmartProjectArrangementOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
-    return output!;
+    // Add a fallback in case the AI returns a different structure or fails
+    try {
+      const {output} = await prompt(input);
+      if (output && Array.isArray(output.arrangedProjects)) {
+        return output;
+      }
+    } catch (e) {
+      console.error("Error in smartProjectArrangementFlow, returning sorted mock.", e);
+    }
+
+    // Fallback if AI fails: sort by scores descending
+    const sortedProjects = [...input.projects].sort((a, b) => {
+        const scoreA = (a.engagementScore || 0) + (a.visualAppealScore || 0);
+        const scoreB = (b.engagementScore || 0) + (b.visualAppealScore || 0);
+        return scoreB - scoreA;
+    });
+
+    return { arrangedProjects: sortedProjects };
   }
 );
