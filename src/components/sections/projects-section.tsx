@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -10,8 +11,8 @@ import { Separator } from '@/components/ui/separator';
 import type { Locale } from '../../../i18n-config';
 
 const PROJECTS_PER_PAGE = 6;
-const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding'];
-const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding'];
+const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding', 'Game App Design'];
+const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding', 'Diseño App Juego'];
 
 const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {
   const [activeFilter, setActiveFilter] = useState(lang === 'es' ? 'Todos' : 'All');
@@ -23,23 +24,20 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
   // This logic now runs on the client with the server-provided arrangedProjects
   const featuredProjects: Project[] = [];
   const otherProjects: Project[] = [];
-  
-  if (arrangedProjects) {
-    const projectMap = new Map(arrangedProjects.map(p => [p.id, p]));
 
-    FEATURED_PROJECT_IDS.forEach(id => {
-      const project = projectMap.get(id);
-      if (project) {
-        featuredProjects.push(project);
-        projectMap.delete(id);
+  if (arrangedProjects && arrangedProjects.length > 0) {
+    const featuredIdsSet = new Set(FEATURED_PROJECT_IDS);
+    arrangedProjects.forEach(p => {
+      if (featuredIdsSet.has(p.id)) {
+        featuredProjects.push(p);
+      } else {
+        otherProjects.push(p);
       }
     });
-    otherProjects.push(...Array.from(projectMap.values()));
+    // Ensure featured projects have a stable order, even if AI changes it
+    featuredProjects.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
   }
   
-  // Ensure featured projects have a stable order, even if AI changes it
-  featuredProjects.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
-
   const handleFilterChange = (filter: string) => {
     setActiveFilter(filter);
     setCurrentPage(1);
@@ -52,14 +50,17 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
   };
 
   const filteredProjects = (() => {
-    // Map the localized category back to the English key for filtering
-    const filterKey = lang === 'es' ? CATEGORIES_EN[CATEGORIES.indexOf(activeFilter)] || 'All' : activeFilter;
-    
-    if (filterKey === 'All') {
+    if (activeFilter === (lang === 'es' ? 'Todos' : 'All')) {
       return otherProjects;
     }
-    // Make sure to handle potential mismatches if category names change
-    return otherProjects.filter(p => p.category === filterKey || (p.category === 'Corporate Website' && filterKey === 'Development'));
+    const filterKey = lang === 'es' ? CATEGORIES_EN[CATEGORIES_ES.indexOf(activeFilter)] || 'All' : activeFilter;
+    
+    return otherProjects.filter(p => {
+        // Handle multiple categories or aliases for filtering
+        const categoryMatch = p.category === filterKey;
+        const aliasMatch = (p.category === 'Corporate Website' && filterKey === 'Development');
+        return categoryMatch || aliasMatch;
+    });
   })();
 
   const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);
@@ -112,8 +113,8 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {paginatedProjects.map((project, index) => (
-            <ProjectCard key={`${project.id}-${index}`} project={project} dictionary={dictionary} />
+          {paginatedProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} dictionary={dictionary} />
           ))}
         </div>
 
