@@ -6,7 +6,6 @@ import Footer from '@/components/layout/footer';
 import { getDictionary } from '@/lib/get-dictionary';
 import { Locale } from '../../../i18n-config';
 import { getProjects, Project } from '@/lib/placeholder-images';
-import { smartProjectArrangement } from '@/ai/flows/smart-project-arrangement';
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
@@ -21,15 +20,10 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
     visualAppealScore: Math.floor(Math.random() * (98 - 75 + 1) + 75),
   }));
 
-  let arrangedProjects: Project[];
-  try {
-    const result = await smartProjectArrangement({ projects: mockProjects });
-    arrangedProjects = result;
-  } catch (error) {
-    console.error("AI flow failed on server, using mock data as is:", error);
-    // Fallback to simple sorting if AI fails
-    arrangedProjects = [...mockProjects].sort((a,b) => (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!));
-  }
+  // Sort projects by scores as a reliable fallback instead of calling AI on every load.
+  const arrangedProjects = [...mockProjects].sort((a, b) => 
+    (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!)
+  );
 
   return (
     <div className="flex min-h-screen flex-col">
