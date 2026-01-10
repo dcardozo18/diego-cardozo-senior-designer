@@ -21,12 +21,13 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Check if the request is for an API route or a static file, and ignore it.
+  // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually.
+  // If you have folders in `public` that are not files, you can use a regex to ignore them here.
   if (
     pathname.startsWith('/api') ||
     pathname.startsWith('/_next/static') ||
     pathname.startsWith('/_next/image') ||
-    pathname.match(/\.(?:svg|png|jpg|jpeg|gif|webp|pdf)$/)
+    pathname.includes('.') // Exclude all files with extensions
   ) {
     return;
   }
@@ -52,5 +53,5 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|pdf)$).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };

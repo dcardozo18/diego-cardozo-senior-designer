@@ -6,15 +6,38 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useTheme } from 'next-themes';
-import { usePathname } from 'next/navigation';
 import { Locale } from '../../../i18n-config';
-import Image from 'next/image';
+import Link from 'next/link';
+
+
+const UsaFlagIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" {...props}>
+        <path fill="#C1272D" d="M0 0h72v48H0z" />
+        <path fill="#FFF" d="M0 4h72v4H0zm0 8h72v4H0zm0 8h72v4H0zm0 8h72v4H0zm0 8h72v4H0zm0 8h72v4H0z" />
+        <path fill="#002868" d="M0 0h36v28H0z" />
+        <path
+            fill="#FFF"
+            d="M5 2.5l.9 2.8H9l-2.3 1.7.9 2.8L5 8.1l-2.5 1.7.9-2.8L1 5.3h3.2zm6 0l.9 2.8H15l-2.3 1.7.9 2.8L11 8.1l-2.5 1.7.9-2.8L7 5.3h3.2zm6 0l.9 2.8H21l-2.3 1.7.9 2.8L17 8.1l-2.5 1.7.9-2.8L13 5.3h3.2zm6 0l.9 2.8H27l-2.3 1.7.9 2.8L23 8.1l-2.5 1.7.9-2.8L19 5.3h3.2zm6 0l.9 2.8H33l-2.3 1.7.9 2.8L29 8.1l-2.5 1.7.9-2.8L25 5.3h3.2zm-27 5l.9 2.8H9l-2.3 1.7.9 2.8L5 13.1l-2.5 1.7.9-2.8L1 10.3h3.2zm6 0l.9 2.8H15l-2.3 1.7.9 2.8L11 13.1l-2.5 1.7.9-2.8L7 10.3h3.2zm6 0l.9 2.8H21l-2.3 1.7.9 2.8L17 13.1l-2.5 1.7.9-2.8L13 10.3h3.2zm6 0l.9 2.8H27l-2.3 1.7.9 2.8L23 13.1l-2.5 1.7.9-2.8L19 10.3h3.2zm6 0l.9 2.8H33l-2.3 1.7.9 2.8L29 13.1l-2.5 1.7.9-2.8L25 10.3h3.2zM5 12.5l.9 2.8H9l-2.3 1.7.9 2.8L5 18.1l-2.5 1.7.9-2.8L1 15.3h3.2zm6 0l.9 2.8H15l-2.3 1.7.9 2.8L11 18.1l-2.5 1.7.9-2.8L7 15.3h3.2zm6 0l.9 2.8H21l-2.3 1.7.9 2.8L17 18.1l-2.5 1.7.9-2.8L13 15.3h3.2zm6 0l.9 2.8H27l-2.3 1.7.9 2.8L23 18.1l-2.5 1.7.9-2.8L19 15.3h3.2zm6 0l.9 2.8H33l-2.3 1.7.9 2.8L29 18.1l-2.5 1.7.9-2.8L25 15.3h3.2zm-27 5l.9 2.8H9l-2.3 1.7.9 2.8L5 23.1l-2.5 1.7.9-2.8L1 20.3h3.2zm6 0l.9 2.8H15l-2.3 1.7.9 2.8L11 23.1l-2.5 1.7.9-2.8L7 20.3h3.2zm6 0l.9 2.8H21l-2.3 1.7.9 2.8L17 23.1l-2.5 1.7.9-2.8L13 20.3h3.2zm6 0l.9 2.8H27l-2.3 1.7.9 2.8L23 23.1l-2.5 1.7.9-2.8L19 20.3h3.2zm6 0l.9 2.8H33l-2.3 1.7.9 2.8L29 23.1l-2.5 1.7.9-2.8L25 20.3h3.2z"
+        />
+    </svg>
+);
+
+const SpainFlagIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 48" {...props}>
+        <path fill="#C60B1E" d="M0 0h72v48H0z" />
+        <path fill="#FFC400" d="M0 12h72v24H0z" />
+        <g transform="translate(18 18) scale(.6)">
+            <path fill="#C60B1E" d="M6 0v24h12V0H6zm1 1h10v22H7V1zm8.5 4.5l-2 3-2-3h4z" />
+            <path fill="#FFC400" d="M0 0v24h6v-9h12v9h6V0h-6v9H6V0H0zm9 13h6v2H9v-2zm0-4h6v2H9V9z" />
+        </g>
+    </svg>
+);
+
 
 const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
   const [activeSection, setActiveSection] = useState('home');
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const pathname = usePathname();
 
   const navLinks = [
     { href: '#home', label: dictionary.nav.home, icon: Home },
@@ -50,16 +73,11 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
     };
   }, [navLinks]);
 
-  const handleLocaleChange = (locale: string) => {
-    const newPath = `/${locale}`;
-    window.location.href = newPath;
-  };
-
   const LanguageSwitcher = () => {
     if (!mounted) return null;
     
     const targetLocale = lang === 'en' ? 'es' : 'en';
-    const flagSrc = lang === 'en' ? '/es.png' : '/en.png';
+    const FlagIcon = lang === 'en' ? SpainFlagIcon : UsaFlagIcon;
 
     return (
       <TooltipProvider delayDuration={0}>
@@ -69,10 +87,12 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
               variant="ghost"
               size="icon"
               className="rounded-full h-12 w-12 text-muted-foreground hover:bg-primary/20 hover:text-primary flex items-center justify-center"
-              onClick={() => handleLocaleChange(targetLocale)}
+              asChild
             >
-              <Image src={flagSrc} alt={dictionary.nav.change_language} width={24} height={24} />
-              <span className="sr-only">{dictionary.nav.change_language}</span>
+              <Link href={`/${targetLocale}`} locale={targetLocale}>
+                 <FlagIcon className="h-6 w-6" />
+                <span className="sr-only">{dictionary.nav.change_language}</span>
+              </Link>
             </Button>
           </TooltipTrigger>
           <TooltipContent side="right" className="bg-card text-foreground border-border">
@@ -191,9 +211,11 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
                 variant="ghost"
                 size="icon"
                 className="rounded-full h-12 w-12 text-muted-foreground flex items-center justify-center"
-                onClick={() => handleLocaleChange(lang === 'en' ? 'es' : 'en')}
+                asChild
               >
-                <Image src={lang === 'en' ? '/es.png' : '/en.png'} alt={dictionary.nav.change_language} width={20} height={20} />
+                 <Link href={`/${lang === 'en' ? 'es' : 'en'}`} locale={lang === 'en' ? 'es' : 'en'}>
+                    {lang === 'en' ? <SpainFlagIcon className="h-5 w-5" /> : <UsaFlagIcon className="h-5 w-5" />}
+                 </Link>
               </Button>
             )}
             { mounted && (
@@ -215,3 +237,5 @@ const Sidebar = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
 };
 
 export default Sidebar;
+
+    
