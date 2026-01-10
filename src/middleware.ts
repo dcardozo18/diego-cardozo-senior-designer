@@ -21,17 +21,6 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // `/_next/` and `/api/` are ignored by the watcher, but we need to ignore files in `public` manually.
-  // If you have folders in `public` that are not files, you can use a regex to ignore them here.
-  if (
-    pathname.startsWith('/api') ||
-    pathname.startsWith('/_next/static') ||
-    pathname.startsWith('/_next/image') ||
-    pathname.includes('.') // Exclude all files with extensions
-  ) {
-    return;
-  }
-
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
@@ -40,8 +29,6 @@ export function middleware(request: NextRequest) {
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
 
-    // e.g. incoming request is /products
-    // The new URL is now /en/products
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
@@ -53,5 +40,5 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)'],
 };

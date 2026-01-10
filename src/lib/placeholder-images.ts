@@ -11,7 +11,7 @@ export const ProjectSchema = z.object({
   goal: z.string(),
   role: z.string(),
   tools: z.array(z.string()),
-  liveSiteUrl: z.string().url().or(z.literal('#')),
+  liveSiteUrl: z.string(),
   imageUrl: z.string(),
   imageHint: z.string(),
   category: z.string(),
