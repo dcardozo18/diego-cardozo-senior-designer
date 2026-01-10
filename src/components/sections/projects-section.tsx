@@ -1,7 +1,7 @@
+
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
-import { smartProjectArrangement } from '@/ai/flows/smart-project-arrangement';
 import { getProjects, type Project } from '@/lib/placeholder-images';
 import ProjectCard from '@/components/shared/project-card';
 import FeaturedProject from '@/components/shared/featured-project';
@@ -9,84 +9,68 @@ import { Button } from '@/components/ui/button';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 import { Separator } from '@/components/ui/separator';
 import { Locale } from '../../../i18n-config';
+import { smartProjectArrangement } from '@/ai/flows/smart-project-arrangement';
 
 const PROJECTS_PER_PAGE = 6;
 const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding'];
 const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding'];
 
-const ProjectsSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }) => {
-  const [allProjects, setAllProjects] = useState<Project[]>([]);
+const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {
   const [activeFilter, setActiveFilter] = useState<string>(lang === 'es' ? 'Todos' : 'All');
-  const [isArranging, setIsArranging] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
+  const [clientProjects, setClientProjects] = useState(arrangedProjects);
 
   const FEATURED_PROJECT_IDS = useMemo(() => ['21', '24', '23'], []);
   const CATEGORIES = lang === 'es' ? CATEGORIES_ES : CATEGORIES_EN;
 
   useEffect(() => {
-    const arrangeProjects = async () => {
-      setIsArranging(true);
-      const placeholderProjects = await getProjects(lang);
-      
-      const mockProjects: Project[] = placeholderProjects.map((p) => ({
-        ...p,
-        engagementScore: Math.floor(Math.random() * (95 - 70 + 1) + 70),
-        visualAppealScore: Math.floor(Math.random() * (98 - 75 + 1) + 75),
-      }));
-
-      try {
-        const arranged = await smartProjectArrangement({ projects: mockProjects });
-        setAllProjects(arranged);
-      } catch (error) {
-        console.error("AI flow failed, using mock data as is:", error);
-        const sorted = mockProjects.sort((a,b) => (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!));
-        setAllProjects(sorted);
-      } finally {
-        setIsArranging(false);
-      }
+    // When language changes, update projects and reset filters
+    const fetchProjects = async () => {
+        const placeholderProjects = await getProjects(lang);
+        const mockProjects: Project[] = placeholderProjects.map((p) => ({
+            ...p,
+            engagementScore: Math.floor(Math.random() * (95 - 70 + 1) + 70),
+            visualAppealScore: Math.floor(Math.random() * (98 - 75 + 1) + 75),
+        }));
+        try {
+            const arranged = await smartProjectArrangement({ projects: mockProjects });
+            setClientProjects(arranged);
+        } catch (error) {
+            console.error("AI flow failed, using mock data as is:", error);
+            const sorted = mockProjects.sort((a,b) => (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!));
+            setClientProjects(sorted);
+        }
     };
-    arrangeProjects();
-  }, [lang]);
-  
-  useEffect(() => {
+    fetchProjects();
     setActiveFilter(lang === 'es' ? 'Todos' : 'All');
     setCurrentPage(1);
   }, [lang]);
 
-  const { featuredProjects, otherProjects, placeholderFeatured } = useMemo(() => {
-    const sourceProjects = isArranging ? [] : allProjects;
+
+  const { featuredProjects, otherProjects } = useMemo(() => {
     const featured: Project[] = [];
     const others: Project[] = [];
 
-    const sourceProjectMap = new Map(sourceProjects.map(p => [p.id, p]));
+    const projectMap = new Map(clientProjects.map(p => [p.id, p]));
 
     FEATURED_PROJECT_IDS.forEach(id => {
-      if (sourceProjectMap.has(id)) {
-        featured.push(sourceProjectMap.get(id)!);
-      }
+        const project = projectMap.get(id);
+        if (project) {
+            featured.push(project);
+            projectMap.delete(id);
+        }
     });
 
-    sourceProjects.forEach(p => {
-      if (!FEATURED_PROJECT_IDS.includes(p.id)) {
-        others.push(p);
-      }
-    });
+    others.push(...projectMap.values());
     
-    const [p1, p2, p3] = FEATURED_PROJECT_IDS;
+    // Ensure featured projects have a stable order
+    featured.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
 
     return { 
       featuredProjects: featured, 
-      otherProjects: others,
-      placeholderFeatured: [
-        allProjects.find(p => p.id === p1),
-        allProjects.find(p => p.id === p2),
-        allProjects.find(p => p.id === p3)
-      ].filter(Boolean) as Project[]
+      otherProjects: others
     };
-  }, [isArranging, allProjects, FEATURED_PROJECT_IDS]);
-
-  const projectsToDisplay = isArranging ? placeholderFeatured : featuredProjects;
-
+  }, [clientProjects, FEATURED_PROJECT_IDS]);
 
   const filteredProjects = useMemo(() => {
     const filterKey = lang === 'es' ? CATEGORIES_EN[CATEGORIES.indexOf(activeFilter)] || 'All' : activeFilter;
@@ -113,10 +97,13 @@ const ProjectsSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }
   const handlePageChange = (page: number) => {
     if (page >= 1 && page <= totalPages) {
       setCurrentPage(page);
-      document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const projectsElement = document.getElementById('projects');
+      if(projectsElement) {
+        projectsElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     }
   };
-
+  
   return (
     <section id="projects" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 md:px-6">
@@ -130,7 +117,7 @@ const ProjectsSection = ({ dictionary, lang }: { dictionary: any, lang: Locale }
         </div>
         
         <div className="flex flex-col gap-20 md:gap-32">
-          {projectsToDisplay.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <FeaturedProject key={project.id} project={project} index={index} dictionary={dictionary} />
           ))}
         </div>
