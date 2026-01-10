@@ -1,4 +1,6 @@
+'use client';
 
+import { useState } from 'react';
 import type { Project } from '@/lib/placeholder-images';
 import ProjectCard from '@/components/shared/project-card';
 import FeaturedProject from '@/components/shared/featured-project';
@@ -12,54 +14,60 @@ const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Develop
 const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding'];
 
 const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {
+  const [activeFilter, setActiveFilter] = useState(lang === 'es' ? 'Todos' : 'All');
+  const [currentPage, setCurrentPage] = useState(1);
   
   const CATEGORIES = lang === 'es' ? CATEGORIES_ES : CATEGORIES_EN;
-
   const FEATURED_PROJECT_IDS = ['21', '24', '23'];
 
+  // This logic now runs on the client with the server-provided arrangedProjects
   const featuredProjects: Project[] = [];
   const otherProjects: Project[] = [];
-  const projectMap = new Map(arrangedProjects.map(p => [p.id, p]));
-
-  FEATURED_PROJECT_IDS.forEach(id => {
-    const project = projectMap.get(id);
-    if (project) {
-      featuredProjects.push(project);
-      projectMap.delete(id);
-    }
-  });
-
-  otherProjects.push(...Array.from(projectMap.values()));
   
-  // Ensure featured projects have a stable order
+  if (arrangedProjects) {
+    const projectMap = new Map(arrangedProjects.map(p => [p.id, p]));
+
+    FEATURED_PROJECT_IDS.forEach(id => {
+      const project = projectMap.get(id);
+      if (project) {
+        featuredProjects.push(project);
+        projectMap.delete(id);
+      }
+    });
+    otherProjects.push(...Array.from(projectMap.values()));
+  }
+  
+  // Ensure featured projects have a stable order, even if AI changes it
   featuredProjects.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
 
+  const handleFilterChange = (filter: string) => {
+    setActiveFilter(filter);
+    setCurrentPage(1);
+  };
 
-  // This is a placeholder for the state that would be managed in a client component
-  const activeFilter = lang === 'es' ? 'Todos' : 'All';
-  const currentPage = 1;
+  const handlePageChange = (page: number) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
 
   const filteredProjects = (() => {
+    // Map the localized category back to the English key for filtering
     const filterKey = lang === 'es' ? CATEGORIES_EN[CATEGORIES.indexOf(activeFilter)] || 'All' : activeFilter;
     
     if (filterKey === 'All') {
       return otherProjects;
     }
-    return otherProjects.filter(p => p.category === filterKey);
+    // Make sure to handle potential mismatches if category names change
+    return otherProjects.filter(p => p.category === filterKey || (p.category === 'Corporate Website' && filterKey === 'Development'));
   })();
 
   const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);
 
-  const paginatedProjects = (() => {
-    const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
-    const endIndex = startIndex + PROJECTS_PER_PAGE;
-    return filteredProjects.slice(startIndex, endIndex);
-  })();
-
-  // The interactive parts will be re-enabled in a client component wrapper later
-  const handlePageChange = (page: number) => {
-    // This would be implemented in a client component
-  };
+  const paginatedProjects = filteredProjects.slice(
+    (currentPage - 1) * PROJECTS_PER_PAGE,
+    currentPage * PROJECTS_PER_PAGE
+  );
   
   return (
     <section id="projects" className="py-20 md:py-32 bg-background">
@@ -90,13 +98,12 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
           </p>
         </div>
 
-        {/* Client-side interactivity for filters and pagination will be restored */}
         <div className="mb-12 flex flex-wrap justify-center gap-2">
           {CATEGORIES.map(tech => (
             <Button
               key={tech}
               variant={activeFilter === tech ? 'default' : 'outline'}
-              // onClick={() => setActiveFilter(tech)}
+              onClick={() => handleFilterChange(tech)}
               className="rounded-full transition-all"
             >
               {tech}
@@ -116,16 +123,17 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
               <PaginationContent>
                 <PaginationItem>
                   <PaginationPrevious 
-                    href="#"
+                    onClick={() => handlePageChange(currentPage - 1)}
                     aria-disabled={currentPage === 1}
-                    className={currentPage === 1 ? 'pointer-events-none opacity-50' : ''}
+                    className={currentPage === 1 ? 'pointer-events-none opacity-50 cursor-not-allowed' : 'cursor-pointer'}
                   />
                 </PaginationItem>
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
                   <PaginationItem key={page}>
                     <PaginationLink 
-                      href="#"
+                      onClick={() => handlePageChange(page)}
                       isActive={currentPage === page}
+                      className="cursor-pointer"
                     >
                       {page}
                     </PaginationLink>
@@ -133,9 +141,9 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
                 ))}
                 <PaginationItem>
                   <PaginationNext 
-                    href="#"
+                     onClick={() => handlePageChange(currentPage + 1)}
                      aria-disabled={currentPage === totalPages}
-                     className={currentPage === totalPages ? 'pointer-events-none opacity-50' : ''}
+                     className={currentPage === totalPages ? 'pointer-events-none opacity-50 cursor-not-allowed' : 'cursor-pointer'}
                   />
                 </PaginationItem>
               </PaginationContent>

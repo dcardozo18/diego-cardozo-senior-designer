@@ -23,6 +23,7 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
     arrangedProjects = await smartProjectArrangement({ projects: mockProjects });
   } catch (error) {
     console.error("AI flow failed on server, using mock data as is:", error);
+    // Fallback to simple sorting if AI fails
     arrangedProjects = mockProjects.sort((a,b) => (b.engagementScore! + b.visualAppealScore!) - (a.engagementScore! + a.visualAppealScore!));
   }
 
