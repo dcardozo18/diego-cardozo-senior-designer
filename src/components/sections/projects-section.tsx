@@ -21,7 +21,6 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
   const CATEGORIES = lang === 'es' ? CATEGORIES_ES : CATEGORIES_EN;
   const FEATURED_PROJECT_IDS = ['21', '24', '23'];
 
-  // This logic now runs on the client with the server-provided arrangedProjects
   const featuredProjects: Project[] = [];
   const otherProjects: Project[] = [];
 
@@ -34,7 +33,6 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
         otherProjects.push(p);
       }
     });
-    // Ensure featured projects have a stable order, even if AI changes it
     featuredProjects.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
   }
   
@@ -56,7 +54,6 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
     const filterKey = lang === 'es' ? CATEGORIES_EN[CATEGORIES_ES.indexOf(activeFilter)] || 'All' : activeFilter;
     
     return otherProjects.filter(p => {
-        // Handle multiple categories or aliases for filtering
         const categoryMatch = p.category === filterKey;
         const aliasMatch = (p.category === 'Corporate Website' && filterKey === 'Development');
         return categoryMatch || aliasMatch;
