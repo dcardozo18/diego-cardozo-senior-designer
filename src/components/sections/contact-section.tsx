@@ -141,14 +141,14 @@ const ContactSection = ({ dictionary }: { dictionary: any }) => {
                     <Mail className="h-6 w-6 text-primary mt-1" />
                     <div>
                         <h4 className="font-semibold text-lg">{dictionary.contact.email_title}</h4>
-                        <a href="mailto:diegocardozo.ux@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">diegocardozo.ux@gmail.com</a>
+                        <a href="mailto:dcardozo18@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">dcardozo18@gmail.com</a>
                     </div>
                 </div>
                  <div className="flex items-start gap-4">
                     <Phone className="h-6 w-6 text-primary mt-1" />
                     <div>
                         <h4 className="font-semibold text-lg">{dictionary.contact.phone_title}</h4>
-                        <p className="text-muted-foreground">+57 312 345 6789</p>
+                        <p className="text-muted-foreground">+57 311 226 1900</p>
                     </div>
                 </div>
                  <div className="flex items-start gap-4">
@@ -163,12 +163,12 @@ const ContactSection = ({ dictionary }: { dictionary: any }) => {
                  <h4 className="font-semibold text-lg mb-4">{dictionary.contact.social_title}</h4>
                  <div className="flex gap-4">
                      <Button variant="outline" size="icon" asChild>
-                         <a href="https://www.linkedin.com/in/diegocardozo-ux/" target="_blank" aria-label="LinkedIn">
+                         <a href="https://www.linkedin.com/in/diegocardozosenioruiuxdeisgner/" target="_blank" aria-label="LinkedIn">
                              <Linkedin className="h-5 w-5"/>
                          </a>
                      </Button>
                      <Button variant="outline" size="icon" asChild>
-                         <a href="https://www.behance.net/diegocardozo" target="_blank" aria-label="Behance">
+                         <a href="https://www.behance.net/dcardozo18" target="_blank" aria-label="Behance">
                              <Code className="h-5 w-5"/>
                          </a>
                      </Button>
