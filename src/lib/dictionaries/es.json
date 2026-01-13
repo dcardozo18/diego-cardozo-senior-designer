@@ -46,8 +46,9 @@
   "contact": {
     "title_part1": "Construyamos algo genial",
     "title_part2": "juntos.",
-    "subtitle": "Actualmente estoy disponible para oportunidades de diseño remoto. ¡Envíame un mensaje!",
+    "subtitle": "Actualmente estoy disponible para oportunidades de diseño remoto en toda América Latina y más allá. ¡Envíame un mensaje o encuéntrame en las redes sociales!",
     "form": {
+      "title": "Envíame un mensaje",
       "name_label": "Nombre Completo",
       "name_placeholder": "Juan Pérez",
       "email_label": "Correo Electrónico",
@@ -66,7 +67,13 @@
         "message_min": "El mensaje debe tener al menos 10 caracteres.",
         "message_max": "El mensaje no puede superar los 500 caracteres."
       }
-    }
+    },
+    "info_title": "Información de Contacto",
+    "email_title": "Correo Electrónico",
+    "phone_title": "Teléfono",
+    "location_title": "Ubicación",
+    "location_text": "Bogotá, Colombia (Disponible para trabajo remoto)",
+    "social_title": "Encuéntrame en"
   },
   "footer": {
     "copy": "Diego Cardozo. Todos los derechos reservados."

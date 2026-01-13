@@ -46,8 +46,9 @@
   "contact": {
     "title_part1": "Let’s build something great",
     "title_part2": "together.",
-    "subtitle": "I’m currently available for remote design opportunities across Latin America and beyond. Drop me a line!",
+    "subtitle": "I’m currently available for remote design opportunities across Latin America and beyond. Drop me a line or find me on social media!",
     "form": {
+      "title": "Send me a message",
       "name_label": "Full Name",
       "name_placeholder": "John Doe",
       "email_label": "Email Address",
@@ -66,7 +67,13 @@
         "message_min": "Message must be at least 10 characters.",
         "message_max": "Message must be no longer than 500 characters."
       }
-    }
+    },
+    "info_title": "Contact Information",
+    "email_title": "Email",
+    "phone_title": "Phone",
+    "location_title": "Location",
+    "location_text": "Bogotá, Colombia (Remote available)",
+    "social_title": "Find me on"
   },
   "footer": {
     "copy": "Diego Cardozo. All rights reserved."
