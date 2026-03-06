@@ -22,7 +22,8 @@
       "problem": "The legacy platform was fragmented, had high cart abandonment rates, and lacked a mobile-first approach, frustrating users during complex booking processes.",
       "objective": "To create a unified, high-performance booking ecosystem that simplifies the travel planning process and increases conversion rates by 25%.",
       "strategy": "We implemented a modular design system and a streamlined 'one-click' checkout flow. We also integrated real-time data APIs to provide instant pricing and availability.",
-      "impact": "Launched a seamless multi-device platform that resulted in a 30% increase in mobile bookings and significantly improved user satisfaction scores."
+      "impact": "Launched a seamless multi-device platform that resulted in a 30% increase in mobile bookings and significantly improved user satisfaction scores.",
+      "decisions": "Implemented a modular 'Step-by-Step' booking flow to reduce cognitive load, resulting in a 15% decrease in drop-off rates during the critical payment stage."
     },
     {
       "id": "24",
@@ -46,7 +47,8 @@
       "problem": "Data overload was preventing users from identifying actionable insights. The interface was also inconsistent across different modules.",
       "objective": "Design a centralized dashboard that prioritizes key performance indicators (KPIs) and ensures 100% WCAG AA compliance.",
       "strategy": "Developed a custom icon library and a color-coded data visualization strategy using D3.js. We prioritized 'Progressive Disclosure' to hide complex data until needed.",
-      "impact": "Reduced user training time by 40% and improved task completion rates within the platform by 50%."
+      "impact": "Reduced user training time by 40% and improved task completion rates within the platform by 50%.",
+      "decisions": "Adopted a 'Mobile-First' approach for the critical dashboard alerts, ensuring that performance drops are notified and readable on any device instantly."
     },
     {
       "id": "23",
@@ -69,7 +71,8 @@
       "problem": "The existing catalog was difficult to navigate, and the wholesale pricing logic was confusing for new digital customers.",
       "objective": "Simplify the wholesale purchasing journey and create a trustworthy digital environment for high-value tech transactions.",
       "strategy": "Conducted stakeholder interviews and user testing to map the specific needs of bulk buyers. Implemented advanced search filters and a dynamic pricing engine on Shopify.",
-      "impact": "A 20% growth in new customer acquisition within the first quarter and a drastic reduction in support calls related to order processing."
+      "impact": "A 20% growth in new customer acquisition within the first quarter and a drastic reduction in support calls related to order processing.",
+      "decisions": "Integrated a 'Quick Reorder' feature based on user purchase history, simplifying the recurring bulk buying process for long-term B2B clients."
     },
     {
       "id": "22",

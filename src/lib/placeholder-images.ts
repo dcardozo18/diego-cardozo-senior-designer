@@ -21,6 +21,7 @@ export const ProjectSchema = z.object({
   objective: z.string().optional(),
   strategy: z.string().optional(),
   impact: z.string().optional(),
+  decisions: z.string().optional(),
   // Optional scores for AI arrangement
   engagementScore: z.number().optional(),
   visualAppealScore: z.number().optional(),

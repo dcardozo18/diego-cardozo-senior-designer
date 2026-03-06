@@ -18,7 +18,8 @@
       "problem": "La plataforma anterior estaba fragmentada, tenía altas tasas de abandono del carrito y carecía de un enfoque móvil, frustrando a los usuarios.",
       "objective": "Crear un ecosistema de reservas unificado y de alto rendimiento que simplifique el proceso de planificación y aumente las conversiones en un 25%.",
       "strategy": "Implementamos un sistema de diseño modular y un flujo de pago 'one-click'. Integramos APIs de datos en tiempo real para precios y disponibilidad instantánea.",
-      "impact": "Lanzamiento de una plataforma multidispositivo que resultó en un aumento del 30% en reservas móviles y una mejora significativa en la satisfacción del usuario."
+      "impact": "Lanzamiento de una plataforma multidispositivo que resultó en un aumento del 30% en reservas móviles y una mejora significativa en la satisfacción del usuario.",
+      "decisions": "Implementación de un flujo de reserva modular paso a paso para reducir la carga cognitiva, resultando en una disminución del 15% en las tasas de abandono durante la etapa crítica de pago."
     },
     {
       "id": "24",
@@ -37,7 +38,8 @@
       "problem": "La sobrecarga de datos impedía a los usuarios identificar ideas accionables. La interfaz era inconsistente entre los diferentes módulos.",
       "objective": "Diseñar un dashboard centralizado que priorice los indicadores clave de rendimiento (KPIs) y garantice el 100% de cumplimiento WCAG AA.",
       "strategy": "Desarrollamos una biblioteca de iconos personalizados y una estrategia de visualización de datos codificada por colores. Priorizamos la 'Divulgación Progresiva'.",
-      "impact": "Reducción del tiempo de capacitación del usuario en un 40% y mejora de las tasas de finalización de tareas en un 50%."
+      "impact": "Reducción del tiempo de capacitación del usuario en un 40% y mejora de las tasas de finalización de tareas en un 50%.",
+      "decisions": "Adopción de un enfoque 'Mobile-First' para las alertas críticas del dashboard, asegurando que las caídas de rendimiento se notifiquen y sean legibles en cualquier dispositivo al instante."
     },
     {
       "id": "23",
@@ -56,7 +58,8 @@
       "problem": "El catálogo existente era difícil de navegar y la lógica de precios al por mayor era confusa para los nuevos clientes digitales.",
       "objective": "Simplificar el viaje de compra mayorista y crear un entorno digital confiable para transacciones tecnológicas de alto valor.",
       "strategy": "Realizamos entrevistas con stakeholders y pruebas de usuario. Implementamos filtros de búsqueda avanzada y un motor de precios dinámicos en Shopify.",
-      "impact": "Crecimiento del 20% en la adquisición de nuevos clientes en el primer trimestre y reducción drástica de llamadas de soporte."
+      "impact": "Crecimiento del 20% en la adquisición de nuevos clientes en el primer trimestre y reducción drástica de llamadas de soporte.",
+      "decisions": "Integración de una función de 'Recompra Rápida' basada en el historial de compras de usuario, simplificando el proceso recurrente de compra al por mayor para clientes B2B a largo plazo."
     },
     {
       "id": "22",
