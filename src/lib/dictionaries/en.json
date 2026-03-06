@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Home",
@@ -41,7 +42,13 @@
     "goal": "Goal",
     "my_role": "My Role",
     "tools": "Tools",
-    "view_live_site": "View Live Site"
+    "view_live_site": "View Live Site",
+    "overview": "Overview",
+    "problem": "The Problem",
+    "objective": "Objective",
+    "strategy": "Strategy",
+    "impact": "Impact",
+    "case_study": "Case Study"
   },
   "contact": {
     "title_part1": "Let’s build something great",

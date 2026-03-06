@@ -17,7 +17,59 @@
       "liveSiteUrl": "https://www.aviatur.com/",
       "imageUrl": "/aviatur.png",
       "imageHint": "travel agency platform",
-      "category": "E-commerce"
+      "category": "E-commerce",
+      "overview": "Aviatur required a complete digital transformation to stay competitive in a rapidly evolving travel market. The project involved re-engineering the booking engine for flights, hotels, and packages.",
+      "problem": "The legacy platform was fragmented, had high cart abandonment rates, and lacked a mobile-first approach, frustrating users during complex booking processes.",
+      "objective": "To create a unified, high-performance booking ecosystem that simplifies the travel planning process and increases conversion rates by 25%.",
+      "strategy": "We implemented a modular design system and a streamlined 'one-click' checkout flow. We also integrated real-time data APIs to provide instant pricing and availability.",
+      "impact": "Launched a seamless multi-device platform that resulted in a 30% increase in mobile bookings and significantly improved user satisfaction scores."
+    },
+    {
+      "id": "24",
+      "name": "Orbit Group Partners - Dashboard",
+      "client": "Orbit Group Partners",
+      "industry": "Coaching & Productivity",
+      "description": "A comprehensive coaching platform designed to help users achieve their goals by tracking real-time performance metrics.",
+      "goal": "To overhaul the user experience by implementing WCAG accessibility standards and creating a robust Design System.",
+      "role": "Lead UI/UX Designer, Design System Architecture",
+      "tools": [
+        "Figma",
+        "Angular",
+        "D3.js",
+        "TypeScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/orbit.png",
+      "imageHint": "dashboard analytics",
+      "category": "App Design",
+      "overview": "Orbit is a B2B SaaS platform that needed to scale its analytics capabilities while maintaining a user-friendly interface for non-technical managers.",
+      "problem": "Data overload was preventing users from identifying actionable insights. The interface was also inconsistent across different modules.",
+      "objective": "Design a centralized dashboard that prioritizes key performance indicators (KPIs) and ensures 100% WCAG AA compliance.",
+      "strategy": "Developed a custom icon library and a color-coded data visualization strategy using D3.js. We prioritized 'Progressive Disclosure' to hide complex data until needed.",
+      "impact": "Reduced user training time by 40% and improved task completion rates within the platform by 50%."
+    },
+    {
+      "id": "23",
+      "name": "Tecnologia Mayorista",
+      "client": "Tecnologia Mayorista",
+      "industry": "E-commerce & Technology",
+      "description": "A comprehensive e-commerce platform for a major technology wholesaler.",
+      "goal": "To boost online sales by optimizing the user experience through in-depth user research and customer journey mapping.",
+      "role": "UX Research, Customer Journey Mapping, UI Design",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "User Research"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/tecnologia.png",
+      "imageHint": "technology store ecommerce",
+      "category": "E-commerce",
+      "overview": "A digital storefront overhaul for one of Colombia's largest tech distributors, aiming to transition traditional B2B buyers to an online-first model.",
+      "problem": "The existing catalog was difficult to navigate, and the wholesale pricing logic was confusing for new digital customers.",
+      "objective": "Simplify the wholesale purchasing journey and create a trustworthy digital environment for high-value tech transactions.",
+      "strategy": "Conducted stakeholder interviews and user testing to map the specific needs of bulk buyers. Implemented advanced search filters and a dynamic pricing engine on Shopify.",
+      "impact": "A 20% growth in new customer acquisition within the first quarter and a drastic reduction in support calls related to order processing."
     },
     {
       "id": "22",
@@ -39,49 +91,12 @@
       "category": "Web Design"
     },
     {
-      "id": "23",
-      "name": "Tecnologia Mayorista",
-      "client": "Tecnologia Mayorista",
-      "industry": "E-commerce & Technology",
-      "description": "A comprehensive e-commerce platform for a major technology wholesaler, offering a wide range of products from computers and cell phones to home and office devices.",
-      "goal": "To boost online sales by optimizing the user experience through in-depth user research and customer journey mapping. The key objective was to create an intuitive, high-converting shopping experience on the Shopify platform.",
-      "role": "UX Research, Customer Journey Mapping, UI Design",
-      "tools": [
-        "Figma",
-        "Shopify",
-        "User Research"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/tecnologia.png",
-      "imageHint": "technology store ecommerce",
-      "category": "E-commerce"
-    },
-    {
-      "id": "24",
-      "name": "Orbit Group Partners - Dashboard",
-      "client": "Orbit Group Partners",
-      "industry": "Coaching & Productivity",
-      "description": "A comprehensive coaching platform designed to help users achieve their goals and complete tasks by tracking real-time performance metrics.",
-      "goal": "To overhaul the user experience by implementing WCAG accessibility standards and creating a robust Design System. The objective was to ensure greater application consistency and accelerate component implementation for the development team.",
-      "role": "Lead UI/UX Designer, Design System Architecture",
-      "tools": [
-        "Figma",
-        "Angular",
-        "D3.js",
-        "TypeScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/orbit.png",
-      "imageHint": "dashboard analytics",
-      "category": "App Design"
-    },
-    {
       "id": "1",
       "name": "Punto Comedia",
       "client": "Punto Comedia",
       "industry": "E-commerce",
       "description": "An e-commerce platform dedicated to selling tickets for premier stand-up comedy events.",
-      "goal": "Conduct market research to define the target audience, then prototype and design a user-centric experience, and adapt the final design for a seamless WooCommerce integration.",
+      "goal": "Conduct market research to define the target audience, then prototype and design a user-centric experience.",
       "role": "UX Research, UI Design, Prototyping",
       "tools": [
         "Figma",
@@ -99,7 +114,7 @@
       "client": "Best Deal Vacations",
       "industry": "Travel",
       "description": "A full-service travel agency website offering flights, hotels, car rentals, and vacation packages.",
-      "goal": "Define the user experience from the ground up through user research and prototyping, delivering a high-fidelity design for a competitive travel booking platform.",
+      "goal": "Define the user experience from the ground up through user research and prototyping.",
       "role": "UX Research, Prototyping, UI Design",
       "tools": [
         "Figma",
@@ -118,7 +133,7 @@
       "client": "BIT-C",
       "industry": "Technology",
       "description": "Corporate website for a technology development and consulting firm, showcasing their services and expertise.",
-      "goal": "Create a professional and modern online presence that effectively communicates the company's value proposition and technical capabilities.",
+      "goal": "Create a professional and modern online presence that effectively communicates the company's value proposition.",
       "role": "UI/UX Design, WordPress Implementation",
       "tools": [
         "Figma",
@@ -136,7 +151,7 @@
       "client": "Water Inc.",
       "industry": "Health & Wellness",
       "description": "A clean and engaging landing page designed to showcase the key features of a new mobile wellness application.",
-      "goal": "Drive user acquisition by creating a visually appealing and informative landing page that clearly presents the app's benefits.",
+      "goal": "Drive user acquisition by creating a visually appealing and informative landing page.",
       "role": "UI Design, Frontend Development",
       "tools": [
         "Figma",
@@ -172,8 +187,8 @@
       "name": "Hamunet Jewelry E-commerce",
       "client": "Hamunet",
       "industry": "E-commerce / Jewelry",
-      "description": "Online jewelry store showcasing handcrafted and modern pieces with a premium shopping experience, secure checkout, and product filtering.",
-      "goal": "Sell jewelry online through a visually elegant, trustworthy, and conversion-focused e-commerce platform.",
+      "description": "Online jewelry store showcasing handcrafted and modern pieces with a premium shopping experience.",
+      "goal": "Sell jewelry online through a visually elegant, trustworthy, and conversion-focused platform.",
       "role": "E-commerce Development & UI/UX",
       "tools": [
         "Woocommerce",
@@ -208,8 +223,8 @@
       "name": "SkillTech IT Support Website",
       "client": "SkillTech",
       "industry": "IT Services",
-      "description": "Corporate website for an IT support and computer maintenance company, highlighting technical services, support plans, and contact channels.",
-      "goal": "Generate leads and build trust by showcasing reliable computer support and maintenance services for individuals and businesses.",
+      "description": "Corporate website for an IT support and computer maintenance company.",
+      "goal": "Generate leads and build trust by showcasing reliable computer support and maintenance services.",
       "role": "UI/UX Design, Frontend Development",
       "tools": [
         "Figma",
@@ -319,8 +334,8 @@
       "name": "Bingo Mobile Game App UI",
       "client": "BingoPlay",
       "industry": "Gaming",
-      "description": "Mobile UI design for a bingo game app featuring interactive bingo cards, live draws, and player rewards.",
-      "goal": "Create a fun, intuitive, and engaging bingo experience that keeps players entertained and motivated.",
+      "description": "Mobile UI design for a bingo game app featuring interactive bingo cards.",
+      "goal": "Create a fun, intuitive, and engaging bingo experience that keeps players entertained.",
       "role": "UI/UX Design",
       "tools": [
         "Figma",

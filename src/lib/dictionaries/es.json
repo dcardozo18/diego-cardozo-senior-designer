@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Inicio",
@@ -41,7 +42,13 @@
     "goal": "Meta",
     "my_role": "Mi Rol",
     "tools": "Herramientas",
-    "view_live_site": "Ver Sitio en Vivo"
+    "view_live_site": "Ver Sitio en Vivo",
+    "overview": "Resumen",
+    "problem": "El Problema",
+    "objective": "Objetivo",
+    "strategy": "Estrategia",
+    "impact": "Impacto",
+    "case_study": "Caso de Estudio"
   },
   "contact": {
     "title_part1": "Construyamos algo genial",

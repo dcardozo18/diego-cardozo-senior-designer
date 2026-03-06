@@ -15,6 +15,12 @@ export const ProjectSchema = z.object({
   imageUrl: z.string(),
   imageHint: z.string(),
   category: z.string(),
+  // Strategic fields for infographic view
+  overview: z.string().optional(),
+  problem: z.string().optional(),
+  objective: z.string().optional(),
+  strategy: z.string().optional(),
+  impact: z.string().optional(),
   // Optional scores for AI arrangement
   engagementScore: z.number().optional(),
   visualAppealScore: z.number().optional(),
