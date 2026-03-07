@@ -13,9 +13,9 @@ function getLocale(request: NextRequest): string | undefined {
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
 
   try {
+    // Intentamos emparejar con los idiomas del navegador, pero caemos en el defaultLocale ('en')
     return matchLocale(languages, locales, i18n.defaultLocale);
   } catch (e) {
-    // If matching fails, return the default locale
     return i18n.defaultLocale;
   }
 }
@@ -23,23 +23,26 @@ function getLocale(request: NextRequest): string | undefined {
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Ignore paths for API, Next.js internals, and static files
+  // Ignorar archivos estáticos, imágenes y Next.js internals
   if (
     pathname.startsWith('/api') ||
     pathname.startsWith('/_next/static') ||
     pathname.startsWith('/_next/image') ||
-    pathname.includes('.') // This will catch files like .png, .svg, .pdf, etc.
+    pathname.includes('.') ||
+    pathname === '/favicon.ico'
   ) {
     return;
   }
 
+  // Verificar si el pathname ya tiene un locale válido
   const pathnameIsMissingLocale = i18n.locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
-  // Redirect if there is no locale
+  // Si no tiene locale, redirigir al detectado (que por defecto será 'en')
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request);
+    const locale = getLocale(request) || i18n.defaultLocale;
+    
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
@@ -50,7 +53,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Matcher ignoring `/_next/` and `/api/` are good defaults.
-  // We handle all other static files inside the middleware function.
   matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };
