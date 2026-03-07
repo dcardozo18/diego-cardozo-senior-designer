@@ -1,4 +1,3 @@
-
 import { z } from 'zod';
 import type { Locale } from '../../i18n-config';
 
@@ -20,6 +19,7 @@ export const ProjectSchema = z.object({
   problem: z.string().optional(),
   objective: z.string().optional(),
   strategy: z.string().optional(),
+  uxImprovements: z.string().optional(),
   impact: z.string().optional(),
   decisions: z.string().optional(),
   // Optional scores for AI arrangement

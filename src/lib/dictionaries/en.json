@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Home",
@@ -47,6 +46,7 @@
     "problem": "The Problem",
     "objective": "Objective",
     "strategy": "Strategy",
+    "ux_improvements": "UX Improvements",
     "impact": "Impact",
     "key_decisions": "Key Decisions",
     "case_study": "Case Study"

@@ -18,12 +18,13 @@
       "imageUrl": "/aviatur.png",
       "imageHint": "travel agency platform",
       "category": "E-commerce",
-      "overview": "Aviatur, a leader in the Colombian travel market, faced the challenge of consolidating its vast catalog of flights, hotels, and tours into a unified digital experience. The legacy system was plagued by high technical debt and a fragmented user interface that led to significant drop-offs. The project's scope included a complete overhaul of the digital infrastructure, focusing on creating a scalable, high-performance ecosystem capable of handling millions of monthly searches while providing a personalized experience for diverse user segments, from solo travelers to corporate groups.",
+      "overview": "Aviatur, a leader in the Colombian travel market, faced the challenge of consolidating its vast catalog of flights, hotels, and tours into a unified digital experience. The legacy system was plagued by high technical debt and a fragmented user interface that led to significant drop-offs. The project's scope included a complete overhaul of the digital infrastructure, focusing on creating a scalable, high-performance ecosystem capable of handling millions of monthly searches while providing a personalized experience for diverse user segments.",
       "problem": "The primary pain point was a 'friction-heavy' booking engine. Users were overwhelmed by a non-intuitive information architecture, slow search results, and a checkout process that required excessive manual input. Mobile users, who represent over 60% of traffic, struggled with a non-responsive design that made completing a purchase nearly impossible on smaller screens. Additionally, the lack of real-time inventory synchronization caused frustration and lost sales due to price mismatches at the final payment stage.",
       "objective": "The main objective was to design and build a 'frictionless' multi-device booking platform that simplifies the travel planning process. Key performance indicators (KPIs) included increasing the conversion rate by 25%, reducing the average time-to-purchase by 40%, and achieving a 90% mobile-readiness score. We also aimed to implement a self-service module to decrease support call volume by 15% through better user onboarding and intuitive management tools.",
-      "strategy": "We adopted a 'Mobile-First' and 'Atomic Design' methodology. My strategy focused on 'Progressive Disclosure'—hiding complex filtering options until the user explicitly needed them to avoid cognitive overload. We implemented a unified design system that ensured visual consistency across all booking modules. Technically, we integrated high-speed search APIs with asynchronous loading states and custom skeleton screens to maintain a perception of speed. A critical part of the strategy was the 'Single-View' dashboard, where users could manage their entire itinerary in one place.",
-      "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months. Mobile conversion rates spiked by 50%, validating the responsive-first approach. User feedback highlighted the clarity of the new interface, and the agency saw a 20% reduction in customer support inquiries related to booking errors. The platform successfully modernized Aviatur's brand image, positioning them as a digital-first leader in the competitive OTA (Online Travel Agency) space.",
-      "decisions": "One of the most impactful decisions was replacing the traditional 5-step checkout with a dynamic 'Single-Page Checkout' that adaptively showed only relevant fields based on the selected services. I also decided to implement a 'Smart Suggestion' engine in the search bar that used historical data to predict destinations, which alone reduced search errors by 12%. Finally, we introduced a 'Price Lock' feature, allowing users to hold a fare for 24 hours, significantly reducing stress and increasing long-term conversion through retargeting."
+      "strategy": "We adopted a 'Mobile-First' and 'Atomic Design' methodology. My strategy focused on 'Progressive Disclosure'—hiding complex filtering options until the user explicitly needed them to avoid cognitive overload. We implemented a unified design system that ensured visual consistency across all booking modules. Technically, we integrated high-speed search APIs with asynchronous loading states and custom skeleton screens to maintain a perception of speed.",
+      "uxImprovements": "We implemented a 'Predictive Search' algorithm that reduced zero-result states by 40% and introduced a 'Floating Itinerary' sidebar that allows users to track their total budget in real-time without leaving the current selection page. We also simplified the complex hotel booking funnel by reducing the required form fields from 18 to 7, using intelligent defaults and geo-location data.",
+      "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months. Mobile conversion rates spiked by 50%, validating the responsive-first approach. User feedback highlighted the clarity of the new interface, and the agency saw a 20% reduction in customer support inquiries related to booking errors.",
+      "decisions": "One of the most impactful decisions was replacing the traditional 5-step checkout with a dynamic 'Single-Page Checkout' that adaptively showed only relevant fields based on the selected services. I also decided to implement a 'Smart Suggestion' engine in the search bar that used historical data to predict destinations, which alone reduced search errors by 12%."
     },
     {
       "id": "24",
@@ -43,12 +44,13 @@
       "imageUrl": "/orbit.png",
       "imageHint": "dashboard analytics",
       "category": "App Design",
-      "overview": "Orbit Group Partners provides executive-level coaching and productivity tools to global enterprises. Their platform, however, was struggling to translate complex behavioral data into actionable insights for managers. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership. The project required a deep understanding of organizational psychology and data visualization best practices to ensure that the interface not only displayed data but told a meaningful story about team health and individual growth.",
-      "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information, and critical performance alerts were often missed. Furthermore, the platform lacked basic accessibility features, alienating users with visual impairments and violating corporate compliance standards. Inconsistency in UI components across different modules led to a steep learning curve for new users.",
-      "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs). We aimed for 100% compliance with WCAG 2.1 AA standards. Our success metrics were defined by a 50% reduction in 'time-to-insight' (the time it takes a user to understand a metric) and a significant increase in daily active usage among senior leadership, who previously avoided the tool due to its complexity.",
-      "strategy": "I developed a comprehensive Design System from the ground up, utilizing a modular 'Grid System' and a carefully curated color palette designed specifically for data visualization clarity. The strategy relied heavily on 'Visual Hierarchy'—using size, color, and placement to guide the user's eye to the most critical metrics first. We integrated D3.js for interactive, real-time data visualizations that allowed users to 'drill down' into specifics without leaving the main view. A 'Contextual Help' system was also implemented to provide immediate guidance on complex metrics.",
-      "impact": "The redesigned platform was met with universal praise from Orbit's corporate clients. We achieved a 60% improvement in task completion speed and a 45% increase in user engagement scores. The platform became a selling point for Orbit's coaching services, directly contributing to a 20% growth in their SaaS subscription revenue. Most importantly, the dashboard successfully empowered managers to make data-driven decisions that improved overall team productivity.",
-      "decisions": "I made the strategic decision to adopt a 'Dark Mode' default for the dashboard to reduce eye strain for executives who spend long hours on the platform. I also implemented a 'Customizable Widget' system, allowing users to tailor their personal view to their specific management style. A key UX decision was the 'Metric Normalization' feature, which translated abstract coaching scores into a simple 0-100 scale, making it instantly understandable across different international departments."
+      "overview": "Orbit Group Partners provides executive-level coaching and productivity tools to global enterprises. Their platform was struggling to translate complex behavioral data into actionable insights for managers. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership. The project required a deep understanding of organizational psychology and data visualization best practices to ensure that the interface not only displayed data but told a meaningful story.",
+      "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information, and critical performance alerts were often missed. Furthermore, the platform lacked basic accessibility features, alienating users with visual impairments and violating corporate compliance standards. Inconsistency in UI components across different modules led to a steep learning curve.",
+      "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs). We aimed for 100% compliance with WCAG 2.1 AA standards. Our success metrics were defined by a 50% reduction in 'time-to-insight' and a significant increase in daily active usage among senior leadership, who previously avoided the tool due to its complexity.",
+      "strategy": "I developed a comprehensive Design System from the ground up, utilizing a modular 'Grid System' and a carefully curated color palette designed specifically for data visualization clarity. The strategy relied heavily on 'Visual Hierarchy'—using size, color, and placement to guide the user's eye to the most critical metrics first. We integrated D3.js for interactive, real-time data visualizations that allowed users to 'drill down' into specifics without leaving the main view.",
+      "uxImprovements": "Redesigned the entire data visualization engine to support 'High-Contrast' accessibility modes and introduced a 'Notification Center' that uses NLP to categorize and prioritize critical alerts. We also implemented a 'Guided Tour' for new users that reduced onboarding time by 60%, and added 'Direct Actions' from charts allowing managers to schedule coaching sessions with one click.",
+      "impact": "The redesigned platform was met with universal praise from Orbit's corporate clients. We achieved a 60% improvement in task completion speed and a 45% increase in user engagement scores. The platform became a selling point for Orbit's coaching services, directly contributing to a 20% growth in their SaaS subscription revenue.",
+      "decisions": "I made the strategic decision to adopt a 'Dark Mode' default for the dashboard to reduce eye strain for executives who spend long hours on the platform. I also implemented a 'Customizable Widget' system, allowing users to tailor their personal view to their specific management style. A key UX decision was the 'Metric Normalization' feature, which translated abstract coaching scores into a simple 0-100 scale."
     },
     {
       "id": "23",
@@ -67,305 +69,13 @@
       "imageUrl": "/tecnologia.png",
       "imageHint": "technology store ecommerce",
       "category": "E-commerce",
-      "overview": "Tecnologia Mayorista is a dominant player in the tech distribution market in Colombia. As part of their digital transformation, they needed to move from a traditional, manual wholesale ordering process to a modern, automated B2B e-commerce platform. I led the UX strategy and UI design, focusing on the unique needs of bulk buyers who value speed, accuracy, and transparent pricing. The project involved mapping complex B2B purchasing workflows and translating them into a seamless digital experience on the Shopify Plus platform.",
-      "problem": "The transition from offline to online was hindered by an antiquated ordering system. Wholesale buyers were frustrated by the inability to see dynamic pricing based on their order volume, the lack of real-time stock levels, and a cumbersome search process for technical products. The previous site was not optimized for mobile, which was a critical failure for warehouse managers and small business owners who needed to order on the go. The 'Time to Order' was too high, leading many long-term clients to stick to inefficient phone orders.",
+      "overview": "Tecnologia Mayorista is a dominant player in the tech distribution market in Colombia. As part of their digital transformation, they needed to move from a traditional, manual wholesale ordering process to a modern, automated B2B e-commerce platform. I led the UX strategy and UI design, focusing on the unique needs of bulk buyers who value speed, accuracy, and transparent pricing. The project involved mapping complex B2B purchasing workflows and translating them into a seamless digital experience on Shopify Plus.",
+      "problem": "The transition from offline to online was hindered by an antiquated ordering system. Wholesale buyers were frustrated by the inability to see dynamic pricing based on their order volume, the lack of real-time stock levels, and a cumbersome search process for technical products. The previous site was not optimized for mobile, which was a critical failure for warehouse managers. The 'Time to Order' was too high, leading many long-term clients to stick to inefficient phone orders.",
       "objective": "Our goal was to transition 40% of traditional phone/email orders to the online platform within the first year. We aimed to simplify the wholesale journey, reducing the time to place a bulk order by 60%. Specific objectives included implementing a multi-tier pricing engine, an advanced technical search system, and a robust mobile experience that mirrored the efficiency of the desktop version.",
-      "strategy": "My strategy was rooted in deep 'Stakeholder Interviews' and 'User Shadowing' to understand the daily routines of bulk buyers. We designed a 'Quick Order' interface that allowed users to add hundreds of SKUs to their cart via a CSV upload or a rapid search-and-add tool. The UI focused on high-density information display, prioritizing specifications and stock status over purely aesthetic imagery. We built a custom pricing logic into the Shopify backend that calculated discounts in real-time as the user increased quantities, providing immediate gratification and transparency.",
-      "impact": "The results exceeded all expectations. Within nine months, 55% of all wholesale orders were being placed online, surpassing our initial target. The average order value (AOV) increased by 15% due to the transparent tier-pricing engine, which encouraged buyers to 'hit the next level' for better discounts. Support calls related to stock availability dropped by 70%, and the platform became the primary growth driver for the company, enabling them to scale their operations without increasing headcount in sales support.",
-      "decisions": "A pivotal decision was to prioritize a 'Matrix Order' view for products with multiple variants (like RAM or storage sizes), allowing buyers to enter quantities for all variants on a single screen rather than clicking into each one. I also decided to implement a 'Wholesale-only' access layer, ensuring that sensitive bulk pricing was only visible to verified business partners. Finally, we introduced an 'Automated Quote' feature that allowed users to convert their cart into a PDF quote for internal approval, bridging the gap between digital ordering and corporate procurement processes."
-    },
-    {
-      "id": "22",
-      "name": "Hotel Las Islas",
-      "client": "Hotel Las Islas",
-      "industry": "Hospitality",
-      "description": "Elegant and immersive website for a luxury island hotel, focusing on stunning visuals and easy booking.",
-      "goal": "Capture the essence of the luxury retreat and increase direct bookings through a seamless user experience.",
-      "role": "UI/UX Design, Frontend Development",
-      "tools": [
-        "WordPress",
-        "Figma",
-        "CSS",
-        "PHP"
-      ],
-      "liveSiteUrl": "https://www.lasislas.com.co/",
-      "imageUrl": "/islas.png",
-      "imageHint": "luxury hotel website",
-      "category": "Web Design"
-    },
-    {
-      "id": "1",
-      "name": "Punto Comedia",
-      "client": "Punto Comedia",
-      "industry": "E-commerce",
-      "description": "An e-commerce platform dedicated to selling tickets for premier stand-up comedy events.",
-      "goal": "Conduct market research to define the target audience, then prototype and design a user-centric experience.",
-      "role": "UX Research, UI Design, Prototyping",
-      "tools": [
-        "Figma",
-        "WooCommerce",
-        "WordPress"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/puntocomedia.png",
-      "imageHint": "comedy club stage",
-      "category": "E-commerce"
-    },
-    {
-      "id": "2",
-      "name": "Best Deal Vacations",
-      "client": "Best Deal Vacations",
-      "industry": "Travel",
-      "description": "A full-service travel agency website offering flights, hotels, car rentals, and vacation packages.",
-      "goal": "Define the user experience from the ground up through user research and prototyping.",
-      "role": "UX Research, Prototyping, UI Design",
-      "tools": [
-        "Figma",
-        "HTML",
-        "CSS",
-        "User Research"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/bestdeal.png",
-      "imageHint": "tropical beach destination",
-      "category": "Web Design"
-    },
-    {
-      "id": "3",
-      "name": "BIT-C Tech Consulting",
-      "client": "BIT-C",
-      "industry": "Technology",
-      "description": "Corporate website for a technology development and consulting firm, showcasing their services and expertise.",
-      "goal": "Create a professional and modern online presence that effectively communicates the company's value proposition.",
-      "role": "UI/UX Design, WordPress Implementation",
-      "tools": [
-        "Figma",
-        "WordPress",
-        "PHP"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/bitc.png",
-      "imageHint": "modern office consulting",
-      "category": "Web Design"
-    },
-    {
-      "id": "4",
-      "name": "Water App Landing Page",
-      "client": "Water Inc.",
-      "industry": "Health & Wellness",
-      "description": "A clean and engaging landing page designed to showcase the key features of a new mobile wellness application.",
-      "goal": "Drive user acquisition by creating a visually appealing and informative landing page.",
-      "role": "UI Design, Frontend Development",
-      "tools": [
-        "Figma",
-        "HTML",
-        "CSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/water.png",
-      "imageHint": "water splash app",
-      "category": "App Design"
-    },
-    {
-      "id": "6",
-      "name": "Fashion E-commerce",
-      "client": "Chic & Co.",
-      "industry": "E-commerce",
-      "description": "Shopify store for a fashion brand with a modern grid layout and animations.",
-      "goal": "Provide a seamless shopping experience and increase brand loyalty.",
-      "role": "E-commerce Development, UI Design",
-      "tools": [
-        "Shopify",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/fashion.jpeg",
-      "imageHint": "fashion ecommerce",
-      "category": "E-commerce"
-    },
-    {
-      "id": "7",
-      "name": "Hamunet Jewelry E-commerce",
-      "client": "Hamunet",
-      "industry": "E-commerce / Jewelry",
-      "description": "Online jewelry store showcasing handcrafted and modern pieces with a premium shopping experience.",
-      "goal": "Sell jewelry online through a visually elegant, trustworthy, and conversion-focused platform.",
-      "role": "E-commerce Development & UI/UX",
-      "tools": [
-        "Woocommerce",
-        "Tailwind CSS",
-        "Liquid"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/hamunet.jpeg",
-      "imageHint": "jewelry ecommerce",
-      "category": "E-commerce"
-    },
-    {
-      "id": "8",
-      "name": "Real Estate Landing Page",
-      "client": "Prime Properties",
-      "industry": "Real Estate",
-      "description": "Modern landing page with dynamic property listings and contact form.",
-      "goal": "Generate leads for real estate agents.",
-      "role": "Web Design, Development",
-      "tools": [
-        "Webflow",
-        "Figma",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/realstate.jpeg",
-      "imageHint": "real estate",
-      "category": "Web Design"
-    },
-    {
-      "id": "9",
-      "name": "SkillTech IT Support Website",
-      "client": "SkillTech",
-      "industry": "IT Services",
-      "description": "Corporate website for an IT support and computer maintenance company.",
-      "goal": "Generate leads and build trust by showcasing reliable computer support and maintenance services.",
-      "role": "UI/UX Design, Frontend Development",
-      "tools": [
-        "Figma",
-        "HTML",
-        "Tailwind CSS",
-        "WordPress"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/skilltech.jpeg",
-      "imageHint": "computer repair it support",
-      "category": "Development"
-    },
-    {
-      "id": "10",
-      "name": "Startup Dashboard UI",
-      "client": "Innovate LLC",
-      "industry": "SaaS",
-      "description": "Admin dashboard for a startup with charts and data visualization.",
-      "goal": "Create an intuitive and powerful tool for data analysis.",
-      "role": "UI/UX Design",
-      "tools": [
-        "Angular",
-        "Figma",
-        "Bootstrap"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/dashboard.jpeg",
-      "imageHint": "data dashboard",
-      "category": "App Design"
-    },
-    {
-      "id": "11",
-      "name": "Wake Up Conferences",
-      "client": "Tech Summit 2025",
-      "industry": "Events",
-      "description": "One-page website for a tech conference with animations and schedule.",
-      "goal": "Drive ticket sales and provide event information.",
-      "role": "Web Design, Interaction Design",
-      "tools": [
-        "Framer",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/wakeup.png",
-      "imageHint": "tech conference",
-      "category": "Web Design"
-    },
-    {
-      "id": "13",
-      "name": "Travel Blog Website",
-      "client": "Wanderlust Chronicles",
-      "industry": "Travel",
-      "description": "WordPress travel blog with custom categories and Instagram integration.",
-      "goal": "Share travel stories and build a community of travelers.",
-      "role": "Web Development, SEO",
-      "tools": [
-        "WordPress",
-        "PHP",
-        "Tailwind"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/travel.jpeg",
-      "imageHint": "travel blog",
-      "category": "Development"
-    },
-    {
-      "id": "14",
-      "name": "Beauty Product Landing Page",
-      "client": "Glow Cosmetics",
-      "industry": "Beauty",
-      "description": "Landing page for a skincare brand created in Canva with Bootstrap styling.",
-      "goal": "Launch a new product and capture customer interest.",
-      "role": "UI Design, Frontend Development",
-      "tools": [
-        "Canva",
-        "Bootstrap",
-        "HTML",
-        "CSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/glow.jpeg",
-      "imageHint": "skincare product",
-      "category": "Branding"
-    },
-    {
-      "id": "16",
-      "name": "Mobile Food Ordering App",
-      "client": "YumYum",
-      "industry": "Food Tech",
-      "description": "App concept for food delivery with interactive menus and tracking UI.",
-      "goal": "Design a user-friendly mobile app for seamless food ordering.",
-      "role": "UI/UX Design",
-      "tools": [
-        "Figma",
-        "Framer",
-        "TailwindCSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/food.jpeg",
-      "imageHint": "food delivery",
-      "category": "App Design"
-    },
-    {
-      "id": "17",
-      "name": "Bingo Mobile Game App UI",
-      "client": "BingoPlay",
-      "industry": "Gaming",
-      "description": "Mobile UI design for a bingo game app featuring interactive bingo cards.",
-      "goal": "Create a fun, intuitive, and engaging bingo experience that keeps players entertained.",
-      "role": "UI/UX Design",
-      "tools": [
-        "Figma",
-        "Adobe XD"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/bingo.png",
-      "imageHint": "bingo game mobile app",
-      "category": "Game App Design"
-    },
-    {
-      "id": "20",
-      "name": "Mobile Dashboard for Finance",
-      "client": "CoinFlow",
-      "industry": "Fintech",
-      "description": "UI concept for a mobile finance tracker with analytics and charts.",
-      "goal": "Help users manage their finances with a clear and insightful mobile dashboard.",
-      "role": "UI/UX Design",
-      "tools": [
-        "Figma",
-        "TailwindCSS",
-        "Framer"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/finance.jpeg",
-      "imageHint": "finance dashboard",
-      "category": "App Design"
+      "strategy": "My strategy was rooted in deep 'Stakeholder Interviews' and 'User Shadowing' to understand the daily routines of bulk buyers. We designed a 'Quick Order' interface that allowed users to add hundreds of SKUs to their cart via a CSV upload or a rapid search-and-add tool. The UI focused on high-density information display, prioritizing specifications and stock status over purely aesthetic imagery.",
+      "uxImprovements": "Developed a custom 'Matrix View' for bulk quantity entry which eliminated the need for 15+ repetitive clicks during order configuration. We also integrated a 'Dynamic Stock Threshold' alert that notifies buyers when items are running low, and created a 'Repeat Order' dashboard that reduces checkout time for frequent buyers to less than 30 seconds.",
+      "impact": "The results exceeded all expectations. Within nine months, 55% of all wholesale orders were being placed online, surpassing our initial target. The average order value (AOV) increased by 15% due to the transparent tier-pricing engine, and support calls related to stock availability dropped by 70%, making the platform the primary growth driver.",
+      "decisions": "A pivotal decision was to prioritize a 'Matrix Order' view for products with multiple variants, allowing buyers to enter quantities for all variants on a single screen. I also decided to implement a 'Wholesale-only' access layer, ensuring that sensitive bulk pricing was only visible to verified business partners."
     }
   ]
 }

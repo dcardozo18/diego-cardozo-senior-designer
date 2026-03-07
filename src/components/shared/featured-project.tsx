@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -19,7 +18,8 @@ import {
   Layers,
   Search,
   PenTool,
-  Trophy
+  Trophy,
+  Sparkles
 } from 'lucide-react';
 import type { Project } from '@/lib/placeholder-images';
 import { Badge } from '../ui/badge';
@@ -88,7 +88,7 @@ const FeaturedProject = ({ project, index, dictionary }: FeaturedProjectProps) =
             <DialogContent className="max-w-6xl h-[92vh] p-0 overflow-hidden bg-background border-border">
               <ScrollArea className="h-full">
                 <div className="pb-20">
-                  {/* HERO SECTION - TIPO BANNER DE LA IMAGEN */}
+                  {/* HERO SECTION */}
                   <div className="relative h-[40vh] min-h-[300px] w-full flex items-center justify-center overflow-hidden">
                     <Image src={project.imageUrl} alt={project.name} fill className="object-cover opacity-20 blur-sm" />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background"></div>
@@ -101,7 +101,7 @@ const FeaturedProject = ({ project, index, dictionary }: FeaturedProjectProps) =
 
                   <div className="container max-w-5xl mx-auto px-6 space-y-24 mt-12">
                     
-                    {/* SECTION 1: ESTRATEGIA - DISEÑO EN FILAS Y COLUMNAS COMO "RECURSOS" */}
+                    {/* SECTION 1: OVERVIEW */}
                     <div className="space-y-8">
                       <div className="flex items-center gap-3 border-l-4 border-primary pl-4">
                          <Layers className="h-8 w-8 text-primary" />
@@ -124,7 +124,7 @@ const FeaturedProject = ({ project, index, dictionary }: FeaturedProjectProps) =
                       </div>
                     </div>
 
-                    {/* SECTION 2: ENTREGABLES / TOOLS - ESTILO "RECURSOS PARA INVERSIONISTAS" */}
+                    {/* SECTION 2: TOOLS & STRATEGY */}
                     <div className="space-y-10">
                        <div className="text-center">
                           <h3 className="text-3xl font-bold mb-4">{dictionary.projects.tools} & {dictionary.projects.strategy}</h3>
@@ -145,7 +145,7 @@ const FeaturedProject = ({ project, index, dictionary }: FeaturedProjectProps) =
                        </div>
                     </div>
 
-                    {/* SECTION 3: EL VIAJE (PROBLEM -> OBJECTIVE) - DISEÑO INFOGRÁFICO DE PASOS */}
+                    {/* SECTION 3: PROBLEM & OBJECTIVE */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                        <div className="bg-destructive/5 border border-destructive/20 p-8 rounded-3xl space-y-4">
                           <div className="flex items-center gap-3 text-destructive mb-2">
@@ -163,7 +163,23 @@ const FeaturedProject = ({ project, index, dictionary }: FeaturedProjectProps) =
                        </div>
                     </div>
 
-                    {/* SECTION 4: MÉTRICAS E IMPACTO - ESTILO "NUESTRAS CIFRAS" */}
+                    {/* SECTION 4: UX IMPROVEMENTS (NEW SECTION) */}
+                    {project.uxImprovements && (
+                      <div className="space-y-8">
+                        <div className="flex items-center gap-3 border-l-4 border-accent pl-4">
+                           <Sparkles className="h-8 w-8 text-accent" />
+                           <h3 className="text-3xl font-bold">{dictionary.projects.ux_improvements}</h3>
+                        </div>
+                        <Card className="border-border/50 bg-accent/5 p-8 rounded-[32px] overflow-hidden relative group">
+                          <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                          <p className="text-xl leading-relaxed text-foreground/90 relative z-10 font-medium">
+                            {project.uxImprovements}
+                          </p>
+                        </Card>
+                      </div>
+                    )}
+
+                    {/* SECTION 5: IMPACT */}
                     <div className="bg-card rounded-[40px] p-8 md:p-12 border border-border/50 shadow-sm overflow-hidden relative">
                        <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
                        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
@@ -177,7 +193,6 @@ const FeaturedProject = ({ project, index, dictionary }: FeaturedProjectProps) =
                              </p>
                           </div>
                           <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                             {/* MOCK METRICS BASED ON THE IMAGE STYLE */}
                              <div className="bg-background/80 backdrop-blur-sm p-6 rounded-2xl border flex items-center gap-4">
                                 <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center">
                                    <BarChart3 className="h-6 w-6 text-primary" />
@@ -218,7 +233,7 @@ const FeaturedProject = ({ project, index, dictionary }: FeaturedProjectProps) =
                        </div>
                     </div>
 
-                    {/* SECTION 5: DECISIONES CLAVE - ESTILO "ÚLTIMAS NOTICIAS" O BANNER FINAL */}
+                    {/* SECTION 6: KEY DECISIONS */}
                     {project.decisions && (
                       <div className="bg-primary p-1 rounded-[32px]">
                          <div className="bg-background rounded-[30px] p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
