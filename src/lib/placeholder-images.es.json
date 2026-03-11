@@ -1,4 +1,3 @@
-
 {
   "placeholderImages": [
     {
@@ -18,8 +17,8 @@
       "problem": "El principal punto de dolor era un motor de reservas con 'fricción' excesiva. Los usuarios se veían abrumados por una arquitectura de información poco intuitiva y resultados de búsqueda lentos. Los usuarios móviles luchaban con un diseño no responsivo.",
       "objective": "El objetivo principal fue diseñar y construir una plataforma de reservas multidispositivo 'sin fricciones' que simplificara la planificación de viajes. Los KPIs incluyeron aumentar la tasa de conversión en un 25%.",
       "strategy": "Adoptamos una metodología 'Mobile-First' y 'Atomic Design'. Mi estrategia se centró en la 'Divulgación Progresiva', ocultando opciones de filtrado complejas hasta que el usuario las necesitara.",
-      "uxImprovements": "Rediseñamos el flujo de pago de un proceso fragmentado de varios pasos a una interfaz de página única optimizada, reduciendo eficazmente la fricción y el abandono del carrito en un 30%. Simplificamos la página de resultados de búsqueda.",
-      "impact": "El relanzamiento resultó en un aumento transformador del 35% en las reservas en línea en los primeros seis meses. Las tasas de conversión móvil se dispararon un 50%.",
+      "uxImprovements": "Eliminamos por completo el proceso de pago tradicional de 5 pasos y lo reemplazamos por un 'Pago de Página Única' dinámico que muestra solo los campos relevantes de forma adaptativa. Esto redujo la fricción de pago en un 40%. También simplificamos las páginas de productos técnicos agrupando especificaciones en secciones colapsables y fáciles de leer.",
+      "impact": "El relanzamiento resultó en un aumento transformador del 35% en las reservas en línea en los primeros seis meses. Las tasas de conversión móvil se dispararon un 50%, validando el enfoque centrado en el rendimiento y la reducción de fricción.",
       "decisions": "Una de las decisiones más impactantes fue reemplazar el pago tradicional de 5 pasos por un 'Pago en una Sola Página' dinámico que mostraba solo los campos relevantes según los servicios elegidos."
     },
     {
@@ -39,9 +38,9 @@
       "problem": "El dashboard existente sufría de 'Fatiga de Datos'. Los ejecutivos recibían muros de números brutos y gráficos estáticos que requerían interpretación manual. No había una jerarquía clara de información.",
       "objective": "El objetivo central fue diseñar un dashboard centralizado, accesible y altamente intuitivo que priorizara los Indicadores Clave de Desempeño (KPIs).",
       "strategy": "Desarrollé un Sistema de Diseño integral desde cero, utilizando un 'Sistema de Cuadrícula' modular y una paleta de colores curada específicamente para la claridad.",
-      "uxImprovements": "Eliminamos la 'Fatiga de Datos' reestructurando completamente el diseño del dashboard para priorizar los KPIs centrales. Reemplazamos tablas de datos complejas con barras de progreso visuales intuitivas.",
+      "uxImprovements": "Para combatir la 'Fatiga de Datos', reemplazamos las tablas densas por barras de progreso visuales intuitivas y alertas de estado codificadas por colores que resaltan las tareas críticas. También implementamos un sistema de 'Widgets Personalizables' que permite a los ejecutivos fijar sus métricas más relevantes al inicio, reduciendo significativamente el tiempo de análisis.",
       "impact": "Logramos una mejora del 60% en la velocidad de finalización de tareas y un aumento del 45% en las puntuaciones de compromiso del usuario.",
-      "decisions": "Tomé la decisión estratégica de adoptar un 'Modo Oscuro' por defecto para reducir la fatiga visual de los ejecutivos."
+      "decisions": "Tomé la decisión estratégica de adoptar un 'Modo Oscuro' por defecto para reducir la fatiga visual de los ejecutivos. También implementé un sistema de widgets personalizables."
     },
     {
       "id": "23",
@@ -60,7 +59,7 @@
       "problem": "La transición de lo analógico a lo digital se veía obstaculizada por un sistema de pedidos anticuado. Los compradores mayoristas estaban frustrados por la incapacidad de ver precios dinámicos basados en volumen.",
       "objective": "Nuestro objetivo fue transicionar el 40% de los pedidos tradicionales de teléfono/email a la plataforma en línea en el primer año. Buscamos simplificar el viaje mayorista.",
       "strategy": "Mi estrategia se basó en profundas 'Entrevistas con Interesados' y 'Observación de Usuarios'. Diseñamos una interfaz de 'Pedido Rápido' para carga de archivos CSV.",
-      "uxImprovements": "Optimizamos la ruta de compra B2B introduciendo una interfaz de 'Selección en Matriz' para pedidos masivos, reduciendo los clics necesarios en un 60%. Simplificamos las páginas de productos técnicos.",
+      "uxImprovements": "Optimizamos la ruta de compra al por mayor introduciendo una interfaz de 'Selección en Matriz' para productos con múltiples variantes. Esto permite a los compradores ingresar cantidades de todas las tallas o colores en una sola pantalla, reduciendo los clics en un 60%. También añadimos un botón de 'Pedido Rápido' en la página de inicio, reconociendo que los clientes mayoristas suelen comprar los mismos artículos repetidamente.",
       "impact": "En nueve meses, el 55% de todos los pedidos mayoristas se realizaban en línea, superando nuestro objetivo inicial. El valor promedio de pedido (AOV) aumentó un 15%.",
       "decisions": "Una decisión fundamental fue priorizar una vista de 'Pedido de Matriz' para productos con múltiples variantes, permitiendo a los compradores ingresar cantidades de forma masiva."
     },
@@ -76,7 +75,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/legal/600/400",
       "imageHint": "sitio web firma abogados",
-      "category": "Diseño Web"
+      "category": "Web Design"
     },
     {
       "id": "26",
@@ -113,12 +112,12 @@
       "industry": "Tecnología",
       "description": "Una plataforma robusta de analíticas para monitoreo y reportes de datos en tiempo real.",
       "goal": "Simplificar conjuntos de datos complejos a través de herramientas de visualización intuitivas.",
-      "role": "Diseñador Full-stack",
+      "role": "Diseñador de Interfaz",
       "tools": ["React", "Tailwind", "D3.js"],
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/saas/600/400",
       "imageHint": "ui plataforma saas",
-      "category": "Desarrollo"
+      "category": "Development"
     }
   ]
 }

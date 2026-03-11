@@ -22,8 +22,8 @@
       "problem": "The primary pain point was a 'friction-heavy' booking engine. Users were overwhelmed by a non-intuitive information architecture, slow search results, and a checkout process that required excessive manual input. Mobile users struggled with a non-responsive design that made completing a purchase nearly impossible.",
       "objective": "The main objective was to design and build a 'frictionless' multi-device booking platform that simplifies the travel planning process. Key performance indicators (KPIs) included increasing the conversion rate by 25% and reducing the average time-to-purchase by 40%.",
       "strategy": "We adopted a 'Mobile-First' and 'Atomic Design' methodology. My strategy focused on 'Progressive Disclosure'—hiding complex filtering options until the user explicitly needed them to avoid cognitive overload.",
-      "uxImprovements": "Redesigned the checkout flow from a fragmented multi-step process to a streamlined single-page interface, effectively reducing friction and cart abandonment by 30%. Simplified the search results page by implementing a clear visual hierarchy that prioritizes price and availability.",
-      "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months. Mobile conversion rates spiked by 50%, validating the responsive-first approach.",
+      "uxImprovements": "We completely eliminated the traditional 5-step checkout process and replaced it with a dynamic 'Single-Page Checkout' that adaptively shows only relevant fields. This reduced checkout friction by 40%. We also simplified the technical product pages by visually grouping specifications into collapsible, easy-to-read sections.",
+      "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months. Mobile conversion rates spiked by 50%, validating the responsive-first approach and the reduction in checkout friction.",
       "decisions": "One of the most impactful decisions was replacing the traditional 5-step checkout with a dynamic 'Single-Page Checkout' that adaptively showed only relevant fields based on the selected services."
     },
     {
@@ -48,7 +48,7 @@
       "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information, and critical performance alerts were often missed.",
       "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs). We aimed for 100% compliance with WCAG 2.1 AA standards.",
       "strategy": "I developed a comprehensive Design System from the ground up, utilizing a modular 'Grid System' and a carefully curated color palette designed specifically for data visualization clarity.",
-      "uxImprovements": "Eliminated 'Data Fatigue' by completely restructuring the dashboard layout to prioritize core KPIs through an improved information architecture. We replaced complex tables with intuitive visual progress bars and color-coded status alerts.",
+      "uxImprovements": "To combat 'Data Fatigue', we replaced complex, data-heavy tables with intuitive visual progress bars and color-coded status alerts that highlight mission-critical tasks. We also implemented a 'Customizable Widget' system that allows executives to pin their most relevant metrics to the top of the dashboard, significantly reducing time-to-insight.",
       "impact": "The redesigned platform was met with universal praise. We achieved a 60% improvement in task completion speed and a 45% increase in user engagement scores.",
       "decisions": "I made the strategic decision to adopt a 'Dark Mode' default for the dashboard to reduce eye strain for executives. I also implemented a 'Customizable Widget' system."
     },
@@ -73,7 +73,7 @@
       "problem": "The transition from offline to online was hindered by an antiquated ordering system. Wholesale buyers were frustrated by the inability to see dynamic pricing based on their order volume and the lack of real-time stock levels.",
       "objective": "Our goal was to transition 40% of traditional phone/email orders to the online platform within the first year. We aimed to simplify the wholesale journey, reducing the time to place a bulk order by 60%.",
       "strategy": "My strategy was rooted in deep 'Stakeholder Interviews' and 'User Shadowing' to understand the daily routines of bulk buyers. We designed a 'Quick Order' interface for CSV uploads.",
-      "uxImprovements": "Optimized the wholesale purchasing path by introducing a 'Matrix Selection' UI for bulk orders, reducing the number of clicks required for large-scale purchases by 60%. Simplified technical product pages by visually grouping key specifications.",
+      "uxImprovements": "We optimized the purchasing path for bulk buyers by introducing a 'Matrix Selection' UI for multi-variant products. This allows buyers to enter quantities for all sizes or colors on a single screen, reducing clicks by 60%. We also added a 'Quick Reorder' button on the homepage, recognizing that wholesale customers often buy the same items repeatedly.",
       "impact": "Within nine months, 55% of all wholesale orders were being placed online, surpassing our initial target. The average order value (AOV) increased by 15% due to the transparent tier-pricing engine.",
       "decisions": "A pivotal decision was to prioritize a 'Matrix Order' view for products with multiple variants, allowing buyers to enter quantities for all variants on a single screen."
     },
