@@ -57,7 +57,7 @@
       "name": "Tecnologia Mayorista",
       "client": "Tecnologia Mayorista",
       "industry": "E-commerce & Technology",
-      "description": "A comprehensive e-commerce platform for a major technology wholesaler.",
+      "description": "A comprehensive e-commerce platform for a technology wholesaler.",
       "goal": "To boost online sales by optimizing the user experience through in-depth user research and customer journey mapping.",
       "role": "UX Research, Customer Journey Mapping, UI Design",
       "tools": [
@@ -78,73 +78,369 @@
       "decisions": "A pivotal decision was to prioritize a 'Matrix Order' view for products with multiple variants, allowing buyers to enter quantities for all variants on a single screen."
     },
     {
-      "id": "25",
-      "name": "Legal Group Bogotá - Redesign",
-      "client": "Legal Group",
-      "industry": "Legal Services",
-      "description": "A modern and professional website redesign for a leading law firm in Bogotá.",
-      "goal": "Improve digital presence and lead generation for specialized legal services.",
-      "role": "Lead UI Designer",
+      "id": "1",
+      "name": "Creative Agency Website",
+      "client": "Agency X",
+      "industry": "Creative",
+      "description": "Corporate website for a creative agency with motion effects and modern UI components.",
+      "goal": "Showcase creative works with high visual impact and smooth transitions.",
+      "role": "UI/UX Designer",
       "tools": [
         "Figma",
-        "Webflow"
+        "Framer",
+        "HTML",
+        "CSS",
+        "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/legal/600/400",
-      "imageHint": "law firm website",
+      "imageUrl": "https://picsum.photos/seed/agency/800/600",
+      "imageHint": "modern agency website",
       "category": "Web Design"
     },
     {
-      "id": "26",
-      "name": "EcoBrand - Visual Identity",
-      "client": "EcoBrand",
-      "industry": "Sustainability",
-      "description": "Complete branding and visual identity system for a sustainable packaging startup.",
-      "goal": "Create a recognizable and eco-friendly brand image that resonates with conscious consumers.",
-      "role": "Brand Designer",
+      "id": "2",
+      "name": "Handmade Products Store",
+      "client": "Artisans Co.",
+      "industry": "Retail",
+      "description": "Shopify e-commerce for handmade goods with a custom responsive theme.",
+      "goal": "Build an online presence for local artisans with a clean, focus-on-product design.",
+      "role": "E-commerce Specialist",
       "tools": [
-        "Adobe Illustrator",
-        "Figma"
+        "Shopify",
+        "Figma",
+        "Tailwind",
+        "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/brand/600/400",
-      "imageHint": "branding identity system",
+      "imageUrl": "https://picsum.photos/seed/handmade/800/600",
+      "imageHint": "handmade products store",
+      "category": "E-commerce"
+    },
+    {
+      "id": "3",
+      "name": "Restaurant Landing Page",
+      "client": "Fine Dining",
+      "industry": "Hospitality",
+      "description": "Landing page for a fine dining restaurant featuring menu sections and booking form.",
+      "goal": "Increase table reservations through an elegant and responsive landing page.",
+      "role": "Web Designer",
+      "tools": [
+        "Webflow",
+        "Adobe Photoshop",
+        "HTML",
+        "CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/restaurant/800/600",
+      "imageHint": "luxury restaurant website",
+      "category": "Web Design"
+    },
+    {
+      "id": "4",
+      "name": "Fitness App Marketing Site",
+      "client": "FitTrack",
+      "industry": "Health & Fitness",
+      "description": "Responsive one-page site promoting a mobile fitness app.",
+      "goal": "Drive app downloads using high-conversion marketing components.",
+      "role": "Marketing Designer",
+      "tools": [
+        "Framer",
+        "Figma",
+        "TailwindCSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/fitness/400/800",
+      "imageHint": "fitness app mobile",
+      "category": "App Design"
+    },
+    {
+      "id": "5",
+      "name": "Photographer Portfolio",
+      "client": "Studio Visual",
+      "industry": "Photography",
+      "description": "Minimalist portfolio for a photographer with fullscreen image galleries.",
+      "goal": "Provide a clean canvas for high-quality photographic work.",
+      "role": "UI Designer",
+      "tools": [
+        "Adobe XD",
+        "Webflow",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/photo/800/600",
+      "imageHint": "minimalist photographer portfolio",
+      "category": "Web Design"
+    },
+    {
+      "id": "6",
+      "name": "Fashion E-commerce",
+      "client": "Trend Moda",
+      "industry": "Fashion",
+      "description": "Shopify store for a fashion brand with a modern grid layout and animations.",
+      "goal": "Create a high-fashion shopping experience with seamless navigation.",
+      "role": "Shopify Developer",
+      "tools": [
+        "Shopify",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/fashion/800/600",
+      "imageHint": "fashion clothing store",
+      "category": "E-commerce"
+    },
+    {
+      "id": "7",
+      "name": "Digital Creators Blog",
+      "client": "Creator Hub",
+      "industry": "Media",
+      "description": "Blog platform for digital creators with custom post types and dark mode.",
+      "goal": "Build a robust content platform with a focus on typography and readability.",
+      "role": "Full-stack Designer",
+      "tools": [
+        "WordPress",
+        "Tailwind",
+        "PHP"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/blog/800/600",
+      "imageHint": "tech blog portal",
+      "category": "Development"
+    },
+    {
+      "id": "8",
+      "name": "Real Estate Landing Page",
+      "client": "Home Seekers",
+      "industry": "Real Estate",
+      "description": "Modern landing page with dynamic property listings and contact form.",
+      "goal": "Facilitate property inquiries through an intuitive search interface.",
+      "role": "UI/UX Designer",
+      "tools": [
+        "Webflow",
+        "Figma",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/realestate/800/600",
+      "imageHint": "real estate listings",
+      "category": "Web Design"
+    },
+    {
+      "id": "9",
+      "name": "Personal Branding Website",
+      "client": "Personal Project",
+      "industry": "Professional Services",
+      "description": "Personal portfolio website combining biography, projects, and contact form.",
+      "goal": "Establish a strong personal brand online.",
+      "role": "UI/UX Designer",
+      "tools": [
+        "Figma",
+        "HTML",
+        "Tailwind",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/personal/800/600",
+      "imageHint": "personal branding site",
+      "category": "Web Design"
+    },
+    {
+      "id": "10",
+      "name": "Startup Dashboard UI",
+      "client": "DataDash",
+      "industry": "Tech Startup",
+      "description": "Admin dashboard for a startup with charts and data visualization.",
+      "goal": "Simplify complex data sets for startup founders.",
+      "role": "Product Designer",
+      "tools": [
+        "Angular",
+        "Figma",
+        "Bootstrap"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/dashboard/800/600",
+      "imageHint": "startup dashboard ui",
+      "category": "Development"
+    },
+    {
+      "id": "11",
+      "name": "Event Promotion Page",
+      "client": "TechConf",
+      "industry": "Events",
+      "description": "One-page website for a tech conference with animations and schedule.",
+      "goal": "Increase ticket sales through an engaging event experience.",
+      "role": "Web Designer",
+      "tools": [
+        "Framer",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/event/800/600",
+      "imageHint": "conference landing page",
+      "category": "Web Design"
+    },
+    {
+      "id": "12",
+      "name": "Marketing Email Templates",
+      "client": "Campaign Pro",
+      "industry": "Marketing",
+      "description": "Responsive HTML email templates for promotional campaigns.",
+      "goal": "Improve click-through rates for email marketing.",
+      "role": "Email Designer",
+      "tools": [
+        "Adobe Illustrator",
+        "HTML",
+        "CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/email/800/600",
+      "imageHint": "marketing email design",
       "category": "Branding"
     },
     {
-      "id": "27",
-      "name": "Bingo Galaxy - UI Design",
-      "client": "GameStudio",
-      "industry": "Gaming",
-      "description": "High-fidelity UI design for a space-themed mobile bingo game.",
-      "goal": "Design an engaging and colorful interface for casual mobile gamers.",
-      "role": "Game UI Designer",
+      "id": "13",
+      "name": "Travel Blog Website",
+      "client": "Wanderlust",
+      "industry": "Travel",
+      "description": "WordPress travel blog with custom categories and Instagram integration.",
+      "goal": "Create an immersive storytelling platform for travel influencers.",
+      "role": "WordPress Developer",
       "tools": [
-        "Figma",
-        "Unity UI"
+        "WordPress",
+        "PHP",
+        "Tailwind"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
-      "imageHint": "mobile game ui design",
-      "category": "Game App Design"
+      "imageUrl": "https://picsum.photos/seed/travelblog/800/600",
+      "imageHint": "travel blog layout",
+      "category": "Web Design"
     },
     {
-      "id": "28",
-      "name": "SaaS Analytics Platform",
-      "client": "DataFlow",
-      "industry": "Technology",
-      "description": "A robust analytics platform for real-time data monitoring and reporting.",
-      "goal": "Simplify complex data sets through intuitive visualization tools.",
-      "role": "Full-stack Designer",
+      "id": "14",
+      "name": "Beauty Product Landing Page",
+      "client": "Glow Skin",
+      "industry": "Cosmetics",
+      "description": "Landing page for a skincare brand created in Canva with Bootstrap styling.",
+      "goal": "Showcase product benefits through a clean, aesthetic design.",
+      "role": "Visual Designer",
       "tools": [
-        "React",
-        "Tailwind",
-        "D3.js"
+        "Canva",
+        "Bootstrap",
+        "HTML",
+        "CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/saas/600/400",
-      "imageHint": "saas platform ui",
-      "category": "Development"
+      "imageUrl": "https://picsum.photos/seed/beauty/800/600",
+      "imageHint": "beauty product landing",
+      "category": "Web Design"
+    },
+    {
+      "id": "15",
+      "name": "Portfolio Redesign in Framer",
+      "client": "Design Studio",
+      "industry": "Design",
+      "description": "Personal portfolio built entirely in Framer showcasing motion design skills.",
+      "goal": "Highlight technical proficiency in no-code motion design.",
+      "role": "Motion Designer",
+      "tools": [
+        "Framer",
+        "Figma"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/framer/800/600",
+      "imageHint": "motion design portfolio",
+      "category": "Web Design"
+    },
+    {
+      "id": "16",
+      "name": "Mobile Food Ordering App",
+      "client": "Quick Bites",
+      "industry": "Food Delivery",
+      "description": "App concept for food delivery with interactive menus and tracking UI.",
+      "goal": "Simplify the food ordering process for mobile users.",
+      "role": "App Designer",
+      "tools": [
+        "Figma",
+        "Framer",
+        "TailwindCSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/foodapp/400/800",
+      "imageHint": "mobile food app",
+      "category": "App Design"
+    },
+    {
+      "id": "17",
+      "name": "Music Streaming App UI",
+      "client": "SoundCloud-ish",
+      "industry": "Entertainment",
+      "description": "Mobile UI design for a music streaming platform with playlists and player screen.",
+      "goal": "Enhance user engagement with a modern music player interface.",
+      "role": "UI Designer",
+      "tools": [
+        "Adobe XD",
+        "Figma"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/musicapp/400/800",
+      "imageHint": "music player ui",
+      "category": "App Design"
+    },
+    {
+      "id": "18",
+      "name": "E-learning Mobile Interface",
+      "client": "EduPlus",
+      "industry": "Education",
+      "description": "Mobile app UI for an e-learning platform with lessons and progress tracking.",
+      "goal": "Make mobile learning accessible and engaging.",
+      "role": "UX Designer",
+      "tools": [
+        "Figma",
+        "Framer",
+        "TailwindCSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/elearning/400/800",
+      "imageHint": "elearning app ui",
+      "category": "App Design"
+    },
+    {
+      "id": "19",
+      "name": "Travel Booking Mobile App",
+      "client": "GoExplore",
+      "industry": "Travel",
+      "description": "Mobile design for a travel app allowing users to search and book destinations.",
+      "goal": "Streamline destination discovery on mobile devices.",
+      "role": "Product Designer",
+      "tools": [
+        "Figma",
+        "Adobe Illustrator"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/travelapp/400/800",
+      "imageHint": "travel booking app",
+      "category": "App Design"
+    },
+    {
+      "id": "20",
+      "name": "Mobile Dashboard for Finance",
+      "client": "FinTracker",
+      "industry": "Finance",
+      "description": "UI concept for a mobile finance tracker with analytics and charts.",
+      "goal": "Provide clear financial insights for mobile users.",
+      "role": "UI Designer",
+      "tools": [
+        "Figma",
+        "TailwindCSS",
+        "Framer"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/financeapp/400/800",
+      "imageHint": "finance app dashboard",
+      "category": "App Design"
     }
   ]
 }
