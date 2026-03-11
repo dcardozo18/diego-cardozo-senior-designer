@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -13,13 +14,13 @@
       "imageUrl": "/aviatur.png",
       "imageHint": "plataforma de agencia de viajes",
       "category": "E-commerce",
-      "overview": "Aviatur, líder en el mercado de viajes en Colombia, enfrentaba el reto de consolidar su vasto catálogo de vuelos, hoteles y tours en una experiencia digital unificada. El sistema anterior sufría de una alta deuda técnica y una interfaz fragmentada que causaba abandonos significativos. El alcance del proyecto incluyó una revisión completa de la infraestructura digital, centrándose en crear un ecosistema escalable y de alto rendimiento capaz de manejar millones de búsquedas mensuales, proporcionando una experiencia personalizada.",
-      "problem": "El principal punto de dolor era un motor de reservas con 'fricción' excesiva. Los usuarios se veían abrumados por una arquitectura de información poco intuitiva, resultados de búsqueda lentos y un proceso de pago que requería demasiada entrada manual de datos. Los usuarios móviles, que representan más del 60% del tráfico, luchaban con un diseño no responsivo que hacía casi imposible completar una compra. Además, la falta de sincronización de inventario en tiempo real causaba frustración.",
-      "objective": "El objetivo principal fue diseñar y construir una plataforma de reservas multidispositivo 'sin fricciones' que simplificara la planificación de viajes. Los indicadores clave (KPIs) incluyeron aumentar la tasa de conversión en un 25%, reducir el tiempo promedio de compra en un 40% y lograr una puntuación de preparación móvil del 90%. También buscamos implementar un módulo de autoservicio para reducir el volumen de llamadas de soporte en un 15% mediante una mejor inducción.",
-      "strategy": "Adoptamos una metodología 'Mobile-First' y 'Atomic Design'. Mi estrategia se centró en la 'Divulgación Progresiva', ocultando opciones de filtrado complejas hasta que el usuario las necesitara para evitar la sobrecarga cognitiva. Implementamos un sistema de diseño unificado que garantizó la consistencia visual en todos los módulos. Técnicamente, integramos APIs de búsqueda de alta velocidad con estados de carga asíncronos y pantallas esqueleto personalizadas.",
-      "uxImprovements": "Rediseñamos el flujo de pago de un proceso fragmentado de varios pasos a una interfaz de página única optimizada, reduciendo eficazmente la fricción y el abandono del carrito en un 30%. Simplificamos la página de resultados de búsqueda implementando una jerarquía visual clara que prioriza el precio y la disponibilidad, disminuyendo la carga cognitiva. También redujimos el formulario de reserva de 18 a solo 7 campos esenciales.",
-      "impact": "El relanzamiento resultó en un aumento transformador del 35% en las reservas en línea en los primeros seis meses. Las tasas de conversión móvil se dispararon un 50%, validando el enfoque responsivo. Los comentarios de los usuarios destacaron la claridad de la nueva interfaz y la agencia vio una reducción del 20% en las consultas de soporte relacionadas con errores de reserva.",
-      "decisions": "Una de las decisiones más impactantes fue reemplazar el pago tradicional de 5 pasos por un 'Pago en una Sola Página' dinámico que mostraba solo los campos relevantes según los servicios elegidos. También decidí implementar un motor de 'Sugerencias Inteligentes' en la barra de búsqueda que utiliza datos históricos para predecir destinos, reduciendo los errores de búsqueda en un 12%."
+      "overview": "Aviatur, líder en el mercado de viajes en Colombia, enfrentaba el reto de consolidar su vasto catálogo de vuelos, hoteles y tours en una experiencia digital unificada. El sistema anterior sufría de una interfaz fragmentada que causaba abandonos significativos.",
+      "problem": "El principal punto de dolor era un motor de reservas con 'fricción' excesiva. Los usuarios se veían abrumados por una arquitectura de información poco intuitiva y resultados de búsqueda lentos. Los usuarios móviles luchaban con un diseño no responsivo.",
+      "objective": "El objetivo principal fue diseñar y construir una plataforma de reservas multidispositivo 'sin fricciones' que simplificara la planificación de viajes. Los KPIs incluyeron aumentar la tasa de conversión en un 25%.",
+      "strategy": "Adoptamos una metodología 'Mobile-First' y 'Atomic Design'. Mi estrategia se centró en la 'Divulgación Progresiva', ocultando opciones de filtrado complejas hasta que el usuario las necesitara.",
+      "uxImprovements": "Rediseñamos el flujo de pago de un proceso fragmentado de varios pasos a una interfaz de página única optimizada, reduciendo eficazmente la fricción y el abandono del carrito en un 30%. Simplificamos la página de resultados de búsqueda.",
+      "impact": "El relanzamiento resultó en un aumento transformador del 35% en las reservas en línea en los primeros seis meses. Las tasas de conversión móvil se dispararon un 50%.",
+      "decisions": "Una de las decisiones más impactantes fue reemplazar el pago tradicional de 5 pasos por un 'Pago en una Sola Página' dinámico que mostraba solo los campos relevantes según los servicios elegidos."
     },
     {
       "id": "24",
@@ -33,14 +34,14 @@
       "liveSiteUrl": "#",
       "imageUrl": "/orbit.png",
       "imageHint": "dashboard de analíticas",
-      "category": "App Design",
-      "overview": "Orbit Group Partners proporciona herramientas de coaching y productividad a nivel ejecutivo para empresas globales. Su plataforma anterior tenía dificultades para traducir datos de comportamiento complejos en ideas accionables. Dirigí la transformación del diseño de su dashboard principal de SaaS, centrándome en crear un 'centro de comando' de alta fidelidad para el liderazgo. El proyecto requiré una comprensión profunda de la psicología organizacional y las mejores prácticas de visualización de datos.",
-      "problem": "El dashboard existente sufría de 'Fatiga de Datos'. Los ejecutivos recibían muros de números brutos y gráficos estáticos que requerían interpretación manual. No había una jerarquía clara de información y las alertas de rendimiento críticas a menudo se pasaban por alto. Además, la plataforma carecía de funciones de accesibilidad, alienando a usuarios con discapacidades visuales y violando estándares de cumplimiento corporativo.",
-      "objective": "El objetivo central fue diseñar un dashboard centralizado, accesible y altamente intuitivo que priorizara los Indicadores Clave de Desempeño (KPIs). Buscamos el cumplimiento total de los estándares WCAG 2.1 AA. Nuestras métricas de éxito se definieron por una reducción del 50% en el 'tiempo para obtener información' y un aumento significativo en el uso activo diario entre el liderazgo senior.",
-      "strategy": "Desarrollé un Sistema de Diseño integral desde cero, utilizando un 'Sistema de Cuadrícula' modular y una paleta de colores curada específicamente para la claridad en visualización de datos. La estrategia se basó en la 'Jerarquía Visual', usando tamaño y color para guiar el ojo del usuario a las métricas más críticas. Integramos D3.js para visualizaciones interactivas en tiempo real que permiten a los usuarios profundizar en detalles.",
-      "uxImprovements": "Eliminamos la 'Fatiga de Datos' reestructurando completamente el diseño del dashboard para priorizar los KPIs centrales mediante una arquitectura de información mejorada. Reemplazamos tablas de datos complejas con barras de progreso visuales intuitivas y alertas de estado codificadas por colores, permitiendo a los ejecutivos captar las tendencias de rendimiento de un vistazo. Redujimos el ruido visual en un 40% mediante un enfoque UI minimalista.",
-      "impact": "La plataforma rediseñada fue recibida con elogios por los clientes corporativos de Orbit. Logramos una mejora del 60% en la velocidad de finalización de tareas y un aumento del 45% en las puntuaciones de compromiso del usuario. La plataforma se convirtió en un punto de venta para los servicios de Orbit, contribuyendo directamente a un crecimiento del 20% en sus ingresos por suscripciones SaaS.",
-      "decisions": "Tomé la decisión estratégica de adoptar un 'Modo Oscuro' por defecto para reducir la fatiga visual de los ejecutivos que pasan largas horas en la plataforma. También implementé un sistema de 'Widgets Personalizables', permitiendo a los usuarios adaptar su vista personal a su estilo de gestión. Una decisión clave de UX fue la función de 'Normalización de Métricas', que tradujo puntuaciones de coaching abstractas en una escala simple."
+      "category": "Diseño App",
+      "overview": "Orbit Group Partners proporciona herramientas de coaching y productividad a nivel ejecutivo. Dirigí la transformación del diseño de su dashboard principal de SaaS, centrándome en crear un 'centro de comando' de alta fidelidad.",
+      "problem": "El dashboard existente sufría de 'Fatiga de Datos'. Los ejecutivos recibían muros de números brutos y gráficos estáticos que requerían interpretación manual. No había una jerarquía clara de información.",
+      "objective": "El objetivo central fue diseñar un dashboard centralizado, accesible y altamente intuitivo que priorizara los Indicadores Clave de Desempeño (KPIs).",
+      "strategy": "Desarrollé un Sistema de Diseño integral desde cero, utilizando un 'Sistema de Cuadrícula' modular y una paleta de colores curada específicamente para la claridad.",
+      "uxImprovements": "Eliminamos la 'Fatiga de Datos' reestructurando completamente el diseño del dashboard para priorizar los KPIs centrales. Reemplazamos tablas de datos complejas con barras de progreso visuales intuitivas.",
+      "impact": "Logramos una mejora del 60% en la velocidad de finalización de tareas y un aumento del 45% en las puntuaciones de compromiso del usuario.",
+      "decisions": "Tomé la decisión estratégica de adoptar un 'Modo Oscuro' por defecto para reducir la fatiga visual de los ejecutivos."
     },
     {
       "id": "23",
@@ -55,13 +56,69 @@
       "imageUrl": "/tecnologia.png",
       "imageHint": "tienda de tecnología ecommerce",
       "category": "E-commerce",
-      "overview": "Tecnologia Mayorista es un actor dominante en el mercado de distribución tecnológica en Colombia. Como parte de su transformación digital, necesitaban pasar de un proceso de pedido manual y tradicional a una plataforma moderna de e-commerce B2B. Lideré la estrategia de UX y el diseño de UI, centrándome en las necesidades únicas de los compradores al por mayor que valoran la velocidad y la transparencia de precios. El proyecto implicó mapear flujos de trabajo de compra B2B complejos y traducirlos en una experiencia digital fluida.",
-      "problem": "La transición de lo analógico a lo digital se veía obstaculizada por un sistema de pedidos anticuado. Los compradores mayoristas estaban frustrados por la incapacidad de ver precios dinámicos basados en volumen, la falta de niveles de stock en tiempo real y un proceso de búsqueda engorroso para productos técnicos. El sitio anterior no estaba optimizado para móviles, un fallo crítico para los gerentes de almacén. El 'Tiempo de Pedido' era demasiado alto, lo que llevaba a pedidos ineficientes.",
-      "objective": "Nuestro objetivo fue transicionar el 40% de los pedidos tradicionales de teléfono/email a la plataforma en línea en el primer año. Buscamos simplificar el viaje mayorista, reduciendo el tiempo para realizar un pedido masivo en un 60%. Los objetivos específicos incluyeron implementar un motor de precios multinivel, un sistema de búsqueda técnica avanzada y una experiencia móvil robusta.",
-      "strategy": "Mi estrategia se basó en profundas 'Entrevistas con Interesados' y 'Observación de Usuarios' para entender sus rutinas diarias. Diseñamos una interfaz de 'Pedido Rápido' que permite añadir cientos de referencias al carrito mediante la carga de un CSV o una herramienta de búsqueda rápida. La UI se centró en la visualización de información de alta densidad, priorizando especificaciones y estado de stock sobre imágenes puramente estéticas.",
-      "uxImprovements": "Optimizamos la ruta de compra B2B introduciendo una interfaz de 'Selección en Matriz' para pedidos masivos, reduciendo los clics necesarios en un 60%. Simplificamos las páginas de productos técnicos agrupando visualmente las especificaciones clave, evitando la parálisis de decisión. Redujimos el proceso de pago de 4 pasos a una única página de revisión de alta eficiencia adaptada para adquisiciones corporativas.",
-      "impact": "Los resultados superaron las expectativas. En nueve meses, el 55% de todos los pedidos mayoristas se realizaban en línea, superando nuestro objetivo inicial. El valor promedio de pedido (AOV) aumentó un 15% debido al motor de precios por niveles, que animaba a los compradores a alcanzar el siguiente nivel de descuento. Las llamadas de soporte relacionadas con stock cayeron un 70% y la plataforma se convirtió en el principal motor de crecimiento.",
-      "decisions": "Una decisión fundamental fue priorizar una vista de 'Pedido de Matriz' para productos con múltiples variantes, permitiendo a los compradores ingresar cantidades para todas las variantes en una sola pantalla. También decidí implementar una capa de acceso de 'Solo Mayoristas', asegurando que los precios sensibles solo fueran visibles para socios verificados."
+      "overview": "Tecnologia Mayorista necesitaba pasar de un proceso de pedido manual a una plataforma moderna de e-commerce B2B. Lideré la estrategia de UX y el diseño de UI, centrándome en las necesidades de compradores al por mayor.",
+      "problem": "La transición de lo analógico a lo digital se veía obstaculizada por un sistema de pedidos anticuado. Los compradores mayoristas estaban frustrados por la incapacidad de ver precios dinámicos basados en volumen.",
+      "objective": "Nuestro objetivo fue transicionar el 40% de los pedidos tradicionales de teléfono/email a la plataforma en línea en el primer año. Buscamos simplificar el viaje mayorista.",
+      "strategy": "Mi estrategia se basó en profundas 'Entrevistas con Interesados' y 'Observación de Usuarios'. Diseñamos una interfaz de 'Pedido Rápido' para carga de archivos CSV.",
+      "uxImprovements": "Optimizamos la ruta de compra B2B introduciendo una interfaz de 'Selección en Matriz' para pedidos masivos, reduciendo los clics necesarios en un 60%. Simplificamos las páginas de productos técnicos.",
+      "impact": "En nueve meses, el 55% de todos los pedidos mayoristas se realizaban en línea, superando nuestro objetivo inicial. El valor promedio de pedido (AOV) aumentó un 15%.",
+      "decisions": "Una decisión fundamental fue priorizar una vista de 'Pedido de Matriz' para productos con múltiples variantes, permitiendo a los compradores ingresar cantidades de forma masiva."
+    },
+    {
+      "id": "25",
+      "name": "Legal Group Bogotá - Rediseño",
+      "client": "Legal Group",
+      "industry": "Servicios Legales",
+      "description": "Rediseño moderno y profesional para una firma de abogados líder en Bogotá.",
+      "goal": "Mejorar la presencia digital y la generación de leads para servicios legales especializados.",
+      "role": "Diseñador UI Principal",
+      "tools": ["Figma", "Webflow"],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/legal/600/400",
+      "imageHint": "sitio web firma abogados",
+      "category": "Diseño Web"
+    },
+    {
+      "id": "26",
+      "name": "EcoBrand - Identidad Visual",
+      "client": "EcoBrand",
+      "industry": "Sostenibilidad",
+      "description": "Sistema completo de branding e identidad visual para una startup de empaques sostenibles.",
+      "goal": "Crear una imagen de marca reconocible y ecológica que resuene con consumidores conscientes.",
+      "role": "Diseñador de Marca",
+      "tools": ["Adobe Illustrator", "Figma"],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/brand/600/400",
+      "imageHint": "sistema identidad branding",
+      "category": "Branding"
+    },
+    {
+      "id": "27",
+      "name": "Bingo Galaxy - Diseño UI",
+      "client": "GameStudio",
+      "industry": "Gaming",
+      "description": "Diseño de interfaz de alta fidelidad para un juego de bingo móvil con temática espacial.",
+      "goal": "Diseñar una interfaz atractiva y colorida para jugadores casuales de móviles.",
+      "role": "Diseñador Game UI",
+      "tools": ["Figma", "Unity UI"],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
+      "imageHint": "diseño ui juego móvil",
+      "category": "Diseño App Juego"
+    },
+    {
+      "id": "28",
+      "name": "Plataforma SaaS de Analíticas",
+      "client": "DataFlow",
+      "industry": "Tecnología",
+      "description": "Una plataforma robusta de analíticas para monitoreo y reportes de datos en tiempo real.",
+      "goal": "Simplificar conjuntos de datos complejos a través de herramientas de visualización intuitivas.",
+      "role": "Diseñador Full-stack",
+      "tools": ["React", "Tailwind", "D3.js"],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/saas/600/400",
+      "imageHint": "ui plataforma saas",
+      "category": "Desarrollo"
     }
   ]
 }

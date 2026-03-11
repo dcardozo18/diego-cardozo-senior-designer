@@ -18,13 +18,13 @@
       "imageUrl": "/aviatur.png",
       "imageHint": "travel agency platform",
       "category": "E-commerce",
-      "overview": "Aviatur, a leader in the Colombian travel market, faced the challenge of consolidating its vast catalog of flights, hotels, and tours into a unified digital experience. The legacy system was plagued by high technical debt and a fragmented user interface that led to significant drop-offs. The project's scope included a complete overhaul of the digital infrastructure, focusing on creating a scalable, high-performance ecosystem capable of handling millions of monthly searches while providing a personalized experience for diverse user segments.",
-      "problem": "The primary pain point was a 'friction-heavy' booking engine. Users were overwhelmed by a non-intuitive information architecture, slow search results, and a checkout process that required excessive manual input. Mobile users, who represent over 60% of traffic, struggled with a non-responsive design that made completing a purchase nearly impossible on smaller screens. Additionally, the lack of real-time inventory synchronization caused frustration and lost sales due to price mismatches at the final payment stage.",
-      "objective": "The main objective was to design and build a 'frictionless' multi-device booking platform that simplifies the travel planning process. Key performance indicators (KPIs) included increasing the conversion rate by 25%, reducing the average time-to-purchase by 40%, and achieving a 90% mobile-readiness score. We also aimed to implement a self-service module to decrease support call volume by 15% through better user onboarding and intuitive management tools.",
-      "strategy": "We adopted a 'Mobile-First' and 'Atomic Design' methodology. My strategy focused on 'Progressive Disclosure'—hiding complex filtering options until the user explicitly needed them to avoid cognitive overload. We implemented a unified design system that ensured visual consistency across all booking modules. Technically, we integrated high-speed search APIs with asynchronous loading states and custom skeleton screens to maintain a perception of speed.",
-      "uxImprovements": "Redesigned the checkout flow from a fragmented multi-step process to a streamlined single-page interface, effectively reducing friction and cart abandonment by 30%. Simplified the search results page by implementing a clear visual hierarchy that prioritizes price and availability, significantly lowering cognitive load for travelers. We also reduced the booking form from 18 to 7 essential fields, using intelligent defaults to speed up the process.",
-      "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months. Mobile conversion rates spiked by 50%, validating the responsive-first approach. User feedback highlighted the clarity of the new interface, and the agency saw a 20% reduction in customer support inquiries related to booking errors.",
-      "decisions": "One of the most impactful decisions was replacing the traditional 5-step checkout with a dynamic 'Single-Page Checkout' that adaptively showed only relevant fields based on the selected services. I also decided to implement a 'Smart Suggestion' engine in the search bar that used historical data to predict destinations, which alone reduced search errors by 12%."
+      "overview": "Aviatur, a leader in the Colombian travel market, faced the challenge of consolidating its vast catalog of flights, hotels, and tours into a unified digital experience. The legacy system was plagued by high technical debt and a fragmented user interface that led to significant drop-offs.",
+      "problem": "The primary pain point was a 'friction-heavy' booking engine. Users were overwhelmed by a non-intuitive information architecture, slow search results, and a checkout process that required excessive manual input. Mobile users struggled with a non-responsive design that made completing a purchase nearly impossible.",
+      "objective": "The main objective was to design and build a 'frictionless' multi-device booking platform that simplifies the travel planning process. Key performance indicators (KPIs) included increasing the conversion rate by 25% and reducing the average time-to-purchase by 40%.",
+      "strategy": "We adopted a 'Mobile-First' and 'Atomic Design' methodology. My strategy focused on 'Progressive Disclosure'—hiding complex filtering options until the user explicitly needed them to avoid cognitive overload.",
+      "uxImprovements": "Redesigned the checkout flow from a fragmented multi-step process to a streamlined single-page interface, effectively reducing friction and cart abandonment by 30%. Simplified the search results page by implementing a clear visual hierarchy that prioritizes price and availability.",
+      "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months. Mobile conversion rates spiked by 50%, validating the responsive-first approach.",
+      "decisions": "One of the most impactful decisions was replacing the traditional 5-step checkout with a dynamic 'Single-Page Checkout' that adaptively showed only relevant fields based on the selected services."
     },
     {
       "id": "24",
@@ -44,13 +44,13 @@
       "imageUrl": "/orbit.png",
       "imageHint": "dashboard analytics",
       "category": "App Design",
-      "overview": "Orbit Group Partners provides executive-level coaching and productivity tools to global enterprises. Their platform was struggling to translate complex behavioral data into actionable insights for managers. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership. The project required a deep understanding of organizational psychology and data visualization best practices to ensure that the interface not only displayed data but told a meaningful story.",
-      "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information, and critical performance alerts were often missed. Furthermore, the platform lacked basic accessibility features, alienating users with visual impairments and violating corporate compliance standards. Inconsistency in UI components across different modules led to a steep learning curve.",
-      "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs). We aimed for 100% compliance with WCAG 2.1 AA standards. Our success metrics were defined by a 50% reduction in 'time-to-insight' and a significant increase in daily active usage among senior leadership, who previously avoided the tool due to its complexity.",
-      "strategy": "I developed a comprehensive Design System from the ground up, utilizing a modular 'Grid System' and a carefully curated color palette designed specifically for data visualization clarity. The strategy relied heavily on 'Visual Hierarchy'—using size, color, and placement to guide the user's eye to the most critical metrics first. We integrated D3.js for interactive, real-time data visualizations that allowed users to 'drill down' into specifics without leaving the main view.",
-      "uxImprovements": "Eliminated 'Data Fatigue' by completely restructuring the dashboard layout to prioritize core KPIs through an improved information architecture. We replaced complex, text-heavy data tables with intuitive visual progress bars and color-coded status alerts, allowing executives to grasp critical performance trends at a glance. Visual noise was reduced by 40% through a minimalist UI approach, emphasizing only actionable insights.",
-      "impact": "The redesigned platform was met with universal praise from Orbit's corporate clients. We achieved a 60% improvement in task completion speed and a 45% increase in user engagement scores. The platform became a selling point for Orbit's coaching services, directly contributing to a 20% growth in their SaaS subscription revenue.",
-      "decisions": "I made the strategic decision to adopt a 'Dark Mode' default for the dashboard to reduce eye strain for executives who spend long hours on the platform. I also implemented a 'Customizable Widget' system, allowing users to tailor their personal view to their specific management style. A key UX decision was the 'Metric Normalization' feature, which translated abstract coaching scores into a simple 0-100 scale."
+      "overview": "Orbit Group Partners provides executive-level coaching and productivity tools to global enterprises. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership.",
+      "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information, and critical performance alerts were often missed.",
+      "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs). We aimed for 100% compliance with WCAG 2.1 AA standards.",
+      "strategy": "I developed a comprehensive Design System from the ground up, utilizing a modular 'Grid System' and a carefully curated color palette designed specifically for data visualization clarity.",
+      "uxImprovements": "Eliminated 'Data Fatigue' by completely restructuring the dashboard layout to prioritize core KPIs through an improved information architecture. We replaced complex tables with intuitive visual progress bars and color-coded status alerts.",
+      "impact": "The redesigned platform was met with universal praise. We achieved a 60% improvement in task completion speed and a 45% increase in user engagement scores.",
+      "decisions": "I made the strategic decision to adopt a 'Dark Mode' default for the dashboard to reduce eye strain for executives. I also implemented a 'Customizable Widget' system."
     },
     {
       "id": "23",
@@ -69,13 +69,82 @@
       "imageUrl": "/tecnologia.png",
       "imageHint": "technology store ecommerce",
       "category": "E-commerce",
-      "overview": "Tecnologia Mayorista is a dominant player in the tech distribution market in Colombia. As part of their digital transformation, they needed to move from a traditional, manual wholesale ordering process to a modern, automated B2B e-commerce platform. I led the UX strategy and UI design, focusing on the unique needs of bulk buyers who value speed, accuracy, and transparent pricing. The project involved mapping complex B2B purchasing workflows and translating them into a seamless digital experience on Shopify Plus.",
-      "problem": "The transition from offline to online was hindered by an antiquated ordering system. Wholesale buyers were frustrated by the inability to see dynamic pricing based on their order volume, the lack of real-time stock levels, and a cumbersome search process for technical products. The previous site was not optimized for mobile, which was a critical failure for warehouse managers. The 'Time to Order' was too high, leading many long-term clients to stick to inefficient phone orders.",
-      "objective": "Our goal was to transition 40% of traditional phone/email orders to the online platform within the first year. We aimed to simplify the wholesale journey, reducing the time to place a bulk order by 60%. Specific objectives included implementing a multi-tier pricing engine, an advanced technical search system, and a robust mobile experience that mirrored the efficiency of the desktop version.",
-      "strategy": "My strategy was rooted in deep 'Stakeholder Interviews' and 'User Shadowing' to understand the daily routines of bulk buyers. We designed a 'Quick Order' interface that allowed users to add hundreds of SKUs to their cart via a CSV upload or a rapid search-and-add tool. The UI focused on high-density information display, prioritizing specifications and stock status over purely aesthetic imagery.",
-      "uxImprovements": "Optimized the wholesale purchasing path by introducing a 'Matrix Selection' UI for bulk orders, reducing the number of clicks required for large-scale purchases by 60%. We simplified technical product pages by visually grouping key specifications, preventing decision paralysis among buyers. The checkout process was reduced from 4 steps to a single, high-efficiency review page tailored for B2B procurement.",
-      "impact": "The results exceeded all expectations. Within nine months, 55% of all wholesale orders were being placed online, surpassing our initial target. The average order value (AOV) increased by 15% due to the transparent tier-pricing engine, and support calls related to stock availability dropped by 70%, making the platform the primary growth driver.",
-      "decisions": "A pivotal decision was to prioritize a 'Matrix Order' view for products with multiple variants, allowing buyers to enter quantities for all variants on a single screen. I also decided to implement a 'Wholesale-only' access layer, ensuring that sensitive bulk pricing was only visible to verified business partners."
+      "overview": "Tecnologia Mayorista is a dominant player in the tech distribution market in Colombia. I led the UX strategy and UI design, focusing on the unique needs of bulk buyers who value speed, accuracy, and transparent pricing.",
+      "problem": "The transition from offline to online was hindered by an antiquated ordering system. Wholesale buyers were frustrated by the inability to see dynamic pricing based on their order volume and the lack of real-time stock levels.",
+      "objective": "Our goal was to transition 40% of traditional phone/email orders to the online platform within the first year. We aimed to simplify the wholesale journey, reducing the time to place a bulk order by 60%.",
+      "strategy": "My strategy was rooted in deep 'Stakeholder Interviews' and 'User Shadowing' to understand the daily routines of bulk buyers. We designed a 'Quick Order' interface for CSV uploads.",
+      "uxImprovements": "Optimized the wholesale purchasing path by introducing a 'Matrix Selection' UI for bulk orders, reducing the number of clicks required for large-scale purchases by 60%. Simplified technical product pages by visually grouping key specifications.",
+      "impact": "Within nine months, 55% of all wholesale orders were being placed online, surpassing our initial target. The average order value (AOV) increased by 15% due to the transparent tier-pricing engine.",
+      "decisions": "A pivotal decision was to prioritize a 'Matrix Order' view for products with multiple variants, allowing buyers to enter quantities for all variants on a single screen."
+    },
+    {
+      "id": "25",
+      "name": "Legal Group Bogotá - Redesign",
+      "client": "Legal Group",
+      "industry": "Legal Services",
+      "description": "A modern and professional website redesign for a leading law firm in Bogotá.",
+      "goal": "Improve digital presence and lead generation for specialized legal services.",
+      "role": "Lead UI Designer",
+      "tools": [
+        "Figma",
+        "Webflow"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/legal/600/400",
+      "imageHint": "law firm website",
+      "category": "Web Design"
+    },
+    {
+      "id": "26",
+      "name": "EcoBrand - Visual Identity",
+      "client": "EcoBrand",
+      "industry": "Sustainability",
+      "description": "Complete branding and visual identity system for a sustainable packaging startup.",
+      "goal": "Create a recognizable and eco-friendly brand image that resonates with conscious consumers.",
+      "role": "Brand Designer",
+      "tools": [
+        "Adobe Illustrator",
+        "Figma"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/brand/600/400",
+      "imageHint": "branding identity system",
+      "category": "Branding"
+    },
+    {
+      "id": "27",
+      "name": "Bingo Galaxy - UI Design",
+      "client": "GameStudio",
+      "industry": "Gaming",
+      "description": "High-fidelity UI design for a space-themed mobile bingo game.",
+      "goal": "Design an engaging and colorful interface for casual mobile gamers.",
+      "role": "Game UI Designer",
+      "tools": [
+        "Figma",
+        "Unity UI"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
+      "imageHint": "mobile game ui design",
+      "category": "Game App Design"
+    },
+    {
+      "id": "28",
+      "name": "SaaS Analytics Platform",
+      "client": "DataFlow",
+      "industry": "Technology",
+      "description": "A robust analytics platform for real-time data monitoring and reporting.",
+      "goal": "Simplify complex data sets through intuitive visualization tools.",
+      "role": "Full-stack Designer",
+      "tools": [
+        "React",
+        "Tailwind",
+        "D3.js"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/saas/600/400",
+      "imageHint": "saas platform ui",
+      "category": "Development"
     }
   ]
 }
