@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -11,8 +10,28 @@ import { Separator } from '@/components/ui/separator';
 import type { Locale } from '../../../i18n-config';
 
 const PROJECTS_PER_PAGE = 6;
-const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding', 'Game App Design', 'Corporate Website'];
-const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding', 'Diseño App Juego', 'Web Corporativa'];
+const CATEGORIES_EN = [
+  'All', 
+  'Game App Design', 
+  'E-commerce', 
+  'Corporate Website', 
+  'Travel Platform', 
+  'Dashboard', 
+  'Mobile App', 
+  'Web App', 
+  'Luxury Website'
+];
+const CATEGORIES_ES = [
+  'Todos', 
+  'Diseño App Juego', 
+  'E-commerce', 
+  'Web Corporativa', 
+  'Plataforma Viajes', 
+  'Dashboard', 
+  'App Móvil', 
+  'App Web', 
+  'Sitio Web de Lujo'
+];
 
 const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {
   const [activeFilter, setActiveFilter] = useState(lang === 'es' ? 'Todos' : 'All');
@@ -33,6 +52,7 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
         otherProjects.push(p);
       }
     });
+    // Ensure featured projects follow the order in FEATURED_PROJECT_IDS
     featuredProjects.sort((a, b) => FEATURED_PROJECT_IDS.indexOf(a.id) - FEATURED_PROJECT_IDS.indexOf(b.id));
   }
   
@@ -48,18 +68,17 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
   };
 
   const filteredProjects = (() => {
-    if (activeFilter === (lang === 'es' ? 'Todos' : 'All')) {
+    const isAll = activeFilter === (lang === 'es' ? 'Todos' : 'All');
+    if (isAll) {
       return otherProjects;
     }
-    const filterKey = lang === 'es' ? CATEGORIES_EN[CATEGORIES_ES.indexOf(activeFilter)] || 'All' : activeFilter;
     
-    return otherProjects.filter(p => {
-        const categoryMatch = p.category === filterKey;
-        // Permissive matching for common variations
-        const aliasMatch = (p.category === 'Corporate Website' && filterKey === 'Corporate Website') ||
-                           (p.category === 'IT Services' && filterKey === 'Corporate Website');
-        return categoryMatch || aliasMatch;
-    });
+    // Get English key for filtering if currently in Spanish
+    const filterKey = lang === 'es' 
+      ? CATEGORIES_EN[CATEGORIES_ES.indexOf(activeFilter)] || 'All' 
+      : activeFilter;
+    
+    return otherProjects.filter(p => p.category === filterKey);
   })();
 
   const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);

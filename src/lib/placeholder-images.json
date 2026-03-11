@@ -15,7 +15,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "https://www.aviatur.com/",
-      "imageUrl": "/aviatur.png",
+      "imageUrl": "https://picsum.photos/seed/travel1/1200/800",
       "imageHint": "travel agency platform",
       "category": "E-commerce",
       "overview": "Aviatur, a leader in the Colombian travel market, faced the challenge of consolidating its vast catalog of flights, hotels, and tours into a unified digital experience. The legacy system was plagued by high technical debt and a fragmented user interface that led to significant drop-offs.",
@@ -41,7 +41,7 @@
         "TypeScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/orbit.png",
+      "imageUrl": "https://picsum.photos/seed/dashboard1/1200/800",
       "imageHint": "dashboard analytics",
       "category": "App Design",
       "overview": "Orbit Group Partners provides executive-level coaching and productivity tools. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership.",
@@ -66,7 +66,7 @@
         "User Research"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/tecnologia.png",
+      "imageUrl": "https://picsum.photos/seed/tech1/1200/800",
       "imageHint": "technology store ecommerce",
       "category": "E-commerce",
       "overview": "Tecnologia Mayorista is a dominant player in the tech distribution market. I led the UX strategy and UI design, focusing on the unique needs of bulk buyers who value speed, accuracy, and transparent pricing.",
@@ -78,29 +78,29 @@
       "decisions": "A pivotal decision was to prioritize a 'Matrix Order' view for products with multiple variants, allowing buyers to enter quantities for all variants on a single screen."
     },
     {
-      "id": "17",
+      "id": "1",
       "name": "Bingo Mobile Game App UI",
       "client": "BingoPlay",
       "industry": "Gaming",
       "description": "Mobile UI design for a bingo game app featuring interactive bingo cards, live draws, and player rewards.",
-      "goal": "Create a fun, intuitive, and engaging bingo experience that keeps players entertained and motivated.",
+      "goal": "Create a fun, intuitive, and engaging bingo experience that keeps players entertained.",
       "role": "UI/UX Design",
       "tools": [
         "Figma",
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/bingo.png",
-      "imageHint": "bingo game mobile app",
+      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
+      "imageHint": "bingo mobile game",
       "category": "Game App Design"
     },
     {
-      "id": "7",
+      "id": "2",
       "name": "Hamunet Jewelry E-commerce",
       "client": "Hamunet",
       "industry": "E-commerce / Jewelry",
-      "description": "Online jewelry store showcasing handcrafted and modern pieces with a premium shopping experience, secure checkout, and product filtering.",
-      "goal": "Sell jewelry online through a visually elegant, trustworthy, and conversion-focused e-commerce platform.",
+      "description": "Online jewelry store showcasing handcrafted and modern pieces with premium product presentation and secure checkout.",
+      "goal": "Create a visually elegant e-commerce platform that increases conversions and brand trust.",
       "role": "E-commerce Development & UI/UX",
       "tools": [
         "Shopify",
@@ -108,17 +108,17 @@
         "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1080&q=80",
-      "imageHint": "jewelry ecommerce",
+      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
+      "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
     {
-      "id": "9",
+      "id": "3",
       "name": "SkillTech IT Support Website",
       "client": "SkillTech",
       "industry": "IT Services",
-      "description": "Corporate website for an IT support and computer maintenance company, highlighting technical services, support plans, and contact channels.",
-      "goal": "Generate leads and build trust by showcasing reliable computer support and maintenance services for individuals and businesses.",
+      "description": "Corporate website for a company specializing in computer repair, maintenance, and IT support services.",
+      "goal": "Generate leads and build trust through a professional and informative website.",
       "role": "UI/UX Design, Frontend Development",
       "tools": [
         "Figma",
@@ -127,158 +127,99 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1080&q=80",
+      "imageUrl": "https://picsum.photos/seed/it-support/600/400",
       "imageHint": "computer repair it support",
       "category": "Corporate Website"
     },
     {
-      "id": "1",
-      "name": "Creative Agency Website",
-      "client": "Agency X",
-      "industry": "Creative",
-      "description": "Corporate website for a creative agency with motion effects and modern UI components.",
-      "goal": "Showcase creative works with high visual impact and smooth transitions.",
-      "role": "UI/UX Designer",
-      "tools": [
-        "Figma",
-        "Framer",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/agency1/800/600",
-      "imageHint": "modern agency website",
-      "category": "Web Design"
-    },
-    {
-      "id": "2",
-      "name": "Handmade Products Store",
-      "client": "Artisans Co.",
-      "industry": "Retail",
-      "description": "Shopify e-commerce for handmade goods with a custom responsive theme.",
-      "goal": "Build an online presence for local artisans with a clean design.",
-      "role": "E-commerce Specialist",
-      "tools": [
-        "Shopify",
-        "Figma",
-        "Tailwind",
-        "Liquid"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/handmade1/800/600",
-      "imageHint": "handmade products store",
-      "category": "E-commerce"
-    },
-    {
-      "id": "3",
-      "name": "Restaurant Landing Page",
-      "client": "Fine Dining",
-      "industry": "Hospitality",
-      "description": "Landing page for a fine dining restaurant featuring menu sections.",
-      "goal": "Increase table reservations through an elegant landing page.",
-      "role": "Web Designer",
-      "tools": [
-        "Webflow",
-        "Adobe Photoshop",
-        "HTML",
-        "CSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/restaurant1/800/600",
-      "imageHint": "luxury restaurant website",
-      "category": "Web Design"
-    },
-    {
       "id": "4",
-      "name": "Fitness App Marketing Site",
-      "client": "FitTrack",
-      "industry": "Health & Fitness",
-      "description": "Responsive one-page site promoting a mobile fitness app.",
-      "goal": "Drive app downloads using high-conversion components.",
-      "role": "Marketing Designer",
+      "name": "Best Deal Hotels Website",
+      "client": "Best Deal",
+      "industry": "Travel / Hospitality",
+      "description": "Hotel booking website where users can explore hotels, compare prices, and find the best travel deals.",
+      "goal": "Improve hotel discovery and booking experience with clear filters and a user-friendly interface.",
+      "role": "UI/UX Design",
       "tools": [
-        "Framer",
         "Figma",
-        "TailwindCSS"
+        "React",
+        "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/fitness1/400/800",
-      "imageHint": "fitness app mobile",
-      "category": "App Design"
+      "imageUrl": "https://picsum.photos/seed/hotel/600/400",
+      "imageHint": "hotel booking website",
+      "category": "Travel Platform"
     },
     {
       "id": "5",
-      "name": "Photographer Portfolio",
-      "client": "Studio Visual",
-      "industry": "Photography",
-      "description": "Minimalist portfolio for a photographer with fullscreen image galleries.",
-      "goal": "Provide a clean canvas for photographic work.",
-      "role": "UI Designer",
+      "name": "Financial Dashboard",
+      "client": "FinAnalytics",
+      "industry": "Finance",
+      "description": "Interactive dashboard that visualizes financial metrics, expenses, and performance indicators in real time.",
+      "goal": "Help users easily understand and track their financial data through clear visualizations.",
+      "role": "Product Design, UI/UX",
       "tools": [
-        "Adobe XD",
-        "Webflow",
-        "JavaScript"
+        "Figma",
+        "Chart.js",
+        "React"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/photo1/800/600",
-      "imageHint": "minimalist photographer portfolio",
-      "category": "Web Design"
+      "imageUrl": "https://picsum.photos/seed/finance-dash/600/400",
+      "imageHint": "finance dashboard analytics",
+      "category": "Dashboard"
     },
     {
       "id": "6",
-      "name": "Fashion E-commerce",
-      "client": "Trend Moda",
-      "industry": "Fashion",
-      "description": "Shopify store for a fashion brand with a modern grid layout.",
-      "goal": "Create a high-fashion shopping experience.",
-      "role": "Shopify Developer",
+      "name": "Personal Finance Mobile App",
+      "client": "FinanceFlow",
+      "industry": "Fintech",
+      "description": "Mobile app designed to help users manage their personal finances, track expenses, and set savings goals.",
+      "goal": "Empower users to make smarter financial decisions through simple financial management tools.",
+      "role": "UI/UX Design",
       "tools": [
-        "Shopify",
-        "HTML",
-        "CSS",
+        "Figma",
+        "Adobe XD"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/finance-app/600/400",
+      "imageHint": "mobile finance app",
+      "category": "Mobile App"
+    },
+    {
+      "id": "7",
+      "name": "Food Delivery Web App",
+      "client": "FoodExpress",
+      "industry": "Food & Delivery",
+      "description": "Web application that allows users to browse restaurants, order meals online, and track delivery in real time.",
+      "goal": "Simplify the online food ordering process with a fast and intuitive user interface.",
+      "role": "UI/UX Design, Frontend Development",
+      "tools": [
+        "Figma",
+        "React",
+        "Tailwind CSS",
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/fashion1/800/600",
-      "imageHint": "fashion clothing store",
-      "category": "E-commerce"
+      "imageUrl": "https://picsum.photos/seed/food/600/400",
+      "imageHint": "food delivery app",
+      "category": "Web App"
     },
     {
       "id": "8",
-      "name": "Real Estate Landing Page",
-      "client": "Home Seekers",
-      "industry": "Real Estate",
-      "description": "Modern landing page with dynamic property listings.",
-      "goal": "Facilitate property inquiries through an intuitive interface.",
-      "role": "UI/UX Designer",
+      "name": "Hotel Las Islas Luxury Website",
+      "client": "Hotel Las Islas",
+      "industry": "Luxury Hospitality",
+      "description": "Luxury hotel website focused on immersive visuals, room showcases, and direct booking functionality.",
+      "goal": "Create a premium digital experience that reflects the exclusivity and beauty of the hotel.",
+      "role": "UI/UX Design",
       "tools": [
-        "Webflow",
         "Figma",
-        "JavaScript"
+        "Next.js",
+        "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/realestate1/800/600",
-      "imageHint": "real estate listings",
-      "category": "Web Design"
-    },
-    {
-      "id": "10",
-      "name": "Startup Dashboard UI",
-      "client": "DataDash",
-      "industry": "Tech Startup",
-      "description": "Admin dashboard for a startup with charts and data visualization.",
-      "goal": "Simplifying complex datasets for founders.",
-      "role": "Product Designer",
-      "tools": [
-        "Angular",
-        "Figma",
-        "Bootstrap"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/dashboard1/800/600",
-      "imageHint": "startup dashboard ui",
-      "category": "Development"
+      "imageUrl": "https://picsum.photos/seed/luxury/600/400",
+      "imageHint": "luxury hotel resort",
+      "category": "Luxury Website"
     }
   ]
 }
