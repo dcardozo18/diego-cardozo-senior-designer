@@ -19,11 +19,11 @@
       "imageHint": "travel agency platform",
       "category": "E-commerce",
       "overview": "Aviatur, a leader in the Colombian travel market, faced the challenge of consolidating its vast catalog of flights, hotels, and tours into a unified digital experience. The legacy system was plagued by high technical debt and a fragmented user interface that led to significant drop-offs.",
-      "problem": "The primary pain point was a 'friction-heavy' booking engine. Users were overwhelmed by a non-intuitive information architecture, slow search results, and a checkout process that required excessive manual input. Mobile users struggled with a non-responsive design that made completing a purchase nearly impossible.",
-      "objective": "The main objective was to design and build a 'frictionless' multi-device booking platform that simplifies the travel planning process. Key performance indicators (KPIs) included increasing the conversion rate by 25% and reducing the average time-to-purchase by 40%.",
+      "problem": "The primary pain point was a 'friction-heavy' booking engine. Users were overwhelmed by a non-intuitive information architecture and a checkout process that required excessive manual input. Mobile users struggled with a non-responsive design that made completing a purchase nearly impossible.",
+      "objective": "The main objective was to design and build a 'frictionless' multi-device booking platform that simplifies the travel planning process. Key performance indicators (KPIs) included increasing the conversion rate and reducing the average time-to-purchase.",
       "strategy": "We adopted a 'Mobile-First' and 'Atomic Design' methodology. My strategy focused on 'Progressive Disclosure'—hiding complex filtering options until the user explicitly needed them to avoid cognitive overload.",
-      "uxImprovements": "We completely eliminated the traditional 5-step checkout process and replaced it with a dynamic 'Single-Page Checkout' that adaptively shows only relevant fields. This reduced checkout friction by 40%. We also simplified the technical product pages by visually grouping specifications into collapsible, easy-to-read sections.",
-      "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months. Mobile conversion rates spiked by 50%, validating the responsive-first approach and the reduction in checkout friction.",
+      "uxImprovements": "We completely eliminated the traditional 5-step checkout process and replaced it with a dynamic 'Single-Page Checkout' that adaptively shows only relevant fields. This reduced checkout friction and abandonment by 40%. We also simplified the technical product pages by visually grouping specifications into collapsible, easy-to-read sections.",
+      "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months. Mobile conversion rates spiked significantly, validating the responsive-first approach.",
       "decisions": "One of the most impactful decisions was replacing the traditional 5-step checkout with a dynamic 'Single-Page Checkout' that adaptively showed only relevant fields based on the selected services."
     },
     {
@@ -44,12 +44,12 @@
       "imageUrl": "/orbit.png",
       "imageHint": "dashboard analytics",
       "category": "App Design",
-      "overview": "Orbit Group Partners provides executive-level coaching and productivity tools to global enterprises. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership.",
-      "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information, and critical performance alerts were often missed.",
-      "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs). We aimed for 100% compliance with WCAG 2.1 AA standards.",
+      "overview": "Orbit Group Partners provides executive-level coaching and productivity tools. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership.",
+      "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information.",
+      "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs).",
       "strategy": "I developed a comprehensive Design System from the ground up, utilizing a modular 'Grid System' and a carefully curated color palette designed specifically for data visualization clarity.",
-      "uxImprovements": "To combat 'Data Fatigue', we replaced complex, data-heavy tables with intuitive visual progress bars and color-coded status alerts that highlight mission-critical tasks. We also implemented a 'Customizable Widget' system that allows executives to pin their most relevant metrics to the top of the dashboard, significantly reducing time-to-insight.",
-      "impact": "The redesigned platform was met with universal praise. We achieved a 60% improvement in task completion speed and a 45% increase in user engagement scores.",
+      "uxImprovements": "To combat 'Data Fatigue', we replaced complex, data-heavy tables with intuitive visual progress bars and color-coded status alerts that highlight mission-critical tasks. We also implemented a 'Customizable Widget' system that allows executives to pin their most relevant metrics, reducing cognitive load.",
+      "impact": "The redesigned platform achieved a 60% improvement in task completion speed and a 45% increase in user engagement scores.",
       "decisions": "I made the strategic decision to adopt a 'Dark Mode' default for the dashboard to reduce eye strain for executives. I also implemented a 'Customizable Widget' system."
     },
     {
@@ -69,13 +69,67 @@
       "imageUrl": "/tecnologia.png",
       "imageHint": "technology store ecommerce",
       "category": "E-commerce",
-      "overview": "Tecnologia Mayorista is a dominant player in the tech distribution market in Colombia. I led the UX strategy and UI design, focusing on the unique needs of bulk buyers who value speed, accuracy, and transparent pricing.",
-      "problem": "The transition from offline to online was hindered by an antiquated ordering system. Wholesale buyers were frustrated by the inability to see dynamic pricing based on their order volume and the lack of real-time stock levels.",
-      "objective": "Our goal was to transition 40% of traditional phone/email orders to the online platform within the first year. We aimed to simplify the wholesale journey, reducing the time to place a bulk order by 60%.",
-      "strategy": "My strategy was rooted in deep 'Stakeholder Interviews' and 'User Shadowing' to understand the daily routines of bulk buyers. We designed a 'Quick Order' interface for CSV uploads.",
-      "uxImprovements": "We optimized the purchasing path for bulk buyers by introducing a 'Matrix Selection' UI for multi-variant products. This allows buyers to enter quantities for all sizes or colors on a single screen, reducing clicks by 60%. We also added a 'Quick Reorder' button on the homepage, recognizing that wholesale customers often buy the same items repeatedly.",
-      "impact": "Within nine months, 55% of all wholesale orders were being placed online, surpassing our initial target. The average order value (AOV) increased by 15% due to the transparent tier-pricing engine.",
+      "overview": "Tecnologia Mayorista is a dominant player in the tech distribution market. I led the UX strategy and UI design, focusing on the unique needs of bulk buyers who value speed, accuracy, and transparent pricing.",
+      "problem": "The transition from offline to online was hindered by an antiquated ordering system. Wholesale buyers were frustrated by the inability to see dynamic pricing based on their order volume.",
+      "objective": "Our goal was to transition 40% of traditional phone/email orders to the online platform. We aimed to simplify the wholesale journey, reducing the time to place a bulk order.",
+      "strategy": "My strategy was rooted in deep 'Stakeholder Interviews' and 'User Shadowing' to understand the daily routines of bulk buyers. We designed a 'Quick Order' interface.",
+      "uxImprovements": "We optimized the purchasing path by introducing a 'Matrix Selection' UI for multi-variant products. This allows buyers to enter quantities for all variants on a single screen, reducing clicks by 60% and cart abandonment. We also added a 'Quick Reorder' button on the homepage.",
+      "impact": "Within nine months, 55% of all wholesale orders were being placed online, surpassing our initial target. The average order value (AOV) increased by 15%.",
       "decisions": "A pivotal decision was to prioritize a 'Matrix Order' view for products with multiple variants, allowing buyers to enter quantities for all variants on a single screen."
+    },
+    {
+      "id": "17",
+      "name": "Bingo Mobile Game App UI",
+      "client": "BingoPlay",
+      "industry": "Gaming",
+      "description": "Mobile UI design for a bingo game app featuring interactive bingo cards, live draws, and player rewards.",
+      "goal": "Create a fun, intuitive, and engaging bingo experience that keeps players entertained and motivated.",
+      "role": "UI/UX Design",
+      "tools": [
+        "Figma",
+        "Adobe XD"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/bingo.png",
+      "imageHint": "bingo game mobile app",
+      "category": "Game App Design"
+    },
+    {
+      "id": "7",
+      "name": "Hamunet Jewelry E-commerce",
+      "client": "Hamunet",
+      "industry": "E-commerce / Jewelry",
+      "description": "Online jewelry store showcasing handcrafted and modern pieces with a premium shopping experience, secure checkout, and product filtering.",
+      "goal": "Sell jewelry online through a visually elegant, trustworthy, and conversion-focused e-commerce platform.",
+      "role": "E-commerce Development & UI/UX",
+      "tools": [
+        "Shopify",
+        "Tailwind CSS",
+        "Liquid"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "jewelry ecommerce",
+      "category": "E-commerce"
+    },
+    {
+      "id": "9",
+      "name": "SkillTech IT Support Website",
+      "client": "SkillTech",
+      "industry": "IT Services",
+      "description": "Corporate website for an IT support and computer maintenance company, highlighting technical services, support plans, and contact channels.",
+      "goal": "Generate leads and build trust by showcasing reliable computer support and maintenance services for individuals and businesses.",
+      "role": "UI/UX Design, Frontend Development",
+      "tools": [
+        "Figma",
+        "HTML",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "computer repair it support",
+      "category": "Corporate Website"
     },
     {
       "id": "1",
@@ -93,7 +147,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/agency/800/600",
+      "imageUrl": "https://picsum.photos/seed/agency1/800/600",
       "imageHint": "modern agency website",
       "category": "Web Design"
     },
@@ -103,7 +157,7 @@
       "client": "Artisans Co.",
       "industry": "Retail",
       "description": "Shopify e-commerce for handmade goods with a custom responsive theme.",
-      "goal": "Build an online presence for local artisans with a clean, focus-on-product design.",
+      "goal": "Build an online presence for local artisans with a clean design.",
       "role": "E-commerce Specialist",
       "tools": [
         "Shopify",
@@ -112,7 +166,7 @@
         "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/handmade/800/600",
+      "imageUrl": "https://picsum.photos/seed/handmade1/800/600",
       "imageHint": "handmade products store",
       "category": "E-commerce"
     },
@@ -121,8 +175,8 @@
       "name": "Restaurant Landing Page",
       "client": "Fine Dining",
       "industry": "Hospitality",
-      "description": "Landing page for a fine dining restaurant featuring menu sections and booking form.",
-      "goal": "Increase table reservations through an elegant and responsive landing page.",
+      "description": "Landing page for a fine dining restaurant featuring menu sections.",
+      "goal": "Increase table reservations through an elegant landing page.",
       "role": "Web Designer",
       "tools": [
         "Webflow",
@@ -131,7 +185,7 @@
         "CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/restaurant/800/600",
+      "imageUrl": "https://picsum.photos/seed/restaurant1/800/600",
       "imageHint": "luxury restaurant website",
       "category": "Web Design"
     },
@@ -141,7 +195,7 @@
       "client": "FitTrack",
       "industry": "Health & Fitness",
       "description": "Responsive one-page site promoting a mobile fitness app.",
-      "goal": "Drive app downloads using high-conversion marketing components.",
+      "goal": "Drive app downloads using high-conversion components.",
       "role": "Marketing Designer",
       "tools": [
         "Framer",
@@ -149,7 +203,7 @@
         "TailwindCSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/fitness/400/800",
+      "imageUrl": "https://picsum.photos/seed/fitness1/400/800",
       "imageHint": "fitness app mobile",
       "category": "App Design"
     },
@@ -159,7 +213,7 @@
       "client": "Studio Visual",
       "industry": "Photography",
       "description": "Minimalist portfolio for a photographer with fullscreen image galleries.",
-      "goal": "Provide a clean canvas for high-quality photographic work.",
+      "goal": "Provide a clean canvas for photographic work.",
       "role": "UI Designer",
       "tools": [
         "Adobe XD",
@@ -167,7 +221,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/photo/800/600",
+      "imageUrl": "https://picsum.photos/seed/photo1/800/600",
       "imageHint": "minimalist photographer portfolio",
       "category": "Web Design"
     },
@@ -176,8 +230,8 @@
       "name": "Fashion E-commerce",
       "client": "Trend Moda",
       "industry": "Fashion",
-      "description": "Shopify store for a fashion brand with a modern grid layout and animations.",
-      "goal": "Create a high-fashion shopping experience with seamless navigation.",
+      "description": "Shopify store for a fashion brand with a modern grid layout.",
+      "goal": "Create a high-fashion shopping experience.",
       "role": "Shopify Developer",
       "tools": [
         "Shopify",
@@ -186,35 +240,17 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/fashion/800/600",
+      "imageUrl": "https://picsum.photos/seed/fashion1/800/600",
       "imageHint": "fashion clothing store",
       "category": "E-commerce"
-    },
-    {
-      "id": "7",
-      "name": "Digital Creators Blog",
-      "client": "Creator Hub",
-      "industry": "Media",
-      "description": "Blog platform for digital creators with custom post types and dark mode.",
-      "goal": "Build a robust content platform with a focus on typography and readability.",
-      "role": "Full-stack Designer",
-      "tools": [
-        "WordPress",
-        "Tailwind",
-        "PHP"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/blog/800/600",
-      "imageHint": "tech blog portal",
-      "category": "Development"
     },
     {
       "id": "8",
       "name": "Real Estate Landing Page",
       "client": "Home Seekers",
       "industry": "Real Estate",
-      "description": "Modern landing page with dynamic property listings and contact form.",
-      "goal": "Facilitate property inquiries through an intuitive search interface.",
+      "description": "Modern landing page with dynamic property listings.",
+      "goal": "Facilitate property inquiries through an intuitive interface.",
       "role": "UI/UX Designer",
       "tools": [
         "Webflow",
@@ -222,27 +258,8 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/realestate/800/600",
+      "imageUrl": "https://picsum.photos/seed/realestate1/800/600",
       "imageHint": "real estate listings",
-      "category": "Web Design"
-    },
-    {
-      "id": "9",
-      "name": "Personal Branding Website",
-      "client": "Personal Project",
-      "industry": "Professional Services",
-      "description": "Personal portfolio website combining biography, projects, and contact form.",
-      "goal": "Establish a strong personal brand online.",
-      "role": "UI/UX Designer",
-      "tools": [
-        "Figma",
-        "HTML",
-        "Tailwind",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/personal/800/600",
-      "imageHint": "personal branding site",
       "category": "Web Design"
     },
     {
@@ -251,7 +268,7 @@
       "client": "DataDash",
       "industry": "Tech Startup",
       "description": "Admin dashboard for a startup with charts and data visualization.",
-      "goal": "Simplify complex data sets for startup founders.",
+      "goal": "Simplifying complex datasets for founders.",
       "role": "Product Designer",
       "tools": [
         "Angular",
@@ -259,188 +276,9 @@
         "Bootstrap"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/dashboard/800/600",
+      "imageUrl": "https://picsum.photos/seed/dashboard1/800/600",
       "imageHint": "startup dashboard ui",
       "category": "Development"
-    },
-    {
-      "id": "11",
-      "name": "Event Promotion Page",
-      "client": "TechConf",
-      "industry": "Events",
-      "description": "One-page website for a tech conference with animations and schedule.",
-      "goal": "Increase ticket sales through an engaging event experience.",
-      "role": "Web Designer",
-      "tools": [
-        "Framer",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/event/800/600",
-      "imageHint": "conference landing page",
-      "category": "Web Design"
-    },
-    {
-      "id": "12",
-      "name": "Marketing Email Templates",
-      "client": "Campaign Pro",
-      "industry": "Marketing",
-      "description": "Responsive HTML email templates for promotional campaigns.",
-      "goal": "Improve click-through rates for email marketing.",
-      "role": "Email Designer",
-      "tools": [
-        "Adobe Illustrator",
-        "HTML",
-        "CSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/email/800/600",
-      "imageHint": "marketing email design",
-      "category": "Branding"
-    },
-    {
-      "id": "13",
-      "name": "Travel Blog Website",
-      "client": "Wanderlust",
-      "industry": "Travel",
-      "description": "WordPress travel blog with custom categories and Instagram integration.",
-      "goal": "Create an immersive storytelling platform for travel influencers.",
-      "role": "WordPress Developer",
-      "tools": [
-        "WordPress",
-        "PHP",
-        "Tailwind"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/travelblog/800/600",
-      "imageHint": "travel blog layout",
-      "category": "Web Design"
-    },
-    {
-      "id": "14",
-      "name": "Beauty Product Landing Page",
-      "client": "Glow Skin",
-      "industry": "Cosmetics",
-      "description": "Landing page for a skincare brand created in Canva with Bootstrap styling.",
-      "goal": "Showcase product benefits through a clean, aesthetic design.",
-      "role": "Visual Designer",
-      "tools": [
-        "Canva",
-        "Bootstrap",
-        "HTML",
-        "CSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/beauty/800/600",
-      "imageHint": "beauty product landing",
-      "category": "Web Design"
-    },
-    {
-      "id": "15",
-      "name": "Portfolio Redesign in Framer",
-      "client": "Design Studio",
-      "industry": "Design",
-      "description": "Personal portfolio built entirely in Framer showcasing motion design skills.",
-      "goal": "Highlight technical proficiency in no-code motion design.",
-      "role": "Motion Designer",
-      "tools": [
-        "Framer",
-        "Figma"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/framer/800/600",
-      "imageHint": "motion design portfolio",
-      "category": "Web Design"
-    },
-    {
-      "id": "16",
-      "name": "Mobile Food Ordering App",
-      "client": "Quick Bites",
-      "industry": "Food Delivery",
-      "description": "App concept for food delivery with interactive menus and tracking UI.",
-      "goal": "Simplify the food ordering process for mobile users.",
-      "role": "App Designer",
-      "tools": [
-        "Figma",
-        "Framer",
-        "TailwindCSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/foodapp/400/800",
-      "imageHint": "mobile food app",
-      "category": "App Design"
-    },
-    {
-      "id": "17",
-      "name": "Music Streaming App UI",
-      "client": "SoundCloud-ish",
-      "industry": "Entertainment",
-      "description": "Mobile UI design for a music streaming platform with playlists and player screen.",
-      "goal": "Enhance user engagement with a modern music player interface.",
-      "role": "UI Designer",
-      "tools": [
-        "Adobe XD",
-        "Figma"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/musicapp/400/800",
-      "imageHint": "music player ui",
-      "category": "App Design"
-    },
-    {
-      "id": "18",
-      "name": "E-learning Mobile Interface",
-      "client": "EduPlus",
-      "industry": "Education",
-      "description": "Mobile app UI for an e-learning platform with lessons and progress tracking.",
-      "goal": "Make mobile learning accessible and engaging.",
-      "role": "UX Designer",
-      "tools": [
-        "Figma",
-        "Framer",
-        "TailwindCSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/elearning/400/800",
-      "imageHint": "elearning app ui",
-      "category": "App Design"
-    },
-    {
-      "id": "19",
-      "name": "Travel Booking Mobile App",
-      "client": "GoExplore",
-      "industry": "Travel",
-      "description": "Mobile design for a travel app allowing users to search and book destinations.",
-      "goal": "Streamline destination discovery on mobile devices.",
-      "role": "Product Designer",
-      "tools": [
-        "Figma",
-        "Adobe Illustrator"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/travelapp/400/800",
-      "imageHint": "travel booking app",
-      "category": "App Design"
-    },
-    {
-      "id": "20",
-      "name": "Mobile Dashboard for Finance",
-      "client": "FinTracker",
-      "industry": "Finance",
-      "description": "UI concept for a mobile finance tracker with analytics and charts.",
-      "goal": "Provide clear financial insights for mobile users.",
-      "role": "UI Designer",
-      "tools": [
-        "Figma",
-        "TailwindCSS",
-        "Framer"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/financeapp/400/800",
-      "imageHint": "finance app dashboard",
-      "category": "App Design"
     }
   ]
 }

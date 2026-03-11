@@ -11,8 +11,8 @@ import { Separator } from '@/components/ui/separator';
 import type { Locale } from '../../../i18n-config';
 
 const PROJECTS_PER_PAGE = 6;
-const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding', 'Game App Design'];
-const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding', 'Diseño App Juego'];
+const CATEGORIES_EN = ['All', 'Web Design', 'E-commerce', 'App Design', 'Development', 'Branding', 'Game App Design', 'Corporate Website'];
+const CATEGORIES_ES = ['Todos', 'Diseño Web', 'E-commerce', 'Diseño App', 'Desarrollo', 'Branding', 'Diseño App Juego', 'Web Corporativa'];
 
 const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {
   const [activeFilter, setActiveFilter] = useState(lang === 'es' ? 'Todos' : 'All');
@@ -55,7 +55,9 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
     
     return otherProjects.filter(p => {
         const categoryMatch = p.category === filterKey;
-        const aliasMatch = (p.category === 'Corporate Website' && filterKey === 'Development');
+        // Permissive matching for common variations
+        const aliasMatch = (p.category === 'Corporate Website' && filterKey === 'Corporate Website') ||
+                           (p.category === 'IT Services' && filterKey === 'Corporate Website');
         return categoryMatch || aliasMatch;
     });
   })();
