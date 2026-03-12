@@ -12,27 +12,19 @@ import type { Locale } from '../../../i18n-config';
 const PROJECTS_PER_PAGE = 6;
 const CATEGORIES_EN = [
   'All', 
-  'Game App Design', 
+  'Apps', 
+  'Web Platforms', 
   'E-commerce', 
-  'Corporate Website', 
-  'Travel Platform', 
-  'Dashboard', 
-  'Mobile App', 
-  'Web App', 
-  'Luxury Website',
-  'Landing Page'
+  'Corporate', 
+  'Landing Pages'
 ];
 const CATEGORIES_ES = [
   'Todos', 
-  'Diseño App Juego', 
+  'Apps', 
+  'Plataformas Web', 
   'E-commerce', 
-  'Web Corporativa', 
-  'Plataforma Viajes', 
-  'Dashboard', 
-  'App Móvil', 
-  'App Web', 
-  'Sitio Web de Lujo',
-  'Landing Page'
+  'Corporativo', 
+  'Landing Pages'
 ];
 
 const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {

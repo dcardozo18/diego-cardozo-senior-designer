@@ -43,7 +43,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/dashboard1/1200/800",
       "imageHint": "dashboard analytics",
-      "category": "Dashboard",
+      "category": "Web Platforms",
       "overview": "Orbit Group Partners provides executive-level coaching and productivity tools. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership.",
       "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information.",
       "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs).",
@@ -90,9 +90,9 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bingo1/600/400",
+      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
       "imageHint": "bingo mobile game",
-      "category": "Game App Design"
+      "category": "Apps"
     },
     {
       "id": "2",
@@ -108,7 +108,7 @@
         "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/jewelry1/600/400",
+      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -127,9 +127,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/it1/600/400",
+      "imageUrl": "https://picsum.photos/seed/it/600/400",
       "imageHint": "computer repair it support",
-      "category": "Corporate Website"
+      "category": "Corporate"
     },
     {
       "id": "4",
@@ -145,9 +145,9 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/hotel1/600/400",
+      "imageUrl": "https://picsum.photos/seed/hotel/600/400",
       "imageHint": "hotel booking website",
-      "category": "Travel Platform"
+      "category": "Web Platforms"
     },
     {
       "id": "5",
@@ -163,9 +163,9 @@
         "React"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance1/600/400",
+      "imageUrl": "https://picsum.photos/seed/finance/600/400",
       "imageHint": "finance dashboard analytics",
-      "category": "Dashboard"
+      "category": "Web Platforms"
     },
     {
       "id": "6",
@@ -180,9 +180,9 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/financeapp1/600/400",
+      "imageUrl": "https://picsum.photos/seed/finapp/600/400",
       "imageHint": "mobile finance app",
-      "category": "Mobile App"
+      "category": "Apps"
     },
     {
       "id": "7",
@@ -199,9 +199,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/food1/600/400",
+      "imageUrl": "https://picsum.photos/seed/food/600/400",
       "imageHint": "food delivery app",
-      "category": "Web App"
+      "category": "Web Platforms"
     },
     {
       "id": "8",
@@ -217,9 +217,9 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/luxury1/600/400",
+      "imageUrl": "https://picsum.photos/seed/luxury/600/400",
       "imageHint": "luxury hotel resort",
-      "category": "Luxury Website"
+      "category": "Web Platforms"
     },
     {
       "id": "9",
@@ -236,9 +236,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/water1/600/400",
+      "imageUrl": "https://picsum.photos/seed/water/600/400",
       "imageHint": "water delivery service app",
-      "category": "Web App"
+      "category": "Web Platforms"
     },
     {
       "id": "10",
@@ -255,9 +255,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/event1/600/400",
+      "imageUrl": "https://picsum.photos/seed/event/600/400",
       "imageHint": "influencer event landing page",
-      "category": "Landing Page"
+      "category": "Landing Pages"
     },
     {
       "id": "11",
@@ -273,7 +273,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/tickets1/600/400",
+      "imageUrl": "https://picsum.photos/seed/comedy/600/400",
       "imageHint": "stand up comedy show tickets",
       "category": "E-commerce"
     },
@@ -291,7 +291,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/beauty1/600/400",
+      "imageUrl": "https://picsum.photos/seed/beauty/600/400",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
     }

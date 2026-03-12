@@ -43,7 +43,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/dashboard1/1200/800",
       "imageHint": "dashboard de analíticas",
-      "category": "Dashboard",
+      "category": "Plataformas Web",
       "overview": "Orbit Group Partners proporciona herramientas de coaching y productividad a nivel ejecutivo. Dirigí la transformación del diseño de su dashboard principal de SaaS, centrándome en crear un 'centro de comando' de alta fidelidad.",
       "problem": "El dashboard existente sufría de 'Fatiga de Datos'. Los ejecutivos recibían muros de números brutos y gráficos estáticos que requerían interpretación manual. No había una jerarquía clara de información.",
       "objective": "El objetivo central fue diseñar un dashboard centralizado, accesible y altamente intuitivo que priorizara los Indicadores Clave de Desempeño (KPIs).",
@@ -87,9 +87,9 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Adobe XD"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bingo1/600/400",
+      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
       "imageHint": "bingo mobile game",
-      "category": "Diseño App Juego"
+      "category": "Apps"
     },
     {
       "id": "2",
@@ -101,7 +101,7 @@
       "role": "Desarrollo E-commerce y UI/UX",
       "tools": ["Shopify", "Tailwind CSS", "Liquid"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/jewelry1/600/400",
+      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -115,9 +115,9 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "HTML", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/it1/600/400",
+      "imageUrl": "https://picsum.photos/seed/it/600/400",
       "imageHint": "computer repair it support",
-      "category": "Web Corporativa"
+      "category": "Corporativo"
     },
     {
       "id": "4",
@@ -129,9 +129,9 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "React", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/hotel1/600/400",
+      "imageUrl": "https://picsum.photos/seed/hotel/600/400",
       "imageHint": "hotel booking website",
-      "category": "Plataforma Viajes"
+      "category": "Plataformas Web"
     },
     {
       "id": "5",
@@ -143,9 +143,9 @@
       "role": "Diseño de Producto, UI/UX",
       "tools": ["Figma", "Chart.js", "React"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance1/600/400",
+      "imageUrl": "https://picsum.photos/seed/finance/600/400",
       "imageHint": "finance dashboard analytics",
-      "category": "Dashboard"
+      "category": "Plataformas Web"
     },
     {
       "id": "6",
@@ -157,9 +157,9 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Adobe XD"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/financeapp1/600/400",
+      "imageUrl": "https://picsum.photos/seed/finapp/600/400",
       "imageHint": "mobile finance app",
-      "category": "App Móvil"
+      "category": "Apps"
     },
     {
       "id": "7",
@@ -171,9 +171,9 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "React", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/food1/600/400",
+      "imageUrl": "https://picsum.photos/seed/food/600/400",
       "imageHint": "food delivery app",
-      "category": "App Web"
+      "category": "Plataformas Web"
     },
     {
       "id": "8",
@@ -185,15 +185,15 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Next.js", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/luxury1/600/400",
+      "imageUrl": "https://picsum.photos/seed/luxury/600/400",
       "imageHint": "luxury hotel resort",
-      "category": "Sitio Web de Lujo"
+      "category": "Plataformas Web"
     },
     {
       "id": "9",
       "name": "App Web de Entrega de Agua",
       "client": "WaterFlow",
-      "industry": "Logística / Servicios",
+      "industry": "Logistics / Servicios",
       "description": "Aplicación web diseñada para gestionar pedidos de agua, entregas y cuentas de clientes para residencias y empresas.",
       "goal": "Optimizar el proceso de pedido y gestión de entregas para empresas de distribución de agua.",
       "role": "Diseño UI/UX, Diseño de Producto",
@@ -204,9 +204,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/water1/600/400",
+      "imageUrl": "https://picsum.photos/seed/water/600/400",
       "imageHint": "water delivery service app",
-      "category": "App Web"
+      "category": "Plataformas Web"
     },
     {
       "id": "10",
@@ -223,9 +223,9 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/event1/600/400",
+      "imageUrl": "https://picsum.photos/seed/event/600/400",
       "imageHint": "influencer event landing page",
-      "category": "Landing Page"
+      "category": "Landing Pages"
     },
     {
       "id": "11",
@@ -241,7 +241,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/tickets1/600/400",
+      "imageUrl": "https://picsum.photos/seed/comedy/600/400",
       "imageHint": "stand up comedy show tickets",
       "category": "E-commerce"
     },
@@ -259,7 +259,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/beauty1/600/400",
+      "imageUrl": "https://picsum.photos/seed/beauty/600/400",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
     }
