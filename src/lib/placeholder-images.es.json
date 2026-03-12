@@ -43,7 +43,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/dashboard1/1200/800",
       "imageHint": "dashboard de analíticas",
-      "category": "App Design",
+      "category": "Dashboard",
       "overview": "Orbit Group Partners proporciona herramientas de coaching y productividad a nivel ejecutivo. Dirigí la transformación del diseño de su dashboard principal de SaaS, centrándome en crear un 'centro de comando' de alta fidelidad.",
       "problem": "El dashboard existente sufría de 'Fatiga de Datos'. Los ejecutivos recibían muros de números brutos y gráficos estáticos que requerían interpretación manual. No había una jerarquía clara de información.",
       "objective": "El objetivo central fue diseñar un dashboard centralizado, accesible y altamente intuitivo que priorizara los Indicadores Clave de Desempeño (KPIs).",
@@ -87,9 +87,9 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Adobe XD"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
+      "imageUrl": "https://picsum.photos/seed/bingo1/600/400",
       "imageHint": "bingo mobile game",
-      "category": "Game App Design"
+      "category": "Diseño App Juego"
     },
     {
       "id": "2",
@@ -101,7 +101,7 @@
       "role": "Desarrollo E-commerce y UI/UX",
       "tools": ["Shopify", "Tailwind CSS", "Liquid"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
+      "imageUrl": "https://picsum.photos/seed/jewelry1/600/400",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -115,9 +115,9 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "HTML", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/it-support/600/400",
+      "imageUrl": "https://picsum.photos/seed/it1/600/400",
       "imageHint": "computer repair it support",
-      "category": "Corporate Website"
+      "category": "Web Corporativa"
     },
     {
       "id": "4",
@@ -129,9 +129,9 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "React", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/hotel/600/400",
+      "imageUrl": "https://picsum.photos/seed/hotel1/600/400",
       "imageHint": "hotel booking website",
-      "category": "Travel Platform"
+      "category": "Plataforma Viajes"
     },
     {
       "id": "5",
@@ -143,7 +143,7 @@
       "role": "Diseño de Producto, UI/UX",
       "tools": ["Figma", "Chart.js", "React"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance-dash/600/400",
+      "imageUrl": "https://picsum.photos/seed/finance1/600/400",
       "imageHint": "finance dashboard analytics",
       "category": "Dashboard"
     },
@@ -157,9 +157,9 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Adobe XD"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance-app/600/400",
+      "imageUrl": "https://picsum.photos/seed/financeapp1/600/400",
       "imageHint": "mobile finance app",
-      "category": "Mobile App"
+      "category": "App Móvil"
     },
     {
       "id": "7",
@@ -171,9 +171,9 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "React", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/food/600/400",
+      "imageUrl": "https://picsum.photos/seed/food1/600/400",
       "imageHint": "food delivery app",
-      "category": "Web App"
+      "category": "App Web"
     },
     {
       "id": "8",
@@ -185,9 +185,83 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Next.js", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/luxury/600/400",
+      "imageUrl": "https://picsum.photos/seed/luxury1/600/400",
       "imageHint": "luxury hotel resort",
-      "category": "Luxury Website"
+      "category": "Sitio Web de Lujo"
+    },
+    {
+      "id": "9",
+      "name": "App Web de Entrega de Agua",
+      "client": "WaterFlow",
+      "industry": "Logística / Servicios",
+      "description": "Aplicación web diseñada para gestionar pedidos de agua, entregas y cuentas de clientes para residencias y empresas.",
+      "goal": "Optimizar el proceso de pedido y gestión de entregas para empresas de distribución de agua.",
+      "role": "Diseño UI/UX, Diseño de Producto",
+      "tools": [
+        "Figma",
+        "React",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/water1/600/400",
+      "imageHint": "water delivery service app",
+      "category": "App Web"
+    },
+    {
+      "id": "10",
+      "name": "Landing Page Evento Wakeup Influencer",
+      "client": "Wakeup",
+      "industry": "Eventos / Marketing",
+      "description": "Página de aterrizaje de alta conversión diseñada para promocionar un evento de influencers, con oradores, agenda y registro.",
+      "goal": "Aumentar los registros al evento mediante una landing page atractiva y visualmente dinámica.",
+      "role": "Diseño UI/UX",
+      "tools": [
+        "Figma",
+        "HTML",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/event1/600/400",
+      "imageHint": "influencer event landing page",
+      "category": "Landing Page"
+    },
+    {
+      "id": "11",
+      "name": "Tienda de Entradas Punto Comedia",
+      "client": "Punto Comedia",
+      "industry": "Entretenimiento",
+      "description": "Plataforma de comercio electrónico para la venta de entradas de shows de stand-up comedy con listados de eventos y pago seguro.",
+      "goal": "Proporcionar una experiencia de compra de entradas fluida para fans de la comedia y organizadores.",
+      "role": "Diseño UI/UX, Desarrollo E-commerce",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "Tailwind CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/tickets1/600/400",
+      "imageHint": "stand up comedy show tickets",
+      "category": "E-commerce"
+    },
+    {
+      "id": "12",
+      "name": "E-commerce Glow Beauty",
+      "client": "Glow",
+      "industry": "Belleza / Cosméticos",
+      "description": "Tienda de belleza online con productos de cuidado de la piel y cosméticos, UI moderna, filtros y recomendaciones personalizadas.",
+      "goal": "Crear una plataforma de e-commerce visualmente atractiva y enfocada en la conversión para productos de belleza.",
+      "role": "Diseño UI/UX",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "Tailwind CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/beauty1/600/400",
+      "imageHint": "beauty cosmetics ecommerce",
+      "category": "E-commerce"
     }
   ]
 }

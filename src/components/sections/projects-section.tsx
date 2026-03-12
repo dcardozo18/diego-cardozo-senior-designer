@@ -19,7 +19,8 @@ const CATEGORIES_EN = [
   'Dashboard', 
   'Mobile App', 
   'Web App', 
-  'Luxury Website'
+  'Luxury Website',
+  'Landing Page'
 ];
 const CATEGORIES_ES = [
   'Todos', 
@@ -30,7 +31,8 @@ const CATEGORIES_ES = [
   'Dashboard', 
   'App Móvil', 
   'App Web', 
-  'Sitio Web de Lujo'
+  'Sitio Web de Lujo',
+  'Landing Page'
 ];
 
 const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {

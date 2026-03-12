@@ -43,7 +43,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/dashboard1/1200/800",
       "imageHint": "dashboard analytics",
-      "category": "App Design",
+      "category": "Dashboard",
       "overview": "Orbit Group Partners provides executive-level coaching and productivity tools. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership.",
       "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation. There was no clear hierarchy of information.",
       "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs).",
@@ -90,7 +90,7 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
+      "imageUrl": "https://picsum.photos/seed/bingo1/600/400",
       "imageHint": "bingo mobile game",
       "category": "Game App Design"
     },
@@ -108,7 +108,7 @@
         "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
+      "imageUrl": "https://picsum.photos/seed/jewelry1/600/400",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -127,7 +127,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/it-support/600/400",
+      "imageUrl": "https://picsum.photos/seed/it1/600/400",
       "imageHint": "computer repair it support",
       "category": "Corporate Website"
     },
@@ -145,7 +145,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/hotel/600/400",
+      "imageUrl": "https://picsum.photos/seed/hotel1/600/400",
       "imageHint": "hotel booking website",
       "category": "Travel Platform"
     },
@@ -163,7 +163,7 @@
         "React"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance-dash/600/400",
+      "imageUrl": "https://picsum.photos/seed/finance1/600/400",
       "imageHint": "finance dashboard analytics",
       "category": "Dashboard"
     },
@@ -180,7 +180,7 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance-app/600/400",
+      "imageUrl": "https://picsum.photos/seed/financeapp1/600/400",
       "imageHint": "mobile finance app",
       "category": "Mobile App"
     },
@@ -199,7 +199,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/food/600/400",
+      "imageUrl": "https://picsum.photos/seed/food1/600/400",
       "imageHint": "food delivery app",
       "category": "Web App"
     },
@@ -217,9 +217,83 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/luxury/600/400",
+      "imageUrl": "https://picsum.photos/seed/luxury1/600/400",
       "imageHint": "luxury hotel resort",
       "category": "Luxury Website"
+    },
+    {
+      "id": "9",
+      "name": "Water Delivery Web App",
+      "client": "WaterFlow",
+      "industry": "Logistics / Utilities",
+      "description": "Web application designed to manage water orders, deliveries, and customer accounts for residential and business clients.",
+      "goal": "Streamline the ordering and delivery management process for water distribution companies.",
+      "role": "UI/UX Design, Product Design",
+      "tools": [
+        "Figma",
+        "React",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/water1/600/400",
+      "imageHint": "water delivery service app",
+      "category": "Web App"
+    },
+    {
+      "id": "10",
+      "name": "Wakeup Influencer Event Landing Page",
+      "client": "Wakeup",
+      "industry": "Events / Marketing",
+      "description": "High-conversion landing page designed to promote an influencer event, featuring speakers, agenda, and registration sections.",
+      "goal": "Increase event registrations through an engaging and visually dynamic landing page.",
+      "role": "UI/UX Design",
+      "tools": [
+        "Figma",
+        "HTML",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/event1/600/400",
+      "imageHint": "influencer event landing page",
+      "category": "Landing Page"
+    },
+    {
+      "id": "11",
+      "name": "Punto Comedia Ticket Store",
+      "client": "Punto Comedia",
+      "industry": "Entertainment",
+      "description": "E-commerce platform for selling stand-up comedy show tickets with event listings, seat availability, and secure checkout.",
+      "goal": "Provide a seamless ticket purchasing experience for comedy fans and event organizers.",
+      "role": "UI/UX Design, E-commerce Development",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "Tailwind CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/tickets1/600/400",
+      "imageHint": "stand up comedy show tickets",
+      "category": "E-commerce"
+    },
+    {
+      "id": "12",
+      "name": "Glow Beauty E-commerce",
+      "client": "Glow",
+      "industry": "Beauty / Cosmetics",
+      "description": "Online beauty store featuring skincare and cosmetic products with modern UI, product filters, and personalized recommendations.",
+      "goal": "Create a visually attractive and conversion-focused e-commerce platform for beauty products.",
+      "role": "UI/UX Design",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "Tailwind CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/beauty1/600/400",
+      "imageHint": "beauty cosmetics ecommerce",
+      "category": "E-commerce"
     }
   ]
 }
