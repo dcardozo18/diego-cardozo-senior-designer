@@ -15,7 +15,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "https://www.aviatur.com/",
-      "imageUrl": "https://picsum.photos/seed/travel1/1200/800",
+      "imageUrl": "/aviatur.png",
       "imageHint": "plataforma de agencia de viajes",
       "category": "E-commerce",
       "overview": "Aviatur, líder en el mercado de viajes en Colombia, enfrentaba el reto de consolidar su vasto catálogo de vuelos, hoteles y tours en una experiencia digital unificada. El sistema anterior sufría de una interfaz fragmentada que causaba abandonos significativos.",
@@ -41,7 +41,7 @@
         "TypeScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/dashboard1/1200/800",
+      "imageUrl": "/orbit.png",
       "imageHint": "dashboard de analíticas",
       "category": "Plataformas Web",
       "overview": "Orbit Group Partners proporciona herramientas de coaching y productividad a nivel ejecutivo. Dirigí la transformación del diseño de su dashboard principal de SaaS, centrándome en crear un 'centro de comando' de alta fidelidad.",
@@ -66,7 +66,7 @@
         "Investigación de Usuario"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/tech1/1200/800",
+      "imageUrl": "/tecnologia.png",
       "imageHint": "tienda de tecnología ecommerce",
       "category": "E-commerce",
       "overview": "Tecnologia Mayorista necesitaba pasar de un proceso de pedido manual a una plataforma moderna de e-commerce B2B. Lideré la estrategia de UX y el diseño de UI, centrándome en las necesidades de compradores al por mayor.",
@@ -87,7 +87,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Adobe XD"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
+      "imageUrl": "/bingo.png",
       "imageHint": "bingo mobile game",
       "category": "Apps"
     },
@@ -101,7 +101,7 @@
       "role": "Desarrollo E-commerce y UI/UX",
       "tools": ["Shopify", "Tailwind CSS", "Liquid"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
+      "imageUrl": "/hamunet.jpeg",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -115,13 +115,13 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "HTML", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/it/600/400",
+      "imageUrl": "/skilltech.jpeg",
       "imageHint": "computer repair it support",
       "category": "Corporativo"
     },
     {
       "id": "4",
-      "name": "Best Deal Hotels Website",
+      "name": "Best Deal Hotels",
       "client": "Best Deal",
       "industry": "Viajes / Hostelería",
       "description": "Sitio de reservas hoteleras donde los usuarios exploran hoteles, comparan precios y encuentran ofertas.",
@@ -129,7 +129,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "React", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/hotel/600/400",
+      "imageUrl": "/bestdeal.png",
       "imageHint": "hotel booking website",
       "category": "Plataformas Web"
     },
@@ -143,7 +143,7 @@
       "role": "Diseño de Producto, UI/UX",
       "tools": ["Figma", "Chart.js", "React"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance/600/400",
+      "imageUrl": "/dashboard.jpeg",
       "imageHint": "finance dashboard analytics",
       "category": "Plataformas Web"
     },
@@ -157,13 +157,13 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Adobe XD"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finapp/600/400",
+      "imageUrl": "/finance.jpeg",
       "imageHint": "mobile finance app",
       "category": "Apps"
     },
     {
       "id": "7",
-      "name": "Food Delivery Web App",
+      "name": "Food Delivery App",
       "client": "FoodExpress",
       "industry": "Comida y Delivery",
       "description": "Aplicación web que permite buscar restaurantes, pedir comida online y rastrear el pedido.",
@@ -171,13 +171,13 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "React", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/food/600/400",
+      "imageUrl": "/food.jpeg",
       "imageHint": "food delivery app",
       "category": "Plataformas Web"
     },
     {
       "id": "8",
-      "name": "Hotel Las Islas Luxury Website",
+      "name": "Hotel Las Islas",
       "client": "Hotel Las Islas",
       "industry": "Hostelería de Lujo",
       "description": "Sitio web de hotel de lujo enfocado en visuales inmersivos y reserva directa.",
@@ -185,13 +185,13 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Next.js", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/luxury/600/400",
+      "imageUrl": "/islas.png",
       "imageHint": "luxury hotel resort",
       "category": "Plataformas Web"
     },
     {
       "id": "9",
-      "name": "App Web de Entrega de Agua",
+      "name": "Water",
       "client": "WaterFlow",
       "industry": "Logistics / Servicios",
       "description": "Aplicación web diseñada para gestionar pedidos de agua, entregas y cuentas de clientes para residencias y empresas.",
@@ -204,13 +204,13 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/water/600/400",
+      "imageUrl": "/water.png",
       "imageHint": "water delivery service app",
       "category": "Plataformas Web"
     },
     {
       "id": "10",
-      "name": "Landing Page Evento Wakeup Influencer",
+      "name": "Wakeup Evento",
       "client": "Wakeup",
       "industry": "Eventos / Marketing",
       "description": "Página de aterrizaje de alta conversión diseñada para promocionar un evento de influencers, con oradores, agenda y registro.",
@@ -223,13 +223,13 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/event/600/400",
+      "imageUrl": "/wakeup.png",
       "imageHint": "influencer event landing page",
       "category": "Landing Pages"
     },
     {
       "id": "11",
-      "name": "Tienda de Entradas Punto Comedia",
+      "name": "Punto Comedia",
       "client": "Punto Comedia",
       "industry": "Entretenimiento",
       "description": "Plataforma de comercio electrónico para la venta de entradas de shows de stand-up comedy con listados de eventos y pago seguro.",
@@ -241,13 +241,13 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/comedy/600/400",
+      "imageUrl": "/puntocomedia.png",
       "imageHint": "stand up comedy show tickets",
       "category": "E-commerce"
     },
     {
       "id": "12",
-      "name": "E-commerce Glow Beauty",
+      "name": "Glow Beauty",
       "client": "Glow",
       "industry": "Belleza / Cosméticos",
       "description": "Tienda de belleza online con productos de cuidado de la piel y cosméticos, UI moderna, filtros y recomendaciones personalizadas.",
@@ -259,7 +259,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/beauty/600/400",
+      "imageUrl": "/glow.jpeg",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
     }

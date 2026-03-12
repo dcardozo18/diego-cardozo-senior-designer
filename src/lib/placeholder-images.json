@@ -15,7 +15,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "https://www.aviatur.com/",
-      "imageUrl": "https://picsum.photos/seed/travel1/1200/800",
+      "imageUrl": "/aviatur.png",
       "imageHint": "travel agency platform",
       "category": "E-commerce",
       "overview": "Aviatur, a leader in the Colombian travel market, faced the challenge of consolidating its vast catalog of flights, hotels, and tours into a unified digital experience. The legacy system was plagued by high technical debt and a fragmented user interface that led to significant drop-offs.",
@@ -41,7 +41,7 @@
         "TypeScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/dashboard1/1200/800",
+      "imageUrl": "/orbit.png",
       "imageHint": "dashboard analytics",
       "category": "Web Platforms",
       "overview": "Orbit Group Partners provides executive-level coaching and productivity tools. I led the design transformation of their primary SaaS dashboard, focusing on creating a high-fidelity 'command center' for leadership.",
@@ -66,7 +66,7 @@
         "User Research"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/tech1/1200/800",
+      "imageUrl": "/tecnologia.png",
       "imageHint": "technology store ecommerce",
       "category": "E-commerce",
       "overview": "Tecnologia Mayorista is a dominant player in the tech distribution market. I led the UX strategy and UI design, focusing on the unique needs of bulk buyers who value speed, accuracy, and transparent pricing.",
@@ -90,7 +90,7 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
+      "imageUrl": "/bingo.png",
       "imageHint": "bingo mobile game",
       "category": "Apps"
     },
@@ -108,7 +108,7 @@
         "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
+      "imageUrl": "/hamunet.jpeg",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -127,7 +127,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/it/600/400",
+      "imageUrl": "/skilltech.jpeg",
       "imageHint": "computer repair it support",
       "category": "Corporate"
     },
@@ -145,7 +145,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/hotel/600/400",
+      "imageUrl": "/bestdeal.png",
       "imageHint": "hotel booking website",
       "category": "Web Platforms"
     },
@@ -163,7 +163,7 @@
         "React"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance/600/400",
+      "imageUrl": "/dashboard.jpeg",
       "imageHint": "finance dashboard analytics",
       "category": "Web Platforms"
     },
@@ -180,13 +180,13 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finapp/600/400",
+      "imageUrl": "/finance.jpeg",
       "imageHint": "mobile finance app",
       "category": "Apps"
     },
     {
       "id": "7",
-      "name": "Food Delivery Web App",
+      "name": "Food Delivery App",
       "client": "FoodExpress",
       "industry": "Food & Delivery",
       "description": "Web application that allows users to browse restaurants, order meals online, and track delivery in real time.",
@@ -199,13 +199,13 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/food/600/400",
+      "imageUrl": "/food.jpeg",
       "imageHint": "food delivery app",
       "category": "Web Platforms"
     },
     {
       "id": "8",
-      "name": "Hotel Las Islas Luxury Website",
+      "name": "Hotel Las Islas",
       "client": "Hotel Las Islas",
       "industry": "Luxury Hospitality",
       "description": "Luxury hotel website focused on immersive visuals, room showcases, and direct booking functionality.",
@@ -217,13 +217,13 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/luxury/600/400",
+      "imageUrl": "/islas.png",
       "imageHint": "luxury hotel resort",
       "category": "Web Platforms"
     },
     {
       "id": "9",
-      "name": "Water Delivery Web App",
+      "name": "Water",
       "client": "WaterFlow",
       "industry": "Logistics / Utilities",
       "description": "Web application designed to manage water orders, deliveries, and customer accounts for residential and business clients.",
@@ -236,13 +236,13 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/water/600/400",
+      "imageUrl": "/water.png",
       "imageHint": "water delivery service app",
       "category": "Web Platforms"
     },
     {
       "id": "10",
-      "name": "Wakeup Influencer Event Landing Page",
+      "name": "Wakeup Event",
       "client": "Wakeup",
       "industry": "Events / Marketing",
       "description": "High-conversion landing page designed to promote an influencer event, featuring speakers, agenda, and registration sections.",
@@ -255,7 +255,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/event/600/400",
+      "imageUrl": "/wakeup.png",
       "imageHint": "influencer event landing page",
       "category": "Landing Pages"
     },
@@ -273,7 +273,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/comedy/600/400",
+      "imageUrl": "/puntocomedia.png",
       "imageHint": "stand up comedy show tickets",
       "category": "E-commerce"
     },
@@ -291,7 +291,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/beauty/600/400",
+      "imageUrl": "/glow.jpeg",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
     }
