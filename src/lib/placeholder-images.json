@@ -294,6 +294,63 @@
       "imageUrl": "/glow.jpeg",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
+    },
+    { 
+      "id": "13", 
+      "name": "BIT-C Corporate Website", 
+      "client": "BIT-C", 
+      "industry": "Technology / IT Services", 
+      "description": "Corporate website designed to present BIT-C’s technology services, company values, and business solutions with a modern and professional digital presence.", 
+      "goal": "Strengthen the company's online presence and generate new business opportunities through a clear and trustworthy website.", 
+      "role": "UI/UX Design, Frontend Development", 
+      "tools": [ 
+        "Figma", 
+        "HTML", 
+        "Tailwind CSS", 
+        "JavaScript" 
+      ], 
+      "liveSiteUrl": "#", 
+      "imageUrl": "/bitc.png", 
+      "imageHint": "corporate technology website", 
+      "category": "Corporate Website" 
+    },
+    {
+      "id": "14",
+      "name": "Real Estate Property Website",
+      "client": "Real Estate",
+      "industry": "Real Estate",
+      "description": "Real estate website designed to showcase properties available for sale or rent, allowing users to browse listings, view detailed property information, and easily contact agents.",
+      "goal": "Provide an intuitive property search experience that helps users discover, compare, and inquire about available real estate quickly and efficiently.",
+      "role": "UI/UX Design, Frontend Development",
+      "tools": [
+        "Figma",
+        "React",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/realstate.jpeg",
+      "imageHint": "real estate property listings",
+      "category": "Corporate Website"
+    },
+    {
+      "id": "15",
+      "name": "Travel Experiences Blog",
+      "client": "Travel Blog",
+      "industry": "Travel / Publishing",
+      "description": "Travel blog website focused on sharing travel experiences, destination guides, and recommendations for places to visit around the world.",
+      "goal": "Inspire travelers by providing engaging stories, useful travel tips, and curated destination content in an easy-to-read digital experience.",
+      "role": "UI/UX Design, Frontend Development",
+      "tools": [
+        "Figma",
+        "HTML",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/travel.jpeg",
+      "imageHint": "travel blog destinations",
+      "category": "Blog / Content Platform"
     }
   ]
 }

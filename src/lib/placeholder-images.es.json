@@ -262,6 +262,63 @@
       "imageUrl": "/glow.jpeg",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
+    },
+    { 
+      "id": "13", 
+      "name": "BIT-C Corporate Website", 
+      "client": "BIT-C", 
+      "industry": "Tecnología / Corporativo", 
+      "description": "Sitio web corporativo diseñado para presentar los servicios tecnológicos de BIT-C, sus soluciones empresariales y la propuesta de valor de la compañía mediante una experiencia digital moderna y profesional.",
+      "goal": "Fortalecer la presencia digital de la empresa y generar nuevas oportunidades de negocio a través de un sitio web claro, confiable y orientado a clientes.",
+      "role": "UI/UX Design, Frontend Development", 
+      "tools": [ 
+        "Figma", 
+        "HTML", 
+        "Tailwind CSS", 
+        "JavaScript" 
+      ], 
+      "liveSiteUrl": "#", 
+      "imageUrl": "/bitc.png", 
+      "imageHint": "corporate technology website", 
+      "category": "Corporate Website" 
+    },
+    {
+      "id": "14",
+      "name": "Real Estate Property Website",
+      "client": "Real State",
+      "industry": "Real Estate",
+      "description": "Sitio web inmobiliario diseñado para mostrar propiedades disponibles para compra o alquiler, permitiendo a los usuarios explorar listados, ver detalles de cada propiedad y contactar fácilmente con los agentes.",
+      "goal": "Facilitar la búsqueda de propiedades mediante una experiencia intuitiva que permita a los usuarios descubrir, comparar y contactar rápidamente sobre inmuebles disponibles.",
+      "role": "UI/UX Design, Frontend Development",
+      "tools": [
+        "Figma",
+        "React",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/realstate.jpeg",
+      "imageHint": "real estate property listings",
+      "category": "Corporate Website"
+    },
+    {
+      "id": "15",
+      "name": "Blog de Experiencias de Viaje",
+      "client": "Travel Blog",
+      "industry": "Viajes / Publicación",
+      "description": "Sitio web tipo blog enfocado en compartir experiencias de viaje, guías de destinos y recomendaciones de lugares para visitar alrededor del mundo.",
+      "goal": "Inspirar a los viajeros proporcionando historias atractivas, consejos útiles y contenido curado sobre destinos en una experiencia digital fácil de navegar.",
+      "role": "Diseño UI/UX, Desarrollo Frontend",
+      "tools": [
+        "Figma",
+        "HTML",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "/travel.jpeg",
+      "imageHint": "blog de viajes destinos",
+      "category": "Blog / Plataforma de Contenido"
     }
   ]
 }
