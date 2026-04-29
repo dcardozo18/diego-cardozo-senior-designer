@@ -296,43 +296,6 @@
       "category": "E-commerce"
     },
     {
-      "id": "13",
-      "name": "Black Friday Campaign",
-      "client": "TechZone",
-      "industry": "E-commerce",
-      "description": "High-impact email marketing campaign for Black Friday with personalized deals and interactive modules.",
-      "goal": "Maximize open rates and ROI during peak sales season through data-driven design.",
-      "role": "Email Marketing Specialist & Designer",
-      "tools": [
-        "HTML",
-        "CSS",
-        "Figma",
-        "Mailchimp"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/email1/600/400",
-      "imageHint": "email marketing template",
-      "category": "Email Marketing"
-    },
-    {
-      "id": "14",
-      "name": "Customer Re-engagement Flow",
-      "client": "FashionHub",
-      "industry": "Fashion",
-      "description": "Automated email sequence designed to win back inactive customers with dynamic content and discounts.",
-      "goal": "Reduce churn rate and increase customer lifetime value through targeted messaging.",
-      "role": "UX Researcher & Email Designer",
-      "tools": [
-        "Klaviyo",
-        "Figma",
-        "HTML"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/email2/600/400",
-      "imageHint": "automated email sequence",
-      "category": "Email Marketing"
-    },
-    {
       "id": "15",
       "name": "Aviatur - Strategic Mailing System",
       "client": "Aviatur",
@@ -354,6 +317,29 @@
       "objective": "Build a modular master template using clean HTML/CSS from scratch to ensure pixel-perfect rendering across all providers.",
       "uxImprovements": "Simplified key content layout for mobile, optimized image delivery, and reduced friction in the purchase path directly from the email.",
       "impact": "Achieved a 25% increase in engagement and a significant improvement in brand technical perception."
+    },
+    {
+      "id": "16",
+      "name": "Aviatur Colombia - Tourism News Mailing",
+      "client": "Aviatur Colombia",
+      "industry": "Travel / Tourism",
+      "description": "Strategic email campaign focused on delivering curated tourism news and trends across Colombia.",
+      "goal": "Engage users with relevant local travel content and position Aviatur as a thought leader in Colombian tourism.",
+      "role": "Email Marketing Designer & Developer",
+      "tools": [
+        "HTML (From scratch)",
+        "CSS (From scratch)",
+        "Figma",
+        "MJML"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/aviatur-colombia/600/400",
+      "imageHint": "colombia tourism news",
+      "category": "Email Marketing",
+      "problem": "Low engagement in general travel newsletters due to a lack of localized and storytelling-driven content.",
+      "objective": "Design and code an editorial-style mailing focused on Colombian tourism to increase brand affinity.",
+      "uxImprovements": "Optimized typography hierarchy for long-form reading on mobile, curated high-quality visuals of Colombian landscapes, and simplified navigation.",
+      "impact": "Significant increase in read time per email and a 30% growth in subscriber retention for the editorial segment."
     }
   ]
 }

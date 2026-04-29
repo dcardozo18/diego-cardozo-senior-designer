@@ -9,17 +9,12 @@
       "description": "Plataforma integral de viajes y reservas para una de las agencias de viajes más grandes de la región.",
       "goal": "Modernizar la experiencia de reserva en línea e integrar múltiples servicios de viaje en una única plataforma.",
       "role": "Diseñador Principal UI/UX, Desarrollo Web",
-      "tools": [
-        "Figma",
-        "Angular",
-        "Bootstrap",
-        "JavaScript"
-      ],
+      "tools": ["Figma", "Angular", "Bootstrap", "JavaScript"],
       "liveSiteUrl": "https://www.aviatur.com/",
       "imageUrl": "/aviatur.png",
       "imageHint": "plataforma de agencia de viajes",
       "category": "E-commerce",
-      "overview": "Aviatur, líder en el mercado de viajes en Colombia, enfrentaba el reto de consolidar su vasto catálogo de vuelos, hoteles y tours en una experiencia digital unificada.",
+      "overview": "Aviatur, líder en el mercado de viajes en Colombia, enfrentaba el resto de consolidar su vasto catálogo de vuelos, hoteles y tours en una experiencia digital unificada.",
       "problem": "El principal punto de dolor era un motor de reservas con 'fricción' excesiva. Los usuarios se veían abrumados por una arquitectura de información poco intuitiva y un proceso de pago que requería demasiada entrada manual.",
       "objective": "El objetivo principal fue diseñar y construir una plataforma de reservas multidispositivo 'sin fricciones' que simplificara la planificación de viajes.",
       "strategy": "Adoptamos una metodología 'Mobile-First' y 'Atomic Design' centrada en la 'Divulgación Progresiva'.",
@@ -35,12 +30,7 @@
       "description": "Una completa plataforma de coaching diseñada para ayudar a los usuarios a alcanzar sus metas mediante el seguimiento de métricas de rendimiento en tiempo real.",
       "goal": "Rediseñar la experiencia del usuario implementando los estándares de accesibilidad WCAG y creando un sistema de diseño robusto.",
       "role": "Diseñador Principal UI/UX, Arquitectura de Sistemas de Diseño",
-      "tools": [
-        "Figma",
-        "Angular",
-        "D3.js",
-        "TypeScript"
-      ],
+      "tools": ["Figma", "Angular", "D3.js", "TypeScript"],
       "liveSiteUrl": "#",
       "imageUrl": "/orbit.png",
       "imageHint": "dashboard de analíticas",
@@ -61,11 +51,7 @@
       "description": "Una completa plataforma de comercio electrónico para un importante mayorista de tecnología.",
       "goal": "Impulsar las ventas en línea optimizando la experiencia del usuario a través de una investigación de usuario en profundidad y el mapeo del viaje del cliente.",
       "role": "Investigación UX, Mapeo del Viaje del Cliente, Diseño de UI",
-      "tools": [
-        "Figma",
-        "Shopify",
-        "Investigación de Usuario"
-      ],
+      "tools": ["Figma", "Shopify", "Investigación de Usuario"],
       "liveSiteUrl": "#",
       "imageUrl": "/tecnologia.png",
       "imageHint": "tienda de tecnología ecommerce",
@@ -198,12 +184,7 @@
       "description": "Aplicación web diseñada para gestionar pedidos de agua, entregas y cuentas de clientes para residencias y empresas.",
       "goal": "Optimizar el proceso de pedido y gestión de entregas para empresas de distribución de agua.",
       "role": "Diseño UI/UX, Diseño de Producto",
-      "tools": [
-        "Figma",
-        "React",
-        "Tailwind CSS",
-        "JavaScript"
-      ],
+      "tools": ["Figma", "React", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
       "imageUrl": "/water-app.png",
       "imageHint": "water delivery service app",
@@ -217,12 +198,7 @@
       "description": "Página de aterrizaje de alta conversión diseñada para promocionar un evento de influencers, con oradores, agenda y registro.",
       "goal": "Aumentar los registros al evento mediante una landing page atractiva y visualmente dinámica.",
       "role": "Diseño UI/UX",
-      "tools": [
-        "Figma",
-        "HTML",
-        "Tailwind CSS",
-        "JavaScript"
-      ],
+      "tools": ["Figma", "HTML", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
       "imageUrl": "/wakeup-event.png",
       "imageHint": "influencer event landing page",
@@ -236,11 +212,7 @@
       "description": "Plataforma de comercio electrónico para la venta de entradas de shows de stand-up comedy con listados de eventos y pago seguro.",
       "goal": "Proporcionar una experiencia de compra de entradas fluida para fans de la comedia y organizadores.",
       "role": "Diseño UI/UX, Desarrollo E-commerce",
-      "tools": [
-        "Figma",
-        "Shopify",
-        "Tailwind CSS"
-      ],
+      "tools": ["Figma", "Shopify", "Tailwind CSS"],
       "liveSiteUrl": "#",
       "imageUrl": "/punto-comedia.png",
       "imageHint": "stand up comedy show tickets",
@@ -254,43 +226,11 @@
       "description": "Tienda de belleza online con productos de cuidado de la piel y cosméticos, UI moderna, filtros y recomendaciones personalizadas.",
       "goal": "Crear una plataforma de e-commerce visualmente atractiva y enfocada en la conversión para productos de belleza.",
       "role": "Diseño UI/UX",
-      "tools": [
-        "Figma",
-        "Shopify",
-        "Tailwind CSS"
-      ],
+      "tools": ["Figma", "Shopify", "Tailwind CSS"],
       "liveSiteUrl": "#",
       "imageUrl": "/glow-beauty.png",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
-    },
-    {
-      "id": "13",
-      "name": "Campaña Black Friday",
-      "client": "TechZone",
-      "industry": "E-commerce",
-      "description": "Campaña de email marketing de alto impacto para Black Friday con ofertas personalizadas y módulos interactivos.",
-      "goal": "Maximizar las tasas de apertura y el ROI durante la temporada alta de ventas mediante diseño basado en datos.",
-      "role": "Especialista en Email Marketing y Diseñador",
-      "tools": ["HTML", "CSS", "Figma", "Mailchimp"],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/email1/600/400",
-      "imageHint": "email marketing template",
-      "category": "Email Marketing"
-    },
-    {
-      "id": "14",
-      "name": "Flujo de Re-engagement de Clientes",
-      "client": "FashionHub",
-      "industry": "Moda",
-      "description": "Secuencia de correos automatizada diseñada para recuperar clientes inactivos con contenido dinámico y descuentos.",
-      "goal": "Reducir la tasa de abandono y aumentar el valor de vida del cliente mediante mensajes segmentados.",
-      "role": "Investigador UX y Diseñador de Email",
-      "tools": ["Klaviyo", "Figma", "HTML"],
-      "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/email2/600/400",
-      "imageHint": "automated email sequence",
-      "category": "Email Marketing"
     },
     {
       "id": "15",
@@ -300,12 +240,7 @@
       "description": "Sistema modular de correos diseñado para promocionar Vuelos, Hoteles, Paquetes y Carros de forma dinámica.",
       "goal": "Crear un sistema de mailing robusto y de alto rendimiento que se adapte a todos los dispositivos y clientes de correo.",
       "role": "Diseñador y Desarrollador de Email Marketing",
-      "tools": [
-        "HTML (Desde cero)",
-        "CSS (Desde cero)",
-        "Figma",
-        "MJML"
-      ],
+      "tools": ["HTML (Desde cero)", "CSS (Desde cero)", "Figma", "MJML"],
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/aviatur-mailing/600/400",
       "imageHint": "travel email newsletter",
@@ -314,6 +249,24 @@
       "objective": "Construir una plantilla maestra modular utilizando HTML/CSS limpio desde cero para garantizar un renderizado perfecto en todos los proveedores.",
       "uxImprovements": "Simplificación del diseño de contenidos clave para móvil, optimización de la entrega de imágenes y reducción de fricción en la ruta de compra desde el correo.",
       "impact": "Se logró un aumento del 25% en el engagement y una mejora significativa en la percepción técnica de la marca."
+    },
+    {
+      "id": "16",
+      "name": "Aviatur Colombia - Mailing de Noticias Turísticas",
+      "client": "Aviatur Colombia",
+      "industry": "Viajes / Turismo",
+      "description": "Campaña de correo estratégico enfocada en entregar noticias y tendencias turísticas curadas de toda Colombia.",
+      "goal": "Involucrar a los usuarios con contenido de viajes local relevante y posicionar a Aviatur como líder de opinión en el turismo colombiano.",
+      "role": "Diseñador y Desarrollador de Email Marketing",
+      "tools": ["HTML (Desde cero)", "CSS (Desde cero)", "Figma", "MJML"],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/aviatur-colombia/600/400",
+      "imageHint": "noticias turismo colombia",
+      "category": "Email Marketing",
+      "problem": "Bajo compromiso en los boletines de viajes generales debido a la falta de contenido localizado y con enfoque narrativo.",
+      "objective": "Diseñar y programar un mailing de estilo editorial enfocado en el turismo colombiano para aumentar la afinidad con la marca.",
+      "uxImprovements": "Jerarquía tipográfica optimizada para lectura larga en móviles, selección curada de visuales de alta calidad de paisajes colombianos y navegación simplificada.",
+      "impact": "Aumento significativo en el tiempo de lectura por correo y un crecimiento del 30% en la retención de suscriptores para el segmento editorial."
     }
   ]
 }

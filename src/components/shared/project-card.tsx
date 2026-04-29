@@ -81,6 +81,15 @@ const ProjectCard = ({ project, dictionary }: ProjectCardProps) => {
                         <p className="text-sm text-foreground/80">{project.problem}</p>
                       </div>
                     )}
+                    
+                    {project.objective && (
+                      <div className="bg-primary/5 border border-primary/10 p-5 rounded-xl">
+                        <h4 className="font-bold text-primary mb-2 flex items-center gap-2">
+                          <Target className="h-5 w-5" /> {dictionary.projects.objective}
+                        </h4>
+                        <p className="text-sm text-foreground/80">{project.objective}</p>
+                      </div>
+                    )}
                 </div>
 
                 <div className="flex flex-col gap-6">
