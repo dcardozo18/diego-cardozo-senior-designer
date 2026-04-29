@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -18,13 +19,13 @@
       "imageUrl": "/aviatur.png",
       "imageHint": "plataforma de agencia de viajes",
       "category": "E-commerce",
-      "overview": "Aviatur, líder en el mercado de viajes en Colombia, enfrentaba el reto de consolidar su vasto catálogo de vuelos, hoteles y tours en una experiencia digital unificada. El sistema anterior sufría de una interfaz fragmentada que causaba abandonos significativos.",
-      "problem": "El principal punto de dolor era un motor de reservas con 'fricción' excesiva. Los usuarios se veían abrumados por una arquitectura de información poco intuitiva y un proceso de pago que requería demasiada entrada manual. Los usuarios móviles luchaban con un diseño no responsivo que hacía casi imposible completar una compra.",
-      "objective": "El objetivo principal fue diseñar y construir una plataforma de reservas multidispositivo 'sin fricciones' que simplificara la planificación de viajes. Los KPIs incluyeron aumentar la tasa de conversión y reducir el tiempo promedio de compra.",
-      "strategy": "Adoptamos una metodología 'Mobile-First' y 'Atomic Design'. Mi estrategia se centró en la 'Divulgación Progresiva', ocultando opciones de filtrado complejas hasta que el usuario las necesitara explícitamente para evitar la sobrecarga cognitiva.",
-      "uxImprovements": "Eliminamos por completo el proceso de pago tradicional de 5 pasos y lo reemplazamos por un 'Pago de Página Única' dinámico que muestra solo los campos relevantes de forma adaptativa. Esto redujo la fricción y el abandono en un 40%. También simplificamos las páginas de productos técnicos agrupando visualmente las especificaciones en secciones colapsables de fácil lectura.",
-      "impact": "El relanzamiento resultó en un aumento transformador del 35% en las reservas en línea en los primeros seis meses. Las tasas de conversión móvil se dispararon significativamente, validando el enfoque 'responsive-first'.",
-      "decisions": "Una de las decisiones más impactantes fue reemplazar el pago tradicional de 5 pasos por un 'Pago en una Sola Página' dinámico que mostraba solo los campos relevantes según los servicios elegidos."
+      "overview": "Aviatur, líder en el mercado de viajes en Colombia, enfrentaba el reto de consolidar su vasto catálogo de vuelos, hoteles y tours en una experiencia digital unificada.",
+      "problem": "El principal punto de dolor era un motor de reservas con 'fricción' excesiva. Los usuarios se veían abrumados por una arquitectura de información poco intuitiva y un proceso de pago que requería demasiada entrada manual.",
+      "objective": "El objetivo principal fue diseñar y construir una plataforma de reservas multidispositivo 'sin fricciones' que simplificara la planificación de viajes.",
+      "strategy": "Adoptamos una metodología 'Mobile-First' y 'Atomic Design' centrada en la 'Divulgación Progresiva'.",
+      "uxImprovements": "Eliminamos por completo el proceso de pago tradicional de 5 pasos y lo reemplazamos por un 'Pago de Página Única' dinámico. Redujimos la fricción y el abandono en un 40%.",
+      "impact": "El relanzamiento resultó en un aumento transformador del 35% en las reservas en línea en los primeros seis meses.",
+      "decisions": "Reemplazar el pago tradicional de 5 pasos por un 'Pago en una Sola Página' dinámico que mostraba solo los campos relevantes de forma adaptativa."
     },
     {
       "id": "24",
@@ -43,14 +44,14 @@
       "liveSiteUrl": "#",
       "imageUrl": "/orbit.png",
       "imageHint": "dashboard de analíticas",
-      "category": "Plataformas Web",
-      "overview": "Orbit Group Partners proporciona herramientas de coaching y productividad a nivel ejecutivo. Dirigí la transformación del diseño de su dashboard principal de SaaS, centrándome en crear un 'centro de comando' de alta fidelidad para el liderazgo.",
-      "problem": "El dashboard existente sufría de 'Fatiga de Datos'. Los ejecutivos recibían muros de números brutos y gráficos estáticos que requerían interpretación manual. No había una jerarquía clara de información.",
+      "category": "Web Platforms",
+      "overview": "Orbit Group Partners proporciona herramientas de coaching y productividad a nivel ejecutivo. Dirigí la transformación del diseño de su dashboard principal de SaaS.",
+      "problem": "El dashboard existente sufría de 'Fatiga de Datos'. Los ejecutivos recibían muros de números brutos y gráficos estáticos que requerían interpretación manual.",
       "objective": "El objetivo central fue diseñar un dashboard centralizado, accesible y altamente intuitivo que priorizara los Indicadores Clave de Desempeño (KPIs).",
-      "strategy": "Desarrollé un Sistema de Diseño integral desde cero, utilizando un 'Sistema de Cuadrícula' modular y una paleta de colores curada específicamente para la claridad en la visualización de datos.",
-      "uxImprovements": "Para combatir la 'Fatiga de Datos', reemplazamos las tablas densas por barras de progreso visuales intuitivas y alertas de estado codificadas por colores que resaltan las tareas críticas. También implementamos un sistema de 'Widgets Personalizables' que permite a los ejecutivos fijar sus métricas más relevantes, reduciendo la carga cognitiva mediante el uso de tipografía de alto contraste y espaciado generoso.",
+      "strategy": "Desarrollé un Sistema de Diseño integral desde cero, utilizando un 'Sistema de Cuadrícula' modular.",
+      "uxImprovements": "Para combatir la 'Fatiga de Datos', reemplazamos tablas densas por barras de progreso visuales intuitivas y alertas de estado codificadas por colores. Implementamos un sistema de 'Widgets Personalizables'.",
       "impact": "La plataforma rediseñada logró una mejora del 60% en la velocidad de finalización de tareas y un aumento del 45% en las puntuaciones de compromiso del usuario.",
-      "decisions": "Tomé la decisión estratégica de adoptar un 'Modo Oscuro' por defecto para el dashboard para reducir la fatiga visual de los ejecutivos. También implementé un sistema de widgets personalizables."
+      "decisions": "Adoptar un 'Modo Oscuro' por defecto para el dashboard y un sistema de widgets personalizables."
     },
     {
       "id": "23",
@@ -69,13 +70,13 @@
       "imageUrl": "/tecnologia.png",
       "imageHint": "tienda de tecnología ecommerce",
       "category": "E-commerce",
-      "overview": "Tecnologia Mayorista es un actor dominante en el mercado de distribución tecnológica. Lideré la estrategia de UX y el diseño de UI, centrándome en las necesidades únicas de los compradores al por mayor que valoran la velocidad, la precisión y los precios transparentes.",
-      "problem": "La transición de lo analógico a lo digital se veía obstaculizada por un sistema de pedidos anticuado. Los compradores mayoristas estaban frustrados por la incapacidad de ver precios dinámicos basados en su volumen de pedido.",
-      "objective": "Nuestro objetivo fue transicionar el 40% de los pedidos tradicionales de teléfono/email a la plataforma en línea. Buscamos simplificar el viaje mayorista, reduciendo el tiempo para realizar un pedido masivo.",
-      "strategy": "Mi estrategia se basó en profundas 'Entrevistas con Interesados' y 'Observación de Usuarios' para entender las rutinas diarias de los compradores mayoristas. Diseñamos una interfaz de 'Pedido Rápido'.",
-      "uxImprovements": "Optimizamos la ruta de compra introduciendo una interfaz de 'Selección en Matriz' para productos con múltiples variantes. Esto permite a los compradores ingresar cantidades de todas las variantes en una sola pantalla, reduciendo los clics en un 60% y el abandono del carrito. También añadimos un botón de 'Pedido Rápido' en la página de inicio.",
-      "impact": "En nueve meses, el 55% de todos los pedidos mayoristas se realizaban en línea, superando nuestro objetivo inicial. El valor promedio de pedido (AOV) aumentó un 15%.",
-      "decisions": "Una decisión fundamental fue priorizar una vista de 'Pedido de Matriz' para productos con múltiples variantes, permitiendo a los compradores ingresar cantidades de forma masiva en una sola pantalla."
+      "overview": "Tecnologia Mayorista es un actor dominante en el mercado de distribución tecnológica. Lideré la estrategia de UX y el diseño de UI para compradores mayoristas.",
+      "problem": "Los compradores mayoristas estaban frustrados por la incapacidad de ver precios dinámicos basados en su volumen de pedido y un sistema de pedidos anticuado.",
+      "objective": "Transicionar el 40% de los pedidos tradicionales de teléfono/email a la plataforma en línea, reduciendo el tiempo de pedido masivo.",
+      "strategy": "Estrategia basada en 'Entrevistas con Interesados' y 'Observación de Usuarios' para entender rutinas de compradores mayoristas.",
+      "uxImprovements": "Optimizamos la ruta de compra introduciendo una interfaz de 'Selección en Matriz' para productos con múltiples variantes. Redujimos clics en un 60% y el abandono del carrito.",
+      "impact": "En nueve meses, el 55% de todos los pedidos mayoristas se realizaban en línea, superando nuestro objetivo inicial.",
+      "decisions": "Priorizar una vista de 'Pedido de Matriz' para productos con múltiples variantes, permitiendo ingresar cantidades de forma masiva en una sola pantalla."
     },
     {
       "id": "1",
@@ -117,7 +118,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "/skilltech.png",
       "imageHint": "computer repair it support",
-      "category": "Corporativo"
+      "category": "Corporate"
     },
     {
       "id": "4",
@@ -131,7 +132,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "/bestdeal.png",
       "imageHint": "hotel booking website",
-      "category": "Plataformas Web"
+      "category": "Web Platforms"
     },
     {
       "id": "5",
@@ -145,7 +146,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "/dashboard-finance.png",
       "imageHint": "finance dashboard analytics",
-      "category": "Plataformas Web"
+      "category": "Web Platforms"
     },
     {
       "id": "6",
@@ -168,12 +169,12 @@
       "industry": "Comida y Delivery",
       "description": "Aplicación web que permite a los usuarios buscar restaurantes, pedir comida online y rastrear el pedido en tiempo real.",
       "goal": "Simplificar el proceso de pedido de comida online con una interfaz rápida e intuitiva.",
-      "role": "Diseño UI/UX, Desarrollo Frontend",
+      "role": "Diseño UI/UX",
       "tools": ["Figma", "React", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
       "imageUrl": "/food-delivery.png",
       "imageHint": "food delivery app",
-      "category": "Plataformas Web"
+      "category": "Web Platforms"
     },
     {
       "id": "8",
@@ -187,7 +188,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "/hotel-las-islas.png",
       "imageHint": "luxury hotel resort",
-      "category": "Plataformas Web"
+      "category": "Landing Pages"
     },
     {
       "id": "9",
@@ -206,7 +207,7 @@
       "liveSiteUrl": "#",
       "imageUrl": "/water-app.png",
       "imageHint": "water delivery service app",
-      "category": "Plataformas Web"
+      "category": "Web Platforms"
     },
     {
       "id": "10",
@@ -290,6 +291,29 @@
       "imageUrl": "https://picsum.photos/seed/email2/600/400",
       "imageHint": "automated email sequence",
       "category": "Email Marketing"
+    },
+    {
+      "id": "15",
+      "name": "Aviatur - Sistema de Mailing Estratégico",
+      "client": "Aviatur",
+      "industry": "Viajes / E-commerce",
+      "description": "Sistema modular de correos diseñado para promocionar Vuelos, Hoteles, Paquetes y Carros de forma dinámica.",
+      "goal": "Crear un sistema de mailing robusto y de alto rendimiento que se adapte a todos los dispositivos y clientes de correo.",
+      "role": "Diseñador y Desarrollador de Email Marketing",
+      "tools": [
+        "HTML (Desde cero)",
+        "CSS (Desde cero)",
+        "Figma",
+        "MJML"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/aviatur-mailing/600/400",
+      "imageHint": "travel email newsletter",
+      "category": "Email Marketing",
+      "problem": "Falta de consistencia visual y baja responsividad en campañas anteriores, lo que resultaba en bajas tasas de clics.",
+      "objective": "Construir una plantilla maestra modular utilizando HTML/CSS limpio desde cero para garantizar un renderizado perfecto en todos los proveedores.",
+      "uxImprovements": "Simplificación del diseño de contenidos clave para móvil, optimización de la entrega de imágenes y reducción de fricción en la ruta de compra desde el correo.",
+      "impact": "Se logró un aumento del 25% en el engagement y una mejora significativa en la percepción técnica de la marca."
     }
   ]
 }
