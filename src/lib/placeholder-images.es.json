@@ -18,7 +18,7 @@
       "problem": "El principal punto de dolor era un motor de reservas con 'fricción' excesiva. Los usuarios se veían abrumados por una arquitectura de información poco intuitiva y un proceso de pago que requería demasiada entrada manual.",
       "objective": "El objetivo principal fue diseñar y construir una plataforma de reservas multidispositivo 'sin fricciones' que simplificara la planificación de viajes.",
       "strategy": "Adoptamos una metodología 'Mobile-First' y 'Atomic Design' centrada en la 'Divulgación Progresiva'.",
-      "uxImprovements": "Eliminamos por completo el proceso de pago tradicional de 5 pasos y lo reemplazamos por un 'Pago de Página Única' dinámico. Redujimos la fricción y el abandono en un 40%.",
+      "uxImprovements": "Eliminación de pasos redundantes en el flujo de búsqueda y reemplazo del pago de 5 pasos por un sistema dinámico de página única, reduciendo el abandono en un 40%.",
       "impact": "El relanzamiento resultó en un aumento transformador del 35% en las reservas en línea en los primeros seis meses.",
       "decisions": "Reemplazar el pago tradicional de 5 pasos por un 'Pago en una Sola Página' dinámico que mostraba solo los campos relevantes de forma adaptativa."
     },
@@ -39,8 +39,8 @@
       "problem": "El dashboard existente sufría de 'Fatiga de Datos'. Los ejecutivos recibían muros de números brutos y gráficos estáticos que requerían interpretación manual.",
       "objective": "El objetivo central fue diseñar un dashboard centralizado, accesible y altamente intuitivo que priorizara los Indicadores Clave de Desempeño (KPIs).",
       "strategy": "Desarrollé un Sistema de Diseño integral desde cero, utilizando un 'Sistema de Cuadrícula' modular.",
-      "uxImprovements": "Para combatir la 'Fatiga de Datos', reemplazamos tablas densas por barras de progreso visuales intuitivas y alertas de estado codificadas por colores. Implementamos un sistema de 'Widgets Personalizables'.",
-      "impact": "La plataforma rediseñada logró una mejora del 60% en la velocidad de finalización de tareas y un aumento del 45% en las puntuaciones de compromiso del usuario.",
+      "uxImprovements": "Simplificación de la visualización de datos reemplazando tablas complejas por barras de progreso visuales intuitivas y alertas de estado por color, mejorando la velocidad de tarea en un 60%.",
+      "impact": "La plataforma rediseñada logró un aumento del 45% en las puntuaciones de compromiso del usuario y redujo significativamente la carga cognitiva.",
       "decisions": "Adoptar un 'Modo Oscuro' por defecto para el dashboard y un sistema de widgets personalizables."
     },
     {
@@ -60,7 +60,7 @@
       "problem": "Los compradores mayoristas estaban frustrados por la incapacidad de ver precios dinámicos basados en su volumen de pedido y un sistema de pedidos anticuado.",
       "objective": "Transicionar el 40% de los pedidos tradicionales de teléfono/email a la plataforma en línea, reduciendo el tiempo de pedido masivo.",
       "strategy": "Estrategia basada en 'Entrevistas con Interesados' y 'Observación de Usuarios' para entender rutinas de compradores mayoristas.",
-      "uxImprovements": "Optimizamos la ruta de compra introduciendo una interfaz de 'Selección en Matriz' para productos con múltiples variantes. Redujimos clics en un 60% y el abandono del carrito.",
+      "uxImprovements": "Optimización de la ruta de compra masiva mediante una interfaz de 'Selección en Matriz' para productos multivariante, reduciendo los clics en un 60%.",
       "impact": "En nueve meses, el 55% de todos los pedidos mayoristas se realizaban en línea, superando nuestro objetivo inicial.",
       "decisions": "Priorizar una vista de 'Pedido de Matriz' para productos con múltiples variantes, permitiendo ingresar cantidades de forma masiva en una sola pantalla."
     },
@@ -177,69 +177,13 @@
       "category": "Landing Pages"
     },
     {
-      "id": "9",
-      "name": "Water Delivery Web App",
-      "client": "WaterFlow",
-      "industry": "Logística / Servicios",
-      "description": "Aplicación web diseñada para gestionar pedidos de agua, entregas y cuentas de clientes para residencias y empresas.",
-      "goal": "Optimizar el proceso de pedido y gestión de entregas para empresas de distribución de agua.",
-      "role": "Diseño UI/UX, Diseño de Producto",
-      "tools": ["Figma", "React", "Tailwind CSS", "JavaScript"],
-      "liveSiteUrl": "#",
-      "imageUrl": "/water-app.png",
-      "imageHint": "water delivery service app",
-      "category": "Web Platforms"
-    },
-    {
-      "id": "10",
-      "name": "Wakeup Influencer Event Landing Page",
-      "client": "Wakeup",
-      "industry": "Eventos / Marketing",
-      "description": "Página de aterrizaje de alta conversión diseñada para promocionar un evento de influencers, con oradores, agenda y registro.",
-      "goal": "Aumentar los registros al evento mediante una landing page atractiva y visualmente dinámica.",
-      "role": "Diseño UI/UX",
-      "tools": ["Figma", "HTML", "Tailwind CSS", "JavaScript"],
-      "liveSiteUrl": "#",
-      "imageUrl": "/wakeup-event.png",
-      "imageHint": "influencer event landing page",
-      "category": "Landing Pages"
-    },
-    {
-      "id": "11",
-      "name": "Punto Comedia Ticket Store",
-      "client": "Punto Comedia",
-      "industry": "Entretenimiento",
-      "description": "Plataforma de comercio electrónico para la venta de entradas de shows de stand-up comedy con listados de eventos y pago seguro.",
-      "goal": "Proporcionar una experiencia de compra de entradas fluida para fans de la comedia y organizadores.",
-      "role": "Diseño UI/UX, Desarrollo E-commerce",
-      "tools": ["Figma", "Shopify", "Tailwind CSS"],
-      "liveSiteUrl": "#",
-      "imageUrl": "/punto-comedia.png",
-      "imageHint": "stand up comedy show tickets",
-      "category": "E-commerce"
-    },
-    {
-      "id": "12",
-      "name": "Glow Beauty E-commerce",
-      "client": "Glow",
-      "industry": "Belleza / Cosméticos",
-      "description": "Tienda de belleza online con productos de cuidado de la piel y cosméticos, UI moderna, filtros y recomendaciones personalizadas.",
-      "goal": "Crear una plataforma de e-commerce visualmente atractiva y enfocada en la conversión para productos de belleza.",
-      "role": "Diseño UI/UX",
-      "tools": ["Figma", "Shopify", "Tailwind CSS"],
-      "liveSiteUrl": "#",
-      "imageUrl": "/glow-beauty.png",
-      "imageHint": "beauty cosmetics ecommerce",
-      "category": "E-commerce"
-    },
-    {
       "id": "15",
       "name": "Aviatur - Sistema de Mailing Estratégico",
       "client": "Aviatur",
       "industry": "Viajes / E-commerce",
       "description": "Sistema modular de correos diseñado para promocionar Vuelos, Hoteles, Paquetes y Carros de forma dinámica.",
       "goal": "Crear un sistema de mailing robusto y de alto rendimiento que se adapte a todos los dispositivos y clientes de correo.",
-      "role": "Diseñador y Desarrollador de Email Marketing",
+      "role": "Email Marketing Designer & Developer",
       "tools": ["HTML (Desde cero)", "CSS (Desde cero)", "Figma", "MJML"],
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/aviatur-mailing/600/400",
@@ -247,7 +191,7 @@
       "category": "Email Marketing",
       "problem": "Falta de consistencia visual y baja responsividad en campañas anteriores, lo que resultaba en bajas tasas de clics.",
       "objective": "Construir una plantilla maestra modular utilizando HTML/CSS limpio desde cero para garantizar un renderizado perfecto en todos los proveedores.",
-      "uxImprovements": "Simplificación del diseño de contenidos clave para móvil, optimización de la entrega de imágenes y reducción de fricción en la ruta de compra desde el correo.",
+      "uxImprovements": "Simplificación del diseño de contenidos clave para móvil, optimización de la entrega de imágenes y reducción de fricción en la ruta de compra.",
       "impact": "Se logró un aumento del 25% en el engagement y una mejora significativa en la percepción técnica de la marca."
     },
     {
@@ -257,7 +201,7 @@
       "industry": "Viajes / Turismo",
       "description": "Campaña de correo estratégico enfocada en entregar noticias y tendencias turísticas curadas de toda Colombia.",
       "goal": "Involucrar a los usuarios con contenido de viajes local relevante y posicionar a Aviatur como líder de opinión en el turismo colombiano.",
-      "role": "Diseñador y Desarrollador de Email Marketing",
+      "role": "Email Marketing Designer & Developer",
       "tools": ["HTML (Desde cero)", "CSS (Desde cero)", "Figma", "MJML"],
       "liveSiteUrl": "#",
       "imageUrl": "https://picsum.photos/seed/aviatur-colombia/600/400",
@@ -265,8 +209,26 @@
       "category": "Email Marketing",
       "problem": "Bajo compromiso en los boletines de viajes generales debido a la falta de contenido localizado y con enfoque narrativo.",
       "objective": "Diseñar y programar un mailing de estilo editorial enfocado en el turismo colombiano para aumentar la afinidad con la marca.",
-      "uxImprovements": "Jerarquía tipográfica optimizada para lectura larga en móviles, selección curada de visuales de alta calidad de paisajes colombianos y navegación simplificada.",
+      "uxImprovements": "Jerarquía tipográfica optimizada para lectura larga en móviles y selección curada de visuales para mejorar la escaneabilidad.",
       "impact": "Aumento significativo en el tiempo de lectura por correo y un crecimiento del 30% en la retención de suscriptores para el segmento editorial."
+    },
+    {
+      "id": "17",
+      "name": "Hotel Las Islas - Mailing de Lujo Exclusivo",
+      "client": "Hotel Las Islas",
+      "industry": "Hostelería de Lujo / E-commerce",
+      "description": "Campaña de email marketing de alta gama para uno de los hoteles más exclusivos de Colombia, con noticias personalizadas y planes de viaje exclusivos.",
+      "goal": "Comunicar la exclusividad de la marca e impulsar las reservas directas mediante contenido curado.",
+      "role": "Diseñador y Desarrollador de Email Marketing",
+      "tools": ["HTML (Desde cero)", "CSS (Desde cero)", "Figma", "MJML"],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/hotel-islas-mail/600/400",
+      "imageHint": "luxury hotel email",
+      "category": "Email Marketing",
+      "problem": "Los clientes de alta gama requieren una experiencia visual sofisticada que muchos clientes de correo no logran renderizar correctamente, perdiendo la sensación de lujo.",
+      "objective": "Crear un sistema de correos codificado a medida y con precisión de píxel que refleje la identidad premium del hotel en todas las plataformas.",
+      "uxImprovements": "Implementación de tipografía fluida para mejor lectura en pantallas móviles de alta resolución y optimización de carga de imágenes para mantener la estética premium sin demoras.",
+      "impact": "Aumento del 20% en reservas directas provenientes de suscriptores y una tasa de apertura récord del 42% para el segmento de lujo."
     }
   ]
 }

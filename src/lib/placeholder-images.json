@@ -22,7 +22,7 @@
       "problem": "The primary pain point was a 'friction-heavy' booking engine. Users were overwhelmed by a non-intuitive information architecture and a checkout process that required excessive manual input.",
       "objective": "The main objective was to design and build a 'frictionless' multi-device booking platform that simplifies the travel planning process.",
       "strategy": "We adopted a 'Mobile-First' and 'Atomic Design' methodology focusing on 'Progressive Disclosure'.",
-      "uxImprovements": "We completely eliminated the traditional 5-step checkout process and replaced it with a dynamic 'Single-Page Checkout'. Reduced checkout friction and abandonment by 40%.",
+      "uxImprovements": "Eliminated redundant steps in the search flow and replaced the 5-step checkout with a dynamic single-page system, reducing abandonment by 40%.",
       "impact": "The relaunch resulted in a transformative 35% increase in online bookings within the first six months.",
       "decisions": "Replacing the traditional 5-step checkout with a dynamic 'Single-Page Checkout' that adaptively showed only relevant fields."
     },
@@ -48,8 +48,8 @@
       "problem": "The existing dashboard suffered from 'Data Fatigue.' Executives were presented with walls of raw numbers and static charts that required manual interpretation.",
       "objective": "The core objective was to design a centralized, accessible, and highly intuitive dashboard that prioritizes Key Performance Indicators (KPIs).",
       "strategy": "I developed a comprehensive Design System from the ground up, utilizing a modular 'Grid System'.",
-      "uxImprovements": "To combat 'Data Fatigue', we replaced complex tables with intuitive visual progress bars and color-coded status alerts. We implemented a 'Customizable Widget' system.",
-      "impact": "The redesigned platform achieved a 60% improvement in task completion speed and a 45% increase in user engagement scores.",
+      "uxImprovements": "Simplified data visualization by replacing complex tables with intuitive progress bars and color-coded status alerts, improving task completion speed by 60%.",
+      "impact": "The redesigned platform achieved a 45% increase in user engagement scores and significantly reduced executive cognitive load.",
       "decisions": "Adopting a 'Dark Mode' default for the dashboard and implementing a 'Customizable Widget' system."
     },
     {
@@ -73,7 +73,7 @@
       "problem": "Wholesale buyers were frustrated by the inability to see dynamic pricing based on their order volume and an antiquated ordering system.",
       "objective": "Transition 40% of traditional phone/email orders to the online platform while reducing the time to place bulk orders.",
       "strategy": "Rooted in deep 'Stakeholder Interviews' and 'User Shadowing' to understand daily routines of bulk buyers.",
-      "uxImprovements": "Optimized the purchasing path with a 'Matrix Selection' UI for multi-variant products. Reduced clicks by 60% and cart abandonment.",
+      "uxImprovements": "Streamlined the bulk ordering path by introducing a 'Matrix Selection' UI for products with multiple variants, reducing clicks by 60%.",
       "impact": "Within nine months, 55% of all wholesale orders were placed online, surpassing our initial target.",
       "decisions": "Prioritizing a 'Matrix Order' view for products with multiple variants to allow bulk quantity entry on a single screen."
     },
@@ -222,80 +222,6 @@
       "category": "Landing Pages"
     },
     {
-      "id": "9",
-      "name": "Water Delivery Web App",
-      "client": "WaterFlow",
-      "industry": "Logistics / Utilities",
-      "description": "Web application designed to manage water orders, deliveries, and customer accounts for residential and business clients.",
-      "goal": "Streamline the ordering and delivery management process for water distribution companies.",
-      "role": "UI/UX Design, Product Design",
-      "tools": [
-        "Figma",
-        "React",
-        "Tailwind CSS",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/water-app.png",
-      "imageHint": "water delivery service app",
-      "category": "Web Platforms"
-    },
-    {
-      "id": "10",
-      "name": "Wakeup Influencer Event Landing Page",
-      "client": "Wakeup",
-      "industry": "Events / Marketing",
-      "description": "High-conversion landing page designed to promote an influencer event, featuring speakers, agenda, and registration sections.",
-      "goal": "Increase event registrations through an engaging and visually dynamic landing page.",
-      "role": "UI/UX Design",
-      "tools": [
-        "Figma",
-        "HTML",
-        "Tailwind CSS",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/wakeup-event.png",
-      "imageHint": "influencer event landing page",
-      "category": "Landing Pages"
-    },
-    {
-      "id": "11",
-      "name": "Punto Comedia Ticket Store",
-      "client": "Punto Comedia",
-      "industry": "Entertainment",
-      "description": "E-commerce platform for selling stand-up comedy show tickets with event listings, seat availability, and secure checkout.",
-      "goal": "Provide a seamless ticket purchasing experience for comedy fans and event organizers.",
-      "role": "UI/UX Design, E-commerce Development",
-      "tools": [
-        "Figma",
-        "Shopify",
-        "Tailwind CSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/punto-comedia.png",
-      "imageHint": "stand up comedy show tickets",
-      "category": "E-commerce"
-    },
-    {
-      "id": "12",
-      "name": "Glow Beauty E-commerce",
-      "client": "Glow",
-      "industry": "Beauty / Cosmetics",
-      "description": "Online beauty store featuring skincare and cosmetic products with modern UI, product filters, and personalized recommendations.",
-      "goal": "Create a visually attractive and conversion-focused e-commerce platform for beauty products.",
-      "role": "UI/UX Design",
-      "tools": [
-        "Figma",
-        "Shopify",
-        "Tailwind CSS"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/glow-beauty.png",
-      "imageHint": "beauty cosmetics ecommerce",
-      "category": "E-commerce"
-    },
-    {
       "id": "15",
       "name": "Aviatur - Strategic Mailing System",
       "client": "Aviatur",
@@ -338,8 +264,31 @@
       "category": "Email Marketing",
       "problem": "Low engagement in general travel newsletters due to a lack of localized and storytelling-driven content.",
       "objective": "Design and code an editorial-style mailing focused on Colombian tourism to increase brand affinity.",
-      "uxImprovements": "Optimized typography hierarchy for long-form reading on mobile, curated high-quality visuals of Colombian landscapes, and simplified navigation.",
+      "uxImprovements": "Optimized typography hierarchy for long-form reading on mobile and curated high-quality visuals to improve scannability.",
       "impact": "Significant increase in read time per email and a 30% growth in subscriber retention for the editorial segment."
+    },
+    {
+      "id": "17",
+      "name": "Hotel Las Islas - Exclusive Luxury Mailing",
+      "client": "Hotel Las Islas",
+      "industry": "Luxury Hospitality / E-commerce",
+      "description": "High-end email marketing campaign for one of Colombia's most exclusive luxury hotels, featuring personalized news and exclusive travel plans.",
+      "goal": "Communicate the brand's exclusivity and drive direct bookings through curated content.",
+      "role": "Email Marketing Designer & Developer",
+      "tools": [
+        "HTML (From scratch)",
+        "CSS (From scratch)",
+        "Figma",
+        "MJML"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/hotel-islas-mail/600/400",
+      "imageHint": "luxury hotel email",
+      "category": "Email Marketing",
+      "problem": "High-end clients require a sophisticated visual experience that many email clients struggle to render correctly, leading to a loss of perceived luxury.",
+      "objective": "Create a custom-coded, pixel-perfect email system that reflects the hotel's premium identity across all platforms.",
+      "uxImprovements": "Implemented fluid typography for better readability on high-resolution mobile screens and optimized image loading to maintain a premium feel without delays.",
+      "impact": "20% increase in direct bookings from newsletter subscribers and a record-high open rate of 42% for the luxury segment."
     }
   ]
 }
