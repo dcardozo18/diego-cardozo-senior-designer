@@ -108,7 +108,7 @@
         "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/hamunet.jpeg",
+      "imageUrl": "/hamunet.png",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -127,7 +127,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/skilltech.jpeg",
+      "imageUrl": "/skilltech.png",
       "imageHint": "computer repair it support",
       "category": "Corporate"
     },
@@ -163,7 +163,7 @@
         "React"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/dashboard.jpeg",
+      "imageUrl": "/dashboard-finance.png",
       "imageHint": "finance dashboard analytics",
       "category": "Web Platforms"
     },
@@ -180,13 +180,13 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/finance.jpeg",
+      "imageUrl": "/finance-app.png",
       "imageHint": "mobile finance app",
       "category": "Apps"
     },
     {
       "id": "7",
-      "name": "Food Delivery App",
+      "name": "Food Delivery Web App",
       "client": "FoodExpress",
       "industry": "Food & Delivery",
       "description": "Web application that allows users to browse restaurants, order meals online, and track delivery in real time.",
@@ -199,13 +199,13 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/food.jpeg",
+      "imageUrl": "/food-delivery.png",
       "imageHint": "food delivery app",
       "category": "Web Platforms"
     },
     {
       "id": "8",
-      "name": "Hotel Las Islas",
+      "name": "Hotel Las Islas Luxury Website",
       "client": "Hotel Las Islas",
       "industry": "Luxury Hospitality",
       "description": "Luxury hotel website focused on immersive visuals, room showcases, and direct booking functionality.",
@@ -217,13 +217,13 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/islas.png",
+      "imageUrl": "/hotel-las-islas.png",
       "imageHint": "luxury hotel resort",
       "category": "Web Platforms"
     },
     {
       "id": "9",
-      "name": "Water",
+      "name": "Water Delivery Web App",
       "client": "WaterFlow",
       "industry": "Logistics / Utilities",
       "description": "Web application designed to manage water orders, deliveries, and customer accounts for residential and business clients.",
@@ -236,13 +236,13 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/water.png",
+      "imageUrl": "/water-app.png",
       "imageHint": "water delivery service app",
       "category": "Web Platforms"
     },
     {
       "id": "10",
-      "name": "Wakeup Event",
+      "name": "Wakeup Influencer Event Landing Page",
       "client": "Wakeup",
       "industry": "Events / Marketing",
       "description": "High-conversion landing page designed to promote an influencer event, featuring speakers, agenda, and registration sections.",
@@ -255,7 +255,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/wakeup.png",
+      "imageUrl": "/wakeup-event.png",
       "imageHint": "influencer event landing page",
       "category": "Landing Pages"
     },
@@ -273,7 +273,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/puntocomedia.png",
+      "imageUrl": "/punto-comedia.png",
       "imageHint": "stand up comedy show tickets",
       "category": "E-commerce"
     },
@@ -291,66 +291,46 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/glow.jpeg",
+      "imageUrl": "/glow-beauty.png",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
     },
-    { 
-      "id": "13", 
-      "name": "BIT-C Corporate Website", 
-      "client": "BIT-C", 
-      "industry": "Technology / IT Services", 
-      "description": "Corporate website designed to present BIT-C’s technology services, company values, and business solutions with a modern and professional digital presence.", 
-      "goal": "Strengthen the company's online presence and generate new business opportunities through a clear and trustworthy website.", 
-      "role": "UI/UX Design, Frontend Development", 
-      "tools": [ 
-        "Figma", 
-        "HTML", 
-        "Tailwind CSS", 
-        "JavaScript" 
-      ], 
-      "liveSiteUrl": "#", 
-      "imageUrl": "/bitc.png", 
-      "imageHint": "corporate technology website", 
-      "category": "Corporate Website" 
+    {
+      "id": "13",
+      "name": "Black Friday Campaign",
+      "client": "TechZone",
+      "industry": "E-commerce",
+      "description": "High-impact email marketing campaign for Black Friday with personalized deals and interactive modules.",
+      "goal": "Maximize open rates and ROI during peak sales season through data-driven design.",
+      "role": "Email Marketing Specialist & Designer",
+      "tools": [
+        "HTML",
+        "CSS",
+        "Figma",
+        "Mailchimp"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/email1/600/400",
+      "imageHint": "email marketing template",
+      "category": "Email Marketing"
     },
     {
       "id": "14",
-      "name": "Real Estate Property Website",
-      "client": "Real Estate",
-      "industry": "Real Estate",
-      "description": "Real estate website designed to showcase properties available for sale or rent, allowing users to browse listings, view detailed property information, and easily contact agents.",
-      "goal": "Provide an intuitive property search experience that helps users discover, compare, and inquire about available real estate quickly and efficiently.",
-      "role": "UI/UX Design, Frontend Development",
+      "name": "Customer Re-engagement Flow",
+      "client": "FashionHub",
+      "industry": "Fashion",
+      "description": "Automated email sequence designed to win back inactive customers with dynamic content and discounts.",
+      "goal": "Reduce churn rate and increase customer lifetime value through targeted messaging.",
+      "role": "UX Researcher & Email Designer",
       "tools": [
+        "Klaviyo",
         "Figma",
-        "React",
-        "Tailwind CSS",
-        "JavaScript"
+        "HTML"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/realstate.jpeg",
-      "imageHint": "real estate property listings",
-      "category": "Corporate Website"
-    },
-    {
-      "id": "15",
-      "name": "Travel Experiences Blog",
-      "client": "Travel Blog",
-      "industry": "Travel / Publishing",
-      "description": "Travel blog website focused on sharing travel experiences, destination guides, and recommendations for places to visit around the world.",
-      "goal": "Inspire travelers by providing engaging stories, useful travel tips, and curated destination content in an easy-to-read digital experience.",
-      "role": "UI/UX Design, Frontend Development",
-      "tools": [
-        "Figma",
-        "HTML",
-        "Tailwind CSS",
-        "JavaScript"
-      ],
-      "liveSiteUrl": "#",
-      "imageUrl": "/travel.jpeg",
-      "imageHint": "travel blog destinations",
-      "category": "Blog / Content Platform"
+      "imageUrl": "https://picsum.photos/seed/email2/600/400",
+      "imageHint": "automated email sequence",
+      "category": "Email Marketing"
     }
   ]
 }

@@ -16,7 +16,8 @@ const CATEGORIES_EN = [
   'Web Platforms', 
   'E-commerce', 
   'Corporate', 
-  'Landing Pages'
+  'Landing Pages',
+  'Email Marketing'
 ];
 const CATEGORIES_ES = [
   'Todos', 
@@ -24,7 +25,8 @@ const CATEGORIES_ES = [
   'Plataformas Web', 
   'E-commerce', 
   'Corporativo', 
-  'Landing Pages'
+  'Landing Pages',
+  'Email Marketing'
 ];
 
 const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: any, lang: Locale, arrangedProjects: Project[] }) => {
