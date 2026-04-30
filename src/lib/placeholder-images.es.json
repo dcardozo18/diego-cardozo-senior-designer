@@ -73,7 +73,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Adobe XD"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
+      "imageUrl": "/bingo.png",
       "imageHint": "bingo mobile game",
       "category": "Apps"
     },
@@ -87,7 +87,7 @@
       "role": "Desarrollo E-commerce y UI/UX",
       "tools": ["Shopify", "Tailwind CSS", "Liquid"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
+      "imageUrl": "/hamunet.jpeg",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -101,7 +101,7 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "HTML", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/it/600/400",
+      "imageUrl": "/skilltech.jpeg",
       "imageHint": "computer repair it support",
       "category": "Corporate"
     },
@@ -115,7 +115,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "React", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/hotels/600/400",
+      "imageUrl": "/bestdeal.png",
       "imageHint": "hotel booking website",
       "category": "Web Platforms"
     },
@@ -129,7 +129,7 @@
       "role": "Diseño de Producto, UI/UX",
       "tools": ["Figma", "Chart.js", "React"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/finance/600/400",
+      "imageUrl": "/dashboard.jpeg",
       "imageHint": "finance dashboard analytics",
       "category": "Web Platforms"
     },
@@ -143,7 +143,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Adobe XD"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/wallet/600/400",
+      "imageUrl": "/finance.jpeg",
       "imageHint": "mobile finance app",
       "category": "Apps"
     },
@@ -157,7 +157,7 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "React", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/food/600/400",
+      "imageUrl": "/food.jpeg",
       "imageHint": "food delivery app",
       "category": "Web Platforms"
     },
@@ -171,7 +171,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Next.js", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/islands/600/400",
+      "imageUrl": "/islas.png",
       "imageHint": "luxury hotel resort",
       "category": "Landing Pages"
     },
@@ -185,7 +185,7 @@
       "role": "Diseño UI/UX, Diseño de Producto",
       "tools": ["Figma", "React", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/water/600/400",
+      "imageUrl": "/water.png",
       "imageHint": "water delivery service app",
       "category": "Web Platforms"
     },
@@ -199,7 +199,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "HTML", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/event/600/400",
+      "imageUrl": "/wakeup.png",
       "imageHint": "influencer event landing page",
       "category": "Landing Pages"
     },
@@ -213,7 +213,7 @@
       "role": "Diseño UI/UX, Desarrollo E-commerce",
       "tools": ["Figma", "Shopify", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/comedy/600/400",
+      "imageUrl": "/puntocomedia.png",
       "imageHint": "stand up comedy show tickets",
       "category": "E-commerce"
     },
@@ -227,7 +227,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "Shopify", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/beauty/600/400",
+      "imageUrl": "/glow.jpeg",
       "imageHint": "beauty cosmetics ecommerce",
       "category": "E-commerce"
     },
@@ -241,7 +241,7 @@
       "role": "Diseño UI/UX, Desarrollo Frontend",
       "tools": ["Figma", "Next.js", "Tailwind CSS"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/bitc/600/400",
+      "imageUrl": "/bitc.png",
       "imageHint": "corporate tech website",
       "category": "Corporate"
     },
@@ -255,7 +255,7 @@
       "role": "Diseño de Producto",
       "tools": ["WordPress", "Tailwind CSS", "JavaScript"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/blog/600/400",
+      "imageUrl": "/travel.jpeg",
       "imageHint": "travel blog publication",
       "category": "Web Platforms"
     },
@@ -269,7 +269,7 @@
       "role": "Diseño UI/UX",
       "tools": ["Figma", "React", "MapBox"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/house/600/400",
+      "imageUrl": "/realstate.jpeg",
       "imageHint": "real estate platform",
       "category": "Web Platforms"
     },
@@ -283,7 +283,7 @@
       "role": "Email Marketing Designer & Developer",
       "tools": ["HTML (Desde cero)", "CSS (Desde cero)", "Figma"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/email1/600/400",
+      "imageUrl": "/aviatur-mailing.jpg",
       "imageHint": "travel email marketing",
       "category": "Email Marketing",
       "problem": "Falta de consistencia visual y baja responsividad en campañas anteriores.",
@@ -301,7 +301,7 @@
       "role": "Email Marketing Designer & Developer",
       "tools": ["HTML (Desde cero)", "CSS (Desde cero)", "Figma"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/email2/600/400",
+      "imageUrl": "/colombia-mailing.jpg",
       "imageHint": "colombia tourism newsletter",
       "category": "Email Marketing",
       "problem": "El contenido genérico no lograba conectar con la audiencia local.",
@@ -319,7 +319,7 @@
       "role": "Email Marketing Designer & Developer",
       "tools": ["HTML (Desde cero)", "CSS (Desde cero)", "Figma"],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/email3/600/400",
+      "imageUrl": "/islas-mailing.jpg",
       "imageHint": "luxury hotel email",
       "category": "Email Marketing",
       "problem": "Las plantillas antiguas no reflejaban la identidad premium en pantallas de alta resolución.",
