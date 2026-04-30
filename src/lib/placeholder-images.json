@@ -90,7 +90,7 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/bingo.png",
+      "imageUrl": "https://picsum.photos/seed/bingo/600/400",
       "imageHint": "bingo mobile game",
       "category": "Apps"
     },
@@ -108,7 +108,7 @@
         "Liquid"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/hamunet.png",
+      "imageUrl": "https://picsum.photos/seed/jewelry/600/400",
       "imageHint": "jewelry ecommerce luxury",
       "category": "E-commerce"
     },
@@ -127,7 +127,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/skilltech.png",
+      "imageUrl": "https://picsum.photos/seed/it/600/400",
       "imageHint": "computer repair it support",
       "category": "Corporate"
     },
@@ -145,7 +145,7 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/bestdeal.png",
+      "imageUrl": "https://picsum.photos/seed/hotels/600/400",
       "imageHint": "hotel booking website",
       "category": "Web Platforms"
     },
@@ -163,7 +163,7 @@
         "React"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/dashboard-finance.png",
+      "imageUrl": "https://picsum.photos/seed/finance/600/400",
       "imageHint": "finance dashboard analytics",
       "category": "Web Platforms"
     },
@@ -180,7 +180,7 @@
         "Adobe XD"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/finance-app.png",
+      "imageUrl": "https://picsum.photos/seed/wallet/600/400",
       "imageHint": "mobile finance app",
       "category": "Apps"
     },
@@ -199,7 +199,7 @@
         "JavaScript"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/food-delivery.png",
+      "imageUrl": "https://picsum.photos/seed/food/600/400",
       "imageHint": "food delivery app",
       "category": "Web Platforms"
     },
@@ -217,78 +217,203 @@
         "Tailwind CSS"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "/hotel-las-islas.png",
+      "imageUrl": "https://picsum.photos/seed/islands/600/400",
       "imageHint": "luxury hotel resort",
       "category": "Landing Pages"
     },
     {
+      "id": "9",
+      "name": "Water Delivery Web App",
+      "client": "WaterFlow",
+      "industry": "Logistics / Utilities",
+      "description": "Web application designed to manage water orders, deliveries, and customer accounts for residential and business clients.",
+      "goal": "Streamline the ordering and delivery management process for water distribution companies.",
+      "role": "UI/UX Design, Product Design",
+      "tools": [
+        "Figma",
+        "React",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/water/600/400",
+      "imageHint": "water delivery service app",
+      "category": "Web Platforms"
+    },
+    {
+      "id": "10",
+      "name": "Wakeup Influencer Event Landing Page",
+      "client": "Wakeup",
+      "industry": "Events / Marketing",
+      "description": "High-conversion landing page designed to promote an influencer event, featuring speakers, agenda, and registration sections.",
+      "goal": "Increase event registrations through an engaging and visually dynamic landing page.",
+      "role": "UI/UX Design",
+      "tools": [
+        "Figma",
+        "HTML",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/event/600/400",
+      "imageHint": "influencer event landing page",
+      "category": "Landing Pages"
+    },
+    {
+      "id": "11",
+      "name": "Punto Comedia Ticket Store",
+      "client": "Punto Comedia",
+      "industry": "Entertainment",
+      "description": "E-commerce platform for selling stand-up comedy show tickets with event listings, seat availability, and secure checkout.",
+      "goal": "Provide a seamless ticket purchasing experience for comedy fans and event organizers.",
+      "role": "UI/UX Design, E-commerce Development",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "Tailwind CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/comedy/600/400",
+      "imageHint": "stand up comedy show tickets",
+      "category": "E-commerce"
+    },
+    {
+      "id": "12",
+      "name": "Glow Beauty E-commerce",
+      "client": "Glow",
+      "industry": "Beauty / Cosmetics",
+      "description": "Online beauty store featuring skincare and cosmetic products with modern UI, product filters, and personalized recommendations.",
+      "goal": "Create a visually attractive and conversion-focused e-commerce platform for beauty products.",
+      "role": "UI/UX Design",
+      "tools": [
+        "Figma",
+        "Shopify",
+        "Tailwind CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/beauty/600/400",
+      "imageHint": "beauty cosmetics ecommerce",
+      "category": "E-commerce"
+    },
+    {
+      "id": "18",
+      "name": "BIT-C Corporate Website",
+      "client": "BIT-C",
+      "industry": "Technology",
+      "description": "Professional corporate website for a leading tech consultancy firm focused on high-end solutions.",
+      "goal": "Showcase technical authority and acquire high-ticket corporate clients.",
+      "role": "UI/UX Design, Frontend Development",
+      "tools": [
+        "Figma",
+        "Next.js",
+        "Tailwind CSS"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/bitc/600/400",
+      "imageHint": "corporate tech website",
+      "category": "Corporate"
+    },
+    {
+      "id": "19",
+      "name": "Travel Experience Blog",
+      "client": "Nomad Stories",
+      "industry": "Media",
+      "description": "Immersive blog platform for travel enthusiasts featuring rich media galleries and location-based storytelling.",
+      "goal": "Increase reader engagement and session duration through visual storytelling.",
+      "role": "Product Design",
+      "tools": [
+        "WordPress",
+        "Tailwind CSS",
+        "JavaScript"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/blog/600/400",
+      "imageHint": "travel blog publication",
+      "category": "Web Platforms"
+    },
+    {
+      "id": "20",
+      "name": "Real Estate Property Platform",
+      "client": "EstatePro",
+      "industry": "Real Estate",
+      "description": "Modern property listing website with advanced filtering, map integration, and virtual tour support.",
+      "goal": "Simplify the house-hunting process with an intuitive and responsive interface.",
+      "role": "UI/UX Design",
+      "tools": [
+        "Figma",
+        "React",
+        "MapBox"
+      ],
+      "liveSiteUrl": "#",
+      "imageUrl": "https://picsum.photos/seed/house/600/400",
+      "imageHint": "real estate platform",
+      "category": "Web Platforms"
+    },
+    {
       "id": "15",
-      "name": "Aviatur - Strategic Mailing System",
+      "name": "Aviatur - Modular Mailing System",
       "client": "Aviatur",
       "industry": "Travel / E-commerce",
-      "description": "Modular email system designed to promote Flights, Hotels, Packages, and Cars dynamically.",
-      "goal": "Create a robust and high-performance mailing system that adapts to all devices and email clients.",
+      "description": "Strategic email system designed to promote Flights, Hotels, and Travel Packages dynamically.",
+      "goal": "Build a robust and high-performance mailing system that scales across all email clients.",
       "role": "Email Marketing Designer & Developer",
       "tools": [
         "HTML (From scratch)",
         "CSS (From scratch)",
-        "Figma",
-        "MJML"
+        "Figma"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/aviatur-mailing/600/400",
-      "imageHint": "travel email newsletter",
+      "imageUrl": "https://picsum.photos/seed/email1/600/400",
+      "imageHint": "travel email marketing",
       "category": "Email Marketing",
-      "problem": "Lack of visual consistency and poor responsiveness in previous campaigns, leading to low click-through rates.",
-      "objective": "Build a modular master template using clean HTML/CSS from scratch to ensure pixel-perfect rendering across all providers.",
-      "uxImprovements": "Simplified key content layout for mobile, optimized image delivery, and reduced friction in the purchase path directly from the email.",
-      "impact": "Achieved a 25% increase in engagement and a significant improvement in brand technical perception."
+      "problem": "Lack of visual consistency and poor responsiveness in legacy campaigns.",
+      "objective": "Build a modular template using pure HTML/CSS code from scratch for perfect rendering.",
+      "uxImprovements": "Optimized mobile layout and reduced friction in the purchase path directly from the newsletter.",
+      "impact": "25% increase in conversion rates and record engagement levels."
     },
     {
       "id": "16",
-      "name": "Aviatur Colombia - Tourism News Mailing",
+      "name": "Aviatur Colombia - Tourism News",
       "client": "Aviatur Colombia",
-      "industry": "Travel / Tourism",
-      "description": "Strategic email campaign focused on delivering curated tourism news and trends across Colombia.",
-      "goal": "Engage users with relevant local travel content and position Aviatur as a thought leader in Colombian tourism.",
+      "industry": "Travel / Media",
+      "description": "Content-driven email campaign delivering curated tourism news and trends from Colombia.",
+      "goal": "Position Aviatur as a thought leader in local tourism through high-quality editorial content.",
       "role": "Email Marketing Designer & Developer",
       "tools": [
         "HTML (From scratch)",
         "CSS (From scratch)",
-        "Figma",
-        "MJML"
+        "Figma"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/aviatur-colombia/600/400",
-      "imageHint": "colombia tourism news",
+      "imageUrl": "https://picsum.photos/seed/email2/600/400",
+      "imageHint": "colombia tourism newsletter",
       "category": "Email Marketing",
-      "problem": "Low engagement in general travel newsletters due to a lack of localized and storytelling-driven content.",
-      "objective": "Design and code an editorial-style mailing focused on Colombian tourism to increase brand affinity.",
-      "uxImprovements": "Optimized typography hierarchy for long-form reading on mobile and curated high-quality visuals to improve scannability.",
-      "impact": "Significant increase in read time per email and a 30% growth in subscriber retention for the editorial segment."
+      "problem": "Generic travel content wasn't engaging enough for the local audience.",
+      "objective": "Design an editorial-style mailing with a narrative focus to build brand affinity.",
+      "uxImprovements": "Optimized typography hierarchy for long-form reading on mobile devices.",
+      "impact": "Significant growth in subscriber retention and open rates."
     },
     {
       "id": "17",
       "name": "Hotel Las Islas - Exclusive Luxury Mailing",
       "client": "Hotel Las Islas",
-      "industry": "Luxury Hospitality / E-commerce",
-      "description": "High-end email marketing campaign for one of Colombia's most exclusive luxury hotels, featuring personalized news and exclusive travel plans.",
-      "goal": "Communicate the brand's exclusivity and drive direct bookings through curated content.",
+      "industry": "Luxury Hospitality",
+      "description": "High-end email marketing campaign for one of Colombia's most exclusive luxury hotels.",
+      "goal": "Communicate brand exclusivity and drive direct bookings for premium travel plans.",
       "role": "Email Marketing Designer & Developer",
       "tools": [
         "HTML (From scratch)",
         "CSS (From scratch)",
-        "Figma",
-        "MJML"
+        "Figma"
       ],
       "liveSiteUrl": "#",
-      "imageUrl": "https://picsum.photos/seed/hotel-islas-mail/600/400",
+      "imageUrl": "https://picsum.photos/seed/email3/600/400",
       "imageHint": "luxury hotel email",
       "category": "Email Marketing",
-      "problem": "High-end clients require a sophisticated visual experience that many email clients struggle to render correctly, leading to a loss of perceived luxury.",
-      "objective": "Create a custom-coded, pixel-perfect email system that reflects the hotel's premium identity across all platforms.",
-      "uxImprovements": "Implemented fluid typography for better readability on high-resolution mobile screens and optimized image loading to maintain a premium feel without delays.",
-      "impact": "20% increase in direct bookings from newsletter subscribers and a record-high open rate of 42% for the luxury segment."
+      "problem": "Legacy templates failed to reflect the hotel's premium identity on high-res displays.",
+      "objective": "Create a pixel-perfect, custom-coded email system that mirrors the brand's luxury status.",
+      "uxImprovements": "Implemented fluid typography and optimized image loading for a premium loading experience.",
+      "impact": "20% increase in direct bookings and record-breaking open rates."
     }
   ]
 }

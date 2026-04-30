@@ -22,9 +22,9 @@ const CATEGORIES_EN = [
 const CATEGORIES_ES = [
   'Todos', 
   'Apps', 
-  'Plataformas Web', 
+  'Web Platforms', 
   'E-commerce', 
-  'Corporativo', 
+  'Corporate', 
   'Landing Pages',
   'Email Marketing'
 ];
@@ -70,6 +70,7 @@ const ProjectsSection = ({ dictionary, lang, arrangedProjects }: { dictionary: a
     }
     
     // Get English key for filtering if currently in Spanish
+    // Since we unified category names in JSON to English version for simplicity
     const filterKey = lang === 'es' 
       ? CATEGORIES_EN[CATEGORIES_ES.indexOf(activeFilter)] || 'All' 
       : activeFilter;
